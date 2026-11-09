@@ -1,0 +1,237 @@
+schema_version: "1.0"
+metadata:
+  name: ernie55-and-smaller-base-post-training-plan
+  created_at: "2026-11-09"
+  canonical_dataset_catalog: datasets-list.yaml
+  status: pilot_plan_not_training_authorization
+  weight_semantics: 归一化采样权重，不是样本行数占比，也不是有效 token 占比
+  token_budget_semantics: row_tokens_before_loss_mask；supervised_tokens 单独记录，不与 row tokens 混用
+  scope: 文本 Base 模型的 SFT、偏好与 RLVR；不包含继续预训练
+
+models:
+  ernie55_flash_base:
+    model_id: baidu/ERNIE-5.5-Flash-Base-BF16
+    revision: dfab899dadcff8f4d08af24b75a26c6d4d2e0b09
+    revision_source: https://huggingface.co/api/models/baidu/ERNIE-5.5-Flash-Base-BF16
+    architecture: 280B_total_14B_active_sparse_moe
+    modality: text
+    checkpoint_precision: bf16
+    pretraining_context: 131072
+    supported_finetune_context: 1048576
+    tokenizer:
+      add_special_tokens: true
+      bos_required: true
+      tokenizer_config_has_chat_template: false
+    chat_template:
+      manager: megatron_bridge
+      name: ernie55_chat_template.jinja
+      bridge_revision: 08035723e7a86f94fc54a7f4473bd0519f2ac941
+      train_inference_must_match: true
+      inline_reasoning_tags: ["<ernie:think>", "</ernie:think>"]
+    training:
+      framework: NVIDIA-NeMo/Megatron-Bridge
+      recipe: ernie55_sft_64gpu_gb300_bf16_config
+      step_func: ernie55_step
+      mcore_minimum: f78809f6d
+      mcore_requirement: dev_branch_at_minimum_or_later_resolve_full_commit_before_run
+      official_hardware: 16_nodes_x_4_GB300
+      official_parallelism: TP1_PP1_CP64_EP64
+      official_row_length: 262144
+      official_global_batch_rows: 2
+      hopper_status: components_support_sm90_but_full_recipe_not_validated
+      optimizer: dist_muon
+      learning_rate: 0.00002
+      min_learning_rate: 0.000002
+      warmup_steps: 103
+      default_train_iters: 2065
+      assistant_only_loss: true
+      mtp_loss_weight: 0.1
+      dsa_indexer_kl_weight: 0.01
+      gradient_clip: 1.0
+      short_context_override_status: requires_new_smoke_and_numerical_validation
+    license:
+      id: ERNIE-5.5-Flash-Base-Model-License-Agreement-v1.0
+      territory_excludes: [European Union, United Kingdom, South Korea]
+      commercial_revenue_threshold_usd: 50000000
+      at_or_below_threshold: one_time_notice_and_Powered_by_ERNIE_attribution
+      above_threshold: prior_written_authorization
+      output_teacher_for_non_ernie_models: prohibited_without_separate_permission
+
+  smaller_base_models:
+    status: pending_user_supplied_model_ids_and_revisions
+    required_fields: [model_id, immutable_revision, architecture, parameter_count, context_length, license]
+    candidates: []
+
+proxy_protocol:
+  purpose: 在小模型上筛选数据配比、模板、过滤器和验证器，再迁移到 ERNIE 5.5
+  controlled_constants:
+    - dataset_immutable_revisions
+    - normalized_sampling_weights
+    - decontamination_version
+    - assistant_only_loss
+    - effective_supervised_token_accounting
+    - evaluation_versions_and_decoding
+  smoke_token_budget: 20000000
+  pilot_token_budget: 250000000
+  full_pilot_token_budget: 1000000000
+  max_seq_len_initial: 8192
+  epochs_preferred: 1
+  avoid_overclaim: 小模型结论只用于淘汰差配方，不保证在大 MoE 上等比例成立
+  full_sft_vs_lora: 行为对齐主实验优先 full SFT；LoRA 结果不得与全量 SFT 直接混为同一缩放结论
+
+experiment_defaults:
+  precision: bf16
+  packing: false
+  assistant_only_loss: true
+  mask_tool_outputs: true
+  max_seq_len: 8192
+  warmup_ratio: 0.03
+  schedule: cosine
+  gradient_clip: 1.0
+  dedup: [exact, minhash, semantic_or_parent_problem]
+  decontaminate: true
+  revisions: pin_immutable_before_materialization
+  eval_decoding: fixed_and_recorded_per_benchmark
+
+experiments:
+  - id: base_regression
+    stage: evaluation
+    parent: null
+    train: []
+    eval: [mmlu_pro, bbh, mt_bench, ifeval, math_500, livecodebench_v6, ruler, local_private_time_eval]
+    acceptance: 建立 Base 能力、指令失效模式、长度和代码基线；固定提示与解码
+
+  - id: general_public_sft
+    stage: sft
+    parent: null
+    track: public_pilot
+    token_budget: 250000000
+    train:
+      - {dataset: dolci_instruct_sft, weight: 0.80}
+      - {dataset: coig_pc_lite, weight: 0.10}
+      - {dataset: openmath_reasoning, config: cot, weight: 0.10}
+    eval: [mt_bench, ifeval, math_500, mmlu_pro, local_private_time_eval]
+    acceptance: 通用对话和指令跟随提升，同时 Base 知识、数学与长上下文不出现不可接受回退
+
+  - id: general_domain_sft
+    stage: sft
+    parent: null
+    track: business_data_required
+    token_budget: 250000000
+    train:
+      - {dataset: dolci_instruct_sft, weight: 0.70}
+      - {dataset: coig_pc_lite, weight: 0.10}
+      - {dataset: openmath_reasoning, config: cot, weight: 0.10}
+      - {dataset: local_domain_zh_sft, weight: 0.10}
+    eval: [mt_bench, ifeval, local_private_time_eval]
+    acceptance: 私有业务集优先提升；不得用公开 benchmark 提升替代业务验收
+
+  - id: precise_if_sft
+    stage: sft
+    parent: general_public_sft
+    track: public_pilot_with_license_review
+    token_budget: 200000000
+    train:
+      - {dataset: dolci_instruct_sft, weight: 0.50, role: general_replay}
+      - {dataset: tulu3_persona_if, weight: 0.30}
+      - {dataset: ifeval_like_filtered, config: filtered, weight: 0.20}
+    eval: [ifeval, mt_bench, local_private_time_eval]
+    acceptance: 程序验证约束通过率提升；IFEval 只评测，训练样本另做母题和语义去污
+
+  - id: long_output_sft
+    stage: sft
+    parent: general_public_sft
+    track: public_pilot_with_license_review
+    token_budget: 200000000
+    max_seq_len: 32768
+    train:
+      - {dataset: dolci_instruct_sft, weight: 0.60, role: general_replay}
+      - {dataset: longform, split: train, weight: 0.20}
+      - {dataset: longcite_45k, weight: 0.20}
+    eval: [longform_test, longbench_cite, ruler, mt_bench]
+    acceptance: 长度、任务完成、事实、引用支持与全局一致性共同验收；通过后再扩 128K／256K
+
+  - id: code_sft
+    stage: sft
+    parent: general_public_sft
+    track: public_pilot
+    token_budget: 250000000
+    train:
+      - {dataset: dolci_instruct_sft, weight: 0.20, role: general_replay}
+      - {dataset: opencodeinstruct, weight: 0.80}
+    alternatives:
+      - replace: opencodeinstruct
+        with: opencode_reasoning
+        rule: 独立 run，不与主集直接相加；按母题去重
+    eval: [livecodebench_v6, bigcodebench, mt_bench, local_private_time_eval]
+    acceptance: 沙箱复跑、母题去污和隐藏测试通过后，代码能力提升且通用能力不回退
+
+  - id: tool_sft
+    stage: sft
+    parent: general_public_sft
+    track: business_data_required
+    token_budget: 200000000
+    train:
+      - {dataset: xlam_function_calling, weight: 0.55}
+      - {dataset: toolace, weight: 0.25}
+      - {dataset: local_no_tool_negative, weight: 0.20}
+    eval: [bfcl, local_private_time_eval]
+    acceptance: Schema 精确率、实际执行成功率、多轮并行和无需调用负例共同达标
+
+  - id: safety_sft
+    stage: sft
+    parent: general_domain_sft
+    track: business_data_required
+    token_budget: 200000000
+    train:
+      - {dataset: dolci_instruct_sft, weight: 0.60, role: general_replay}
+      - {dataset: local_domain_safety, weight: 0.20}
+      - {dataset: local_overrefusal, weight: 0.20}
+    eval: [harmbench, strongreject, sorry_bench_202503, local_private_time_eval]
+    acceptance: 攻击成功率、正常请求过拒率和任务效用联合验收；危险原文不直接当普通聊天 SFT
+
+  - id: preference_dpo
+    stage: preference
+    parent: best_sft
+    track: after_sft_winner
+    train:
+      - {dataset: helpsteer3_preference, config: preference, weight: 1.00}
+    alternatives:
+      - replace: helpsteer3_preference
+        with: helpsteer2
+        rule: 独立 run；按同提示切分并人工抽检偏好对
+    eval: [rewardbench2, mt_bench, local_private_time_eval]
+    acceptance: 先验证偏好增益与通用能力，再决定是否进入 RL；不默认串联所有阶段
+
+  - id: math_rlvr
+    stage: rlvr
+    parent: best_sft
+    track: verifier_required
+    train:
+      - {dataset: dapo_math_17k, weight: 1.00}
+    eval: [math_500, gsm8k_test, omni_math, mgsm, local_private_time_eval]
+    verifier: answer_equivalence_with_normalized_ground_truth
+    curriculum: base_model_pass_rate_buckets
+    acceptance: 先做 pass-rate 分桶和奖励一致性审计，再决定 rollout 数与训练预算
+
+  - id: code_rlvr
+    stage: rlvr
+    parent: code_sft
+    track: verifier_required
+    train:
+      - {dataset: acecode_87k, weight: 1.00}
+    eval: [livecodebench_v6, bigcodebench, local_private_time_eval]
+    verifier: fail_closed_sandbox_with_hidden_tests
+    acceptance: 网络隔离、资源限制、隐藏测试和奖励攻击审计全部签署后启用
+
+release_gates:
+  - smaller_base_model_ids_and_immutable_revisions
+  - actual_gpu_type_count_interconnect_and_storage
+  - all_enabled_dataset_immutable_revisions_splits_configs
+  - chat_template_train_inference_parity_test
+  - tokenizer_bos_and_label_mask_test
+  - mcore_full_commit_and_bridge_container_lock
+  - two_step_smoke_loss_gradnorm_router_and_checkpoint_export
+  - data_quality_license_decontamination_signoff
+  - rlvr_verifier_signoff
+  - ernie_territory_commercial_and_distillation_review

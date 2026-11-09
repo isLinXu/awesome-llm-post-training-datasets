@@ -1,0 +1,472 @@
+manifest_version: '1.0'
+metadata:
+  name: commercial-post-training-recipe
+  created_at: '2026-11-09'
+  source_resolved_at: '2026-11-09T06:01:42Z'
+  canonical_catalog: datasets-list.yaml
+  weight_semantics: 归一化采样权重；不是样本行数占比，也不是有效 token 占比
+  token_budget_semantics: row_tokens_before_loss_mask；supervised_tokens 单独记录
+  status: executable_schema_pending_real_signoffs_not_training_authorization
+project:
+  selected_profile: commercial_general_sft
+  commercial_use: true
+  seed: 42
+  output_dir: ./runs/commercial-default
+  base_model:
+    id: baidu/ERNIE-5.5-Flash-Base-BF16
+    revision: dfab899dadcff8f4d08af24b75a26c6d4d2e0b09
+    chat_template: ernie55_chat_template.jinja
+    chat_template_bridge_revision: 08035723e7a86f94fc54a7f4473bd0519f2ac941
+    max_seq_len: 8192
+    add_special_tokens: true
+paths:
+  raw_root: ./commercial_default/raw
+  processed_root: ./commercial_default/processed
+  cache_root: ./commercial_default/cache
+runtime:
+  num_proc: 8
+  trust_remote_code: false
+  overwrite_processed: false
+defaults:
+  sft:
+    output_format: messages
+    assistant_only_loss: true
+    mask_tool_outputs: true
+    packing: false
+    truncation: drop
+    max_seq_len: 8192
+  preference:
+    output_format: prompt_chosen_rejected
+    max_prompt_len: 4096
+    max_response_len: 4096
+  rlvr:
+    output_format: prompt_answer_verifier
+    max_prompt_len: 4096
+    max_response_len: 8192
+    rollouts_per_prompt: 8
+    temperature: 0.7
+    correct_reward: 1.0
+    incorrect_reward: 0.0
+datasets:
+  tulu3_sft_mixture:
+    canonical_id: tulu3_sft_mixture
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: allenai/tulu-3-sft-mixture
+      revision: b14afda60f1bbebe55d5d2fa1e4df5042f97f8be
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: messages
+      adapter: messages_passthrough
+      fields:
+        messages: messages
+    license:
+      id: ODC-By-1.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - valid_roles
+      - nonempty_assistant
+      - length_histogram
+      - upstream_provenance_audit
+  aya_dataset:
+    canonical_id: aya_dataset
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: CohereLabs/aya_dataset
+      revision: f9ea04583f02a8f86404ff6c58bf75fe637df8a2
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: inputs_targets_language
+      adapter: input_target_to_messages
+      fields:
+        instruction: inputs
+        output: targets
+        language: language
+        language_code: language_code
+        annotation_type: annotation_type
+    license:
+      id: Apache-2.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - language_stratification
+      - empty_target_drop
+      - pii_review
+  openmath_reasoning:
+    canonical_id: openmath_reasoning
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: nvidia/OpenMathReasoning
+      revision: d3d08664755704f422af97d43a7ff0ded4bd95df
+      subset: default
+      split: cot
+      local_path: null
+    data:
+      format: problem_solution_answer
+      adapter: problem_solution_to_messages
+      fields:
+        problem: problem
+        solution: generated_solution
+        answer: expected_answer
+        inference_mode: inference_mode
+        source: problem_source
+    license:
+      id: CC-BY-4.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - cot_only
+      - answer_present
+      - solution_length_cap
+      - parent_problem_dedup
+  tulu3_persona_if:
+    canonical_id: tulu3_persona_if
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: allenai/tulu-3-sft-personas-instruction-following
+      revision: fe0c7d350c9b4542b8d829a6f1daa1c259f0ba0e
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: messages_constraints
+      adapter: messages_with_constraints
+      fields:
+        messages: messages
+        constraints: constraints
+    license:
+      id: ODC-By-1.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - deterministic_constraint_check
+      - valid_roles
+      - response_nonempty
+  opencodeinstruct:
+    canonical_id: opencodeinstruct
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: nvidia/OpenCodeInstruct
+      revision: 8f3ba5bafe4d6e8db46082cf7ae6741bc370604d
+      subset: train
+      split: train
+      local_path: null
+    data:
+      format: input_output_domain_unit_tests_scores
+      adapter: input_output_to_messages
+      fields:
+        prompt: input
+        response: output
+        domain: domain
+        unit_tests: unit_tests
+        execution_status: tests_execution_status
+        average_test_score: average_test_score
+    license:
+      id: CC-BY-4.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - execution_score_filter
+      - sandbox_replay
+      - parent_problem_dedup
+  longcite_45k:
+    canonical_id: longcite_45k
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: zai-org/LongCite-45k
+      revision: b776b01faf6e132a3d9cc373de1b46cd6630d772
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: long_document_prompt_cited_response
+      adapter: prompt_response_to_messages
+      fields:
+        prompt: prompt
+        response: response
+    license:
+      id: Apache-2.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - citation_support_audit
+      - empty_citation_audit
+      - length_histogram
+  helpsteer3_preference:
+    canonical_id: helpsteer3_preference
+    stage: preference
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: nvidia/HelpSteer3
+      revision: f6d145777bcbde96137596340fab89793acd1031
+      subset: preference
+      split: train
+      local_path: null
+    data:
+      format: context_chosen_rejected_human_preferences
+      adapter: helpsteer3_preference_pairs
+      fields:
+        context: context
+        response1: response1
+        response2: response2
+        overall_preference: overall_preference
+        individual_preference: individual_preference
+        language: language
+        domain: domain
+    license:
+      id: CC-BY-4.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - same_prompt_split
+      - preference_tie_policy
+      - human_label_audit
+  dapo_math_17k:
+    canonical_id: dapo_math_17k
+    stage: rlvr
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: BytedTsinghua-SIA/DAPO-Math-17k
+      revision: 65877096c24ffa7abc4e4fa5edb95cf3413a5674
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: prompt_answer_verifier
+      adapter: dapo_prompt_ground_truth
+      fields:
+        prompt: prompt
+        ground_truth: reward_model.ground_truth
+        data_source: data_source
+        ability: ability
+        extra_info: extra_info
+    license:
+      id: Apache-2.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - answer_normalization_audit
+      - benchmark_decontamination
+      - pass_rate_bucket
+    verifier:
+      type: math_answer_equivalence
+      implementation: math_verify
+      package_revision: PIN_ME_TO_MATH_VERIFY_VERSION
+      network: false
+      normalization_test_required: true
+profiles:
+  commercial_general_sft:
+    stage: sft
+    description: 商用默认通用／多语言／数学／精确指令 SFT；不包含 NC 或 review_required 数据
+    mixture:
+    - dataset: tulu3_sft_mixture
+      weight: 0.65
+    - dataset: aya_dataset
+      weight: 0.1
+    - dataset: openmath_reasoning
+      weight: 0.15
+    - dataset: tulu3_persona_if
+      weight: 0.1
+    overrides:
+      max_seq_len: 8192
+      packing: false
+      assistant_only_loss: true
+      row_token_budget: 250000000
+  commercial_code_sft:
+    stage: sft
+    description: 商用默认代码专项；通用回放与代码主集分开计量
+    mixture:
+    - dataset: tulu3_sft_mixture
+      weight: 0.2
+    - dataset: opencodeinstruct
+      weight: 0.8
+    overrides:
+      max_seq_len: 8192
+      packing: false
+      assistant_only_loss: true
+      row_token_budget: 250000000
+  commercial_long_sft:
+    stage: sft
+    description: 商用默认长文引用专项；长输入单独验收
+    mixture:
+    - dataset: tulu3_sft_mixture
+      weight: 0.6
+    - dataset: longcite_45k
+      weight: 0.4
+    overrides:
+      max_seq_len: 32768
+      packing: false
+      assistant_only_loss: true
+      row_token_budget: 200000000
+  commercial_preference_dpo:
+    stage: preference
+    description: 最佳商用 SFT 之后的偏好实验；固定 preference config
+    mixture:
+    - dataset: helpsteer3_preference
+      weight: 1.0
+    overrides:
+      max_prompt_len: 4096
+      max_response_len: 4096
+  commercial_math_rlvr:
+    stage: rlvr
+    description: 商用默认数学 RLVR；Math-Verify 版本和奖励一致性签署后启动
+    mixture:
+    - dataset: dapo_math_17k
+      weight: 1.0
+    overrides:
+      max_prompt_len: 4096
+      max_response_len: 8192
+      rollouts_per_prompt: 8
+      temperature: 0.7
+      curriculum: base_model_pass_rate_buckets
+preflight:
+  require_immutable_revisions: true
+  require_data_quality_signoff: true
+  require_license_signoff: true
+  require_decontamination_signoff: true
+  require_verifier_signoff_for_rlvr: true
+  fail_on_disabled_dataset: true
+  fail_on_unaccepted_gated_dataset: true
+  require_no_call_negative_for_tool_profile: true
+signoff:
+  data_quality: false
+  license: false
+  decontamination: false
+  verifier: false
+isolation:
+  recipe_class: commercial
+  allow_cross_recipe_raw_cache_or_output_reuse: false
+  research_to_commercial_promotion: requires_new_manifest_and_full_license_review
+  eval_only_assets_allowed_in_mixture: false
+run_record:
+  run_id: REPLACE_ME
+  resolved_manifest_sha256: REPLACE_ME
+  benchmark_versions: REPLACE_ME
+  decontamination_report: REPLACE_ME
+  data_quality_report: REPLACE_ME
+  license_review_report: REPLACE_ME
+  verifier_test_report: REPLACE_ME
+  notes: 记录实际样本数、row tokens、supervised tokens、长度分桶、删除原因和最终权重

@@ -1,0 +1,188 @@
+schema_version: '1.0'
+name: base-llm-post-training-dataset-taxonomy
+scope: text-only Base LLM post-training
+
+automation:
+  min_score: 6.0
+  require_strong: true
+  discovery_limit_per_query: 20
+  history_keep: 30
+  request_timeout_seconds: 20
+  request_pause_seconds: 0.10
+  max_retries: 3
+  weights:
+    strong: {title: 6.0, body: 3.0}
+    medium: {title: 3.0, body: 1.5}
+    weak: {title: 1.0, body: 0.5}
+
+# 自动召回只负责发现候选；以下词条用于排除明显非文本后训练数据。
+negative:
+  - image segmentation
+  - image generation
+  - text-to-image
+  - speech recognition
+  - audio generation
+  - video understanding
+  - video generation
+  - vision-language
+  - multimodal
+  - medical imaging
+  - remote sensing
+  - recommender system
+
+blocklist: []
+
+queries:
+  - {category: general_sft, search: instruction sft}
+  - {category: general_sft, search: supervised fine tuning chat}
+  - {category: chinese, search: chinese instruction}
+  - {category: multilingual, search: multilingual instruction}
+  - {category: instruction_following, search: verifiable instruction following}
+  - {category: long_context, search: long context sft}
+  - {category: reasoning, search: reasoning traces}
+  - {category: math, search: math reasoning}
+  - {category: rlvr_math, search: math rlvr}
+  - {category: code, search: code reasoning}
+  - {category: rlvr_code, search: code rlvr}
+  - {category: tool, search: function calling}
+  - {category: agent_search, search: search agent reinforcement learning}
+  - {category: agent_swe, search: swe agent}
+  - {category: preference, search: human preference}
+  - {category: process_reward, search: process reward}
+  - {category: safety, search: llm safety refusal}
+  - {category: evaluation, search: llm benchmark evaluation}
+  - {category: rlvr_if, search: instruction following rlvr}
+  - {category: long_output, search: long output instruction following}
+  - {category: agent_browser, search: browser web navigation agent dataset}
+  - {category: agent_safety, search: agent prompt injection safety benchmark}
+
+categories:
+  general_sft:
+    name: 通用指令与 SFT
+    keywords:
+      strong: [instruction following, supervised fine-tuning, supervised fine tuning, sft dataset, instruction dataset]
+      medium: [instruction, chat, alignment, conversation]
+      weak: [llm, language model]
+  chinese:
+    name: 中文指令与领域数据
+    keywords:
+      strong: [chinese instruction, chinese sft, chinese conversation, 中文指令]
+      medium: [chinese, zh-cn, mandarin, 中文]
+      weak: [instruction, chat]
+  multilingual:
+    name: 多语言指令数据
+    keywords:
+      strong: [multilingual instruction, multilingual sft, cross-lingual instruction]
+      medium: [multilingual, cross-lingual, translation]
+      weak: [language, instruction]
+  instruction_following:
+    name: 精确指令遵循
+    keywords:
+      strong: [verifiable instruction, instruction following constraints, ifeval, constraint following]
+      medium: [instruction following, constraints, verifiable]
+      weak: [sft, alignment]
+  long_context:
+    name: 长上下文与引用
+    keywords:
+      strong: [long context sft, long-context instruction, long document citation, grounded citation]
+      medium: [long context, long-document, citation, long align]
+      weak: [instruction, reasoning]
+  reasoning:
+    name: 通用与蒸馏推理
+    keywords:
+      strong: [reasoning traces, reasoning dataset, chain-of-thought, chain of thought]
+      medium: [reasoning, cot, deliberative]
+      weak: [sft, distillation]
+  math:
+    name: 数学 SFT
+    keywords:
+      strong: [math reasoning, mathematics reasoning, math cot, mathematical chain-of-thought]
+      medium: [math, mathematics, gsm8k, solution]
+      weak: [reasoning, sft]
+  rlvr_math:
+    name: 数学 RLVR
+    keywords:
+      strong: [math rlvr, mathematical rlvr, verifiable math rewards, math reinforcement learning]
+      medium: [rlvr, reinforcement learning, math, verifiable reward]
+      weak: [reasoning, grpo]
+  code:
+    name: 代码 SFT 与推理
+    keywords:
+      strong: [code reasoning, code instruction, programming instruction, code sft]
+      medium: [code generation, programming, code contest, software]
+      weak: [reasoning, sft]
+  rlvr_code:
+    name: 代码 RLVR
+    keywords:
+      strong: [code rlvr, code reinforcement learning, executable code rewards, verifiable code]
+      medium: [rlvr, reinforcement learning, unit tests, code]
+      weak: [grpo, programming]
+  tool:
+    name: 工具与函数调用
+    keywords:
+      strong: [function calling, tool calling, tool use dataset, api calling]
+      medium: [function call, tool use, api, tool augmented]
+      weak: [agent, sft]
+  agent_search:
+    name: 搜索与浏览 Agent
+    keywords:
+      strong: [search agent, web agent, browsing agent, retrieval agent]
+      medium: [search, retrieval, web navigation, reinforcement learning]
+      weak: [agent, reasoning]
+  agent_swe:
+    name: 软件工程 Agent
+    keywords:
+      strong: [swe agent, software engineering agent, swe-bench, repository level tasks]
+      medium: [software engineering, github issues, code repair, repository]
+      weak: [agent, code]
+  preference:
+    name: 偏好与奖励模型
+    keywords:
+      strong: [human preference, preference pairs, reward model dataset, chosen rejected]
+      medium: [preference, reward model, dpo, rlhf]
+      weak: [alignment, ranking]
+  process_reward:
+    name: 过程奖励与步级监督
+    keywords:
+      strong: [process reward, process supervision, step-level labels, step by step verification]
+      medium: [prm, step labels, reasoning steps, verifier]
+      weak: [math, reward model]
+  safety:
+    name: 安全、拒答与防过拒
+    keywords:
+      strong: [safety refusal, safe refusal, over-refusal, overrefusal, content safety dataset]
+      medium: [safety, harmless, moderation, jailbreak]
+      weak: [preference, alignment]
+  evaluation:
+    name: 独立评测
+    keywords:
+      strong: [llm benchmark, evaluation benchmark, reasoning benchmark, instruction following benchmark]
+      medium: [benchmark, evaluation, test set, leaderboard]
+      weak: [llm, reasoning]
+  rlvr_if:
+    name: 指令遵循 RLVR
+    keywords:
+      strong: [instruction following rlvr, verifiable instruction rewards, instruction reinforcement learning]
+      medium: [instruction following, rlvr, verifiable reward]
+      weak: [grpo, constraints]
+  long_output:
+    name: 长输出生成
+    keywords:
+      strong: [long output instruction, long-form generation, longform dataset, long response generation]
+      medium: [long output, long-form, lengthy response, global consistency]
+      weak: [instruction, sft]
+  agent_browser:
+    name: 浏览与网页导航 Agent
+    keywords:
+      strong: [browser agent dataset, web navigation dataset, website navigation, weblinx, mind2web]
+      medium: [browser, web agent, navigation, browsergym]
+      weak: [agent, tool]
+  agent_safety:
+    name: Agent 安全与提示注入
+    keywords:
+      strong: [agent safety benchmark, prompt injection benchmark, agentharm, agentdojo]
+      medium: [agent security, prompt injection, harmful agent, tool safety]
+      weak: [agent, safety]
+  local_required:
+    name: 本地必需物料
+    keywords: {strong: [], medium: [], weak: []}

@@ -1,0 +1,5183 @@
+{
+  "candidates": {
+    "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {
+          "language": [
+            "ko"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "Rosetta KO Instruction-Following Synthetic (SFT)",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "text-generation",
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 33,
+        "gated": "auto",
+        "last_modified": "2026-09-11T15:29:07.000Z",
+        "license": "apache-2.0",
+        "likes": 0,
+        "private": false,
+        "repo_id": "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft",
+        "sha": "e015bf3f675ce33808970f3af6580a467629751f",
+        "siblings_count": 0,
+        "tags": [
+          "format:json",
+          "if",
+          "instruction-following",
+          "korean",
+          "language:ko",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "rosetta",
+          "sft",
+          "size_categories:100K<n<1M",
+          "synthetic",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft"
+      },
+      "queries": [
+        "instruction sft"
+      ],
+      "repo_id": "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 9.5,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "general_sft",
+          "matched": [
+            {
+              "keyword": "instruction following",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "llm",
+              "location": "body",
+              "strength": "weak"
+            }
+          ],
+          "score": 9.5
+        }
+      ],
+      "suggested_category": "general_sft",
+      "url": "https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft"
+    },
+    "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {
+          "language": [
+            "ko"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "Rosetta KO Instruction-Following Synthetic (Reasoning SFT)",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 20,
+        "gated": "auto",
+        "last_modified": "2026-09-11T15:29:08.000Z",
+        "license": "apache-2.0",
+        "likes": 0,
+        "private": false,
+        "repo_id": "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think",
+        "sha": "0c1ecfebeeec051b0ba84b5b0dc1e92f8fa2cc20",
+        "siblings_count": 0,
+        "tags": [
+          "format:json",
+          "if",
+          "instruction-following",
+          "korean",
+          "language:ko",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "rosetta",
+          "sft-think",
+          "size_categories:10K<n<100K",
+          "synthetic",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think"
+      },
+      "queries": [
+        "instruction sft"
+      ],
+      "repo_id": "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 9.5,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "general_sft",
+          "matched": [
+            {
+              "keyword": "instruction following",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "llm",
+              "location": "body",
+              "strength": "weak"
+            }
+          ],
+          "score": 9.5
+        }
+      ],
+      "suggested_category": "general_sft",
+      "url": "https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think"
+    },
+    "bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 13,
+        "gated": false,
+        "last_modified": "2026-07-01T11:51:32.000Z",
+        "license": null,
+        "likes": 0,
+        "private": false,
+        "repo_id": "bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits",
+        "sha": "93cb14e4ad410af5d76481d72d749f819bca320e",
+        "siblings_count": 0,
+        "tags": [
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits"
+      },
+      "queries": [
+        "multilingual instruction"
+      ],
+      "repo_id": "bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 10.5,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "multilingual",
+          "matched": [
+            {
+              "keyword": "multilingual instruction",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "multilingual",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "language",
+              "location": "body",
+              "strength": "weak"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "weak"
+            }
+          ],
+          "score": 10.5
+        }
+      ],
+      "suggested_category": "multilingual",
+      "url": "https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits"
+    },
+    "bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 284,
+        "gated": false,
+        "last_modified": "2026-07-01T11:52:54.000Z",
+        "license": null,
+        "likes": 0,
+        "private": false,
+        "repo_id": "bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits",
+        "sha": "46d129c8765bb612ba635c6b021ec6d75f83c600",
+        "siblings_count": 0,
+        "tags": [
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits"
+      },
+      "queries": [
+        "multilingual instruction"
+      ],
+      "repo_id": "bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 10.5,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "multilingual",
+          "matched": [
+            {
+              "keyword": "multilingual instruction",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "multilingual",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "language",
+              "location": "body",
+              "strength": "weak"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "weak"
+            }
+          ],
+          "score": 10.5
+        }
+      ],
+      "suggested_category": "multilingual",
+      "url": "https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits"
+    },
+    "dlface/code_instructions_120k_alpaca_chinese": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 95,
+        "gated": false,
+        "last_modified": "2024-05-14T14:18:19.000Z",
+        "license": null,
+        "likes": 2,
+        "private": false,
+        "repo_id": "dlface/code_instructions_120k_alpaca_chinese",
+        "sha": "56e3369bc22b05bbb936768e50301aa61ff5e250",
+        "siblings_count": 0,
+        "tags": [
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/dlface/code_instructions_120k_alpaca_chinese"
+      },
+      "queries": [
+        "chinese instruction"
+      ],
+      "repo_id": "dlface/code_instructions_120k_alpaca_chinese",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 6.0,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "code",
+          "matched": [
+            {
+              "keyword": "code instruction",
+              "location": "title",
+              "strength": "strong"
+            }
+          ],
+          "score": 6.0
+        }
+      ],
+      "suggested_category": "code",
+      "url": "https://huggingface.co/datasets/dlface/code_instructions_120k_alpaca_chinese"
+    },
+    "ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": [
+            "openmdw-1.1"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 232,
+        "gated": false,
+        "last_modified": "2026-10-16T13:50:18.000Z",
+        "license": [
+          "openmdw-1.1"
+        ],
+        "likes": 1,
+        "private": false,
+        "repo_id": "ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4",
+        "sha": "5b38b2a92a3093cf025b14c43cdbf0e19b89315b",
+        "siblings_count": 0,
+        "tags": [
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:openmdw-1.1",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4"
+      },
+      "queries": [
+        "instruction sft"
+      ],
+      "repo_id": "ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 13.5,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "general_sft",
+          "matched": [
+            {
+              "keyword": "instruction following",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "chat",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "conversation",
+              "location": "body",
+              "strength": "medium"
+            }
+          ],
+          "score": 13.5
+        }
+      ],
+      "suggested_category": "general_sft",
+      "url": "https://huggingface.co/datasets/ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4"
+    },
+    "jean1/45k_python_code_chinese_instruction": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 39,
+        "gated": false,
+        "last_modified": "2024-04-19T00:00:57.000Z",
+        "license": null,
+        "likes": 6,
+        "private": false,
+        "repo_id": "jean1/45k_python_code_chinese_instruction",
+        "sha": "39cfffc0023b2dc42e329bfb00a3fd5ac7e601ba",
+        "siblings_count": 0,
+        "tags": [
+          "format:csv",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/jean1/45k_python_code_chinese_instruction"
+      },
+      "queries": [
+        "chinese instruction"
+      ],
+      "repo_id": "jean1/45k_python_code_chinese_instruction",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 11.5,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "chinese",
+          "matched": [
+            {
+              "keyword": "chinese instruction",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "chinese",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "中文",
+              "location": "body",
+              "strength": "medium"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "weak"
+            }
+          ],
+          "score": 11.5
+        }
+      ],
+      "suggested_category": "chinese",
+      "url": "https://huggingface.co/datasets/jean1/45k_python_code_chinese_instruction"
+    },
+    "karanverma19/multilingual-indian-instruction-dataset": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {
+          "license": "apache-2.0",
+          "pretty_name": "Multilingual Context-Aware Instruction Dataset for Indian Use Cases"
+        },
+        "disabled": false,
+        "downloads": 13,
+        "gated": false,
+        "last_modified": "2026-04-07T10:59:46.000Z",
+        "license": "apache-2.0",
+        "likes": 0,
+        "private": false,
+        "repo_id": "karanverma19/multilingual-indian-instruction-dataset",
+        "sha": "bdd55bae90fec08f07762c2247f8303310da09b6",
+        "siblings_count": 0,
+        "tags": [
+          "format:csv",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "size_categories:n<1K"
+        ],
+        "url": "https://huggingface.co/datasets/karanverma19/multilingual-indian-instruction-dataset"
+      },
+      "queries": [
+        "multilingual instruction"
+      ],
+      "repo_id": "karanverma19/multilingual-indian-instruction-dataset",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 9.0,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "general_sft",
+          "matched": [
+            {
+              "keyword": "instruction dataset",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "medium"
+            }
+          ],
+          "score": 9.0
+        },
+        {
+          "category": "multilingual",
+          "matched": [
+            {
+              "keyword": "multilingual instruction",
+              "location": "body",
+              "strength": "strong"
+            },
+            {
+              "keyword": "multilingual",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "language",
+              "location": "body",
+              "strength": "weak"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "weak"
+            }
+          ],
+          "score": 7.5
+        }
+      ],
+      "suggested_category": "general_sft",
+      "url": "https://huggingface.co/datasets/karanverma19/multilingual-indian-instruction-dataset"
+    },
+    "kumar2235/kannada-sft-instruction-pool": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {
+          "language": [
+            "kn",
+            "en"
+          ],
+          "license": "cc-by-sa-4.0",
+          "pretty_name": "Kannada SFT Instruction Pool",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 112,
+        "gated": "auto",
+        "last_modified": "2026-10-24T13:50:55.000Z",
+        "license": "cc-by-sa-4.0",
+        "likes": 1,
+        "private": false,
+        "repo_id": "kumar2235/kannada-sft-instruction-pool",
+        "sha": "74cdf5ee5e8b8c9e3b992a5592e0c163efc8927c",
+        "siblings_count": 0,
+        "tags": [
+          "chat",
+          "format:json",
+          "instruction-tuning",
+          "kannada",
+          "language:en",
+          "language:kn",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-sa-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "synthetic-data",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/kumar2235/kannada-sft-instruction-pool"
+      },
+      "queries": [
+        "instruction sft"
+      ],
+      "repo_id": "kumar2235/kannada-sft-instruction-pool",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 9.5,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "general_sft",
+          "matched": [
+            {
+              "keyword": "supervised fine tuning",
+              "location": "body",
+              "strength": "strong"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "chat",
+              "location": "body",
+              "strength": "medium"
+            },
+            {
+              "keyword": "conversation",
+              "location": "body",
+              "strength": "medium"
+            },
+            {
+              "keyword": "language model",
+              "location": "body",
+              "strength": "weak"
+            }
+          ],
+          "score": 9.5
+        }
+      ],
+      "suggested_category": "general_sft",
+      "url": "https://huggingface.co/datasets/kumar2235/kannada-sft-instruction-pool"
+    },
+    "treasure4l/multilingual_instruction_tuning": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 56,
+        "gated": false,
+        "last_modified": "2026-08-18T14:27:07.000Z",
+        "license": null,
+        "likes": 0,
+        "private": false,
+        "repo_id": "treasure4l/multilingual_instruction_tuning",
+        "sha": "4ab35fc0b52fb597c4ab80a9ea0924e8040ee410",
+        "siblings_count": 0,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning"
+      },
+      "queries": [
+        "multilingual instruction"
+      ],
+      "repo_id": "treasure4l/multilingual_instruction_tuning",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 10.0,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "multilingual",
+          "matched": [
+            {
+              "keyword": "multilingual instruction",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "multilingual",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "weak"
+            }
+          ],
+          "score": 10.0
+        }
+      ],
+      "suggested_category": "multilingual",
+      "url": "https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning"
+    },
+    "treasure4l/multilingual_instruction_tuning_plus": {
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "last_counted_run": "2026-11-09T05:00:20Z",
+      "last_seen_at": "2026-11-09T05:00:20Z",
+      "metadata": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 154,
+        "gated": false,
+        "last_modified": "2026-08-26T13:19:36.000Z",
+        "license": null,
+        "likes": 0,
+        "private": false,
+        "repo_id": "treasure4l/multilingual_instruction_tuning_plus",
+        "sha": "00d9a403e45c09a281bb940b7f0048abd17d4950",
+        "siblings_count": 0,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning_plus"
+      },
+      "queries": [
+        "multilingual instruction"
+      ],
+      "repo_id": "treasure4l/multilingual_instruction_tuning_plus",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 10.0,
+      "seen_count": 3,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "multilingual",
+          "matched": [
+            {
+              "keyword": "multilingual instruction",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "multilingual",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "weak"
+            }
+          ],
+          "score": 10.0
+        }
+      ],
+      "suggested_category": "multilingual",
+      "url": "https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning_plus"
+    }
+  },
+  "generated_at": "2026-11-09T06:01:42Z",
+  "last_run": {
+    "assets": 114,
+    "changes": [
+      {
+        "changes": {
+          "likes": {
+            "new": 284,
+            "old": 283
+          }
+        },
+        "dataset_ids": [
+          "tulu3_sft_mixture"
+        ],
+        "repo_id": "allenai/tulu-3-sft-mixture"
+      }
+    ],
+    "errors": [],
+    "generated_at": "2026-11-09T06:01:42Z",
+    "mode": "metadata",
+    "new_candidates": [],
+    "pending_candidates": 11,
+    "queries_run": 0,
+    "refreshed_ok": 63,
+    "tracked_total": 63
+  },
+  "repositories": {
+    "AmazonScience/FalseReject": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-4.0",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "text-generation",
+            "text2text-generation",
+            "fill-mask"
+          ]
+        },
+        "disabled": false,
+        "downloads": 890,
+        "gated": false,
+        "last_modified": "2025-05-14T19:16:44.000Z",
+        "license": "cc-by-nc-4.0",
+        "likes": 37,
+        "private": false,
+        "repo_id": "AmazonScience/FalseReject",
+        "sha": "493ba967714ea54c6f01067e1f61e389cc2c9b3e",
+        "siblings_count": 5,
+        "tags": [
+          "arxiv:2406.14598",
+          "arxiv:2505.08054",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-nc-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:fill-mask",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/AmazonScience/FalseReject"
+      },
+      "dataset_ids": [
+        "falsereject_test",
+        "falsereject_train"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "AmazonScience/FalseReject",
+      "status": "ok"
+    },
+    "Anthropic/hh-rlhf": {
+      "current": {
+        "card_data": {
+          "license": "mit"
+        },
+        "disabled": false,
+        "downloads": 48971,
+        "gated": false,
+        "last_modified": "2023-05-26T18:47:34.000Z",
+        "license": "mit",
+        "likes": 2493,
+        "private": false,
+        "repo_id": "Anthropic/hh-rlhf",
+        "sha": "09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa",
+        "siblings_count": 11,
+        "tags": [
+          "arxiv:2204.05862",
+          "format:json",
+          "human-feedback",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:mit",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/Anthropic/hh-rlhf"
+      },
+      "dataset_ids": [
+        "hh_rlhf"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Anthropic/hh-rlhf",
+      "status": "ok"
+    },
+    "BAAI/COIG-PC-Lite": {
+      "current": {
+        "card_data": {
+          "language": [
+            "zh"
+          ],
+          "license": "unknown"
+        },
+        "disabled": false,
+        "downloads": 589,
+        "gated": false,
+        "last_modified": "2024-06-14T01:18:23.000Z",
+        "license": "unknown",
+        "likes": 36,
+        "private": false,
+        "repo_id": "BAAI/COIG-PC-Lite",
+        "sha": "c8a630389c1aee2f6649744da3c8f8f5b2cbdb64",
+        "siblings_count": 21,
+        "tags": [
+          "arxiv:2304.07987",
+          "format:parquet",
+          "language:zh",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:unknown",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M"
+        ],
+        "url": "https://huggingface.co/datasets/BAAI/COIG-PC-Lite"
+      },
+      "dataset_ids": [
+        "coig_pc_lite"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "BAAI/COIG-PC-Lite",
+      "status": "ok"
+    },
+    "BAAI/Infinity-Instruct": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en",
+            "zh"
+          ],
+          "license": "cc-by-sa-4.0",
+          "size_categories": [
+            "1M<n<10M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 5912,
+        "gated": "auto",
+        "last_modified": "2025-12-04T07:56:39.000Z",
+        "license": "cc-by-sa-4.0",
+        "likes": 769,
+        "private": false,
+        "repo_id": "BAAI/Infinity-Instruct",
+        "sha": "bddc39a8feadbd679c30623197f4e736b7e75b48",
+        "siblings_count": 229,
+        "tags": [
+          "arxiv:2402.00530",
+          "arxiv:2405.19327",
+          "arxiv:2408.07089",
+          "arxiv:2409.07045",
+          "arxiv:2506.11116",
+          "arxiv:2507.06968",
+          "format:parquet",
+          "language:en",
+          "language:zh",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-sa-4.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:10M<n<100M",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/BAAI/Infinity-Instruct"
+      },
+      "dataset_ids": [
+        "infinity_instruct"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "BAAI/Infinity-Instruct",
+      "status": "ok"
+    },
+    "BAAI/TACO": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [],
+          "language": [
+            "code"
+          ],
+          "language_creators": [
+            "crowdsourced",
+            "expert-generated"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "TACO",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "source_datasets": [],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 26500,
+        "gated": false,
+        "last_modified": "2024-06-19T09:16:49.000Z",
+        "license": "apache-2.0",
+        "likes": 148,
+        "private": false,
+        "repo_id": "BAAI/TACO",
+        "sha": "d593ed0a2becbbc952230bb89be09189bf1056dc",
+        "siblings_count": 23,
+        "tags": [
+          "arxiv:2312.14852",
+          "code",
+          "language:code",
+          "language_creators:crowdsourced",
+          "language_creators:expert-generated",
+          "license:apache-2.0",
+          "multilinguality:monolingual",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:text-generation",
+          "task_ids:language-modeling"
+        ],
+        "url": "https://huggingface.co/datasets/BAAI/TACO"
+      },
+      "dataset_ids": [
+        "taco"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "BAAI/TACO",
+      "status": "ok"
+    },
+    "BytedTsinghua-SIA/DAPO-Math-17k": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "DAPO-Math-17k",
+          "size_categories": [
+            "1M<n<10M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 19519,
+        "gated": false,
+        "last_modified": "2025-04-18T11:20:51.000Z",
+        "license": "apache-2.0",
+        "likes": 194,
+        "private": false,
+        "repo_id": "BytedTsinghua-SIA/DAPO-Math-17k",
+        "sha": "65877096c24ffa7abc4e4fa5edb95cf3413a5674",
+        "siblings_count": 3,
+        "tags": [
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "math",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k"
+      },
+      "dataset_ids": [
+        "dapo_math_17k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "BytedTsinghua-SIA/DAPO-Math-17k",
+      "status": "ok"
+    },
+    "BytedTsinghua-SIA/Enigmata-Data": {
+      "current": {
+        "card_data": {
+          "license": "cc-by-nc-4.0"
+        },
+        "disabled": false,
+        "downloads": 385,
+        "gated": false,
+        "last_modified": "2025-08-13T09:00:27.000Z",
+        "license": "cc-by-nc-4.0",
+        "likes": 4,
+        "private": false,
+        "repo_id": "BytedTsinghua-SIA/Enigmata-Data",
+        "sha": "95f6920c2428c762ba6a6a2038af7dbe15eb7c75",
+        "siblings_count": 42,
+        "tags": [
+          "license:cc-by-nc-4.0",
+          "region:us"
+        ],
+        "url": "https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data"
+      },
+      "dataset_ids": [
+        "enigmata_data"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "BytedTsinghua-SIA/Enigmata-Data",
+      "status": "ok"
+    },
+    "BytedTsinghua-SIA/Enigmata-Eval": {
+      "current": {
+        "card_data": {
+          "license": "apache-2.0"
+        },
+        "disabled": false,
+        "downloads": 1185,
+        "gated": false,
+        "last_modified": "2025-05-27T08:14:17.000Z",
+        "license": "apache-2.0",
+        "likes": 2,
+        "private": false,
+        "repo_id": "BytedTsinghua-SIA/Enigmata-Eval",
+        "sha": "987d7c855c7c77c9c41cdbc004559e88f1a66122",
+        "siblings_count": 98,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval"
+      },
+      "dataset_ids": [
+        "enigmata_eval"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "BytedTsinghua-SIA/Enigmata-Eval",
+      "status": "ok"
+    },
+    "CohereLabs/aya_collection": {
+      "current": {
+        "card_data": {
+          "language": [
+            "ace",
+            "afr",
+            "amh",
+            "ara",
+            "aze",
+            "ban",
+            "bbc",
+            "bel",
+            "bem",
+            "ben",
+            "bjn",
+            "bul",
+            "cat",
+            "ceb",
+            "ces",
+            "cym",
+            "dan",
+            "deu",
+            "ell",
+            "eng",
+            "epo",
+            "est",
+            "eus",
+            "fil",
+            "fin",
+            "fon",
+            "fra",
+            "gla",
+            "gle",
+            "glg",
+            "guj",
+            "hat",
+            "hau",
+            "heb",
+            "hin",
+            "hrv",
+            "hun",
+            "hye",
+            "ibo",
+            "ind",
+            "isl",
+            "ita",
+            "jav",
+            "jpn",
+            "kan",
+            "kas",
+            "kat",
+            "kau",
+            "kaz",
+            "khm",
+            "kin",
+            "kir",
+            "kor",
+            "kur",
+            "lao",
+            "lav",
+            "lij",
+            "lit",
+            "ltz",
+            "mad",
+            "mal",
+            "man",
+            "mar",
+            "min",
+            "mkd",
+            "mlg",
+            "mlt",
+            "mon",
+            "mri",
+            "msa",
+            "mya",
+            "nep",
+            "nij",
+            "nld",
+            "nor",
+            "nso",
+            "nya",
+            "pan",
+            "pes",
+            "pol",
+            "por",
+            "pus",
+            "ron",
+            "rus",
+            "sin",
+            "slk",
+            "slv",
+            "smo",
+            "sna",
+            "snd",
+            "som",
+            "sot",
+            "spa",
+            "sqi",
+            "srp",
+            "sun",
+            "swa",
+            "swe",
+            "tam",
+            "taq",
+            "tel",
+            "tgk",
+            "tha",
+            "tur",
+            "twi",
+            "ukr",
+            "urd",
+            "uzb",
+            "vie",
+            "wol",
+            "xho",
+            "yid",
+            "yor",
+            "zho",
+            "zul"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "Aya Collection",
+          "size_categories": [
+            "100M<n<1B"
+          ],
+          "task_categories": [
+            "text-classification",
+            "summarization",
+            "translation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 14647,
+        "gated": false,
+        "last_modified": "2025-04-15T08:52:39.000Z",
+        "license": "apache-2.0",
+        "likes": 251,
+        "private": false,
+        "repo_id": "CohereLabs/aya_collection",
+        "sha": "09069079fad96ad9c7f8781be8c1d70471dfa768",
+        "siblings_count": 297,
+        "tags": [
+          "arxiv:2402.06619",
+          "format:parquet",
+          "language:ace",
+          "language:afr",
+          "language:amh",
+          "language:ara",
+          "language:aze",
+          "language:ban",
+          "language:bbc",
+          "language:bel",
+          "language:bem",
+          "language:ben",
+          "language:bjn",
+          "language:bul",
+          "language:cat",
+          "language:ceb",
+          "language:ces",
+          "language:cym",
+          "language:dan",
+          "language:deu",
+          "language:ell",
+          "language:eng",
+          "language:epo",
+          "language:est",
+          "language:eus",
+          "language:fil",
+          "language:fin",
+          "language:fon",
+          "language:fra",
+          "language:gla",
+          "language:gle",
+          "language:glg",
+          "language:guj",
+          "language:hat",
+          "language:hau",
+          "language:heb",
+          "language:hin",
+          "language:hrv",
+          "language:hun",
+          "language:hye",
+          "language:ibo",
+          "language:ind",
+          "language:isl",
+          "language:ita",
+          "language:jav",
+          "language:jpn",
+          "language:kan",
+          "language:kas",
+          "language:kat",
+          "language:kau",
+          "language:kaz",
+          "language:khm",
+          "language:kin",
+          "language:kir",
+          "language:kor",
+          "language:kur",
+          "language:lao",
+          "language:lav",
+          "language:lij",
+          "language:lit",
+          "language:ltz",
+          "language:mad",
+          "language:mal",
+          "language:man",
+          "language:mar",
+          "language:min",
+          "language:mkd",
+          "language:mlg",
+          "language:mlt",
+          "language:mon",
+          "language:mri",
+          "language:msa",
+          "language:mya",
+          "language:nep",
+          "language:nij",
+          "language:nld",
+          "language:nor",
+          "language:nso",
+          "language:nya",
+          "language:pan",
+          "language:pes",
+          "language:pol",
+          "language:por",
+          "language:pus",
+          "language:ron",
+          "language:rus",
+          "language:sin",
+          "language:slk",
+          "language:slv",
+          "language:smo",
+          "language:sna",
+          "language:snd",
+          "language:som",
+          "language:sot",
+          "language:spa",
+          "language:sqi",
+          "language:srp",
+          "language:sun",
+          "language:swa",
+          "language:swe",
+          "language:tam",
+          "language:taq",
+          "language:tel",
+          "language:tgk",
+          "language:tha",
+          "language:tur",
+          "language:twi",
+          "language:ukr",
+          "language:urd",
+          "language:uzb",
+          "language:vie",
+          "language:wol",
+          "language:xho",
+          "language:yid",
+          "language:yor",
+          "language:zho",
+          "language:zul",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:100M<n<1B",
+          "task_categories:summarization",
+          "task_categories:text-classification",
+          "task_categories:translation"
+        ],
+        "url": "https://huggingface.co/datasets/CohereLabs/aya_collection"
+      },
+      "dataset_ids": [
+        "aya_collection"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "CohereLabs/aya_collection",
+      "status": "ok"
+    },
+    "CohereLabs/aya_dataset": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [
+            "crowdsourced",
+            "expert-generated"
+          ],
+          "language": [
+            "amh",
+            "arb",
+            "ary",
+            "ars",
+            "acq",
+            "arz",
+            "apc",
+            "ben",
+            "ceb",
+            "dan",
+            "deu",
+            "ell",
+            "eng",
+            "eus",
+            "fil",
+            "fin",
+            "fra",
+            "gle",
+            "guj",
+            "hat",
+            "hau",
+            "hin",
+            "hun",
+            "ibo",
+            "ind",
+            "ita",
+            "jav",
+            "jpn",
+            "kan",
+            "kir",
+            "kor",
+            "kur",
+            "lit",
+            "mal",
+            "mar",
+            "mlg",
+            "msa",
+            "mya",
+            "nep",
+            "nld",
+            "nso",
+            "nya",
+            "pan",
+            "pes",
+            "pol",
+            "por",
+            "pus",
+            "rus",
+            "sin",
+            "sna",
+            "snd",
+            "som",
+            "spa",
+            "sqi",
+            "srp",
+            "sun",
+            "swa",
+            "swe",
+            "tam",
+            "tel",
+            "tha",
+            "tur",
+            "ukr",
+            "urd",
+            "vie",
+            "wol",
+            "xho",
+            "yor",
+            "zho",
+            "zul"
+          ],
+          "language_creators": [
+            "crowdsourced",
+            "expert-generated"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "Aya Dataset",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "source_datasets": [
+            "original"
+          ],
+          "task_categories": [
+            "other"
+          ]
+        },
+        "disabled": false,
+        "downloads": 24040,
+        "gated": false,
+        "last_modified": "2025-04-15T08:51:55.000Z",
+        "license": "apache-2.0",
+        "likes": 381,
+        "private": false,
+        "repo_id": "CohereLabs/aya_dataset",
+        "sha": "f9ea04583f02a8f86404ff6c58bf75fe637df8a2",
+        "siblings_count": 6,
+        "tags": [
+          "annotations_creators:crowdsourced",
+          "annotations_creators:expert-generated",
+          "arxiv:2402.06619",
+          "format:parquet",
+          "language:acq",
+          "language:amh",
+          "language:apc",
+          "language:arb",
+          "language:ars",
+          "language:ary",
+          "language:arz",
+          "language:ben",
+          "language:ceb",
+          "language:dan",
+          "language:deu",
+          "language:ell",
+          "language:eng",
+          "language:eus",
+          "language:fil",
+          "language:fin",
+          "language:fra",
+          "language:gle",
+          "language:guj",
+          "language:hat",
+          "language:hau",
+          "language:hin",
+          "language:hun",
+          "language:ibo",
+          "language:ind",
+          "language:ita",
+          "language:jav",
+          "language:jpn",
+          "language:kan",
+          "language:kir",
+          "language:kor",
+          "language:kur",
+          "language:lit",
+          "language:mal",
+          "language:mar",
+          "language:mlg",
+          "language:msa",
+          "language:mya",
+          "language:nep",
+          "language:nld",
+          "language:nso",
+          "language:nya",
+          "language:pan",
+          "language:pes",
+          "language:pol",
+          "language:por",
+          "language:pus",
+          "language:rus",
+          "language:sin",
+          "language:sna",
+          "language:snd",
+          "language:som",
+          "language:spa",
+          "language:sqi",
+          "language:srp",
+          "language:sun",
+          "language:swa",
+          "language:swe",
+          "language:tam",
+          "language:tel",
+          "language:tha",
+          "language:tur",
+          "language:ukr",
+          "language:urd",
+          "language:vie",
+          "language:wol",
+          "language:xho",
+          "language:yor",
+          "language:zho",
+          "language:zul",
+          "language_creators:crowdsourced",
+          "language_creators:expert-generated",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "multilinguality:multilingual",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "source_datasets:original",
+          "task_categories:other"
+        ],
+        "url": "https://huggingface.co/datasets/CohereLabs/aya_dataset"
+      },
+      "dataset_ids": [
+        "aya_dataset"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "CohereLabs/aya_dataset",
+      "status": "ok"
+    },
+    "Congliu/Chinese-DeepSeek-R1-Distill-data-110k": {
+      "current": {
+        "card_data": {
+          "language": [
+            "zh"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "text-generation",
+            "text2text-generation",
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 2550,
+        "gated": false,
+        "last_modified": "2025-02-21T02:18:08.000Z",
+        "license": "apache-2.0",
+        "likes": 804,
+        "private": false,
+        "repo_id": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k",
+        "sha": "8520b649430617c2be4490f424d251d09d835ed3",
+        "siblings_count": 3,
+        "tags": [
+          "format:json",
+          "language:zh",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k"
+      },
+      "dataset_ids": [
+        "chinese_r1_distill_110k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k",
+      "status": "ok"
+    },
+    "HuggingFaceH4/MATH-500": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "pretty_name": "MATH-500",
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 201942,
+        "gated": false,
+        "last_modified": "2025-12-15T11:01:40.000Z",
+        "license": null,
+        "likes": 357,
+        "private": false,
+        "repo_id": "HuggingFaceH4/MATH-500",
+        "sha": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+        "siblings_count": 4,
+        "tags": [
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:n<1K",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/HuggingFaceH4/MATH-500"
+      },
+      "dataset_ids": [
+        "math_500"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "HuggingFaceH4/MATH-500",
+      "status": "ok"
+    },
+    "HuggingFaceH4/mt_bench_prompts": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "MT Bench",
+          "size_categories": [
+            "n<1K"
+          ],
+          "task_categories": [
+            "question-answering",
+            "conversational"
+          ]
+        },
+        "disabled": false,
+        "downloads": 19694,
+        "gated": false,
+        "last_modified": "2023-07-03T20:52:34.000Z",
+        "license": "apache-2.0",
+        "likes": 27,
+        "private": false,
+        "repo_id": "HuggingFaceH4/mt_bench_prompts",
+        "sha": "e3a795c5e9a82ee40611c416b8a7786c73198991",
+        "siblings_count": 4,
+        "tags": [
+          "arxiv:2306.05685",
+          "evaluation",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "size_categories:n<1K",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/HuggingFaceH4/mt_bench_prompts"
+      },
+      "dataset_ids": [
+        "mt_bench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "HuggingFaceH4/mt_bench_prompts",
+      "status": "ok"
+    },
+    "HuggingFaceH4/no_robots": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-4.0",
+          "pretty_name": "No Robots",
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 45606,
+        "gated": false,
+        "last_modified": "2024-04-18T08:40:39.000Z",
+        "license": "cc-by-nc-4.0",
+        "likes": 608,
+        "private": false,
+        "repo_id": "HuggingFaceH4/no_robots",
+        "sha": "e6f9a4ac5c37faeb744ba9ecf0473184d7f8105b",
+        "siblings_count": 6,
+        "tags": [
+          "arxiv:2203.02155",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-nc-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/HuggingFaceH4/no_robots"
+      },
+      "dataset_ids": [
+        "no_robots"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "HuggingFaceH4/no_robots",
+      "status": "ok"
+    },
+    "Idavidrein/gpqa": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "GPQA",
+          "size_categories": [
+            "n<1K"
+          ],
+          "task_categories": [
+            "question-answering",
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 97023,
+        "gated": "auto",
+        "last_modified": "2026-09-21T22:29:06.000Z",
+        "license": "cc-by-4.0",
+        "likes": 634,
+        "private": false,
+        "repo_id": "Idavidrein/gpqa",
+        "sha": "83022cefff930aea54f654c0b282e74b9eeda5c6",
+        "siblings_count": 8,
+        "tags": [
+          "arxiv:2311.12022",
+          "benchmark:eval-yaml",
+          "benchmark:official",
+          "format:csv",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:tabular",
+          "modality:text",
+          "multiple-choice-qa",
+          "open-book-qa",
+          "open-domain-qa",
+          "region:us",
+          "size_categories:1K<n<10K",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/Idavidrein/gpqa"
+      },
+      "dataset_ids": [
+        "gpqa_diamond"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Idavidrein/gpqa",
+      "status": "ok"
+    },
+    "KbsdJames/Omni-MATH": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "1K<n<10K"
+          ]
+        },
+        "disabled": false,
+        "downloads": 10362,
+        "gated": false,
+        "last_modified": "2024-10-12T09:02:05.000Z",
+        "license": "apache-2.0",
+        "likes": 133,
+        "private": false,
+        "repo_id": "KbsdJames/Omni-MATH",
+        "sha": "40ba231d8f16e29ecd40e6407e2c8640145a8f62",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2410.07985",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "math",
+          "modality:text",
+          "olympiads",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/KbsdJames/Omni-MATH"
+      },
+      "dataset_ids": [
+        "omni_math"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "KbsdJames/Omni-MATH",
+      "status": "ok"
+    },
+    "McGill-NLP/WebLINX": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-sa-4.0",
+          "pretty_name": "weblinx",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "image-to-text",
+            "text-generation",
+            "text2text-generation",
+            "sentence-similarity"
+          ]
+        },
+        "disabled": false,
+        "downloads": 2845,
+        "gated": false,
+        "last_modified": "2024-12-07T04:23:40.000Z",
+        "license": "cc-by-nc-sa-4.0",
+        "likes": 66,
+        "private": false,
+        "repo_id": "McGill-NLP/WebLINX",
+        "sha": "a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13",
+        "siblings_count": 27,
+        "tags": [
+          "arxiv:2402.05930",
+          "convAI",
+          "image-to-text",
+          "language:en",
+          "license:cc-by-nc-sa-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:image-to-text",
+          "task_categories:sentence-similarity",
+          "task_categories:text-generation",
+          "vision"
+        ],
+        "url": "https://huggingface.co/datasets/McGill-NLP/WebLINX"
+      },
+      "dataset_ids": [
+        "weblinx"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "McGill-NLP/WebLINX",
+      "status": "ok"
+    },
+    "Nanbeige/ToolMind": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "ToolMind",
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 4084,
+        "gated": false,
+        "last_modified": "2026-01-09T02:23:42.000Z",
+        "license": "apache-2.0",
+        "likes": 188,
+        "private": false,
+        "repo_id": "Nanbeige/ToolMind",
+        "sha": "8020ed1c03c367e4eb720ac3828ab4b0b95d8baf",
+        "siblings_count": 15,
+        "tags": [
+          "arxiv:2511.15718",
+          "format:json",
+          "function-calling",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:document",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "synthetic",
+          "task_categories:text-generation",
+          "tool-calling"
+        ],
+        "url": "https://huggingface.co/datasets/Nanbeige/ToolMind"
+      },
+      "dataset_ids": [
+        "toolmind"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Nanbeige/ToolMind",
+      "status": "ok"
+    },
+    "Qwen/ProcessBench": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "1K<n<10K"
+          ]
+        },
+        "disabled": false,
+        "downloads": 8923,
+        "gated": false,
+        "last_modified": "2024-12-27T14:05:30.000Z",
+        "license": "apache-2.0",
+        "likes": 60,
+        "private": false,
+        "repo_id": "Qwen/ProcessBench",
+        "sha": "3bdcd5371ed567559a78f559c01c13a6deee7604",
+        "siblings_count": 6,
+        "tags": [
+          "arxiv:2412.06559",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "math",
+          "modality:text",
+          "reasoning",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/Qwen/ProcessBench"
+      },
+      "dataset_ids": [
+        "processbench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Qwen/ProcessBench",
+      "status": "ok"
+    },
+    "Salesforce/xlam-function-calling-60k": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "question-answering",
+            "text-generation",
+            "reinforcement-learning"
+          ]
+        },
+        "disabled": false,
+        "downloads": 15001,
+        "gated": "auto",
+        "last_modified": "2025-01-24T19:25:58.000Z",
+        "license": "cc-by-4.0",
+        "likes": 757,
+        "private": false,
+        "repo_id": "Salesforce/xlam-function-calling-60k",
+        "sha": "26d14ebfe18b1f7b524bd39b404b50af5dc97866",
+        "siblings_count": 6,
+        "tags": [
+          "LLM Agent",
+          "arxiv:2406.18518",
+          "code",
+          "format:json",
+          "function-calling",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "synthetic",
+          "task_categories:question-answering",
+          "task_categories:reinforcement-learning",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k"
+      },
+      "dataset_ids": [
+        "xlam_function_calling"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Salesforce/xlam-function-calling-60k",
+      "status": "ok"
+    },
+    "ServiceNow-AI/M2Lingual": {
+      "current": {
+        "card_data": {
+          "language": [
+            "zh",
+            "ne",
+            "uk",
+            "ja",
+            "zu",
+            "ku",
+            "ig",
+            "mg",
+            "fi",
+            "si",
+            "id",
+            "sw",
+            "ar",
+            "sv",
+            "ru",
+            "yo",
+            "en",
+            "ht",
+            "kn",
+            "ta",
+            "te",
+            "sq",
+            "mr",
+            "am",
+            "wo",
+            "it",
+            "tr",
+            "ha",
+            "pl",
+            "el",
+            "lt",
+            "ms",
+            "jv",
+            "sn",
+            "ml",
+            "ps",
+            "ky",
+            "es",
+            "ga",
+            "gu",
+            "ko",
+            "vi",
+            "sd",
+            "fa",
+            "nl",
+            "hu",
+            "so",
+            "pa",
+            "bn",
+            "pt",
+            "da",
+            "hi",
+            "eu",
+            "de",
+            "ur",
+            "su",
+            "xh",
+            "fr"
+          ],
+          "license": "cc-by-nc-sa-4.0"
+        },
+        "disabled": false,
+        "downloads": 483,
+        "gated": false,
+        "last_modified": "2024-08-13T19:01:43.000Z",
+        "license": "cc-by-nc-sa-4.0",
+        "likes": 42,
+        "private": false,
+        "repo_id": "ServiceNow-AI/M2Lingual",
+        "sha": "e02c0901ccabb711e3dc27ccebaf001e23ee92a4",
+        "siblings_count": 6,
+        "tags": [
+          "arxiv:2406.16783",
+          "format:parquet",
+          "language:am",
+          "language:ar",
+          "language:bn",
+          "language:da",
+          "language:de",
+          "language:el",
+          "language:en",
+          "language:es",
+          "language:eu",
+          "language:fa",
+          "language:fi",
+          "language:fr",
+          "language:ga",
+          "language:gu",
+          "language:ha",
+          "language:hi",
+          "language:ht",
+          "language:hu",
+          "language:id",
+          "language:ig",
+          "language:it",
+          "language:ja",
+          "language:jv",
+          "language:kn",
+          "language:ko",
+          "language:ku",
+          "language:ky",
+          "language:lt",
+          "language:mg",
+          "language:ml",
+          "language:mr",
+          "language:ms",
+          "language:ne",
+          "language:nl",
+          "language:pa",
+          "language:pl",
+          "language:ps",
+          "language:pt",
+          "language:ru",
+          "language:sd",
+          "language:si",
+          "language:sn",
+          "language:so",
+          "language:sq",
+          "language:su",
+          "language:sv",
+          "language:sw",
+          "language:ta",
+          "language:te",
+          "language:tr",
+          "language:uk",
+          "language:ur",
+          "language:vi",
+          "language:wo",
+          "language:xh",
+          "language:yo",
+          "language:zh",
+          "language:zu",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-nc-sa-4.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/ServiceNow-AI/M2Lingual"
+      },
+      "dataset_ids": [
+        "m2lingual"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "ServiceNow-AI/M2Lingual",
+      "status": "ok"
+    },
+    "Skywork/Skywork-OR1-RL-Data": {
+      "current": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 2274,
+        "gated": false,
+        "last_modified": "2025-05-29T02:27:10.000Z",
+        "license": null,
+        "likes": 69,
+        "private": false,
+        "repo_id": "Skywork/Skywork-OR1-RL-Data",
+        "sha": "1cdedc52e0e2db85fdf252f9be682e63a5a38c33",
+        "siblings_count": 6,
+        "tags": [
+          "arxiv:2505.22312",
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data"
+      },
+      "dataset_ids": [
+        "skywork_or1_rl"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Skywork/Skywork-OR1-RL-Data",
+      "status": "ok"
+    },
+    "Skywork/Skywork-Reward-Preference-80K-v0.2": {
+      "current": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 1896,
+        "gated": false,
+        "last_modified": "2024-10-25T01:58:25.000Z",
+        "license": null,
+        "likes": 73,
+        "private": false,
+        "repo_id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
+        "sha": "9757870d81894c90216e92536bad48f41475d5d0",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2410.18451",
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/Skywork/Skywork-Reward-Preference-80K-v0.2"
+      },
+      "dataset_ids": [
+        "skywork_reward_preference_80k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
+      "status": "ok"
+    },
+    "SynthLabsAI/Big-Math-RL-Verified": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "question-answering",
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 4877,
+        "gated": "auto",
+        "last_modified": "2025-03-25T15:33:48.000Z",
+        "license": "apache-2.0",
+        "likes": 246,
+        "private": false,
+        "repo_id": "SynthLabsAI/Big-Math-RL-Verified",
+        "sha": "c75d2f117cddfecb6bd08756e61e508e59732b21",
+        "siblings_count": 6,
+        "tags": [
+          "RL",
+          "arxiv:2502.17387",
+          "closed-form-answers",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "math",
+          "mathematics",
+          "modality:text",
+          "open-ended-questions",
+          "reasoning",
+          "region:us",
+          "reinforcement-learning",
+          "size_categories:100K<n<1M",
+          "task_categories:question-answering",
+          "task_categories:text-generation",
+          "verifiable"
+        ],
+        "url": "https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified"
+      },
+      "dataset_ids": [
+        "big_math_rl_verified"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "SynthLabsAI/Big-Math-RL-Verified",
+      "status": "ok"
+    },
+    "TIGER-Lab/MMLU-Pro": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "mit",
+          "pretty_name": "MMLU-Pro",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 383853,
+        "gated": false,
+        "last_modified": "2026-05-02T06:26:05.000Z",
+        "license": "mit",
+        "likes": 601,
+        "private": false,
+        "repo_id": "TIGER-Lab/MMLU-Pro",
+        "sha": "b189ec765aa7ed75c8acfea42df31fdae71f97be",
+        "siblings_count": 7,
+        "tags": [
+          "arxiv:2406.01574",
+          "benchmark:eval-yaml",
+          "benchmark:official",
+          "doi:10.57967/hf/2439",
+          "evaluation",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:mit",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"
+      },
+      "dataset_ids": [
+        "mmlu_pro"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "TIGER-Lab/MMLU-Pro",
+      "status": "ok"
+    },
+    "agentica-org/DeepScaleR-Preview-Dataset": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "mit",
+          "size_categories": [
+            "10K<n<100K"
+          ]
+        },
+        "disabled": false,
+        "downloads": 43571,
+        "gated": false,
+        "last_modified": "2025-02-10T09:51:18.000Z",
+        "license": "mit",
+        "likes": 220,
+        "private": false,
+        "repo_id": "agentica-org/DeepScaleR-Preview-Dataset",
+        "sha": "b6ae8c60f5c1f2b594e2140b91c49c9ad0949e29",
+        "siblings_count": 3,
+        "tags": [
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:mit",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset"
+      },
+      "dataset_ids": [
+        "deepscaler_preview"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "agentica-org/DeepScaleR-Preview-Dataset",
+      "status": "ok"
+    },
+    "ai-safety-institute/AgentHarm": {
+      "current": {
+        "card_data": {
+          "license": "other"
+        },
+        "disabled": false,
+        "downloads": 13181,
+        "gated": false,
+        "last_modified": "2024-12-19T13:27:30.000Z",
+        "license": "other",
+        "likes": 67,
+        "private": false,
+        "repo_id": "ai-safety-institute/AgentHarm",
+        "sha": "e23b3fe60a0da9037314b88e5ee3a0c054970dad",
+        "siblings_count": 8,
+        "tags": [
+          "arxiv:2404.02151",
+          "arxiv:2410.09024",
+          "format:json",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:other",
+          "modality:text",
+          "region:us",
+          "size_categories:n<1K"
+        ],
+        "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm"
+      },
+      "dataset_ids": [
+        "agentharm"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "ai-safety-institute/AgentHarm",
+      "status": "ok"
+    },
+    "akoksal/LongForm": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "mit",
+          "pretty_name": "longform",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "table-question-answering",
+            "summarization",
+            "text2text-generation",
+            "text-generation",
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 548,
+        "gated": false,
+        "last_modified": "2024-03-05T15:20:00.000Z",
+        "license": "mit",
+        "likes": 61,
+        "private": false,
+        "repo_id": "akoksal/LongForm",
+        "sha": "c4d2836f581bf1b7ad4ba1243af81b6b1b8626f1",
+        "siblings_count": 5,
+        "tags": [
+          "arxiv:2304.08460",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:mit",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:question-answering",
+          "task_categories:summarization",
+          "task_categories:table-question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/akoksal/LongForm"
+      },
+      "dataset_ids": [
+        "longform",
+        "longform_test"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "akoksal/LongForm",
+      "status": "ok"
+    },
+    "allenai/Dolci-Instruct-SFT": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [
+            "crowdsourced",
+            "expert-generated",
+            "machine-generated"
+          ],
+          "language": [
+            "amh",
+            "arb",
+            "ary",
+            "ars",
+            "acq",
+            "arz",
+            "apc",
+            "ben",
+            "ceb",
+            "dan",
+            "deu",
+            "ell",
+            "eng",
+            "eus",
+            "fil",
+            "fin",
+            "fra",
+            "gle",
+            "guj",
+            "hat",
+            "hau",
+            "hin",
+            "hun",
+            "ibo",
+            "ind",
+            "ita",
+            "jav",
+            "jpn",
+            "kan",
+            "kir",
+            "kor",
+            "kur",
+            "lit",
+            "mal",
+            "mar",
+            "mlg",
+            "msa",
+            "mya",
+            "nep",
+            "nld",
+            "nso",
+            "nya",
+            "pan",
+            "pes",
+            "pol",
+            "por",
+            "pus",
+            "rus",
+            "sin",
+            "sna",
+            "snd",
+            "som",
+            "spa",
+            "sqi",
+            "srp",
+            "sun",
+            "swa",
+            "swe",
+            "tam",
+            "tel",
+            "tha",
+            "tur",
+            "ukr",
+            "urd",
+            "vie",
+            "wol",
+            "xho",
+            "yor",
+            "zho",
+            "zul"
+          ],
+          "license": "odc-by",
+          "task_categories": [
+            "other"
+          ]
+        },
+        "disabled": false,
+        "downloads": 5643,
+        "gated": false,
+        "last_modified": "2026-02-03T00:08:38.000Z",
+        "license": "odc-by",
+        "likes": 66,
+        "private": false,
+        "repo_id": "allenai/Dolci-Instruct-SFT",
+        "sha": "bd3c8f3a9b2cc5a9682e44b96ddd0bb2ff027221",
+        "siblings_count": 17,
+        "tags": [
+          "annotations_creators:crowdsourced",
+          "annotations_creators:expert-generated",
+          "annotations_creators:machine-generated",
+          "arxiv:2512.13961",
+          "format:parquet",
+          "language:acq",
+          "language:amh",
+          "language:apc",
+          "language:arb",
+          "language:ars",
+          "language:ary",
+          "language:arz",
+          "language:ben",
+          "language:ceb",
+          "language:dan",
+          "language:deu",
+          "language:ell",
+          "language:eng",
+          "language:eus",
+          "language:fil",
+          "language:fin",
+          "language:fra",
+          "language:gle",
+          "language:guj",
+          "language:hat",
+          "language:hau",
+          "language:hin",
+          "language:hun",
+          "language:ibo",
+          "language:ind",
+          "language:ita",
+          "language:jav",
+          "language:jpn",
+          "language:kan",
+          "language:kir",
+          "language:kor",
+          "language:kur",
+          "language:lit",
+          "language:mal",
+          "language:mar",
+          "language:mlg",
+          "language:msa",
+          "language:mya",
+          "language:nep",
+          "language:nld",
+          "language:nso",
+          "language:nya",
+          "language:pan",
+          "language:pes",
+          "language:pol",
+          "language:por",
+          "language:pus",
+          "language:rus",
+          "language:sin",
+          "language:sna",
+          "language:snd",
+          "language:som",
+          "language:spa",
+          "language:sqi",
+          "language:srp",
+          "language:sun",
+          "language:swa",
+          "language:swe",
+          "language:tam",
+          "language:tel",
+          "language:tha",
+          "language:tur",
+          "language:ukr",
+          "language:urd",
+          "language:vie",
+          "language:wol",
+          "language:xho",
+          "language:yor",
+          "language:zho",
+          "language:zul",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:odc-by",
+          "modality:text",
+          "multilinguality:multilingual",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "task_categories:other"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT"
+      },
+      "dataset_ids": [
+        "dolci_instruct_sft"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "allenai/Dolci-Instruct-SFT",
+      "status": "ok"
+    },
+    "allenai/llama-3.1-tulu-3-8b-preference-mixture": {
+      "current": {
+        "card_data": {
+          "license": "odc-by"
+        },
+        "disabled": false,
+        "downloads": 4054,
+        "gated": false,
+        "last_modified": "2025-02-04T00:21:47.000Z",
+        "license": "odc-by",
+        "likes": 28,
+        "private": false,
+        "repo_id": "allenai/llama-3.1-tulu-3-8b-preference-mixture",
+        "sha": "78a6f00785946cd24276c5dd075f83a143a3b1e6",
+        "siblings_count": 11,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:odc-by",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture"
+      },
+      "dataset_ids": [
+        "tulu3_preference_mixture"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "allenai/llama-3.1-tulu-3-8b-preference-mixture",
+      "status": "ok"
+    },
+    "allenai/reward-bench": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "odc-by",
+          "pretty_name": "RM Bench",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 16086,
+        "gated": false,
+        "last_modified": "2024-09-09T16:11:45.000Z",
+        "license": "odc-by",
+        "likes": 112,
+        "private": false,
+        "repo_id": "allenai/reward-bench",
+        "sha": "168d848cdbbea9764fae4a544dc9ca1e6cca4931",
+        "siblings_count": 16,
+        "tags": [
+          "arxiv:2308.01263",
+          "arxiv:2308.07124",
+          "arxiv:2310.07641",
+          "arxiv:2403.13787",
+          "doi:10.57967/hf/2457",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:text",
+          "region:us",
+          "size_categories:1K<n<10K",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/reward-bench"
+      },
+      "dataset_ids": [
+        "rewardbench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "allenai/reward-bench",
+      "status": "ok"
+    },
+    "allenai/reward-bench-2": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "odc-by",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 6719,
+        "gated": false,
+        "last_modified": "2025-06-04T08:53:38.000Z",
+        "license": "odc-by",
+        "likes": 37,
+        "private": false,
+        "repo_id": "allenai/reward-bench-2",
+        "sha": "7ff08853b0d5686e79b13fda8677024f566a104a",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2506.01937",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:1K<n<10K",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/reward-bench-2"
+      },
+      "dataset_ids": [
+        "rewardbench2"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "allenai/reward-bench-2",
+      "status": "ok"
+    },
+    "allenai/tulu-3-sft-mixture": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [
+            "crowdsourced",
+            "expert-generated",
+            "machine-generated"
+          ],
+          "language": [
+            "amh",
+            "arb",
+            "ary",
+            "ars",
+            "acq",
+            "arz",
+            "apc",
+            "ben",
+            "ceb",
+            "dan",
+            "deu",
+            "ell",
+            "eng",
+            "eus",
+            "fil",
+            "fin",
+            "fra",
+            "gle",
+            "guj",
+            "hat",
+            "hau",
+            "hin",
+            "hun",
+            "ibo",
+            "ind",
+            "ita",
+            "jav",
+            "jpn",
+            "kan",
+            "kir",
+            "kor",
+            "kur",
+            "lit",
+            "mal",
+            "mar",
+            "mlg",
+            "msa",
+            "mya",
+            "nep",
+            "nld",
+            "nso",
+            "nya",
+            "pan",
+            "pes",
+            "pol",
+            "por",
+            "pus",
+            "rus",
+            "sin",
+            "sna",
+            "snd",
+            "som",
+            "spa",
+            "sqi",
+            "srp",
+            "sun",
+            "swa",
+            "swe",
+            "tam",
+            "tel",
+            "tha",
+            "tur",
+            "ukr",
+            "urd",
+            "vie",
+            "wol",
+            "xho",
+            "yor",
+            "zho",
+            "zul"
+          ],
+          "license": "odc-by",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "source_datasets": [
+            "allenai/coconot",
+            "ai2-adapt-dev/flan_v2_converted",
+            "HuggingFaceH4/no_robots",
+            "OpenAssistant/oasst1",
+            "allenai/tulu-3-personas-math",
+            "allenai/tulu-3-sft-personas-math-grade",
+            "allenai/tulu-3-sft-personas-code",
+            "allenai/tulu-3-personas-algebra",
+            "allenai/tulu-3-sft-personas-instruction-following",
+            "AI-MO/NuminaMath-TIR",
+            "allenai/wildguardmix",
+            "allenai/wildjailbreak",
+            "allenai/tulu-3-hard-coded",
+            "CohereForAI/aya_dataset",
+            "allenai/WildChat-1M",
+            "LipengCS/Table-GPT",
+            "allenai/SciRIFF",
+            "theblackcat102/evol-codealpaca-v1"
+          ],
+          "task_categories": [
+            "other"
+          ]
+        },
+        "disabled": false,
+        "downloads": 26920,
+        "gated": false,
+        "last_modified": "2024-12-02T19:48:33.000Z",
+        "license": "odc-by",
+        "likes": 284,
+        "private": false,
+        "repo_id": "allenai/tulu-3-sft-mixture",
+        "sha": "b14afda60f1bbebe55d5d2fa1e4df5042f97f8be",
+        "siblings_count": 8,
+        "tags": [
+          "annotations_creators:crowdsourced",
+          "annotations_creators:expert-generated",
+          "annotations_creators:machine-generated",
+          "format:parquet",
+          "language:acq",
+          "language:amh",
+          "language:apc",
+          "language:arb",
+          "language:ars",
+          "language:ary",
+          "language:arz",
+          "language:ben",
+          "language:ceb",
+          "language:dan",
+          "language:deu",
+          "language:ell",
+          "language:eng",
+          "language:eus",
+          "language:fil",
+          "language:fin",
+          "language:fra",
+          "language:gle",
+          "language:guj",
+          "language:hat",
+          "language:hau",
+          "language:hin",
+          "language:hun",
+          "language:ibo",
+          "language:ind",
+          "language:ita",
+          "language:jav",
+          "language:jpn",
+          "language:kan",
+          "language:kir",
+          "language:kor",
+          "language:kur",
+          "language:lit",
+          "language:mal",
+          "language:mar",
+          "language:mlg",
+          "language:msa",
+          "language:mya",
+          "language:nep",
+          "language:nld",
+          "language:nso",
+          "language:nya",
+          "language:pan",
+          "language:pes",
+          "language:pol",
+          "language:por",
+          "language:pus",
+          "language:rus",
+          "language:sin",
+          "language:sna",
+          "language:snd",
+          "language:som",
+          "language:spa",
+          "language:sqi",
+          "language:srp",
+          "language:sun",
+          "language:swa",
+          "language:swe",
+          "language:tam",
+          "language:tel",
+          "language:tha",
+          "language:tur",
+          "language:ukr",
+          "language:urd",
+          "language:vie",
+          "language:wol",
+          "language:xho",
+          "language:yor",
+          "language:zho",
+          "language:zul",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:odc-by",
+          "modality:text",
+          "multilinguality:multilingual",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "source_datasets:AI-MO/NuminaMath-TIR",
+          "source_datasets:CohereForAI/aya_dataset",
+          "source_datasets:HuggingFaceH4/no_robots",
+          "source_datasets:LipengCS/Table-GPT",
+          "source_datasets:OpenAssistant/oasst1",
+          "source_datasets:ai2-adapt-dev/flan_v2_converted",
+          "source_datasets:allenai/SciRIFF",
+          "source_datasets:allenai/WildChat-1M",
+          "source_datasets:allenai/coconot",
+          "source_datasets:allenai/tulu-3-hard-coded",
+          "source_datasets:allenai/tulu-3-personas-algebra",
+          "source_datasets:allenai/tulu-3-personas-math",
+          "source_datasets:allenai/tulu-3-sft-personas-code",
+          "source_datasets:allenai/tulu-3-sft-personas-instruction-following",
+          "source_datasets:allenai/tulu-3-sft-personas-math-grade",
+          "source_datasets:allenai/wildguardmix",
+          "source_datasets:allenai/wildjailbreak",
+          "source_datasets:theblackcat102/evol-codealpaca-v1",
+          "task_categories:other"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/tulu-3-sft-mixture"
+      },
+      "dataset_ids": [
+        "tulu3_sft_mixture"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [
+        {
+          "changes": {
+            "likes": {
+              "new": 284,
+              "old": 283
+            }
+          },
+          "observed_at": "2026-11-09T06:01:42Z",
+          "previous": {
+            "card_data": {
+              "annotations_creators": [
+                "crowdsourced",
+                "expert-generated",
+                "machine-generated"
+              ],
+              "language": [
+                "amh",
+                "arb",
+                "ary",
+                "ars",
+                "acq",
+                "arz",
+                "apc",
+                "ben",
+                "ceb",
+                "dan",
+                "deu",
+                "ell",
+                "eng",
+                "eus",
+                "fil",
+                "fin",
+                "fra",
+                "gle",
+                "guj",
+                "hat",
+                "hau",
+                "hin",
+                "hun",
+                "ibo",
+                "ind",
+                "ita",
+                "jav",
+                "jpn",
+                "kan",
+                "kir",
+                "kor",
+                "kur",
+                "lit",
+                "mal",
+                "mar",
+                "mlg",
+                "msa",
+                "mya",
+                "nep",
+                "nld",
+                "nso",
+                "nya",
+                "pan",
+                "pes",
+                "pol",
+                "por",
+                "pus",
+                "rus",
+                "sin",
+                "sna",
+                "snd",
+                "som",
+                "spa",
+                "sqi",
+                "srp",
+                "sun",
+                "swa",
+                "swe",
+                "tam",
+                "tel",
+                "tha",
+                "tur",
+                "ukr",
+                "urd",
+                "vie",
+                "wol",
+                "xho",
+                "yor",
+                "zho",
+                "zul"
+              ],
+              "license": "odc-by",
+              "size_categories": [
+                "100K<n<1M"
+              ],
+              "source_datasets": [
+                "allenai/coconot",
+                "ai2-adapt-dev/flan_v2_converted",
+                "HuggingFaceH4/no_robots",
+                "OpenAssistant/oasst1",
+                "allenai/tulu-3-personas-math",
+                "allenai/tulu-3-sft-personas-math-grade",
+                "allenai/tulu-3-sft-personas-code",
+                "allenai/tulu-3-personas-algebra",
+                "allenai/tulu-3-sft-personas-instruction-following",
+                "AI-MO/NuminaMath-TIR",
+                "allenai/wildguardmix",
+                "allenai/wildjailbreak",
+                "allenai/tulu-3-hard-coded",
+                "CohereForAI/aya_dataset",
+                "allenai/WildChat-1M",
+                "LipengCS/Table-GPT",
+                "allenai/SciRIFF",
+                "theblackcat102/evol-codealpaca-v1"
+              ],
+              "task_categories": [
+                "other"
+              ]
+            },
+            "disabled": false,
+            "downloads": 26920,
+            "gated": false,
+            "last_modified": "2024-12-02T19:48:33.000Z",
+            "license": "odc-by",
+            "likes": 283,
+            "private": false,
+            "repo_id": "allenai/tulu-3-sft-mixture",
+            "sha": "b14afda60f1bbebe55d5d2fa1e4df5042f97f8be",
+            "siblings_count": 8,
+            "tags": [
+              "annotations_creators:crowdsourced",
+              "annotations_creators:expert-generated",
+              "annotations_creators:machine-generated",
+              "format:parquet",
+              "language:acq",
+              "language:amh",
+              "language:apc",
+              "language:arb",
+              "language:ars",
+              "language:ary",
+              "language:arz",
+              "language:ben",
+              "language:ceb",
+              "language:dan",
+              "language:deu",
+              "language:ell",
+              "language:eng",
+              "language:eus",
+              "language:fil",
+              "language:fin",
+              "language:fra",
+              "language:gle",
+              "language:guj",
+              "language:hat",
+              "language:hau",
+              "language:hin",
+              "language:hun",
+              "language:ibo",
+              "language:ind",
+              "language:ita",
+              "language:jav",
+              "language:jpn",
+              "language:kan",
+              "language:kir",
+              "language:kor",
+              "language:kur",
+              "language:lit",
+              "language:mal",
+              "language:mar",
+              "language:mlg",
+              "language:msa",
+              "language:mya",
+              "language:nep",
+              "language:nld",
+              "language:nso",
+              "language:nya",
+              "language:pan",
+              "language:pes",
+              "language:pol",
+              "language:por",
+              "language:pus",
+              "language:rus",
+              "language:sin",
+              "language:sna",
+              "language:snd",
+              "language:som",
+              "language:spa",
+              "language:sqi",
+              "language:srp",
+              "language:sun",
+              "language:swa",
+              "language:swe",
+              "language:tam",
+              "language:tel",
+              "language:tha",
+              "language:tur",
+              "language:ukr",
+              "language:urd",
+              "language:vie",
+              "language:wol",
+              "language:xho",
+              "language:yor",
+              "language:zho",
+              "language:zul",
+              "library:dask",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:polars",
+              "license:odc-by",
+              "modality:text",
+              "multilinguality:multilingual",
+              "region:us",
+              "size_categories:100K<n<1M",
+              "source_datasets:AI-MO/NuminaMath-TIR",
+              "source_datasets:CohereForAI/aya_dataset",
+              "source_datasets:HuggingFaceH4/no_robots",
+              "source_datasets:LipengCS/Table-GPT",
+              "source_datasets:OpenAssistant/oasst1",
+              "source_datasets:ai2-adapt-dev/flan_v2_converted",
+              "source_datasets:allenai/SciRIFF",
+              "source_datasets:allenai/WildChat-1M",
+              "source_datasets:allenai/coconot",
+              "source_datasets:allenai/tulu-3-hard-coded",
+              "source_datasets:allenai/tulu-3-personas-algebra",
+              "source_datasets:allenai/tulu-3-personas-math",
+              "source_datasets:allenai/tulu-3-sft-personas-code",
+              "source_datasets:allenai/tulu-3-sft-personas-instruction-following",
+              "source_datasets:allenai/tulu-3-sft-personas-math-grade",
+              "source_datasets:allenai/wildguardmix",
+              "source_datasets:allenai/wildjailbreak",
+              "source_datasets:theblackcat102/evol-codealpaca-v1",
+              "task_categories:other"
+            ],
+            "url": "https://huggingface.co/datasets/allenai/tulu-3-sft-mixture"
+          }
+        }
+      ],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "allenai/tulu-3-sft-mixture",
+      "status": "ok"
+    },
+    "allenai/tulu-3-sft-personas-instruction-following": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "odc-by",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 13466,
+        "gated": false,
+        "last_modified": "2024-11-21T15:57:21.000Z",
+        "license": "odc-by",
+        "likes": 71,
+        "private": false,
+        "repo_id": "allenai/tulu-3-sft-personas-instruction-following",
+        "sha": "fe0c7d350c9b4542b8d829a6f1daa1c259f0ba0e",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2311.07911",
+          "arxiv:2406.20094",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following"
+      },
+      "dataset_ids": [
+        "tulu3_persona_if"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "allenai/tulu-3-sft-personas-instruction-following",
+      "status": "ok"
+    },
+    "argilla/ifeval-like-data": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "other",
+          "pretty_name": "IFEval Like Data",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 6619,
+        "gated": false,
+        "last_modified": "2024-10-17T09:43:39.000Z",
+        "license": "other",
+        "likes": 51,
+        "private": false,
+        "repo_id": "argilla/ifeval-like-data",
+        "sha": "56505d1771e36fa5aa07aa9a1b39008fe60a8487",
+        "siblings_count": 17,
+        "tags": [
+          "arxiv:2406.08464",
+          "distilabel",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:distilabel",
+          "library:mlcroissant",
+          "library:polars",
+          "license:other",
+          "modality:text",
+          "region:us",
+          "rlaif",
+          "size_categories:100K<n<1M",
+          "synthetic",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/argilla/ifeval-like-data"
+      },
+      "dataset_ids": [
+        "ifeval_like_filtered"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "argilla/ifeval-like-data",
+      "status": "ok"
+    },
+    "berkeley-nest/Nectar": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "100K<n<1M"
+          ]
+        },
+        "disabled": false,
+        "downloads": 2932,
+        "gated": false,
+        "last_modified": "2024-03-20T04:17:46.000Z",
+        "license": "apache-2.0",
+        "likes": 308,
+        "private": false,
+        "repo_id": "berkeley-nest/Nectar",
+        "sha": "3c6b4c47fa1cc38869f9f32dce1699f7abad8b06",
+        "siblings_count": 7,
+        "tags": [
+          "RLAIF",
+          "RLHF",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "reward model",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/berkeley-nest/Nectar"
+      },
+      "dataset_ids": [
+        "nectar"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "berkeley-nest/Nectar",
+      "status": "ok"
+    },
+    "databricks/databricks-dolly-15k": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-sa-3.0",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "question-answering",
+            "summarization"
+          ]
+        },
+        "disabled": false,
+        "downloads": 51531,
+        "gated": false,
+        "last_modified": "2023-06-30T18:34:13.000Z",
+        "license": "cc-by-sa-3.0",
+        "likes": 1381,
+        "private": false,
+        "repo_id": "databricks/databricks-dolly-15k",
+        "sha": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2203.02155",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-sa-3.0",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:question-answering",
+          "task_categories:summarization"
+        ],
+        "url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k"
+      },
+      "dataset_ids": [
+        "dolly_15k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "databricks/databricks-dolly-15k",
+      "status": "ok"
+    },
+    "deepmind/code_contests": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [
+            "found"
+          ],
+          "language": [
+            "en"
+          ],
+          "language_creators": [
+            "found"
+          ],
+          "license": [
+            "cc-by-4.0"
+          ],
+          "pretty_name": "CodeContests",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "source_datasets": [
+            "original"
+          ],
+          "task_categories": [
+            "translation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 64782,
+        "gated": false,
+        "last_modified": "2023-06-11T12:22:30.000Z",
+        "license": [
+          "cc-by-4.0"
+        ],
+        "likes": 246,
+        "private": false,
+        "repo_id": "deepmind/code_contests",
+        "sha": "802411c3010cb00d1b05bad57ca77365a3c699d6",
+        "siblings_count": 44,
+        "tags": [
+          "annotations_creators:found",
+          "arxiv:2105.12655",
+          "arxiv:2203.07814",
+          "format:parquet",
+          "language:en",
+          "language_creators:found",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:tabular",
+          "modality:text",
+          "multilinguality:monolingual",
+          "region:us",
+          "size_categories:1K<n<10K",
+          "source_datasets:original",
+          "task_categories:translation"
+        ],
+        "url": "https://huggingface.co/datasets/deepmind/code_contests"
+      },
+      "dataset_ids": [
+        "codecontests"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "deepmind/code_contests",
+      "status": "ok"
+    },
+    "facebook/natural_reasoning": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-4.0",
+          "pretty_name": "Natural Reasoning",
+          "size_categories": [
+            "1M<n<10M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 6346,
+        "gated": false,
+        "last_modified": "2025-02-21T06:02:40.000Z",
+        "license": "cc-by-nc-4.0",
+        "likes": 600,
+        "private": false,
+        "repo_id": "facebook/natural_reasoning",
+        "sha": "99eea5dc6bfa45a925eb42600e81dc90377ba237",
+        "siblings_count": 5,
+        "tags": [
+          "arxiv:2502.13124",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-nc-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/facebook/natural_reasoning"
+      },
+      "dataset_ids": [
+        "natural_reasoning"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "facebook/natural_reasoning",
+      "status": "ok"
+    },
+    "glaiveai/glaive-function-calling-v2": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 20860,
+        "gated": false,
+        "last_modified": "2023-09-27T18:04:08.000Z",
+        "license": "apache-2.0",
+        "likes": 539,
+        "private": false,
+        "repo_id": "glaiveai/glaive-function-calling-v2",
+        "sha": "e7f4b6456019f5d8bcb991ef0dd67d8ff23221ac",
+        "siblings_count": 3,
+        "tags": [
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2"
+      },
+      "dataset_ids": [
+        "glaive_function_calling_v2"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "glaiveai/glaive-function-calling-v2",
+      "status": "ok"
+    },
+    "lmarena-ai/arena-human-preference-140k": {
+      "current": {
+        "card_data": {
+          "license": "cc-by-4.0",
+          "size_categories": [
+            "100K<n<1M"
+          ]
+        },
+        "disabled": false,
+        "downloads": 8063,
+        "gated": false,
+        "last_modified": "2025-08-01T05:03:39.000Z",
+        "license": "cc-by-4.0",
+        "likes": 62,
+        "private": false,
+        "repo_id": "lmarena-ai/arena-human-preference-140k",
+        "sha": "6322995ab34d7c2693e3f47dd13fa5caa0789a74",
+        "siblings_count": 9,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k"
+      },
+      "dataset_ids": [
+        "arena_human_preference_140k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "lmarena-ai/arena-human-preference-140k",
+      "status": "ok"
+    },
+    "lukaemon/bbh": {
+      "current": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 172994,
+        "gated": false,
+        "last_modified": "2025-07-11T17:27:58.000Z",
+        "license": null,
+        "likes": 93,
+        "private": false,
+        "repo_id": "lukaemon/bbh",
+        "sha": "982bb89fd79532a8ac676a61fc42eb1aeec63f99",
+        "siblings_count": 29,
+        "tags": [
+          "arxiv:2210.09261",
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/lukaemon/bbh"
+      },
+      "dataset_ids": [
+        "bbh"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "lukaemon/bbh",
+      "status": "ok"
+    },
+    "m-a-p/CodeFeedback-Filtered-Instruction": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 22443,
+        "gated": false,
+        "last_modified": "2024-02-26T09:25:26.000Z",
+        "license": "apache-2.0",
+        "likes": 225,
+        "private": false,
+        "repo_id": "m-a-p/CodeFeedback-Filtered-Instruction",
+        "sha": "a08c213a9748c66c15d0225814be80a2e77adf4a",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2402.14658",
+          "code",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction"
+      },
+      "dataset_ids": [
+        "codefeedback_filtered"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "m-a-p/CodeFeedback-Filtered-Instruction",
+      "status": "ok"
+    },
+    "nvidia/Aegis-AI-Content-Safety-Dataset-2.0": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "Nemotron Content Safety Dataset V2",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "text-classification"
+          ]
+        },
+        "disabled": false,
+        "downloads": 24319,
+        "gated": false,
+        "last_modified": "2025-06-09T19:15:56.000Z",
+        "license": "cc-by-4.0",
+        "likes": 119,
+        "private": false,
+        "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+        "sha": "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
+        "siblings_count": 7,
+        "tags": [
+          "LLM safety",
+          "aegis",
+          "content moderation",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:text",
+          "nemoguard",
+          "nemotron",
+          "region:us",
+          "safety",
+          "size_categories:10K<n<100K",
+          "task_categories:text-classification",
+          "toxicity detection"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+      },
+      "dataset_ids": [
+        "aegis_content_safety_2"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "status": "ok"
+    },
+    "nvidia/HelpSteer2": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "HelpSteer2",
+          "size_categories": [
+            "10K<n<100K"
+          ]
+        },
+        "disabled": false,
+        "downloads": 28955,
+        "gated": false,
+        "last_modified": "2024-12-18T21:06:57.000Z",
+        "license": "cc-by-4.0",
+        "likes": 466,
+        "private": false,
+        "repo_id": "nvidia/HelpSteer2",
+        "sha": "990b2711a36180dd19d9c94b8627844866f8982a",
+        "siblings_count": 6,
+        "tags": [
+          "arxiv:2406.08673",
+          "arxiv:2410.01257",
+          "format:json",
+          "human-feedback",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/HelpSteer2"
+      },
+      "dataset_ids": [
+        "helpsteer2"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/HelpSteer2",
+      "status": "ok"
+    },
+    "nvidia/HelpSteer3": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en",
+            "zh",
+            "ko",
+            "fr",
+            "es",
+            "ru",
+            "ja",
+            "de",
+            "it",
+            "pt",
+            "pl",
+            "id",
+            "nl",
+            "vi"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "HelpSteer3",
+          "size_categories": [
+            "10K<n<100K"
+          ]
+        },
+        "disabled": false,
+        "downloads": 19453,
+        "gated": false,
+        "last_modified": "2025-11-16T07:18:00.000Z",
+        "license": "cc-by-4.0",
+        "likes": 119,
+        "private": false,
+        "repo_id": "nvidia/HelpSteer3",
+        "sha": "f6d145777bcbde96137596340fab89793acd1031",
+        "siblings_count": 12,
+        "tags": [
+          "arxiv:2410.16184",
+          "arxiv:2503.04378",
+          "arxiv:2505.11475",
+          "arxiv:2509.21319",
+          "format:json",
+          "human-feedback",
+          "language:de",
+          "language:en",
+          "language:es",
+          "language:fr",
+          "language:id",
+          "language:it",
+          "language:ja",
+          "language:ko",
+          "language:nl",
+          "language:pl",
+          "language:pt",
+          "language:ru",
+          "language:vi",
+          "language:zh",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:text",
+          "region:us",
+          "reinforcement-learning",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/HelpSteer3"
+      },
+      "dataset_ids": [
+        "helpsteer3_preference"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/HelpSteer3",
+      "status": "ok"
+    },
+    "nvidia/Nemotron-Cascade-2-RL-data": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "odc-by"
+        },
+        "disabled": false,
+        "downloads": 404,
+        "gated": false,
+        "last_modified": "2026-03-20T03:38:20.000Z",
+        "license": "odc-by",
+        "likes": 55,
+        "private": false,
+        "repo_id": "nvidia/Nemotron-Cascade-2-RL-data",
+        "sha": "05bbaf03bac608e804efc86c5f8bf99844f2d197",
+        "siblings_count": 6,
+        "tags": [
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data"
+      },
+      "dataset_ids": [
+        "nemotron_cascade_2_rl"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/Nemotron-Cascade-2-RL-data",
+      "status": "ok"
+    },
+    "nvidia/Nemotron-Cascade-2-SFT-Data": {
+      "current": {
+        "card_data": {
+          "license": "other"
+        },
+        "disabled": false,
+        "downloads": 13188,
+        "gated": false,
+        "last_modified": "2026-03-19T23:57:48.000Z",
+        "license": "other",
+        "likes": 78,
+        "private": false,
+        "repo_id": "nvidia/Nemotron-Cascade-2-SFT-Data",
+        "sha": "9f36020daf067f1a8b39336bf619fe30af30bb02",
+        "siblings_count": 16,
+        "tags": [
+          "format:json",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:other",
+          "modality:text",
+          "region:us",
+          "size_categories:10M<n<100M"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data"
+      },
+      "dataset_ids": [
+        "nemotron_cascade_2_sft"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/Nemotron-Cascade-2-SFT-Data",
+      "status": "ok"
+    },
+    "nvidia/OpenCodeInstruct": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "OpenCodeInstruct",
+          "size_categories": [
+            "1M<n<5M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 52999,
+        "gated": false,
+        "last_modified": "2025-04-28T19:08:02.000Z",
+        "license": "cc-by-4.0",
+        "likes": 120,
+        "private": false,
+        "repo_id": "nvidia/OpenCodeInstruct",
+        "sha": "8f3ba5bafe4d6e8db46082cf7ae6741bc370604d",
+        "siblings_count": 52,
+        "tags": [
+          "arxiv:2504.04030",
+          "code",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "synthetic",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/OpenCodeInstruct"
+      },
+      "dataset_ids": [
+        "opencodeinstruct"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/OpenCodeInstruct",
+      "status": "ok"
+    },
+    "nvidia/OpenCodeReasoning": {
+      "current": {
+        "card_data": {
+          "license": "cc-by-4.0",
+          "pretty_name": "OpenCodeReasoning",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 20229,
+        "gated": false,
+        "last_modified": "2025-05-04T23:54:22.000Z",
+        "license": "cc-by-4.0",
+        "likes": 576,
+        "private": false,
+        "repo_id": "nvidia/OpenCodeReasoning",
+        "sha": "20a1ca19c0d050fe9057fc08339d6b370ec1c67a",
+        "siblings_count": 42,
+        "tags": [
+          "arxiv:2504.01943",
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "synthetic",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/OpenCodeReasoning"
+      },
+      "dataset_ids": [
+        "opencode_reasoning"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/OpenCodeReasoning",
+      "status": "ok"
+    },
+    "nvidia/OpenMathInstruct-2": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "OpenMathInstruct-2",
+          "size_categories": [
+            "10M<n<100M"
+          ],
+          "task_categories": [
+            "question-answering",
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 102080,
+        "gated": false,
+        "last_modified": "2024-11-25T20:07:28.000Z",
+        "license": "cc-by-4.0",
+        "likes": 268,
+        "private": false,
+        "repo_id": "nvidia/OpenMathInstruct-2",
+        "sha": "469216e3f46f4dacf476b382e192485ea51a143e",
+        "siblings_count": 59,
+        "tags": [
+          "arxiv:2410.01560",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-4.0",
+          "math",
+          "modality:text",
+          "nvidia",
+          "region:us",
+          "size_categories:10M<n<100M",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/OpenMathInstruct-2"
+      },
+      "dataset_ids": [
+        "openmathinstruct2"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/OpenMathInstruct-2",
+      "status": "ok"
+    },
+    "nvidia/OpenMathReasoning": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "OpenMathReasoning",
+          "size_categories": [
+            "1M<n<10M"
+          ],
+          "task_categories": [
+            "question-answering",
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 72755,
+        "gated": false,
+        "last_modified": "2025-05-27T18:43:44.000Z",
+        "license": "cc-by-4.0",
+        "likes": 499,
+        "private": false,
+        "repo_id": "nvidia/OpenMathReasoning",
+        "sha": "d3d08664755704f422af97d43a7ff0ded4bd95df",
+        "siblings_count": 234,
+        "tags": [
+          "arxiv:2504.16891",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-4.0",
+          "math",
+          "modality:text",
+          "nvidia",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/OpenMathReasoning"
+      },
+      "dataset_ids": [
+        "openmath_reasoning"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "nvidia/OpenMathReasoning",
+      "status": "ok"
+    },
+    "open-r1/Mixture-of-Thoughts": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "pretty_name": "Mixture of Thoughts",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 17691,
+        "gated": false,
+        "last_modified": "2025-05-26T15:25:56.000Z",
+        "license": null,
+        "likes": 351,
+        "private": false,
+        "repo_id": "open-r1/Mixture-of-Thoughts",
+        "sha": "e55fa28006c0d0ec60fb3547520f775dd42d02cd",
+        "siblings_count": 37,
+        "tags": [
+          "arxiv:2504.21318",
+          "arxiv:2505.00949",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts"
+      },
+      "dataset_ids": [
+        "mixture_of_thoughts"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "open-r1/Mixture-of-Thoughts",
+      "status": "ok"
+    },
+    "openai/gsm8k": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [
+            "crowdsourced"
+          ],
+          "language": [
+            "en"
+          ],
+          "language_creators": [
+            "crowdsourced"
+          ],
+          "license": [
+            "mit"
+          ],
+          "pretty_name": "Grade School Math 8K",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "source_datasets": [
+            "original"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 1053051,
+        "gated": false,
+        "last_modified": "2026-03-23T10:18:13.000Z",
+        "license": [
+          "mit"
+        ],
+        "likes": 2029,
+        "private": false,
+        "repo_id": "openai/gsm8k",
+        "sha": "740312add88f781978c0658806c59bc2815b9866",
+        "siblings_count": 7,
+        "tags": [
+          "annotations_creators:crowdsourced",
+          "arxiv:2110.14168",
+          "benchmark:eval-yaml",
+          "benchmark:official",
+          "format:parquet",
+          "language:en",
+          "language_creators:crowdsourced",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:mit",
+          "math-word-problems",
+          "modality:text",
+          "multilinguality:monolingual",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "source_datasets:original",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/openai/gsm8k"
+      },
+      "dataset_ids": [
+        "gsm8k_test"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "openai/gsm8k",
+      "status": "ok"
+    },
+    "openai/summarize_from_feedback": {
+      "current": {
+        "card_data": {
+          "pretty_name": "Summarize from Feedback"
+        },
+        "disabled": false,
+        "downloads": 5930,
+        "gated": false,
+        "last_modified": "2023-01-03T16:55:41.000Z",
+        "license": null,
+        "likes": 233,
+        "private": false,
+        "repo_id": "openai/summarize_from_feedback",
+        "sha": "b8f7d168b6f4e95b2a92e84768bd6c955bed2f29",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2009.01325",
+          "library:datasets",
+          "library:mlcroissant",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/openai/summarize_from_feedback"
+      },
+      "dataset_ids": [
+        "summarize_from_feedback"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "openai/summarize_from_feedback",
+      "status": "ok"
+    },
+    "openai/webgpt_comparisons": {
+      "current": {
+        "card_data": {
+          "pretty_name": "WebGPT Comparisons"
+        },
+        "disabled": false,
+        "downloads": 2155,
+        "gated": false,
+        "last_modified": "2022-12-19T17:55:29.000Z",
+        "license": null,
+        "likes": 251,
+        "private": false,
+        "repo_id": "openai/webgpt_comparisons",
+        "sha": "f30e1bd2f0a51535b493de36d3686cfcfff47abe",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2112.09332",
+          "library:datasets",
+          "library:mlcroissant",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/openai/webgpt_comparisons"
+      },
+      "dataset_ids": [
+        "webgpt_comparisons"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "openai/webgpt_comparisons",
+      "status": "ok"
+    },
+    "openbmb/UltraFeedback": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "mit",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 21625,
+        "gated": false,
+        "last_modified": "2023-12-29T14:11:19.000Z",
+        "license": "mit",
+        "likes": 449,
+        "private": false,
+        "repo_id": "openbmb/UltraFeedback",
+        "sha": "40b436560ca83a8dba36114c22ab3c66e43f6d5e",
+        "siblings_count": 8,
+        "tags": [
+          "arxiv:2310.01377",
+          "format:json",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:mit",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/openbmb/UltraFeedback"
+      },
+      "dataset_ids": [
+        "ultrafeedback"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "openbmb/UltraFeedback",
+      "status": "ok"
+    },
+    "princeton-nlp/SWE-bench_Verified": {
+      "current": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 168984,
+        "gated": false,
+        "last_modified": "2025-02-18T23:48:55.000Z",
+        "license": null,
+        "likes": 409,
+        "private": false,
+        "repo_id": "princeton-nlp/SWE-bench_Verified",
+        "sha": "c104f840cc67f8b6eec6f759ebc8b2693d585d4a",
+        "siblings_count": 3,
+        "tags": [
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:n<1K"
+        ],
+        "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified"
+      },
+      "dataset_ids": [
+        "swebench_verified"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "princeton-nlp/SWE-bench_Verified",
+      "status": "ok"
+    },
+    "sorry-bench/sorry-bench-202503": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en",
+            "zh",
+            "fr",
+            "ml",
+            "mr",
+            "ta"
+          ],
+          "license": "other",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "task_categories": [
+            "text-generation",
+            "question-answering",
+            "text2text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 1818,
+        "gated": "auto",
+        "last_modified": "2025-02-28T21:58:59.000Z",
+        "license": "other",
+        "likes": 28,
+        "private": false,
+        "repo_id": "sorry-bench/sorry-bench-202503",
+        "sha": "612a4e1f45db8adf884fa62318ddf9fa1c6e75e9",
+        "siblings_count": 27,
+        "tags": [
+          "arxiv:2406.14598",
+          "croissant",
+          "format:json",
+          "language:en",
+          "language:fr",
+          "language:ml",
+          "language:mr",
+          "language:ta",
+          "language:zh",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "license:other",
+          "modality:text",
+          "region:us",
+          "safety",
+          "size_categories:1K<n<10K",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/sorry-bench/sorry-bench-202503"
+      },
+      "dataset_ids": [
+        "sorry_bench_202503"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T05:00:20Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "sorry-bench/sorry-bench-202503",
+      "status": "ok"
+    },
+    "stanfordnlp/SHP": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "text-generation",
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 27122,
+        "gated": false,
+        "last_modified": "2023-10-10T23:35:57.000Z",
+        "license": null,
+        "likes": 333,
+        "private": false,
+        "repo_id": "stanfordnlp/SHP",
+        "sha": "e94b5f32602712d78ed494fe79105b1959396686",
+        "siblings_count": 57,
+        "tags": [
+          "NLG",
+          "RL",
+          "arxiv:2001.08435",
+          "arxiv:2112.00861",
+          "evaluation",
+          "format:json",
+          "human feedback",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "modality:tabular",
+          "modality:text",
+          "preference model",
+          "preferences",
+          "reddit",
+          "region:us",
+          "rlhf",
+          "size_categories:100K<n<1M",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/stanfordnlp/SHP"
+      },
+      "dataset_ids": [
+        "shp"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "stanfordnlp/SHP",
+      "status": "ok"
+    },
+    "teknium/OpenHermes-2.5": {
+      "current": {
+        "card_data": {
+          "language": [
+            "eng"
+          ],
+          "pretty_name": "OpenHermes 2.5"
+        },
+        "disabled": false,
+        "downloads": 14819,
+        "gated": false,
+        "last_modified": "2024-04-15T08:18:12.000Z",
+        "license": null,
+        "likes": 931,
+        "private": false,
+        "repo_id": "teknium/OpenHermes-2.5",
+        "sha": "b82037821055c377bed0d495e72e46de3bc72e84",
+        "siblings_count": 3,
+        "tags": [
+          "Compilation",
+          "Distillation",
+          "GPT-4",
+          "format:json",
+          "language:eng",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "synthetic"
+        ],
+        "url": "https://huggingface.co/datasets/teknium/OpenHermes-2.5"
+      },
+      "dataset_ids": [
+        "openhermes_2_5"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "teknium/OpenHermes-2.5",
+      "status": "ok"
+    },
+    "zai-org/LongAlign-10k": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en",
+            "zh"
+          ],
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 2133,
+        "gated": false,
+        "last_modified": "2024-02-22T11:39:00.000Z",
+        "license": null,
+        "likes": 100,
+        "private": false,
+        "repo_id": "zai-org/LongAlign-10k",
+        "sha": "12f17c4baff1001f0d44c4f8feab09ee2ee8c6dc",
+        "siblings_count": 3,
+        "tags": [
+          "Long Context",
+          "arxiv:2401.18058",
+          "format:json",
+          "language:en",
+          "language:zh",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "region:us",
+          "sft",
+          "size_categories:1K<n<10K",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/zai-org/LongAlign-10k"
+      },
+      "dataset_ids": [
+        "longalign_10k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "zai-org/LongAlign-10k",
+      "status": "ok"
+    },
+    "zai-org/LongCite-45k": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en",
+            "zh"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "text-generation",
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 1529,
+        "gated": false,
+        "last_modified": "2024-10-18T09:59:40.000Z",
+        "license": "apache-2.0",
+        "likes": 78,
+        "private": false,
+        "repo_id": "zai-org/LongCite-45k",
+        "sha": "b776b01faf6e132a3d9cc373de1b46cd6630d772",
+        "siblings_count": 3,
+        "tags": [
+          "SFT",
+          "arxiv:2409.02897",
+          "citation generation",
+          "format:json",
+          "language:en",
+          "language:zh",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "long context",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:question-answering",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/zai-org/LongCite-45k"
+      },
+      "dataset_ids": [
+        "longcite_45k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T04:15:35Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T06:01:42Z",
+      "last_success_at": "2026-11-09T06:01:42Z",
+      "repo_id": "zai-org/LongCite-45k",
+      "status": "ok"
+    }
+  },
+  "schema_version": "1.0",
+  "source_catalog": {
+    "path": "datasets-list.yaml",
+    "sha256": "ab6b7a19d12c16dc29eea91db92d5c677425697585cd934907f69f5bd33125ae"
+  }
+}

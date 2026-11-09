@@ -1,0 +1,36 @@
+name: Validate repository
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Test catalog automation
+        run: python -m unittest scripts/test_update_datasets_catalog.py -v
+      - name: Validate canonical catalog
+        run: python validate_datasets_list.py datasets-list.yaml --expect-total 114
+      - name: Validate training recipes and isolation
+        run: python validate_training_recipes.py
+      - name: Validate ERNIE experiment references
+        run: python validate_ernie55_training_plan.py config/ernie55-training-plan.yaml
+      - name: Check generated recipe files are synchronized
+        run: |
+          python build_training_recipes.py
+          python research/build_gap_review.py
+          git diff --exit-code -- commercial-default-manifest.yaml research-isolated-manifest.yaml training-recipes.md awesome-datasets-gap-review.md
+      - name: Check repository documentation and links
+        run: python scripts/check_repository.py

@@ -1,0 +1,567 @@
+manifest_version: '1.0'
+metadata:
+  name: research-post-training-recipe
+  created_at: '2026-11-09'
+  source_resolved_at: '2026-11-09T06:01:42Z'
+  canonical_catalog: datasets-list.yaml
+  weight_semantics: 归一化采样权重；不是样本行数占比，也不是有效 token 占比
+  token_budget_semantics: row_tokens_before_loss_mask；supervised_tokens 单独记录
+  status: executable_schema_pending_real_signoffs_not_training_authorization
+project:
+  selected_profile: research_reasoning_sft
+  commercial_use: false
+  seed: 42
+  output_dir: ./runs/research-isolated
+  base_model:
+    id: baidu/ERNIE-5.5-Flash-Base-BF16
+    revision: dfab899dadcff8f4d08af24b75a26c6d4d2e0b09
+    chat_template: ernie55_chat_template.jinja
+    chat_template_bridge_revision: 08035723e7a86f94fc54a7f4473bd0519f2ac941
+    max_seq_len: 8192
+    add_special_tokens: true
+paths:
+  raw_root: ./research_isolated/raw
+  processed_root: ./research_isolated/processed
+  cache_root: ./research_isolated/cache
+runtime:
+  num_proc: 8
+  trust_remote_code: false
+  overwrite_processed: false
+defaults:
+  sft:
+    output_format: messages
+    assistant_only_loss: true
+    mask_tool_outputs: true
+    packing: false
+    truncation: drop
+    max_seq_len: 8192
+  preference:
+    output_format: prompt_chosen_rejected
+    max_prompt_len: 4096
+    max_response_len: 4096
+  rlvr:
+    output_format: prompt_answer_verifier
+    max_prompt_len: 4096
+    max_response_len: 8192
+    rollouts_per_prompt: 8
+    temperature: 0.7
+    correct_reward: 1.0
+    incorrect_reward: 0.0
+datasets:
+  openmath_reasoning:
+    canonical_id: openmath_reasoning
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: nvidia/OpenMathReasoning
+      revision: d3d08664755704f422af97d43a7ff0ded4bd95df
+      subset: default
+      split: cot
+      local_path: null
+    data:
+      format: problem_solution_answer
+      adapter: problem_solution_to_messages
+      fields:
+        problem: problem
+        solution: generated_solution
+        answer: expected_answer
+        inference_mode: inference_mode
+        source: problem_source
+    license:
+      id: CC-BY-4.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - cot_only
+      - answer_present
+      - solution_length_cap
+      - parent_problem_dedup
+  opencode_reasoning:
+    canonical_id: opencode_reasoning
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: nvidia/OpenCodeReasoning
+      revision: 20a1ca19c0d050fe9057fc08339d6b370ec1c67a
+      subset: split_0
+      split: split_0
+      local_path: null
+    data:
+      format: input_r1_output_solution
+      adapter: input_output_to_messages
+      fields:
+        prompt: input
+        response: output
+        source: source
+        upstream_license: license
+        dataset: dataset
+        difficulty: difficulty
+        solution: solution
+    license:
+      id: CC-BY-4.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - split_0_only
+      - parent_problem_dedup
+      - upstream_license_inheritance
+      - solution_quality_audit
+  chinese_r1_distill_110k:
+    canonical_id: chinese_r1_distill_110k
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: Congliu/Chinese-DeepSeek-R1-Distill-data-110k
+      revision: 8520b649430617c2be4490f424d251d09d835ed3
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: input_reasoning_content_answer_score
+      adapter: reasoning_content_to_messages
+      fields:
+        prompt: input
+        reasoning_content: reasoning_content
+        response: content
+        source: repo_name
+        score: score
+    license:
+      id: Apache-2.0 + mixed-upstream
+      commercial_status: review_required
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - factuality_sample_audit
+      - score_distribution_audit
+      - parent_problem_dedup
+      - upstream_license_inheritance
+  m2lingual:
+    canonical_id: m2lingual
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: ServiceNow-AI/M2Lingual
+      revision: e02c0901ccabb711e3dc27ccebaf001e23ee92a4
+      subset: full_data
+      split: train
+      local_path: null
+    data:
+      format: multilingual_multiturn_conversations
+      adapter: conversation_passthrough
+      fields:
+        messages: conversation
+        language: language
+        sample_type: sample_type
+    license:
+      id: CC-BY-NC-SA-4.0
+      commercial_status: noncommercial
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - full_data_only
+      - language_stratification
+      - valid_roles
+      - teacher_provenance_audit
+  longform:
+    canonical_id: longform
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: akoksal/LongForm
+      revision: c4d2836f581bf1b7ad4ba1243af81b6b1b8626f1
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: long_output_instruction_response
+      adapter: prompt_response_to_messages
+      fields:
+        prompt: prompt
+        response: response
+    license:
+      id: MIT + upstream-and-OpenAI-terms
+      commercial_status: review_required
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - train_split_only
+      - long_output_quality_audit
+      - upstream_license_inheritance
+      - global_consistency_audit
+  tulu3_sft_mixture:
+    canonical_id: tulu3_sft_mixture
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: allenai/tulu-3-sft-mixture
+      revision: b14afda60f1bbebe55d5d2fa1e4df5042f97f8be
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: messages
+      adapter: messages_passthrough
+      fields:
+        messages: messages
+    license:
+      id: ODC-By-1.0
+      commercial_status: allowed_with_obligations
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - valid_roles
+      - nonempty_assistant
+      - length_histogram
+      - upstream_provenance_audit
+  weblinx:
+    canonical_id: weblinx
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: McGill-NLP/WebLINX
+      revision: a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13
+      subset: chat
+      split: train
+      local_path: null
+    data:
+      format: website_navigation_dialogue_actions
+      adapter: weblinx_chat_turn_to_action_messages
+      fields:
+        demo: demo
+        turn: turn
+        action: action
+        action_history: action_history
+        utterances: utterances
+        candidates: candidates
+        clean_html: clean_html
+        viewport: viewport
+    license:
+      id: CC-BY-NC-SA-4.0
+      commercial_status: noncommercial
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - chat_train_only
+      - credential_pii_scrub
+      - html_length_cap
+      - static_trajectory_not_dynamic_environment
+  falsereject_train:
+    canonical_id: falsereject_train
+    stage: sft
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: AmazonScience/FalseReject
+      revision: 493ba967714ea54c6f01067e1f61e389cc2c9b3e
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: benign_sensitive_prompt_structured_responses
+      adapter: falsereject_instruct_to_messages
+      fields:
+        prompt: prompt
+        response: instruct_response
+        category: category
+        category_text: category_text
+    license:
+      id: CC-BY-NC-4.0
+      commercial_status: noncommercial
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - instruct_response_only
+      - train_split_only
+      - safe_content_review
+      - overrefusal_stratification
+  tulu3_preference_mixture:
+    canonical_id: tulu3_preference_mixture
+    stage: preference
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: allenai/llama-3.1-tulu-3-8b-preference-mixture
+      revision: 78a6f00785946cd24276c5dd075f83a143a3b1e6
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: prompt_chosen_rejected
+      adapter: prompt_chosen_rejected_passthrough
+      fields:
+        prompt: prompt
+        chosen: chosen
+        rejected: rejected
+    license:
+      id: ODC-BY-1.0 + noncommercial-subsets
+      commercial_status: noncommercial
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - noncommercial_isolation
+      - same_prompt_split
+      - teacher_provenance_audit
+      - preference_pair_audit
+  enigmata_data:
+    canonical_id: enigmata_data
+    stage: rlvr
+    enabled: true
+    source:
+      provider: huggingface
+      repo_id: BytedTsinghua-SIA/Enigmata-Data
+      revision: 95f6920c2428c762ba6a6a2038af7dbe15eb7c75
+      subset: default
+      split: train
+      local_path: null
+    data:
+      format: puzzle_prompt_answer_rule_verifier
+      adapter: enigmata_prompt_answer
+      fields:
+        prompt: prompt
+        answer: answer
+        task_name: task_name
+        ability: ability
+        language: language
+        meta: meta
+    license:
+      id: CC-BY-NC-4.0
+      commercial_status: noncommercial
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: revision 固定不等于许可签署；商用前须完成上游和教师条款审查
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup:
+      - exact
+      - minhash
+      - semantic_or_parent_problem
+      decontaminate: true
+      filters:
+      - task_stratification
+      - enigmata_eval_instance_decontamination
+      - rule_verifier_coverage
+    verifier:
+      type: enigmata_rule_verifier
+      implementation: BytedTsinghua-SIA/Enigmata
+      repository_revision: PIN_ME_TO_ENIGMATA_GIT_COMMIT
+      network: false
+      all_task_verifiers_required: true
+profiles:
+  research_reasoning_sft:
+    stage: sft
+    description: 研究隔离推理、多语言、中文蒸馏与长输出 SFT；包含 NC／待审数据
+    mixture:
+    - dataset: openmath_reasoning
+      weight: 0.3
+    - dataset: opencode_reasoning
+      weight: 0.25
+    - dataset: chinese_r1_distill_110k
+      weight: 0.15
+    - dataset: m2lingual
+      weight: 0.1
+    - dataset: longform
+      weight: 0.1
+    - dataset: tulu3_sft_mixture
+      weight: 0.1
+    overrides:
+      max_seq_len: 16384
+      packing: false
+      assistant_only_loss: true
+      row_token_budget: 250000000
+  research_browser_sft:
+    stage: sft
+    description: WebLINX 1.0 chat 静态轨迹研究；不得视为动态浏览环境训练
+    mixture:
+    - dataset: weblinx
+      weight: 0.8
+    - dataset: tulu3_sft_mixture
+      weight: 0.2
+    overrides:
+      max_seq_len: 16384
+      packing: false
+      assistant_only_loss: true
+      mask_tool_outputs: true
+      row_token_budget: 200000000
+  research_overrefusal_sft:
+    stage: sft
+    description: FalseReject Instruct 防过拒研究；test 独立隔离，不使用 CoT 字段复制样本
+    mixture:
+    - dataset: falsereject_train
+      weight: 0.6
+    - dataset: tulu3_sft_mixture
+      weight: 0.4
+    overrides:
+      max_seq_len: 8192
+      packing: false
+      assistant_only_loss: true
+      row_token_budget: 200000000
+  research_preference_dpo:
+    stage: preference
+    description: Tulu 3 整包偏好研究基线；含非商小子集，禁止晋升商用
+    mixture:
+    - dataset: tulu3_preference_mixture
+      weight: 1.0
+    overrides:
+      max_prompt_len: 4096
+      max_response_len: 4096
+  research_enigmata_rlvr:
+    stage: rlvr
+    description: Enigmata 非商用规则验证 RL；固定全部任务验证器和 Eval 实例去污后启动
+    mixture:
+    - dataset: enigmata_data
+      weight: 1.0
+    overrides:
+      max_prompt_len: 16384
+      max_response_len: 4096
+      rollouts_per_prompt: 8
+      temperature: 0.7
+      curriculum: task_and_pass_rate_buckets
+preflight:
+  require_immutable_revisions: true
+  require_data_quality_signoff: true
+  require_license_signoff: true
+  require_decontamination_signoff: true
+  require_verifier_signoff_for_rlvr: true
+  fail_on_disabled_dataset: true
+  fail_on_unaccepted_gated_dataset: true
+  require_no_call_negative_for_tool_profile: true
+signoff:
+  data_quality: false
+  license: false
+  decontamination: false
+  verifier: false
+isolation:
+  recipe_class: research
+  allow_cross_recipe_raw_cache_or_output_reuse: false
+  research_to_commercial_promotion: requires_new_manifest_and_full_license_review
+  eval_only_assets_allowed_in_mixture: false
+run_record:
+  run_id: REPLACE_ME
+  resolved_manifest_sha256: REPLACE_ME
+  benchmark_versions: REPLACE_ME
+  decontamination_report: REPLACE_ME
+  data_quality_report: REPLACE_ME
+  license_review_report: REPLACE_ME
+  verifier_test_report: REPLACE_ME
+  notes: 记录实际样本数、row tokens、supervised tokens、长度分桶、删除原因和最终权重

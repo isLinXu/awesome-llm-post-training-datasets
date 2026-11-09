@@ -1,0 +1,4619 @@
+schema_version: '1.0'
+metadata:
+  name: base-llm-post-training-datasets-list
+  created_at: '2026-11-09'
+  canonical: true
+  supersedes: 不覆盖训练 manifest；本文件是资产总表
+scope:
+  modality: text
+  base_model_target: text-only Base LLM
+  completeness_definition: 核心能力、SFT/偏好/RLVR/PRM/Agent 阶段、许可治理、独立评测和本地必需物料覆盖完整；不是穷尽所有公开数据集
+  excluded:
+  - 图像、音频、视频和多模态样本
+  - 未形成可固定版本或无法确认用途的候选
+usage_tier_definitions:
+  core: 首轮配方候选；仍需完成版本、质量、去污和许可签署，不等于已批准商用
+  optional: 按目标和消融结果加入的补集
+  research_only: 非商用许可或仅适合研究的小数据／特定假设数据
+  eval_only: 独立评测；train_prohibited=true，严禁训练
+  local_required: 必须由业务方建设，公共数据不能替代
+provenance:
+  previous_report: llm-post-training-datasets-zh.md
+  previous_asset_ids:
+  - dolci_instruct_sft
+  - nemotron_cascade_2_sft
+  - tulu3_sft_mixture
+  - smoltalk2
+  - no_robots
+  - oasst2
+  - lima
+  - wildchat
+  - coig_pc_lite
+  - coig_cqia
+  - belle
+  - firefly
+  - openthoughts3
+  - numina_math_cot
+  - openmath_reasoning
+  - s1k
+  - limo
+  - kodcode
+  - acecode_87k
+  - magicoder
+  - xlam_function_calling
+  - toolace
+  - glaive_function_calling_v2
+  - hh_rlhf
+  - shp
+  - helpsteer
+  - helpsteer2
+  - ultrafeedback
+  - nectar
+  - pku_saferlhf
+  - dapo_math_17k
+  - deepscaler_preview
+  - deepmath_103k
+  - big_math_rl_verified
+  - skywork_or1_rl
+  - verinstruct
+  - prm800k
+  - math_shepherd
+  - swe_gym
+  - swe_smith
+  - r2e_gym
+  - search_r1
+  previous_assets_retained: 42
+datasets:
+- id: dolci_instruct_sft
+  name: Dolci-Instruct-SFT
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 2150000
+    unit: samples
+    note: 约 215 万；多能力、多语言混合集
+  source:
+    provider: huggingface
+    repo_id: allenai/Dolci-Instruct-SFT
+    url: https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: messages
+  capabilities:
+  - general_chat
+  - knowledge_recall
+  - multilingual
+  - chinese
+  - precise_if
+  license:
+    id: ODC-By-1.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 混合集上游与教师条款仍需逐项审查
+  recommendation:
+  - 作为通用主集候选；不要与其他大合集无去重叠加
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: nemotron_cascade_2_sft
+  name: Nemotron-Cascade-2-SFT-Data
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 15870000
+    unit: samples
+    note: 约 1,587 万；含 Agent、SWE、安全和长上下文
+  source:
+    provider: huggingface
+    repo_id: nvidia/Nemotron-Cascade-2-SFT-Data
+    url: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: messages
+  capabilities:
+  - general_chat
+  - knowledge_recall
+  - long_context
+  license:
+    id: NVIDIA Open Model License
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 自定义模型许可
+  - 全量训练成本高且子集异质
+  recommendation:
+  - 按来源、长度和质量抽样后做大规模消融
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: tulu3_sft_mixture
+  name: Tulu 3 SFT Mixture
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 939344
+    unit: samples
+    note: 最终公开 SFT 配方样本数
+  source:
+    provider: huggingface
+    repo_id: allenai/tulu-3-sft-mixture
+    url: https://huggingface.co/datasets/allenai/tulu-3-sft-mixture
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: messages
+  capabilities:
+  - general_chat
+  - knowledge_recall
+  - multiturn
+  - precise_if
+  license:
+    id: ODC-By-1.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 含多上游数据，仍需谱系和教师条款审查
+  recommendation:
+  - 作为成熟配比与去污基线；与 Dolci 二选一为主
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: smoltalk2
+  name: SmolTalk2
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 2000000
+    unit: samples
+    note: 约 200 万；含数学、代码、多轮和工具子集
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://huggingface.co/blog/smollm3
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: messages
+  capabilities:
+  - general_chat
+  - knowledge_recall
+  - multiturn
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 多上游混合，不能只凭合集标签推断权利
+  recommendation:
+  - 中小模型多能力 SFT；逐子集固定版本
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: no_robots
+  name: No Robots
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 10000
+    unit: conversations
+    note: 约 1 万条人工编写对话
+  source:
+    provider: huggingface
+    repo_id: HuggingFaceH4/no_robots
+    url: https://huggingface.co/datasets/HuggingFaceH4/no_robots
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: messages
+  capabilities:
+  - general_chat
+  - multiturn
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - 规模不足以独立建立广泛能力
+  recommendation:
+  - 用于非商用人工风格基准和小数据冷启动
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: oasst2
+  name: OpenAssistant OASST2
+  category: multilingual
+  stages:
+  - sft
+  - preference
+  usage_tier: optional
+  scale:
+    value: null
+    unit: message_tree
+    note: 35 种语言；按消息树路径抽取后再计数
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2304.07327v3
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: conversation_trees
+  capabilities:
+  - general_chat
+  - multilingual
+  - multiturn
+  - preference_rm
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 原始结构不是平铺对话
+  - 各语言质量不均
+  recommendation:
+  - 多语言人工对话与偏好研究补集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: lima
+  name: LIMA
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 1000
+    unit: samples
+    note: 精选小样本风格对齐集
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2305.11206v4
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: instruction_response
+  capabilities:
+  - general_chat
+  license:
+    id: CC-BY-NC-SA-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用及相同方式共享义务
+  - 不能外推为全能力训练配方
+  recommendation:
+  - 仅用于非商用小数据质量消融
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: wildchat
+  name: WildChat
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 650000
+    unit: conversations
+    note: 约 65 万对话、100 万轮次、204 种语言
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2405.01470v3
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: real_user_conversations
+  capabilities:
+  - general_chat
+  - multilingual
+  - multiturn
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 隐私、毒性、语言错标、提示注入和服务条款
+  recommendation:
+  - 只作受控真实分布补充，不作默认干净主集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: coig_pc_lite
+  name: COIG-PC-Lite
+  category: chinese
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 52232
+    unit: samples
+    note: 中文指令样本精确数
+  source:
+    provider: huggingface
+    repo_id: BAAI/COIG-PC-Lite
+    url: https://huggingface.co/datasets/BAAI/COIG-PC-Lite
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: instruction_input_output
+  capabilities:
+  - chinese
+  license:
+    id: Apache-2.0（项目口径）；HF unknown
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 当前 HF 许可字段 unknown，商用前必须核对固定版本许可原文
+  recommendation:
+  - 中文候选补集；完成许可复核后再进入商用默认配方
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: coig_cqia
+  name: COIG-CQIA
+  category: chinese
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 48373
+    unit: samples
+    note: 23 个中文互联网来源
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2403.18058v2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: instruction_response
+  capabilities:
+  - chinese
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - 隐私、事实性和论坛噪声
+  recommendation:
+  - 非商用中文分布研究补集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: belle
+  name: BELLE
+  category: chinese
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 1500000
+    unit: samples
+    note: 约 150 万中文 Self-Instruct
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/LianjiaTech/BELLE
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: instruction_response
+  capabilities:
+  - chinese
+  license:
+    id: research-only-custom
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 项目禁止商用
+  - 模板化和教师错误
+  recommendation:
+  - 仅作非商用中文合成数据基线
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: firefly
+  name: Firefly
+  category: chinese
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 1150000
+    unit: samples
+    note: 约 115 万、23 类中文任务
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/yangjianxin1/Firefly
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: instruction_response
+  capabilities:
+  - chinese
+  license:
+    id: CC-BY-NC-SA-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用及相同方式共享义务
+  recommendation:
+  - 非商用中文多任务训练
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: openthoughts3
+  name: OpenThoughts3
+  category: reasoning
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 1200000
+    unit: samples
+    note: 约 120 万；数学、科学、代码和谜题
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2506.04178v1
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: reasoning_messages
+  capabilities:
+  - general_reasoning
+  - math_sft
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 答案正确不代表过程严谨
+  - 版本、许可和教师条款需固定后复核
+  recommendation:
+  - 长推理蒸馏候选；先做过程抽检与长度消融
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: numina_math_cot
+  name: NuminaMath-CoT
+  category: math
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 860000
+    unit: samples
+    note: 约 86 万数学 CoT
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/project-numina/aimo-progress-prize
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_cot_answer
+  capabilities:
+  - general_reasoning
+  - math_sft
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 母题重复和公开数学基准重叠
+  recommendation:
+  - 数学 SFT；按母题去污后使用
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: openmath_reasoning
+  name: OpenMathReasoning
+  category: math
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 3200000
+    unit: cot_samples
+    note: 约 320 万 CoT；另有约 170 万 TIR，分开使用不相加
+  source:
+    provider: huggingface
+    repo_id: nvidia/OpenMathReasoning
+    url: https://huggingface.co/datasets/nvidia/OpenMathReasoning
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_solution_answer
+  capabilities:
+  - general_reasoning
+  - math_sft
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 长序列成本和教师偏差
+  - CoT/TIR 格式不同
+  recommendation:
+  - 数学蒸馏主候选；CoT 与 TIR 分 profile
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: s1k
+  name: s1K
+  category: reasoning
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 1000
+    unit: samples
+    note: 约 1,000 条高难筛选样本
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2501.19393v1
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_reasoning_answer
+  capabilities:
+  - general_reasoning
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 结论依赖基座与筛选方法
+  - 许可按发布版本复核
+  recommendation:
+  - 小样本推理冷启动研究，不作通用底座
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: limo
+  name: LIMO
+  category: reasoning
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 817
+    unit: samples
+    note: 817 条精选推理样本
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2502.03387v1
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_reasoning_answer
+  capabilities:
+  - general_reasoning
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 小样本结论不可泛化到所有 Base
+  recommendation:
+  - 推理激活假设和数据质量消融
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: kodcode
+  name: KodCode-V1
+  category: code
+  stages:
+  - sft
+  - rlvr
+  usage_tier: optional
+  scale:
+    value: 447000
+    unit: problem_solution_test_triples
+    note: 约 44.7 万题目—解答—测试三元组
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2503.02951
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_solution_tests
+  capabilities:
+  - code_sft
+  - code_rlvr
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 测试覆盖与环境依赖
+  - 许可需按固定版本复核
+  recommendation:
+  - 沙箱重跑后用于代码 SFT 或 RLVR
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: acecode_87k
+  name: AceCode-87K
+  category: rlvr_code
+  stages:
+  - rlvr
+  usage_tier: core
+  scale:
+    value: 87000
+    unit: problems
+    note: 约 8.7 万带合成筛选测试的题
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2502.01718v4
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_tests_verifier
+  capabilities:
+  - code_rlvr
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 公开测试过拟合
+  - 需独立隐藏测试和资源限制
+  recommendation:
+  - 轻量代码 RLVR 候选；验证器签署后启用
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: magicoder
+  name: Magicoder OSS-Instruct / Self-OSS-Instruct
+  category: code
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 75000
+    unit: samples
+    note: OSS-Instruct 约 75K；Self-OSS-Instruct 另约 50K
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2312.02120v2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: instruction_code_response
+  capabilities:
+  - code_sft
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 不自带可靠单元测试
+  - 开源代码启发不等于统一许可
+  recommendation:
+  - 代码指令入门补集；逐来源审查
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: xlam_function_calling
+  name: xLAM / APIGen
+  category: tool
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 60000
+    unit: samples
+    note: 约 6 万函数调用样本
+  source:
+    provider: huggingface
+    repo_id: Salesforce/xlam-function-calling-60k
+    url: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: query_tools_answers
+  capabilities:
+  - tool_calling
+  license:
+    id: CC-BY-4.0
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: gated_terms
+  risks:
+  - 需登录接受访问条件，页面含研究用途声明
+  - Schema 过期与不可执行样本
+  recommendation:
+  - 接受并归档条件、完成执行验证后作为精确调用主候选
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: toolace
+  name: ToolACE
+  category: tool
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 11512
+    unit: dialogues
+    note: 含多轮、并行调用和无需调用情形
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2409.00917v1
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: tool_conversations
+  capabilities:
+  - tool_calling
+  - multistep_tool
+  - multiturn
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 许可与字段按固定版本复核
+  - 真实业务工具分布仍需自有数据
+  recommendation:
+  - 多轮、并行和拒调能力补集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: glaive_function_calling_v2
+  name: Glaive-function-calling-v2
+  category: tool
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 113305
+    unit: samples
+    note: 函数调用样本精确数
+  source:
+    provider: huggingface
+    repo_id: glaiveai/glaive-function-calling-v2
+    url: https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: function_call_messages
+  capabilities:
+  - tool_calling
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 近重复
+  - 并非全部代表现实 API
+  recommendation:
+  - 格式基线补集；近重复去重和 Schema 验证后使用
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: hh_rlhf
+  name: HH-RLHF
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  scale:
+    value: 169352
+    unit: preference_pairs
+    note: 人工偏好对；含有用性和无害性子集
+  source:
+    provider: huggingface
+    repo_id: Anthropic/hh-rlhf
+    url: https://huggingface.co/datasets/Anthropic/hh-rlhf
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_chosen_rejected
+  capabilities:
+  - preference_rm
+  - safe_refusal
+  license:
+    id: MIT
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 有害、偏见和隐私文本
+  - 历史偏好不等于现代安全规范
+  recommendation:
+  - 经典偏好与奖励模型基线；隔离危险内容
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: shp
+  name: SHP
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  scale:
+    value: 385563
+    unit: raw_preference_samples
+    note: 不要与 SHP-2 的约 480 万行混淆
+  source:
+    provider: huggingface
+    repo_id: stanfordnlp/SHP
+    url: https://huggingface.co/datasets/stanfordnlp/SHP
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: reddit_preference_pairs
+  capabilities:
+  - preference_rm
+  license:
+    id: unknown
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 许可字段不明确
+  - 点赞不等于事实或安全
+  recommendation:
+  - 领域化人类偏好研究；先复核权利
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: helpsteer
+  name: HelpSteer
+  category: preference
+  stages:
+  - reward_model
+  - preference
+  usage_tier: optional
+  scale:
+    value: 37120
+    unit: scored_responses
+    note: 多维评分响应
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2406.08673v1
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multi_attribute_scores
+  capabilities:
+  - preference_rm
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 与 HelpSteer2 版本和规模不可混写
+  recommendation:
+  - 属性奖励模型研究的旧版基线
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: helpsteer2
+  name: HelpSteer2
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: core
+  scale:
+    value: 21362
+    unit: responses
+    note: 约 1 万独立提示，可构造约 1 万偏好对
+  source:
+    provider: huggingface
+    repo_id: nvidia/HelpSteer2
+    url: https://huggingface.co/datasets/nvidia/HelpSteer2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multi_attribute_scores
+  capabilities:
+  - preference_rm
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 响应数不等于提示数
+  - 需检查同提示标注一致性和来源
+  recommendation:
+  - 细粒度奖励模型与 DPO 首选候选之一
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: ultrafeedback
+  name: UltraFeedback
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  scale:
+    value: 63967
+    unit: prompts
+    note: 约 34 万个回答评分
+  source:
+    provider: huggingface
+    repo_id: openbmb/UltraFeedback
+    url: https://huggingface.co/datasets/openbmb/UltraFeedback
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multi_response_ai_feedback
+  capabilities:
+  - preference_rm
+  license:
+    id: MIT
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - GPT-4 教师服务条款
+  - 自动评分偏差和上游谱系
+  recommendation:
+  - AI 反馈补集；教师条款通过后使用
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: nectar
+  name: Nectar
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  scale:
+    value: 183000
+    unit: prompts
+    note: 每题 7 回答，可构造约 380 万对；构造对数不等于独立样本数
+  source:
+    provider: huggingface
+    repo_id: berkeley-nest/Nectar
+    url: https://huggingface.co/datasets/berkeley-nest/Nectar
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: ranked_multi_responses
+  capabilities:
+  - preference_rm
+  license:
+    id: Apache-2.0
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - GPT-4 输出条款和底层提示来源
+  - 偏好对数量膨胀
+  recommendation:
+  - 多回答排序研究；按独立提示规划采样
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: pku_saferlhf
+  name: PKU-SafeRLHF / BeaverTails
+  category: safety
+  stages:
+  - preference
+  - reward_model
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 44600
+    unit: prompts
+    note: 另有 265K QA 安全标签、166.8K 偏好样本
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/PKU-Alignment/beavertails
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: safety_labels_and_preferences
+  capabilities:
+  - safe_refusal
+  - safety_moderation
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - 危险内容与过拒风险
+  recommendation:
+  - 非商用安全奖励和有用性／无害性双目标研究
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: dapo_math_17k
+  name: DAPO-Math-17k
+  category: rlvr_math
+  stages:
+  - rlvr
+  usage_tier: core
+  scale:
+    value: 17000
+    unit: problems
+    note: prompt + reward_model.ground_truth
+  source:
+    provider: huggingface
+    repo_id: BytedTsinghua-SIA/DAPO-Math-17k
+    url: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_answer_verifier
+  capabilities:
+  - math_rlvr
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 答案归一化与基准重复
+  recommendation:
+  - 数学 RLVR 快速闭环主候选
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: deepscaler_preview
+  name: DeepScaleR-Preview-Dataset
+  category: rlvr_math
+  stages:
+  - rlvr
+  usage_tier: core
+  scale:
+    value: 40000
+    unit: problems
+    note: 约 4 万题，带答案和参考解答
+  source:
+    provider: huggingface
+    repo_id: agentica-org/DeepScaleR-Preview-Dataset
+    url: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_answer_solution
+  capabilities:
+  - math_rlvr
+  license:
+    id: MIT
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 部分参考解答与最终答案可能不一致
+  recommendation:
+  - 主要使用题目＋最终答案；不盲信 solution
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: deepmath_103k
+  name: DeepMath-103K
+  category: rlvr_math
+  stages:
+  - rlvr
+  usage_tier: optional
+  scale:
+    value: 103000
+    unit: problems
+    note: 约 95K 难度 5–9、8K 难度 3–5
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2504.11456v2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_answer_verifier
+  capabilities:
+  - math_rlvr
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 选择／判断题猜测奖励
+  - 许可按固定版本复核
+  recommendation:
+  - 高难数学 RL 课程候选；转开放题或降低可猜性
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: big_math_rl_verified
+  name: Big-Math-RL-Verified
+  category: rlvr_math
+  stages:
+  - rlvr
+  usage_tier: core
+  scale:
+    value: 251122
+    unit: problems
+    note: 含 47,010 选择题改开放题与指定模型 solve rate
+  source:
+    provider: huggingface
+    repo_id: SynthLabsAI/Big-Math-RL-Verified
+    url: https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_answer_verifier
+  capabilities:
+  - math_rlvr
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: gated_terms
+  risks:
+  - 需接受访问条件
+  - solve rate 不是所有 Base 的通用难度
+  - 共同上游污染
+  recommendation:
+  - 访问条件归档后作为大规模数学 RLVR 候选
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: skywork_or1_rl
+  name: Skywork-OR1-RL-Data
+  category: rlvr_math
+  stages:
+  - rlvr
+  usage_tier: optional
+  scale:
+    value: 105000
+    unit: math_problems
+    note: 另有约 13.7K 代码题，分别计数和验证
+  source:
+    provider: huggingface
+    repo_id: Skywork/Skywork-OR1-RL-Data
+    url: https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_answer_or_tests
+  capabilities:
+  - math_rlvr
+  - code_rlvr
+  license:
+    id: unknown
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 许可不明确
+  - 多模型难度不可直接迁移
+  recommendation:
+  - 许可复核后作联合数学／代码 RL 补集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: verinstruct
+  name: VerInstruct
+  category: rlvr_if
+  stages:
+  - rlvr
+  usage_tier: core
+  scale:
+    value: 22000
+    unit: samples
+    note: 约 2.2 万带规则或 LLM 验证信号的指令样本
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://aclanthology.org/2025.emnlp-main.1542/
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_constraints_verifier
+  capabilities:
+  - precise_if
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - LLM 验证器不等于绝对可验证
+  - 表面约束过拟合
+  recommendation:
+  - 精确指令 RLVR；硬规则与 LLM 判断分报
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: prm800k
+  name: PRM800K
+  category: process_reward
+  stages:
+  - prm
+  usage_tier: optional
+  scale:
+    value: 800000
+    unit: step_labels
+    note: 另含 7.5 万解答、1.2 万题
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/openai/prm800k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: step_level_human_labels
+  capabilities:
+  - process_reward
+  license:
+    id: MIT
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 训练集纳入 4.5K MATH 测试题，MATH 切分污染风险极高
+  recommendation:
+  - 数学 PRM 主候选；严格执行官方切分与独立时间外评测
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: math_shepherd
+  name: Math-Shepherd
+  category: process_reward
+  stages:
+  - prm
+  usage_tier: research_only
+  scale:
+    value: 445000
+    unit: automatic_step_labels
+    note: 约 40–44.5 万，论文口径有差异
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/abs/2312.08935
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: automatic_step_labels
+  capabilities:
+  - process_reward
+  license:
+    id: no-explicit-license
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 结果回推不等于每步因果正确
+  - 无明确许可
+  recommendation:
+  - 仅限许可明确后的 PRM 研究，不标 Apache
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: swe_gym
+  name: SWE-Gym
+  category: agent_swe
+  stages:
+  - agent_sft
+  - agent_rl
+  usage_tier: optional
+  scale:
+    value: 2438
+    unit: executable_tasks
+    note: 论文 SFT 仅使用 491 条成功轨迹
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/abs/2412.21139
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: repo_tasks_environment_trajectories
+  capabilities:
+  - swe_agent
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 任务数不等于轨迹数
+  - 仓库提交、依赖、测试与许可需固定
+  recommendation:
+  - 仓库级 Agent 小闭环候选
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: swe_smith
+  name: SWE-smith
+  category: agent_swe
+  stages:
+  - agent_sft
+  - agent_rl
+  usage_tier: optional
+  scale:
+    value: 52000
+    unit: task_instances
+    note: 当前约 52K 任务、26K 轨迹、250+ 环境；训练子集另计
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/SWE-bench/SWE-smith
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: repo_tasks_environment_trajectories
+  capabilities:
+  - swe_agent
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 任务、轨迹和实际训练子集不可混计
+  - 版本口径会变化
+  recommendation:
+  - 大规模 SWE 环境和轨迹生成候选
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: r2e_gym
+  name: R2E-Gym
+  category: agent_swe
+  stages:
+  - agent_sft
+  - agent_rl
+  usage_tier: optional
+  scale:
+    value: 8100
+    unit: executable_tasks
+    note: 约 8.1K 可执行任务
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://r2e-gym.github.io/
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: repo_tasks_environment
+  capabilities:
+  - swe_agent
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 同仓库随机切分泄漏
+  - 环境与底层代码许可分离
+  recommendation:
+  - 仓库级 Agent RL；按仓库隔离切分
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: search_r1
+  name: Search-R1
+  category: agent_search
+  stages:
+  - agent_rl
+  usage_tier: optional
+  scale:
+    value: 169615
+    unit: questions
+    note: NQ 79,168 + HotpotQA 90,447 的可复现训练口径
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/PeterGriffinJin/Search-R1
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: questions_retriever_answer_reward
+  capabilities:
+  - search_agent
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 检索器、语料快照和动作空间决定可复现性
+  - 上游数据许可分离
+  recommendation:
+  - 端到端搜索 RL 基线；环境观测屏蔽策略梯度
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked_previous
+    checked_at: '2026-11-09'
+- id: aya_dataset
+  name: Aya Dataset
+  category: multilingual
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: null
+    unit: instruction_pairs
+    note: 含 original-annotations 与 re-annotations；当前语言标签与历史论文口径不同，须按固定版本计数
+  source:
+    provider: huggingface
+    repo_id: CohereLabs/aya_dataset
+    url: https://huggingface.co/datasets/CohereLabs/aya_dataset
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: inputs_targets_language
+  capabilities:
+  - multilingual
+  - general_chat
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 与 Aya Collection 内嵌 Aya-Dataset 记录重复
+  - 版本语言数不可混写
+  recommendation:
+  - 多语言人工数据主补集；固定 config 后统计语言与样本数
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: aya_collection
+    action: deduplicate_by_source_and_content
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: aya_collection
+  name: Aya Collection
+  category: multilingual
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: null
+    unit: task_instances
+    note: 多来源模板化合集；含 dataset_name=Aya-Dataset 的记录
+  source:
+    provider: huggingface
+    repo_id: CohereLabs/aya_collection
+    url: https://huggingface.co/datasets/CohereLabs/aya_collection
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: templated_instruction_tasks
+  capabilities:
+  - multilingual
+  - knowledge_recall
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 与 Aya Dataset 直接相加会重复
+  - 多上游任务需来源级去重
+  recommendation:
+  - 多语言任务补集；先按 dataset_name、语言和文本去重
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: aya_dataset
+    action: deduplicate_by_source_and_content
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: openhermes_2_5
+  name: OpenHermes-2.5
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 1000000
+    unit: samples
+    note: 约百万级 GPT-4 合成多源合集；legacy
+  source:
+    provider: huggingface
+    repo_id: teknium/OpenHermes-2.5
+    url: https://huggingface.co/datasets/teknium/OpenHermes-2.5
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: conversations_human_gpt
+  capabilities:
+  - general_chat
+  license:
+    id: unknown
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 本次数据卡未见明确许可
+  - 多源重复和教师条款
+  recommendation:
+  - 仅作 legacy 可选集，不作为新默认主集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: infinity_instruct
+  name: Infinity-Instruct
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 7449106
+    unit: samples
+    note: 此处固定为 7M config；3M/0613/0625/Gen 等配置分别计数
+  source:
+    provider: huggingface
+    repo_id: BAAI/Infinity-Instruct
+    url: https://huggingface.co/datasets/BAAI/Infinity-Instruct
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multi_source_instructions
+  capabilities:
+  - general_chat
+  - chinese
+  license:
+    id: CC-BY-SA-4.0
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: gated_terms
+  risks:
+  - 需登录接受条件
+  - 上游含 OpenHermes/FLAN/BELLE/COIG-CQIA/WildChat，继承许可与重复风险
+  recommendation:
+  - 可选大合集；不直接作为默认商用主集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: openhermes_2_5
+    action: source_level_deduplicate
+  - type: overlap
+    target: wildchat
+    action: source_level_deduplicate
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: tulu3_persona_if
+  name: Tulu 3 Persona Instruction Following
+  category: instruction_following
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 29980
+    unit: instruction_response_pairs
+    note: 25 类可验证约束；messages + constraints
+  source:
+    provider: huggingface
+    repo_id: allenai/tulu-3-sft-personas-instruction-following
+    url: https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: messages_constraints
+  capabilities:
+  - precise_if
+  license:
+    id: ODC-By-1.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 以英文合成数据为主
+  - 约束标签不等于每条响应均已程序验证
+  recommendation:
+  - 精确指令 SFT 主补集；训练前运行确定性约束检查
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: longalign_10k
+  name: LongAlign-10k
+  category: long_context
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 9888
+    unit: samples
+    note: 当前 train 9,888；名称口径 10K，长度约 8K–64K
+  source:
+    provider: huggingface
+    repo_id: zai-org/LongAlign-10k
+    url: https://huggingface.co/datasets/zai-org/LongAlign-10k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: long_context_messages
+  capabilities:
+  - long_context
+  - multiturn
+  license:
+    id: unknown
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 当前 HF 未见明确许可字段
+  - 长输入不等于长输出或引用能力
+  recommendation:
+  - 长输入对齐补集；许可复核与长度 token 配比后使用
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: longcite_45k
+  name: LongCite-45k
+  category: long_context
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 45000
+    unit: samples
+    note: 名称口径约 45K；中英文长文句级引用
+  source:
+    provider: huggingface
+    repo_id: zai-org/LongCite-45k
+    url: https://huggingface.co/datasets/zai-org/LongCite-45k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: long_document_prompt_cited_response
+  capabilities:
+  - long_context
+  - grounded_citation
+  - chinese
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 引用格式需保留
+  - 应抽检引用支持与空引用
+  recommendation:
+  - 长文 grounded generation 与句级引用主补集
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: natural_reasoning
+  name: NaturalReasoning
+  category: reasoning
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 1100000
+    unit: questions
+    note: 公开 110 万子集；18.29% 无参考答案
+  source:
+    provider: huggingface
+    repo_id: facebook/natural_reasoning
+    url: https://huggingface.co/datasets/facebook/natural_reasoning
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: question_reference_model_response
+  capabilities:
+  - general_reasoning
+  - knowledge_recall
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - 模型回答可能存在事实和推理错误
+  - 无参考答案样本不能直接 RLVR
+  recommendation:
+  - 非商用通用推理研究主候选；按答案类型分层
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mixture_of_thoughts
+  name: open-r1 Mixture-of-Thoughts
+  category: reasoning
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 349317
+    unit: reasoning_traces
+    note: all config 精确数；math 93,733、code 83,070、science 172,514
+  source:
+    provider: huggingface
+    repo_id: open-r1/Mixture-of-Thoughts
+    url: https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: reasoning_messages_num_tokens
+  capabilities:
+  - general_reasoning
+  - math_sft
+  - code_sft
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - R1 蒸馏与多上游许可
+  - 科学子集不能等同全领域开放推理
+  recommendation:
+  - 数学、代码、科学长推理混合补集；按 domain 分开消融
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: opencode_reasoning
+  name: OpenCodeReasoning
+  category: code
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 735255
+    unit: python_reasoning_samples
+    note: 28,319 道独立竞赛题；split_0 567,850 + split_1 167,405
+  source:
+    provider: huggingface
+    repo_id: nvidia/OpenCodeReasoning
+    url: https://huggingface.co/datasets/nvidia/OpenCodeReasoning
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: input_r1_output_solution
+  capabilities:
+  - code_sft
+  - general_reasoning
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 题目与 TACO/APPS/CodeContests 等重叠
+  - 是蒸馏样本集而非直接 RLVR 题目库
+  recommendation:
+  - 代码推理 SFT 主候选；按母题去重并核验所用上游
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: taco
+  name: TACO
+  category: code
+  stages:
+  - sft
+  - rlvr
+  usage_tier: core
+  scale:
+    value: 25443
+    unit: train_problems
+    note: 另有 1,000 test；约 155 万验证解答
+  source:
+    provider: huggingface
+    repo_id: BAAI/TACO
+    url: https://huggingface.co/datasets/BAAI/TACO
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: question_solutions_input_output_tests
+  capabilities:
+  - code_sft
+  - code_rlvr
+  license:
+    id: Apache-2.0 + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - HackerRank 等部分上游权利官方也不确定
+  - 测试字段有缺失和更新历史
+  recommendation:
+  - 可执行代码题主候选；过滤无测试样本并复核上游权利
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: codecontests
+  name: CodeContests
+  category: code
+  stages:
+  - sft
+  - rlvr
+  usage_tier: core
+  scale:
+    value: 13328
+    unit: train_problems
+    note: 另 validation 117、test 165；含正确／错误人类解和多类测试
+  source:
+    provider: huggingface
+    repo_id: deepmind/code_contests
+    url: https://huggingface.co/datasets/deepmind/code_contests
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_tests_multilang_solutions
+  capabilities:
+  - code_sft
+  - code_rlvr
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 私有测试不得作为模型输入
+  - 多平台来源与重复题
+  recommendation:
+  - 竞赛代码执行奖励主候选；隐藏测试仅作验证
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: toolbench
+  name: ToolBench
+  category: tool
+  stages:
+  - sft
+  - agent_sft
+  usage_tier: optional
+  scale:
+    value: 126486
+    unit: solution_path_annotations
+    note: 3,451 tools、16,464 APIs、469,585 real API calls；轨迹与调用分开计数
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/OpenBMB/ToolBench
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multi_step_tool_reasoning_traces
+  capabilities:
+  - multistep_tool
+  - tool_calling
+  license:
+    id: Apache-2.0（项目声明）
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 项目声明仅供研究教育
+  - 真实 API 漂移、密钥与结果可复现性
+  - ChatGPT 自动生成
+  recommendation:
+  - 真实 API、多步工具研究补集；优先 StableToolBench 固定环境
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: api_bank
+  name: API-Bank
+  category: tool
+  stages:
+  - sft
+  - evaluation
+  usage_tier: optional
+  scale:
+    value: 1888
+    unit: training_dialogues
+    note: 训练 1,888 对话／2,138 APIs；评测另 314 对话、753 调用、73 工具
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/api-bank
+    split: train_and_test_separated
+    revision_policy: pin_immutable_revision_before_use
+  data_format: tool_dialogues_executable_apis
+  capabilities:
+  - tool_calling
+  - multistep_tool
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 训练与评测切分必须隔离
+  - 许可和模拟 API 保真度需复核
+  recommendation:
+  - 规划、检索、调用补集；73 工具评测部分按 eval_only 管理
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: arena_human_preference_140k
+  name: Arena Human Preference 140K
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  scale:
+    value: 135634
+    unit: human_votes
+    note: text-only 类别当前 train 精确数；含 tie 和 both_bad
+  source:
+    provider: huggingface
+    repo_id: lmarena-ai/arena-human-preference-140k
+    url: https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: pairwise_full_conversations
+  capabilities:
+  - preference_rm
+  - general_chat
+  - multiturn
+  license:
+    id: CC-BY-4.0（用户提示）
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 模型输出受各供应商条款约束
+  - 真实用户隐私、多轮上下文模型不一致
+  recommendation:
+  - 现代真实人类偏好补集；过滤图像字段并逐模型审查输出条款
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: skywork_reward_preference_80k
+  name: Skywork-Reward-Preference-80K-v0.2
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  scale:
+    value: 77016
+    unit: preference_pairs
+    note: v0.2 为 RewardBench 去污版；v0.1 删除 4,957 对
+  source:
+    provider: huggingface
+    repo_id: Skywork/Skywork-Reward-Preference-80K-v0.2
+    url: https://huggingface.co/datasets/Skywork/Skywork-Reward-Preference-80K-v0.2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_chosen_rejected
+  capabilities:
+  - preference_rm
+  - safe_refusal
+  license:
+    id: mixed-review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 多上游许可和 Magpie 教师来源
+  - 不可回退到 RewardBench 污染版
+  recommendation:
+  - 奖励模型训练补集；固定 v0.2 并继续谱系审查
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: aegis_content_safety_2
+  name: Nemotron Content Safety Dataset V2 / Aegis 2.0
+  category: safety
+  stages:
+  - sft
+  - reward_model
+  usage_tier: core
+  scale:
+    value: 33416
+    unit: annotated_interactions
+    note: train 30,007、validation 1,445、test 1,964；含 5K 合成拒答训练样本
+  source:
+    provider: huggingface
+    repo_id: nvidia/Aegis-AI-Content-Safety-Dataset-2.0
+    url: https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_response_binary_safety_labels
+  capabilities:
+  - safety_moderation
+  - safe_refusal
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 官方不建议直接把原始内容当普通对话 SFT
+  - 危险文本和部分响应标签为 LLM jury
+  - 自杀相关 358 样本不分发
+  recommendation:
+  - 安全分类主候选；只将审查后的安全响应用于生成对齐
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: wildguardmix_tulu3
+  name: Tulu 3 WildGuardMix fixed subset
+  category: safety
+  stages:
+  - sft
+  - preference
+  usage_tier: optional
+  scale:
+    value: 50000
+    unit: samples
+    note: Tulu 3 配方中的去污固定子集，不是原始全集规模
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2411.15124v2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: safety_prompt_response
+  capabilities:
+  - safe_refusal
+  - safety_moderation
+  - overrefusal
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: restricted_review
+  risks:
+  - 原始库访问受限，本次直接数据卡未读取
+  - 包含有害与良性场景，字段和许可须下载后复核
+  recommendation:
+  - 安全响应补集；只有在固定包字段、访问条件和许可复核后启用
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: dolly_15k
+  name: Databricks Dolly 15k
+  category: general_sft
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 15000
+    unit: instruction_records
+    note: 约 15K 人工编写英文指令，覆盖 8 类任务
+  source:
+    provider: huggingface
+    repo_id: databricks/databricks-dolly-15k
+    url: https://huggingface.co/datasets/databricks/databricks-dolly-15k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: instruction_context_response
+  capabilities:
+  - general_chat
+  license:
+    id: CC-BY-SA-3.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - Wikipedia context 需保留来源和 ShareAlike 义务
+  - 规模小且英文单一
+  recommendation:
+  - 可商用人工指令冷启动与风格补集；保留署名和相同方式共享义务
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: longform
+  name: LongForm
+  category: long_output
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 23652
+    unit: train_samples
+    note: validation 2,042、test 2,045 分开隔离；长输出指令跟随
+  source:
+    provider: huggingface
+    repo_id: akoksal/LongForm
+    url: https://huggingface.co/datasets/akoksal/LongForm
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: long_output_instruction_response
+  capabilities:
+  - long_output
+  - general_chat
+  license:
+    id: MIT + upstream-and-OpenAI-terms
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 卡片明确含 OpenAI 与 WikiHow 上游限制
+  - C4/Wikipedia/Stack Exchange/NIv2/BigBench 等来源需逐项审查
+  recommendation:
+  - 长输出 SFT 结构补集；只使用 train，独立保留 test，并抽检全局一致性
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: ifeval_like_filtered
+  name: IFEval-like Data filtered
+  category: instruction_following
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 56339
+    unit: filtered_samples
+    note: default 550,000；filtered 仅保留 prompt_level_strict_acc=True 的 56,339 条
+  source:
+    provider: huggingface
+    repo_id: argilla/ifeval-like-data
+    url: https://huggingface.co/datasets/argilla/ifeval-like-data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_response_constraints_verification
+  capabilities:
+  - precise_if
+  license:
+    id: Qwen license (other)
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - Qwen2.5-72B-Instruct 教师条款
+  - 名称含 IFEval-like 不代表已对 IFEval 去污
+  - default 可能含冲突指令和错误回答
+  recommendation:
+  - 只用 filtered 配置作精确指令补集；对 IFEval 母题与提示隔离并复核 Qwen 条款
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: openmathinstruct2
+  name: OpenMathInstruct-2
+  category: math
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 13972791
+    unit: problem_solution_pairs
+    note: 另有公平降采样 train_1M/train_2M/train_5M；Llama-3.1-405B-Instruct 生成
+  source:
+    provider: huggingface
+    repo_id: nvidia/OpenMathInstruct-2
+    url: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: problem_generated_solution_answer
+  capabilities:
+  - math_sft
+  - general_reasoning
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - GSM8K/MATH 母题及增广谱系
+  - 增广题答案来自 majority voting
+  - 官方建议过滤约 564 个超长问题
+  recommendation:
+  - 数学 SFT 主候选；优先从公平降采样 split 消融并继续做 Omni-MATH 等母题去污
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: opencodeinstruct
+  name: OpenCodeInstruct
+  category: code
+  stages:
+  - sft
+  usage_tier: core
+  scale:
+    value: 5000000
+    unit: instruction_response_pairs
+    note: 精确 500 万 Python 代码 SFT；含 domain、unit_tests、执行状态和平均分
+  source:
+    provider: huggingface
+    repo_id: nvidia/OpenCodeInstruct
+    url: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: input_output_domain_unit_tests_scores
+  capabilities:
+  - code_sft
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - The Stack V2、TACO 与教师生成上游需复核
+  - 有测试字段不等于全部样本可直接转 RLVR
+  recommendation:
+  - 大规模代码 SFT 主候选；按执行分数过滤、沙箱复跑并按母题去重
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: codefeedback_filtered
+  name: CodeFeedback-Filtered-Instruction
+  category: code
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 156000
+    unit: samples_approx
+    note: README 称约 156K；从 287K 查询筛选复杂度 4/5 的单轮代码指令
+  source:
+    provider: huggingface
+    repo_id: m-a-p/CodeFeedback-Filtered-Instruction
+    url: https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: single_turn_code_instruction_response
+  capabilities:
+  - code_sft
+  license:
+    id: Apache-2.0 + teacher-terms
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - README 156K 与历史规模标签口径需固定版本复核
+  - 部分数据由 OpenAI 模型生成
+  - Magicoder/ShareGPT/Evol-Instruct 来源重叠
+  recommendation:
+  - 复杂代码指令可选补集；按固定文件实际计数并做教师条款与来源去重审查
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: helpsteer3_preference
+  name: HelpSteer3 Preference
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: core
+  scale:
+    value: 40476
+    unit: preference_samples
+    note: 95% train／5% validation；General/STEM/Code/Multilingual，含多轮上下文与最多 3 人标注
+  source:
+    provider: huggingface
+    repo_id: nvidia/HelpSteer3
+    url: https://huggingface.co/datasets/nvidia/HelpSteer3
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: context_chosen_rejected_human_preferences
+  capabilities:
+  - preference_rm
+  - multiturn
+  - multilingual
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - Preference/Feedback/Edit/Edit Quality/Principle 配置不可混加
+  - 多领域不等于各语言均衡
+  recommendation:
+  - 偏好与奖励模型主候选；固定 preference config 并按同提示切分
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: tulu3_preference_mixture
+  name: Tulu 3 8B Preference Mixture
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: research_only
+  scale:
+    value: 272898
+    unit: preference_pairs
+    note: 官方明确部分子集非商用并作为研究 artifact 发布
+  source:
+    provider: huggingface
+    repo_id: allenai/llama-3.1-tulu-3-8b-preference-mixture
+    url: https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: prompt_chosen_rejected
+  capabilities:
+  - preference_rm
+  license:
+    id: ODC-BY-1.0 + noncommercial-subsets
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 不能只看 ODC 标签推断整包可商用
+  - 含 GPT-4/Claude/Llama/Qwen/Gemma 等多教师
+  recommendation:
+  - 仅作非商用偏好配方研究基线；商用配方不得直接继承整包
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: nemotron_cascade_2_rl
+  name: Nemotron-Cascade-2-RL-data
+  category: rlvr_general
+  stages:
+  - rlvr
+  - agent_rl
+  - sft
+  usage_tier: optional
+  scale:
+    value: 73809
+    unit: config_rows_total
+    note: IF-RL 45,879、multi-domain-RL 18,147、MOPD 6,171、SWE-RL 3,612；四配置分开使用
+  source:
+    provider: huggingface
+    repo_id: nvidia/Nemotron-Cascade-2-RL-data
+    url: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: mixed_rl_and_on_policy_distillation
+  capabilities:
+  - precise_if
+  - general_reasoning
+  - swe_agent
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - MOPD 是 on-policy distillation，不是同质 RLVR
+  - SWE-Gym/R2E-Gym 等上游许可与重复
+  - 总数只为目录口径，训练不得混配后直接相加
+  recommendation:
+  - 按 IF、通用 RL、MOPD、SWE 四 profile 分开消融；逐配置验证奖励与上游
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: toolmind
+  name: ToolMind
+  category: tool
+  stages:
+  - sft
+  - agent_sft
+  usage_tier: optional
+  scale:
+    value: 360000
+    unit: assistant_turn_samples
+    note: 160K 合成＋200K 开源增广，20K+ tools；按通过过滤的 assistant turn 拆分
+  source:
+    provider: huggingface
+    repo_id: Nanbeige/ToolMind
+    url: https://huggingface.co/datasets/Nanbeige/ToolMind
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multi_turn_tool_trajectories
+  capabilities:
+  - tool_calling
+  - multistep_tool
+  - multiturn
+  license:
+    id: Apache-2.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 样本数不等于独立轨迹数
+  - 与 xLAM/Glaive/ToolACE/When2Call/APIGen-MT/τ-bench 来源级重叠
+  - 合成调用需执行验证
+  recommendation:
+  - 大规模工具轨迹补集；执行验证、按来源去重并与评测环境隔离
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: xlam_function_calling
+    action: source_and_content_deduplicate
+  - type: overlap
+    target: toolace
+    action: source_and_content_deduplicate
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: enigmata_data
+  name: Enigmata-Data
+  category: rlvr_general
+  stages:
+  - rlvr
+  usage_tier: research_only
+  scale:
+    value: null
+    unit: generator_tasks
+    note: 36 任务、7 类；generator＋rule verifier，可控制难度生成实例，固定包规模不猜数
+  source:
+    provider: huggingface
+    repo_id: BytedTsinghua-SIA/Enigmata-Data
+    url: https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: puzzle_prompt_answer_rule_verifier
+  capabilities:
+  - general_reasoning
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - 生成器可扩展不等于已固定训练集规模
+  - 必须与 Enigmata-Eval 做实例级泄漏检查
+  recommendation:
+  - 非商用逻辑谜题 RLVR；固定生成器种子、难度和任务排除清单
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: pathfinder_prm
+  name: PathFinder-PRM 400K
+  category: process_reward
+  stages:
+  - prm
+  usage_tier: research_only
+  scale:
+    value: 400000
+    unit: samples_approx
+    note: 由 PRM800K 与 RLHFlow Mistral traces 增广；Math/Consistency/Optimality 三维步级标签
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/declare-lab/PathFinder-PRM
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: three_dimensional_step_labels
+  capabilities:
+  - process_reward
+  license:
+    id: review-required
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: manual
+  risks:
+  - 数据许可未在官方项目中明确
+  - 继承 PRM800K 的 MATH 切分污染风险
+  - 自动增广标签需抽检
+  recommendation:
+  - 许可复核后用于非默认 PRM 研究；严格继承母题切分并单独评测三维标签
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: derived_from
+    target: prm800k
+    action: inherit_split_and_decontaminate
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: weblinx
+  name: WebLINX 1.0 chat train
+  category: agent_browser
+  stages:
+  - agent_sft
+  usage_tier: research_only
+  scale:
+    value: null
+    unit: chat_turns
+    note: 固定 WebLINX 1.0 chat train；WebLINX 1.1/BrowserGym 是不同版本，规模不混写
+  source:
+    provider: huggingface
+    repo_id: McGill-NLP/WebLINX
+    url: https://huggingface.co/datasets/McGill-NLP/WebLINX
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: website_navigation_dialogue_actions
+  capabilities:
+  - browser_agent
+  - multistep_tool
+  - multiturn
+  license:
+    id: CC-BY-NC-SA-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用及相同方式共享义务
+  - 原始轨迹可能含测试账号、密码和动态 HTML
+  - 文本投影不保证动态环境可复现
+  recommendation:
+  - 非商用静态浏览轨迹研究；固定 1.0、脱敏并用 BrowserGym 版本另做动态评测
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: falsereject_train
+  name: FalseReject train
+  category: safety
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 14624
+    unit: training_prompts
+    note: 每条含 instruct_response 与 cot_response 两字段；另有 1,187 人工测试提示，不能相加为训练量
+  source:
+    provider: huggingface
+    repo_id: AmazonScience/FalseReject
+    url: https://huggingface.co/datasets/AmazonScience/FalseReject
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: benign_sensitive_prompt_structured_responses
+  capabilities:
+  - overrefusal
+  - safe_refusal
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - Claude-3.5-Sonnet/DeepSeek-R1 教师输出需审查
+  - 看似有害但良性的提示仍需安全过滤
+  recommendation:
+  - 非商用防过拒主补集；Instruct/CoT 分 profile，test 独立 eval_only
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: m2lingual
+  name: M2Lingual full_data
+  category: multilingual
+  stages:
+  - sft
+  usage_tier: research_only
+  scale:
+    value: 173672
+    unit: dataset_rows
+    note: 70 语言、17 任务；卡片另称 182K IR pairs，行数与 pairs 不混写
+  source:
+    provider: huggingface
+    repo_id: ServiceNow-AI/M2Lingual
+    url: https://huggingface.co/datasets/ServiceNow-AI/M2Lingual
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multilingual_multiturn_conversations
+  capabilities:
+  - multilingual
+  - multiturn
+  license:
+    id: CC-BY-NC-SA-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用及相同方式共享义务
+  - GPT-4 教师和 Aya 种子谱系需审查
+  - full_data/seed_data/seed_evol_data 配置不可混加
+  recommendation:
+  - 非商用多语言多轮研究补集；固定 full_data 并按语言和 sample_type 分层
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: chinese_r1_distill_110k
+  name: Chinese DeepSeek R1 Distill 110K
+  category: chinese
+  stages:
+  - sft
+  usage_tier: optional
+  scale:
+    value: 110000
+    unit: samples
+    note: Math 36,568、Exam 2,432、STEM 12,648、General 58,352
+  source:
+    provider: huggingface
+    repo_id: Congliu/Chinese-DeepSeek-R1-Distill-data-110k
+    url: https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: input_reasoning_content_answer_score
+  capabilities:
+  - chinese
+  - general_reasoning
+  - math_sft
+  license:
+    id: Apache-2.0 + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 官方承认事实性未经严格验证
+  - 模型评分可能不准确
+  - COIG-CQIA/GSM8K_zh 等上游许可和评测重叠
+  recommendation:
+  - 中文推理蒸馏补集；按 repo_name 继承许可审查、事实抽检与母题去污
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: coig_cqia
+    action: source_level_license_and_deduplication
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: webgpt_comparisons
+  name: WebGPT Comparisons
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: research_only
+  scale:
+    value: 19578
+    unit: comparisons
+    note: 双答案、引用摘录和人类偏好分数；官方卡片未给明确许可
+  source:
+    provider: huggingface
+    repo_id: openai/webgpt_comparisons
+    url: https://huggingface.co/datasets/openai/webgpt_comparisons
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: quoted_answers_human_preference
+  capabilities:
+  - preference_rm
+  - grounded_citation
+  - search_agent
+  license:
+    id: no-explicit-license
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 无明确许可
+  - 引用摘录的网页上游权利
+  - 历史浏览器和答案分布
+  recommendation:
+  - 许可签署后用于带引用答案偏好研究；不得默认可商用
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: summarize_from_feedback
+  name: Summarize from Feedback
+  category: preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: research_only
+  scale:
+    value: null
+    unit: comparison_and_axis_rows
+    note: comparisons/axis 配置与切分不同；官方卡片未给明确许可和统一精确规模
+  source:
+    provider: huggingface
+    repo_id: openai/summarize_from_feedback
+    url: https://huggingface.co/datasets/openai/summarize_from_feedback
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: summary_comparisons_and_axis_scores
+  capabilities:
+  - preference_rm
+  license:
+    id: no-explicit-license + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 无明确许可
+  - TL;DR 及验证/测试中的 CNN/Daily Mail 上游限制
+  - 配置和切分不可混加
+  recommendation:
+  - 许可和上游审查后作摘要偏好研究基线；不填未经核实的统一规模
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: ifeval
+  name: IFEval
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: prompts
+    note: 使用官方 input_data 固定版本；程序检查可验证指令
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/google-research/google-research/tree/master/instruction_following_eval
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - precise_if
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 精确指令独立评测；不得使用其提示改写训练
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: longbench_chat
+  name: LongBench-Chat
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: queries
+    note: 10K–100K 真实用户长上下文查询；GPT-4 judge
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/THUDM/LongAlign
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - long_context
+  - general_chat
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 长输入指令遵循评测；judge 版本固定
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: longbench_cite
+  name: LongBench-Cite
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: queries
+    note: 来自 LongBench 与 LongBench-Chat 的引用评测
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/THUDM/LongCite
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - grounded_citation
+  - long_context
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 分别报告答案正确性和引用质量
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mmlu_pro
+  name: MMLU-Pro
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 12032
+    unit: test_questions
+    note: 另 validation 70；持续修订，必须记录 revision
+  source:
+    provider: huggingface
+    repo_id: TIGER-Lab/MMLU-Pro
+    url: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - knowledge_recall
+  - general_reasoning
+  license:
+    id: MIT
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 知识与推理评测；不将 CoT 字段用于训练
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: bbh
+  name: BIG-bench Hard
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: task_configs
+    note: 27 个 config，分别固定并汇总；不要无版本引用单一总数
+  source:
+    provider: huggingface
+    repo_id: lukaemon/bbh
+    url: https://huggingface.co/datasets/lukaemon/bbh
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - general_reasoning
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 通用推理评测；按任务报告宏平均与样本加权
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: math_500
+  name: MATH-500
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 500
+    unit: problems
+    note: PRM800K 官方 MATH 切分的 500 题子集
+  source:
+    provider: huggingface
+    repo_id: HuggingFaceH4/MATH-500
+    url: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - math_sft
+  - math_rlvr
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 高难数学保留评测；尤其检查 PRM800K 污染
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: gsm8k_test
+  name: GSM8K test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 1319
+    unit: test_problems
+    note: train 7,473 不纳入本 eval_only 资产
+  source:
+    provider: huggingface
+    repo_id: openai/gsm8k
+    url: https://huggingface.co/datasets/openai/gsm8k
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - math_sft
+  - math_rlvr
+  license:
+    id: MIT
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 基础多步数学保留评测；与训练切分隔离
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: livecodebench_v6
+  name: LiveCodeBench release_v6
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 1055
+    unit: problems
+    note: 题目发布时间为 2023-05 至 2025-04；必须写 release_v6
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/LiveCodeBench/LiveCodeBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - code_sft
+  - code_rlvr
+  license:
+    id: MIT
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 代码生成、执行、修复和输出预测评测；优先 Base 之后时间窗
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: bfcl
+  name: Berkeley Function Calling Leaderboard
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: versioned_test_cases
+    note: 按 BFCL 版本和类别计数；含 AST、可执行、多轮、多步等
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - tool_calling
+  - multistep_tool
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 函数调用独立评测；固定版本、工具 Schema 和类别
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: rewardbench
+  name: RewardBench filtered
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 2985
+    unit: preference_pairs
+    note: raw 5,123；filtered 2,985，含 Chat/Chat Hard/Safety/Reasoning
+  source:
+    provider: huggingface
+    repo_id: allenai/reward-bench
+    url: https://huggingface.co/datasets/allenai/reward-bench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - preference_rm
+  - overrefusal
+  license:
+    id: ODC-By-1.0 + mixed-upstream
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 奖励模型评测；Skywork 等训练集必须使用对应去污版
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: processbench
+  name: ProcessBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: annotated_solutions
+    note: GSM8K/MATH/OlympiadBench/OmniMATH 四个文件分开计数
+  source:
+    provider: huggingface
+    repo_id: Qwen/ProcessBench
+    url: https://huggingface.co/datasets/Qwen/ProcessBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - process_reward
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 步级错误定位评测；不得转 PRM 训练
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: swebench_verified
+  name: SWE-bench Verified
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 500
+    unit: issue_pr_pairs
+    note: 人工验证的 SWE-bench test 子集
+  source:
+    provider: huggingface
+    repo_id: princeton-nlp/SWE-bench_Verified
+    url: https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - swe_agent
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 仓库级软件工程保留评测；gold patch/test patch 不输入模型
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: xstest
+  name: XSTest
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: prompts
+    note: 固定 exaggerated-safety 官方版本；safe/unsafe 分开报告
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/paul-rottger/exaggerated-safety
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - safe_refusal
+  - overrefusal
+  - safety_moderation
+  license:
+    id: CC-BY-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 拒答与过拒双向评测；不可只报 unsafe 拒答率
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: longform_test
+  name: LongForm test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 2045
+    unit: test_samples
+    note: LongForm 官方 test；train 23,652 与 validation 2,042 均不得混入
+  source:
+    provider: huggingface
+    repo_id: akoksal/LongForm
+    url: https://huggingface.co/datasets/akoksal/LongForm
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - long_output
+  license:
+    id: MIT + mixed-upstream
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 长输出独立评测；除长度外同时评分任务完成、事实与全局一致性
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: omni_math
+  name: Omni-MATH
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 4428
+    unit: competition_problems
+    note: 33 个子领域、10 个难度级别；奥林匹克级数学
+  source:
+    provider: huggingface
+    repo_id: KbsdJames/Omni-MATH
+    url: https://huggingface.co/datasets/KbsdJames/Omni-MATH
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - math_sft
+  - math_rlvr
+  - general_reasoning
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 高难数学保留评测；OpenMathInstruct/Numina 等必须按母题去污
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: gpqa_diamond
+  name: GPQA Diamond
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 198
+    unit: questions
+    note: 固定 gpqa_diamond config；不得与 Main 448 或 Extended 混写
+  source:
+    provider: huggingface
+    repo_id: Idavidrein/gpqa
+    url: https://huggingface.co/datasets/Idavidrein/gpqa
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - general_reasoning
+  - knowledge_recall
+  license:
+    id: CC-BY-4.0 + gated-terms
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 研究生级科学推理评测；遵守 gated 条款，不公开传播题目文本
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: ruler
+  name: RULER
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: configurable_tasks
+    note: 4 类、13 个可配置任务；rulerv1-ns/rulerv2-ns 分支和生成长度必须固定
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/NVIDIA/RULER
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - long_context
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 长上下文合成评测；记录分支、任务配置、长度、种子与 tokenizer
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: bigcodebench
+  name: BigCodeBench Full / Hard
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 1140
+    unit: full_tasks
+    note: Hard 148；Complete/Instruct 两种提示模式分别报告
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/bigcode-project/bigcodebench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - code_sft
+  - code_rlvr
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 实用代码生成执行评测；固定包版本、subset、split 与沙箱
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mgsm
+  name: MGSM
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 250
+    unit: parallel_problems_per_language
+    note: 同一 250 道 GSM8K 题人工译为 10 种语言，另有英文；按语言分别报告
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/abs/2210.03057
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - multilingual
+  - math_sft
+  - math_rlvr
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 多语言数学保留评测；与 GSM8K_zh 及翻译训练数据做跨语言母题去污
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mt_bench
+  name: MT-Bench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 80
+    unit: multi_turn_prompts
+    note: 固定官方 80 个两轮提示与 judge；不能把 judge 输出用于训练
+  source:
+    provider: huggingface
+    repo_id: HuggingFaceH4/mt_bench_prompts
+    url: https://huggingface.co/datasets/HuggingFaceH4/mt_bench_prompts
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - general_chat
+  - multiturn
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 通用多轮对话评测；固定提示、参考回答、judge 和采样参数
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: rewardbench2
+  name: RewardBench 2
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 1865
+    unit: test_samples
+    note: Factuality/Precise IF/Math/Safety/Focus/Ties 六类；单轮
+  source:
+    provider: huggingface
+    repo_id: allenai/reward-bench-2
+    url: https://huggingface.co/datasets/allenai/reward-bench-2
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - preference_rm
+  - precise_if
+  license:
+    id: ODC-By + third-party-model-terms
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 新一代奖励模型评测；按官方六类计分，不能沿用 RewardBench v1 算法
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: prmbench
+  name: PRMBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: step_level_evaluation_samples
+    note: 固定官方 prmtest_classified 数据与版本；规模未从官方卡片直接核实则不填
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/ssmisya/PRMBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - process_reward
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 细粒度过程奖励评测；与 PathFinder/PRM800K 按母题和轨迹去污
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: harmbench
+  name: HarmBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: red_teaming_behaviors
+    note: 标准化自动红队框架；按标准/上下文行为和固定分类器分别报告
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/centerforaisafety/HarmBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - safety_moderation
+  - safe_refusal
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 攻击与防御双向安全评测；固定行为集、攻击方法、分类器和试验次数
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: strongreject
+  name: StrongREJECT
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 313
+    unit: forbidden_prompts
+    note: full 313、small 60；使用维护中的 dsbowen/strong_reject 而非旧仓库
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/dsbowen/strong_reject
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - safe_refusal
+  - safety_moderation
+  license:
+    id: MIT + unlicensed-upstream-subsets
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 越狱鲁棒性评测；分别报告空攻击基线和各攻击，不只看拒答率
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: sorry_bench_202503
+  name: SORRY-Bench 2025/03
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 9240
+    unit: unsafe_instructions
+    note: base 440＋20 种语言/格式变换 8,800；44 类，gated 自定义协议
+  source:
+    provider: huggingface
+    repo_id: sorry-bench/sorry-bench-202503
+    url: https://huggingface.co/datasets/sorry-bench/sorry-bench-202503
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - safe_refusal
+  - safety_moderation
+  - multilingual
+  license:
+    id: sorry-bench-custom
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 安全拒答评测；接受并归档数据协议，不向第三方转移数据
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: agentharm
+  name: AgentHarm public test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 44
+    unit: public_test_base_behaviors
+    note: 176 augmented；另有 validation 8 base／32 augmented；当前公开包不是论文全集 440
+  source:
+    provider: huggingface
+    repo_id: ai-safety-institute/AgentHarm
+    url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - agent_safety
+  - safe_refusal
+  - multistep_tool
+  license:
+    id: MIT + safety-only-additional-clause
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - Agent 有害与良性行为评测；canary 禁止训练，仅限改善 AI 安全/安保
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mind2web_test
+  name: Mind2Web test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 1341
+    unit: test_tasks
+    note: Cross Task 252、Cross Website 177、Cross Domain 912；train 1,009 不在本资产内
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/OSU-NLP-Group/Mind2Web
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - browser_agent
+  - multistep_tool
+  license:
+    id: CC-BY-4.0 + test-distribution-terms
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 浏览 Agent 跨任务/网站/领域评测；测试 zip 不再公开传播，canary 严禁训练
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: agentdojo
+  name: AgentDojo
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: null
+    unit: dynamic_attack_defense_tasks
+    note: 动态提示注入攻防环境；固定 suite、user task、attack、defense 与模型
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/ethz-spylab/agentdojo
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - agent_safety
+  - multistep_tool
+  - tool_calling
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 工具 Agent 提示注入攻防评测；分开报告效用和攻击成功率
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: enigmata_eval
+  name: Enigmata-Eval
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 4758
+    unit: puzzle_instances
+    note: Easy/Medium/Hard；36 任务、7 类，与 Enigmata-Data 严格分离
+  source:
+    provider: huggingface
+    repo_id: BytedTsinghua-SIA/Enigmata-Eval
+    url: https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - general_reasoning
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 逻辑谜题独立评测；训练生成器运行官方泄漏检查并固定任务排除清单
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: falsereject_test
+  name: FalseReject test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 1187
+    unit: human_annotated_prompts
+    note: 人工标注的看似有害但良性提示；训练 14,624 条单独管理
+  source:
+    provider: huggingface
+    repo_id: AmazonScience/FalseReject
+    url: https://huggingface.co/datasets/AmazonScience/FalseReject
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - overrefusal
+  - safe_refusal
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 防过拒独立评测；固定 judge 并报告 Compliance Rate 与 USR_Benign
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: tau_bench_2_text
+  name: τ-bench 2.0 text-v1
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  scale:
+    value: 900
+    unit: single_trial_calls
+    note: 6 语言×3 域×50 冻结任务；v2.0 与 v1.x 分数不可直接比较
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/sierra-research/tau2-bench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: evaluation
+  capabilities:
+  - multistep_tool
+  - multiturn
+  - multilingual
+  license:
+    id: MIT
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开评测污染
+  - 必须固定版本与切分
+  recommendation:
+  - 政策约束多轮工具 Agent 评测；固定 v2.0.0、text-v1、语言包与 pass^k
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: local_domain_zh_sft
+  name: 真实业务中文与领域 SFT
+  category: local_required
+  stages:
+  - sft
+  usage_tier: local_required
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义规模、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_domain_zh_sft
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: domain_messages_and_human_preferences
+  capabilities:
+  - domain_adaptation
+  - chinese
+  - general_chat
+  - grounded_citation
+  - preference_rm
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 权利、隐私、机密和业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 覆盖真实用户、真实知识库、失败工单和人工高质量回答；作为中文与领域效果的主要增量
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+- id: local_no_tool_negative
+  name: 无需工具调用负例
+  category: local_required
+  stages:
+  - sft
+  - evaluation
+  usage_tier: local_required
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义规模、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_no_tool_negative
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: tools_available_but_direct_answer
+  capabilities:
+  - tool_calling
+  - multistep_tool
+  - domain_adaptation
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 权利、隐私、机密和业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 工具可用但无需调用时必须直接回答；与工具 SFT 同 profile 配比
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+- id: local_overrefusal
+  name: 正常请求防过拒数据
+  category: local_required
+  stages:
+  - sft
+  - preference
+  - evaluation
+  usage_tier: local_required
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义规模、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_overrefusal
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: benign_sensitive_boundary_prompts
+  capabilities:
+  - overrefusal
+  - safe_refusal
+  - domain_adaptation
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 权利、隐私、机密和业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 覆盖医疗、法律、代码安全、敏感实体但合法的请求；保留合理回答与解释性拒答边界
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+- id: local_domain_safety
+  name: 领域安全与政策样本
+  category: local_required
+  stages:
+  - sft
+  - preference
+  - reward_model
+  - evaluation
+  usage_tier: local_required
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义规模、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_domain_safety
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: policy_labeled_prompt_response
+  capabilities:
+  - safe_refusal
+  - safety_moderation
+  - agent_safety
+  - domain_adaptation
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 权利、隐私、机密和业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 按实际产品政策标注，而非照搬历史通用安全偏好；覆盖工具返回注入、数据外泄和危险动作；危险内容隔离访问
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+- id: local_private_time_eval
+  name: 私有与时间外综合评测
+  category: local_required
+  stages:
+  - evaluation
+  usage_tier: local_required
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义规模、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_private_time_eval
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: private_time_out_of_distribution_eval
+  capabilities:
+  - multilingual
+  - math_rlvr
+  - process_reward
+  - tool_calling
+  - browser_agent
+  - long_context
+  - math_sft
+  - long_output
+  - code_sft
+  - general_reasoning
+  - chinese
+  - preference_rm
+  - domain_adaptation
+  - multiturn
+  - safe_refusal
+  - knowledge_recall
+  - precise_if
+  - search_agent
+  - swe_agent
+  - grounded_citation
+  - code_rlvr
+  - overrefusal
+  - safety_moderation
+  - multistep_tool
+  - general_chat
+  - agent_safety
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 权利、隐私、机密和业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 至少覆盖业务中文、多轮、多语言、长文引用、工具、浏览、安全与推理；冻结并严禁训练
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+coverage_requirements:
+  general_chat:
+    required: true
+    training_candidates:
+    - dolci_instruct_sft
+    - tulu3_sft_mixture
+    - dolly_15k
+    - longform
+    - nemotron_cascade_2_sft
+    - smoltalk2
+    - no_robots
+    - oasst2
+    - lima
+    - wildchat
+    - openhermes_2_5
+    - infinity_instruct
+    - local_domain_zh_sft
+    eval_ids:
+    - mt_bench
+    - local_private_time_eval
+  knowledge_recall:
+    required: true
+    training_candidates:
+    - dolci_instruct_sft
+    - tulu3_sft_mixture
+    - nemotron_cascade_2_sft
+    - smoltalk2
+    - aya_collection
+    - natural_reasoning
+    eval_ids:
+    - mmlu_pro
+    - gpqa_diamond
+    - local_private_time_eval
+  multilingual:
+    required: true
+    training_candidates:
+    - aya_dataset
+    - aya_collection
+    - m2lingual
+    - helpsteer3_preference
+    - oasst2
+    - dolci_instruct_sft
+    - wildchat
+    eval_ids:
+    - mgsm
+    - sorry_bench_202503
+    - tau_bench_2_text
+    - local_private_time_eval
+  chinese:
+    required: true
+    training_candidates:
+    - coig_pc_lite
+    - coig_cqia
+    - belle
+    - firefly
+    - chinese_r1_distill_110k
+    - dolci_instruct_sft
+    - longcite_45k
+    - local_domain_zh_sft
+    eval_ids:
+    - local_private_time_eval
+  multiturn:
+    required: true
+    training_candidates:
+    - no_robots
+    - oasst2
+    - wildchat
+    - smoltalk2
+    - tulu3_sft_mixture
+    - helpsteer3_preference
+    - toolmind
+    - m2lingual
+    - weblinx
+    - toolace
+    eval_ids:
+    - mt_bench
+    - tau_bench_2_text
+    - local_private_time_eval
+  precise_if:
+    required: true
+    training_candidates:
+    - tulu3_persona_if
+    - ifeval_like_filtered
+    - verinstruct
+    - nemotron_cascade_2_rl
+    - dolci_instruct_sft
+    - tulu3_sft_mixture
+    eval_ids:
+    - ifeval
+    - rewardbench2
+    - local_private_time_eval
+  long_context:
+    required: true
+    training_candidates:
+    - longalign_10k
+    - longcite_45k
+    - nemotron_cascade_2_sft
+    eval_ids:
+    - longbench_chat
+    - longbench_cite
+    - ruler
+    - local_private_time_eval
+  grounded_citation:
+    required: true
+    training_candidates:
+    - longcite_45k
+    - webgpt_comparisons
+    - local_domain_zh_sft
+    eval_ids:
+    - longbench_cite
+    - local_private_time_eval
+  general_reasoning:
+    required: true
+    training_candidates:
+    - openthoughts3
+    - natural_reasoning
+    - mixture_of_thoughts
+    - openmathinstruct2
+    - enigmata_data
+    - nemotron_cascade_2_rl
+    - chinese_r1_distill_110k
+    - s1k
+    - limo
+    - openmath_reasoning
+    - numina_math_cot
+    eval_ids:
+    - bbh
+    - mmlu_pro
+    - omni_math
+    - gpqa_diamond
+    - enigmata_eval
+    - local_private_time_eval
+  math_sft:
+    required: true
+    training_candidates:
+    - numina_math_cot
+    - openmath_reasoning
+    - openmathinstruct2
+    - chinese_r1_distill_110k
+    - openthoughts3
+    - mixture_of_thoughts
+    eval_ids:
+    - math_500
+    - gsm8k_test
+    - omni_math
+    - mgsm
+    - local_private_time_eval
+  math_rlvr:
+    required: true
+    training_candidates:
+    - dapo_math_17k
+    - deepscaler_preview
+    - deepmath_103k
+    - big_math_rl_verified
+    - skywork_or1_rl
+    eval_ids:
+    - math_500
+    - gsm8k_test
+    - omni_math
+    - mgsm
+    - local_private_time_eval
+  code_sft:
+    required: true
+    training_candidates:
+    - kodcode
+    - magicoder
+    - opencode_reasoning
+    - opencodeinstruct
+    - codefeedback_filtered
+    - mixture_of_thoughts
+    - taco
+    - codecontests
+    eval_ids:
+    - livecodebench_v6
+    - bigcodebench
+    - local_private_time_eval
+  code_rlvr:
+    required: true
+    training_candidates:
+    - acecode_87k
+    - kodcode
+    - taco
+    - codecontests
+    - skywork_or1_rl
+    eval_ids:
+    - livecodebench_v6
+    - bigcodebench
+    - local_private_time_eval
+  tool_calling:
+    required: true
+    training_candidates:
+    - xlam_function_calling
+    - toolace
+    - toolmind
+    - glaive_function_calling_v2
+    - api_bank
+    - toolbench
+    - local_no_tool_negative
+    eval_ids:
+    - bfcl
+    - agentdojo
+    - local_private_time_eval
+  multistep_tool:
+    required: true
+    training_candidates:
+    - toolbench
+    - api_bank
+    - toolace
+    - toolmind
+    - weblinx
+    - local_no_tool_negative
+    eval_ids:
+    - bfcl
+    - tau_bench_2_text
+    - agentdojo
+    - mind2web_test
+    - agentharm
+    - local_private_time_eval
+  preference_rm:
+    required: true
+    training_candidates:
+    - helpsteer2
+    - helpsteer3_preference
+    - tulu3_preference_mixture
+    - webgpt_comparisons
+    - summarize_from_feedback
+    - hh_rlhf
+    - shp
+    - helpsteer
+    - ultrafeedback
+    - nectar
+    - arena_human_preference_140k
+    - skywork_reward_preference_80k
+    - local_domain_zh_sft
+    eval_ids:
+    - rewardbench
+    - rewardbench2
+    - local_private_time_eval
+  safety_moderation:
+    required: true
+    training_candidates:
+    - aegis_content_safety_2
+    - wildguardmix_tulu3
+    - pku_saferlhf
+    - local_domain_safety
+    eval_ids:
+    - xstest
+    - harmbench
+    - strongreject
+    - sorry_bench_202503
+    - local_private_time_eval
+  safe_refusal:
+    required: true
+    training_candidates:
+    - pku_saferlhf
+    - aegis_content_safety_2
+    - wildguardmix_tulu3
+    - falsereject_train
+    - hh_rlhf
+    - local_domain_safety
+    eval_ids:
+    - xstest
+    - falsereject_test
+    - harmbench
+    - strongreject
+    - sorry_bench_202503
+    - agentharm
+    - local_private_time_eval
+  overrefusal:
+    required: true
+    training_candidates:
+    - local_overrefusal
+    - wildguardmix_tulu3
+    - falsereject_train
+    eval_ids:
+    - xstest
+    - falsereject_test
+    - rewardbench
+    - local_private_time_eval
+  process_reward:
+    required: true
+    training_candidates:
+    - prm800k
+    - math_shepherd
+    - pathfinder_prm
+    eval_ids:
+    - processbench
+    - prmbench
+    - local_private_time_eval
+  search_agent:
+    required: true
+    training_candidates:
+    - search_r1
+    - webgpt_comparisons
+    eval_ids:
+    - local_private_time_eval
+  swe_agent:
+    required: true
+    training_candidates:
+    - swe_gym
+    - swe_smith
+    - r2e_gym
+    - nemotron_cascade_2_rl
+    eval_ids:
+    - swebench_verified
+    - local_private_time_eval
+  domain_adaptation:
+    required: true
+    training_candidates:
+    - local_domain_zh_sft
+    - local_no_tool_negative
+    - local_overrefusal
+    - local_domain_safety
+    eval_ids:
+    - local_private_time_eval
+  long_output:
+    required: true
+    training_candidates:
+    - longform
+    eval_ids:
+    - longform_test
+    - local_private_time_eval
+  browser_agent:
+    required: true
+    training_candidates:
+    - weblinx
+    eval_ids:
+    - mind2web_test
+    - local_private_time_eval
+  agent_safety:
+    required: true
+    training_candidates:
+    - local_domain_safety
+    eval_ids:
+    - agentharm
+    - agentdojo
+    - local_private_time_eval
+excluded_or_deferred_candidates:
+- name: PRISM Alignment
+  status: deferred
+  reason: 本次官方数据卡访问返回 401，未核验当前字段、许可和规模，不写成已核验推荐项
+- name: Skywork-SynPref-40M
+  status: deferred
+  reason: 论文可核实 40M 池与 26M 精选子集，但当前官方 HF API/README 返回 401，固定数据包与许可未核验
+- name: Qwen AutoIF
+  status: deferred
+  reason: 官方数据卡本次返回 401；已有 Tulu Persona IF、IFEval-like filtered 与 VerInstruct，不凭二手清单晋升
+- name: WebDancer / WebSailor
+  status: deferred
+  reason: 当前未形成可核验的固定训练数据卡与许可；WebLINX 仅补非商用静态轨迹，动态环境仍须专项建设
+- name: Mind2Web train
+  status: deferred
+  reason: 官方声明研究用途且测试包单独分发；本版只将 1,341 测试任务列 eval_only，训练侧先用 WebLINX 研究轨迹
+- name: SWE-bench-extra
+  status: deferred
+  reason: 本次原始数据卡访问返回 401；已有 SWE-Gym/SWE-smith/R2E-Gym，不为凑数纳入未核验项
+- name: LongAttn / LongABC
+  status: out_of_scope
+  reason: 官方项目为长上下文继续预训练数据，不属于本 post-training 清单；不得当作长输出 SFT
+- name: 多模态数据集
+  status: out_of_scope
+  reason: 本清单范围限定文本 Base LLM；WebLINX 仅保留文本化聊天轨迹，图像和语音分支不纳入
+- name: τ-bench legacy
+  status: superseded
+  reason: 旧任务已过时；本版使用 sierra-research/tau2-bench 的 τ-bench 2.0.0 text-v1，且不与 1.x 分数直接比较
+global_preflight:
+- 固定 repo revision、文件哈希和实际 split
+- 按精确/近重复/语义/母题/仓库/网站谱系去重去污
+- 许可、上游内容、教师服务条款和访问条件分别签署
+- 按有效 token、独立提示、任务和轨迹分别配比
+- 数学/代码/工具验证器实际重跑
+- eval_only 和私有时间外评测绝不进入训练

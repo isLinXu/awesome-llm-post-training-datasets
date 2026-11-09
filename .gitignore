@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Local logs and temporary files
+*.log
+*.tmp
+.tmp/
+
+# Downloaded datasets and model artifacts
+commercial_default/
+research_isolated/
+runs/
+checkpoints/
+models/
+hf_cache/
+huggingface/
+
+# Local secrets
+.env
+.env.*
+!.env.example

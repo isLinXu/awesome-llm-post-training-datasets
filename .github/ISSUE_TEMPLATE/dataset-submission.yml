@@ -1,0 +1,50 @@
+name: 数据集收录或修正
+description: 提交 canonical 新资产，或修正已有资产的版本、许可、分类和来源
+labels: [dataset]
+body:
+  - type: input
+    id: dataset-id
+    attributes:
+      label: Canonical ID／建议 ID
+      description: 使用唯一、小写、下划线分隔的 ID
+    validations:
+      required: true
+  - type: input
+    id: official-url
+    attributes:
+      label: 官方数据卡、论文或项目页
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 阶段、能力与 config／split
+      description: 区分 SFT、偏好、RLVR、PRM、Agent 和 eval_only；不要只写仓库默认 split
+    validations:
+      required: true
+  - type: textarea
+    id: revision
+    attributes:
+      label: 不可变 revision 与规模口径
+      description: 正式配方需要 40 位 commit SHA；说明规模是样本、对话、轮次、题目还是 token
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: 许可、上游与教师条款
+      description: 无法确认时请明确写 review_required，不要根据二手清单推断可商用
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 已回到官方来源核对，而非只复制 awesome 清单
+          required: true
+        - label: 独立评测已标记 eval_only 和 train_prohibited=true
+          required: false
+        - label: 未在 Issue 中上传原始数据、凭证或受限样本
+          required: true

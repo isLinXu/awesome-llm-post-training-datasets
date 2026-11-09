@@ -1,0 +1,701 @@
+# Base 模型后训练数据 Manifest
+#
+# 用法：
+#   1. 替换 REPLACE_ME、PIN_ME_TO_IMMUTABLE_COMMIT 等占位符。
+#   2. 选择 project.selected_profile，并审查对应数据集。
+#   3. 完成数据、许可、去污和验证器检查后，把 signoff 改为 true。
+#   4. 运行：python validate_post_training_manifest.py post-training-dataset-manifest.yaml
+#
+# 注意：采样权重只是首轮消融起点，不是通用最优配比；本文件不绑定具体训练框架。
+
+manifest_version: "1.0"
+
+metadata:
+  name: "base-post-training-dataset-manifest"
+  created_at: "2026-11-09"
+  weight_semantics: "归一化采样权重；不是样本行数占比，也不是有效 token 占比"
+  revision_policy: "正式训练必须使用不可变版本；禁止使用浮动的 main 作为实验记录"
+
+project:
+  selected_profile: "general_zh_sft"
+  commercial_use: false
+  seed: 42
+  output_dir: "REPLACE_ME"
+  base_model:
+    id: "REPLACE_ME"
+    revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+    chat_template: "auto"
+    max_seq_len: 8192
+
+paths:
+  raw_root: "./data/raw"
+  processed_root: "./data/processed"
+  cache_root: "./data/cache"
+
+runtime:
+  num_proc: 8
+  trust_remote_code: false
+  overwrite_processed: false
+
+# 各 profile 可以覆盖这些默认值。
+defaults:
+  sft:
+    output_format: "messages"
+    assistant_only_loss: true
+    mask_tool_outputs: true
+    packing: false
+    truncation: "drop"
+    max_seq_len: 8192
+  preference:
+    output_format: "prompt_chosen_rejected"
+    max_prompt_len: 4096
+    max_response_len: 4096
+  rlvr:
+    output_format: "prompt_answer_verifier"
+    max_prompt_len: 4096
+    max_response_len: 8192
+    rollouts_per_prompt: 8
+    temperature: 0.7
+    correct_reward: 1.0
+    incorrect_reward: 0.0
+
+# commercial_status 的可选值：
+#   allowed_with_obligations：可在履行署名等义务后使用，但仍需完成项目审查。
+#   noncommercial：非商业研究。
+#   review_required：许可、访问条件或教师条款尚需复核。
+#   internal_review_required：自有数据，需要内部权利和隐私审查。
+datasets:
+  dolci_instruct_sft:
+    stage: "sft"
+    enabled: true
+    source:
+      provider: "huggingface"
+      repo_id: "allenai/Dolci-Instruct-SFT"
+      revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+      subset: null
+      split: "train"
+      local_path: null
+    data:
+      format: "messages"
+      adapter: "messages_passthrough"
+      fields:
+        messages: "messages"
+    license:
+      id: "ODC-By-1.0"
+      commercial_status: "allowed_with_obligations"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "混合数据需同时保留上游来源与教师条款审查结果"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "semantic"]
+      decontaminate: true
+      filters: ["valid_roles", "nonempty_assistant", "length_histogram"]
+
+  coig_pc_lite:
+    stage: "sft"
+    enabled: true
+    source:
+      provider: "huggingface"
+      repo_id: "BAAI/COIG-PC-Lite"
+      revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+      subset: null
+      split: "train"
+      local_path: null
+    data:
+      format: "instruction_input_output"
+      adapter: "alpaca_to_messages"
+      fields:
+        instruction: "instruction"
+        input: "input"
+        output: "output"
+        task_type: "task_type"
+        domain: "domain"
+    license:
+      id: "Apache-2.0（论文／项目口径）；Hugging Face 当前字段为 unknown"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: false
+      notes: "商用前以固定版本文件和项目许可原文复核，不仅依赖数据卡字段"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash"]
+      decontaminate: true
+      filters: ["chinese_quality_audit", "task_type_stratification", "pii_review"]
+
+  openmath_reasoning_cot:
+    stage: "sft"
+    enabled: true
+    source:
+      provider: "huggingface"
+      repo_id: "nvidia/OpenMathReasoning"
+      revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+      subset: "cot"
+      split: "train"
+      local_path: null
+    data:
+      format: "problem_solution_answer"
+      adapter: "problem_solution_to_messages"
+      fields:
+        problem: "problem"
+        solution: "generated_solution"
+        answer: "expected_answer"
+        inference_mode: "inference_mode"
+        source: "problem_source"
+    license:
+      id: "CC-BY-4.0"
+      commercial_status: "allowed_with_obligations"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "CoT 与 TIR 不混用；保留 DeepSeek-R1 等教师来源审查"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "parent_problem"]
+      decontaminate: true
+      filters: ["answer_present", "solution_length_cap", "reasoning_quality_audit"]
+
+  openthoughts3:
+    stage: "sft"
+    enabled: false
+    source:
+      provider: "manual"
+      repo_id: null
+      revision: "PIN_ME_TO_DATA_VERSION"
+      subset: null
+      split: "train"
+      local_path: "REPLACE_ME"
+      homepage: "https://arxiv.org/abs/2506.04178"
+    data:
+      format: "messages"
+      adapter: "VERIFY_FIELDS_THEN_MAP"
+      fields:
+        messages: "REVIEW_ME"
+    license:
+      id: "REVIEW_REQUIRED"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "固定数据版本后补充 repo_id、字段和许可"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "semantic"]
+      decontaminate: true
+      filters: ["answer_validation", "reasoning_quality_audit", "length_histogram"]
+
+  xlam_function_calling:
+    stage: "sft"
+    enabled: false
+    source:
+      provider: "huggingface"
+      repo_id: "Salesforce/xlam-function-calling-60k"
+      revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+      subset: null
+      split: "train"
+      local_path: null
+    data:
+      format: "query_tools_answers"
+      adapter: "xlam_json_strings_to_tool_messages"
+      fields:
+        query: "query"
+        tools: "tools"
+        answers: "answers"
+    license:
+      id: "CC-BY-4.0"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "页面要求登录并接受条件，且含研究用途声明；接受条件并复核后再启用"
+    access:
+      gated: true
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash"]
+      decontaminate: true
+      filters: ["json_loads", "schema_validation", "execution_validation"]
+
+  toolace:
+    stage: "sft"
+    enabled: false
+    source:
+      provider: "manual"
+      repo_id: null
+      revision: "PIN_ME_TO_DATA_VERSION"
+      subset: null
+      split: "train"
+      local_path: "REPLACE_ME"
+      homepage: "https://arxiv.org/abs/2409.00917"
+    data:
+      format: "tool_conversations"
+      adapter: "VERIFY_FIELDS_THEN_MAP"
+      fields:
+        messages: "REVIEW_ME"
+        tools: "REVIEW_ME"
+    license:
+      id: "REVIEW_REQUIRED"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "用于多轮、并行调用和无需调用补集"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash"]
+      decontaminate: true
+      filters: ["schema_validation", "execution_validation", "multi_turn_state_audit"]
+
+  custom_no_call_negative:
+    stage: "sft"
+    enabled: false
+    source:
+      provider: "local"
+      repo_id: null
+      revision: "local-v1"
+      subset: null
+      split: "train"
+      local_path: "REPLACE_ME"
+    data:
+      format: "messages"
+      adapter: "messages_passthrough"
+      role: "no_call_negative"
+      fields:
+        messages: "messages"
+        tools: "tools"
+    license:
+      id: "INTERNAL"
+      commercial_status: "internal_review_required"
+      attribution_required: false
+      upstream_review_required: true
+      teacher_terms_review_required: false
+      notes: "自有真实请求；工具可用但无需调用时直接回答"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash"]
+      decontaminate: true
+      filters: ["pii_review", "no_tool_call_assertion", "answer_quality_audit"]
+
+  helpsteer2_preference:
+    stage: "preference"
+    enabled: true
+    source:
+      provider: "huggingface"
+      repo_id: "nvidia/HelpSteer2"
+      revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+      subset: null
+      split: "train"
+      local_path: null
+    data:
+      format: "multi_attribute_scores"
+      adapter: "within_prompt_score_gap_to_pairs"
+      fields:
+        prompt: "prompt"
+        response: "response"
+        helpfulness: "helpfulness"
+        correctness: "correctness"
+        coherence: "coherence"
+        complexity: "complexity"
+        verbosity: "verbosity"
+      pair_conversion:
+        min_total_score_gap: 1
+        correctness_weight: 2
+        helpfulness_weight: 2
+        coherence_weight: 1
+        complexity_weight: 0
+        verbosity_weight: 0
+    license:
+      id: "CC-BY-4.0"
+      commercial_status: "allowed_with_obligations"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "响应数不等于独立提示数；同提示内构造偏好对并避免跨 split 泄漏"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "prompt_response_pair"]
+      decontaminate: true
+      filters: ["score_gap", "pair_dedup", "human_pair_audit"]
+
+  dapo_math_17k:
+    stage: "rlvr"
+    enabled: true
+    source:
+      provider: "huggingface"
+      repo_id: "BytedTsinghua-SIA/DAPO-Math-17k"
+      revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+      subset: null
+      split: "train"
+      local_path: null
+    data:
+      format: "prompt_answer_verifier"
+      adapter: "dapo_ground_truth_to_verifier"
+      fields:
+        prompt: "prompt"
+        answer: "reward_model.ground_truth"
+    license:
+      id: "Apache-2.0"
+      commercial_status: "allowed_with_obligations"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: false
+      notes: "HF 文件规模分桶不是样本数"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "parent_problem"]
+      decontaminate: true
+      filters: ["answer_present", "guessability_audit", "difficulty_by_base_model"]
+    verifier:
+      type: "math_equivalence"
+      implementation: "REPLACE_ME"
+      answer_normalization: ["latex", "fraction", "radical", "set", "interval", "unit"]
+      reject_empty_answer: true
+      allow_multiple_equivalent_answers: true
+
+  deepmath_103k:
+    stage: "rlvr"
+    enabled: false
+    source:
+      provider: "manual"
+      repo_id: null
+      revision: "PIN_ME_TO_DATA_VERSION"
+      subset: null
+      split: "train"
+      local_path: "REPLACE_ME"
+      homepage: "https://arxiv.org/abs/2504.11456"
+    data:
+      format: "prompt_answer_verifier"
+      adapter: "VERIFY_FIELDS_THEN_MAP"
+      fields:
+        prompt: "REVIEW_ME"
+        answer: "REVIEW_ME"
+        difficulty: "REVIEW_ME"
+    license:
+      id: "REVIEW_REQUIRED"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "选择题和判断题需处理猜测奖励"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "parent_problem"]
+      decontaminate: true
+      filters: ["convert_or_drop_guessable", "difficulty_by_base_model"]
+    verifier:
+      type: "math_equivalence"
+      implementation: "REPLACE_ME"
+      answer_normalization: ["latex", "fraction", "radical", "set", "interval", "unit"]
+      reject_empty_answer: true
+      allow_multiple_equivalent_answers: true
+
+  big_math_rl_verified:
+    stage: "rlvr"
+    enabled: false
+    source:
+      provider: "huggingface"
+      repo_id: "SynthLabsAI/Big-Math-RL-Verified"
+      revision: "PIN_ME_TO_IMMUTABLE_COMMIT"
+      subset: null
+      split: "train"
+      local_path: null
+    data:
+      format: "prompt_answer_verifier"
+      adapter: "VERIFY_FIELDS_THEN_MAP"
+      fields:
+        prompt: "REVIEW_ME"
+        answer: "REVIEW_ME"
+        solve_rate: "REVIEW_ME"
+    license:
+      id: "Apache-2.0"
+      commercial_status: "allowed_with_obligations"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "公开但需接受访问条件；solve rate 只对应指定模型"
+    access:
+      gated: true
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "parent_problem"]
+      decontaminate: true
+      filters: ["answer_present", "difficulty_by_base_model", "converted_mcq_audit"]
+    verifier:
+      type: "math_equivalence"
+      implementation: "REPLACE_ME"
+      answer_normalization: ["latex", "fraction", "radical", "set", "interval", "unit"]
+      reject_empty_answer: true
+      allow_multiple_equivalent_answers: true
+
+  kodcode_sft:
+    stage: "sft"
+    enabled: false
+    source:
+      provider: "manual"
+      repo_id: null
+      revision: "PIN_ME_TO_DATA_VERSION"
+      subset: null
+      split: "train"
+      local_path: "REPLACE_ME"
+      homepage: "https://arxiv.org/abs/2503.02951"
+    data:
+      format: "problem_solution_tests"
+      adapter: "VERIFY_FIELDS_THEN_MAP"
+      fields:
+        problem: "REVIEW_ME"
+        solution: "REVIEW_ME"
+        tests: "REVIEW_ME"
+    license:
+      id: "REVIEW_REQUIRED"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "先在沙箱重跑测试，再保留为 SFT 样本"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "problem_family"]
+      decontaminate: true
+      filters: ["sandbox_pass", "test_coverage_audit", "solution_quality_audit"]
+
+  kodcode_rlvr:
+    stage: "rlvr"
+    enabled: false
+    source:
+      provider: "manual"
+      repo_id: null
+      revision: "PIN_ME_TO_DATA_VERSION"
+      subset: null
+      split: "train"
+      local_path: "REPLACE_ME"
+      homepage: "https://arxiv.org/abs/2503.02951"
+    data:
+      format: "prompt_tests_verifier"
+      adapter: "VERIFY_FIELDS_THEN_MAP"
+      fields:
+        prompt: "REVIEW_ME"
+        tests: "REVIEW_ME"
+    license:
+      id: "REVIEW_REQUIRED"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "与 kodcode_sft 使用相同固定源版本，但训练角色不同"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "problem_family"]
+      decontaminate: true
+      filters: ["sandbox_pass", "hidden_tests_available", "resource_limit_audit"]
+    verifier:
+      type: "sandbox_unit_tests"
+      implementation: "REPLACE_ME"
+      image: "REPLACE_ME"
+      network: false
+      timeout_seconds: 20
+      memory_mb: 2048
+      hidden_tests_required: true
+
+  acecode_rlvr:
+    stage: "rlvr"
+    enabled: false
+    source:
+      provider: "manual"
+      repo_id: null
+      revision: "PIN_ME_TO_DATA_VERSION"
+      subset: null
+      split: "train"
+      local_path: "REPLACE_ME"
+      homepage: "https://github.com/TIGER-AI-Lab/AceCoder"
+    data:
+      format: "prompt_tests_verifier"
+      adapter: "VERIFY_FIELDS_THEN_MAP"
+      fields:
+        prompt: "REVIEW_ME"
+        tests: "REVIEW_ME"
+    license:
+      id: "REVIEW_REQUIRED"
+      commercial_status: "review_required"
+      attribution_required: true
+      upstream_review_required: true
+      teacher_terms_review_required: true
+      notes: "公开测试用于训练，隐藏测试用于评估"
+    access:
+      gated: false
+      terms_accepted: false
+    processing:
+      max_samples: null
+      dedup: ["exact", "minhash", "problem_family"]
+      decontaminate: true
+      filters: ["sandbox_pass", "hidden_tests_available", "resource_limit_audit"]
+    verifier:
+      type: "sandbox_unit_tests"
+      implementation: "REPLACE_ME"
+      image: "REPLACE_ME"
+      network: false
+      timeout_seconds: 20
+      memory_mb: 2048
+      hidden_tests_required: true
+
+profiles:
+  general_zh_sft:
+    stage: "sft"
+    description: "通用中文首轮消融；工具能力另做独立 profile，避免缺少不调用负例"
+    mixture:
+      - dataset: "dolci_instruct_sft"
+        weight: 0.80
+      - dataset: "coig_pc_lite"
+        weight: 0.10
+      - dataset: "openmath_reasoning_cot"
+        weight: 0.10
+    overrides:
+      max_seq_len: 8192
+      packing: false
+      assistant_only_loss: true
+
+  research_reasoning_sft:
+    stage: "sft"
+    description: "长推理冷启动；先完成 OpenThoughts3 版本、字段和许可复核"
+    mixture:
+      - dataset: "openthoughts3"
+        weight: 0.50
+      - dataset: "openmath_reasoning_cot"
+        weight: 0.50
+    overrides:
+      max_seq_len: 16384
+      packing: false
+      assistant_only_loss: true
+
+  code_sft:
+    stage: "sft"
+    description: "带测试的代码 SFT；只有沙箱重跑通过的样本才进入训练"
+    mixture:
+      - dataset: "kodcode_sft"
+        weight: 1.00
+    overrides:
+      max_seq_len: 8192
+      packing: false
+      assistant_only_loss: true
+
+  helpsteer2_dpo:
+    stage: "preference"
+    description: "同提示内按多维评分构造 chosen／rejected，先人工抽检偏好对"
+    mixture:
+      - dataset: "helpsteer2_preference"
+        weight: 1.00
+    overrides:
+      max_prompt_len: 4096
+      max_response_len: 4096
+
+  math_rlvr:
+    stage: "rlvr"
+    description: "DAPO 快速闭环，DeepMath 和 Big-Math 在许可、访问与去污完成后加入"
+    mixture:
+      - dataset: "dapo_math_17k"
+        weight: 0.50
+      - dataset: "deepmath_103k"
+        weight: 0.30
+      - dataset: "big_math_rl_verified"
+        weight: 0.20
+    overrides:
+      max_prompt_len: 4096
+      max_response_len: 8192
+      rollouts_per_prompt: 8
+      temperature: 0.7
+      curriculum: "base_model_pass_rate_buckets"
+
+  code_rlvr:
+    stage: "rlvr"
+    description: "沙箱单元测试奖励；正式训练前必须准备独立隐藏测试"
+    mixture:
+      - dataset: "kodcode_rlvr"
+        weight: 0.60
+      - dataset: "acecode_rlvr"
+        weight: 0.40
+    overrides:
+      max_prompt_len: 4096
+      max_response_len: 8192
+      rollouts_per_prompt: 8
+      temperature: 0.7
+      fail_closed_sandbox: true
+
+  tool_sft:
+    stage: "sft"
+    description: "精确调用＋多轮／并行＋不调用负例；三项缺一不可"
+    mixture:
+      - dataset: "xlam_function_calling"
+        weight: 0.55
+      - dataset: "toolace"
+        weight: 0.25
+      - dataset: "custom_no_call_negative"
+        weight: 0.20
+    overrides:
+      max_seq_len: 8192
+      mask_tool_outputs: true
+      assistant_only_loss: true
+      validate_tool_schema: true
+
+preflight:
+  require_immutable_revisions: true
+  require_data_quality_signoff: true
+  require_license_signoff: true
+  require_decontamination_signoff: true
+  require_verifier_signoff_for_rlvr: true
+  fail_on_disabled_dataset: true
+  fail_on_unaccepted_gated_dataset: true
+  require_no_call_negative_for_tool_profile: true
+
+# 只有实际完成审查后才改为 true；脚本默认会阻止未完成签署的配置。
+signoff:
+  data_quality: false
+  license: false
+  decontamination: false
+  verifier: false
+
+# 每次实际训练复制本段并填写，保证数据配比和评测能追溯。
+run_record:
+  run_id: "REPLACE_ME"
+  resolved_manifest_sha256: "REPLACE_ME"
+  benchmark_versions: "REPLACE_ME"
+  decontamination_report: "REPLACE_ME"
+  data_quality_report: "REPLACE_ME"
+  license_review_report: "REPLACE_ME"
+  verifier_test_report: "REPLACE_ME"
+  notes: "记录实际样本数、有效 token 数、长度分桶、删除原因和最终权重"

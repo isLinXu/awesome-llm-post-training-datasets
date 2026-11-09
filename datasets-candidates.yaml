@@ -1,0 +1,674 @@
+schema_version: '1.0'
+generated_at: '2026-11-09T06:01:42Z'
+policy:
+  default_status: pending_review
+  auto_training_allowed: false
+  promotion_requires:
+  - 人工确认文本模态与训练阶段
+  - 固定 revision 和 split
+  - 许可、上游与教师条款审查
+  - 去重去污和样本级抽检
+  - 加入 datasets-list.yaml 后通过完整性校验
+candidates:
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data:
+      language:
+      - ko
+      license: apache-2.0
+      pretty_name: Rosetta KO Instruction-Following Synthetic (SFT)
+      size_categories:
+      - 100K<n<1M
+      task_categories:
+      - text-generation
+      - question-answering
+    disabled: false
+    downloads: 33
+    gated: auto
+    last_modified: '2026-09-11T15:29:07.000Z'
+    license: apache-2.0
+    likes: 0
+    private: false
+    repo_id: PoSTMEDIA/rosetta-ko-instruction-following-synth-sft
+    sha: e015bf3f675ce33808970f3af6580a467629751f
+    siblings_count: 0
+    tags:
+    - format:json
+    - if
+    - instruction-following
+    - korean
+    - language:ko
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - license:apache-2.0
+    - modality:text
+    - region:us
+    - rosetta
+    - sft
+    - size_categories:100K<n<1M
+    - synthetic
+    - task_categories:question-answering
+    - task_categories:text-generation
+    url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft
+  queries:
+  - instruction sft
+  repo_id: PoSTMEDIA/rosetta-ko-instruction-following-synth-sft
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 9.5
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: general_sft
+    matched:
+    - keyword: instruction following
+      location: title
+      strength: strong
+    - keyword: instruction
+      location: title
+      strength: medium
+    - keyword: llm
+      location: body
+      strength: weak
+    score: 9.5
+  suggested_category: general_sft
+  url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data:
+      language:
+      - ko
+      license: apache-2.0
+      pretty_name: Rosetta KO Instruction-Following Synthetic (Reasoning SFT)
+      size_categories:
+      - 10K<n<100K
+      task_categories:
+      - text-generation
+    disabled: false
+    downloads: 20
+    gated: auto
+    last_modified: '2026-09-11T15:29:08.000Z'
+    license: apache-2.0
+    likes: 0
+    private: false
+    repo_id: PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think
+    sha: 0c1ecfebeeec051b0ba84b5b0dc1e92f8fa2cc20
+    siblings_count: 0
+    tags:
+    - format:json
+    - if
+    - instruction-following
+    - korean
+    - language:ko
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - license:apache-2.0
+    - modality:text
+    - region:us
+    - rosetta
+    - sft-think
+    - size_categories:10K<n<100K
+    - synthetic
+    - task_categories:text-generation
+    url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think
+  queries:
+  - instruction sft
+  repo_id: PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 9.5
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: general_sft
+    matched:
+    - keyword: instruction following
+      location: title
+      strength: strong
+    - keyword: instruction
+      location: title
+      strength: medium
+    - keyword: llm
+      location: body
+      strength: weak
+    score: 9.5
+  suggested_category: general_sft
+  url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data: {}
+    disabled: false
+    downloads: 13
+    gated: false
+    last_modified: '2026-07-01T11:51:32.000Z'
+    license: null
+    likes: 0
+    private: false
+    repo_id: bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits
+    sha: 93cb14e4ad410af5d76481d72d749f819bca320e
+    siblings_count: 0
+    tags:
+    - format:parquet
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - modality:text
+    - region:us
+    - size_categories:10K<n<100K
+    url: https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits
+  queries:
+  - multilingual instruction
+  repo_id: bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 10.5
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: multilingual
+    matched:
+    - keyword: multilingual instruction
+      location: title
+      strength: strong
+    - keyword: multilingual
+      location: title
+      strength: medium
+    - keyword: language
+      location: body
+      strength: weak
+    - keyword: instruction
+      location: title
+      strength: weak
+    score: 10.5
+  suggested_category: multilingual
+  url: https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data: {}
+    disabled: false
+    downloads: 284
+    gated: false
+    last_modified: '2026-07-01T11:52:54.000Z'
+    license: null
+    likes: 0
+    private: false
+    repo_id: bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits
+    sha: 46d129c8765bb612ba635c6b021ec6d75f83c600
+    siblings_count: 0
+    tags:
+    - format:parquet
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - modality:text
+    - region:us
+    - size_categories:10K<n<100K
+    url: https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits
+  queries:
+  - multilingual instruction
+  repo_id: bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 10.5
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: multilingual
+    matched:
+    - keyword: multilingual instruction
+      location: title
+      strength: strong
+    - keyword: multilingual
+      location: title
+      strength: medium
+    - keyword: language
+      location: body
+      strength: weak
+    - keyword: instruction
+      location: title
+      strength: weak
+    score: 10.5
+  suggested_category: multilingual
+  url: https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data: {}
+    disabled: false
+    downloads: 95
+    gated: false
+    last_modified: '2024-05-14T14:18:19.000Z'
+    license: null
+    likes: 2
+    private: false
+    repo_id: dlface/code_instructions_120k_alpaca_chinese
+    sha: 56e3369bc22b05bbb936768e50301aa61ff5e250
+    siblings_count: 0
+    tags:
+    - format:parquet
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - modality:text
+    - region:us
+    - size_categories:100K<n<1M
+    url: https://huggingface.co/datasets/dlface/code_instructions_120k_alpaca_chinese
+  queries:
+  - chinese instruction
+  repo_id: dlface/code_instructions_120k_alpaca_chinese
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 6.0
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: code
+    matched:
+    - keyword: code instruction
+      location: title
+      strength: strong
+    score: 6.0
+  suggested_category: code
+  url: https://huggingface.co/datasets/dlface/code_instructions_120k_alpaca_chinese
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data:
+      language:
+      - en
+      license:
+      - openmdw-1.1
+      task_categories:
+      - text-generation
+    disabled: false
+    downloads: 232
+    gated: false
+    last_modified: '2026-10-16T13:50:18.000Z'
+    license:
+    - openmdw-1.1
+    likes: 1
+    private: false
+    repo_id: ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4
+    sha: 5b38b2a92a3093cf025b14c43cdbf0e19b89315b
+    siblings_count: 0
+    tags:
+    - format:json
+    - language:en
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - license:openmdw-1.1
+    - modality:text
+    - region:us
+    - size_categories:1M<n<10M
+    - task_categories:text-generation
+    url: https://huggingface.co/datasets/ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4
+  queries:
+  - instruction sft
+  repo_id: ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 13.5
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: general_sft
+    matched:
+    - keyword: instruction following
+      location: title
+      strength: strong
+    - keyword: instruction
+      location: title
+      strength: medium
+    - keyword: chat
+      location: title
+      strength: medium
+    - keyword: conversation
+      location: body
+      strength: medium
+    score: 13.5
+  suggested_category: general_sft
+  url: https://huggingface.co/datasets/ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data: {}
+    disabled: false
+    downloads: 39
+    gated: false
+    last_modified: '2024-04-19T00:00:57.000Z'
+    license: null
+    likes: 6
+    private: false
+    repo_id: jean1/45k_python_code_chinese_instruction
+    sha: 39cfffc0023b2dc42e329bfb00a3fd5ac7e601ba
+    siblings_count: 0
+    tags:
+    - format:csv
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - modality:text
+    - region:us
+    - size_categories:10K<n<100K
+    url: https://huggingface.co/datasets/jean1/45k_python_code_chinese_instruction
+  queries:
+  - chinese instruction
+  repo_id: jean1/45k_python_code_chinese_instruction
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 11.5
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: chinese
+    matched:
+    - keyword: chinese instruction
+      location: title
+      strength: strong
+    - keyword: chinese
+      location: title
+      strength: medium
+    - keyword: 中文
+      location: body
+      strength: medium
+    - keyword: instruction
+      location: title
+      strength: weak
+    score: 11.5
+  suggested_category: chinese
+  url: https://huggingface.co/datasets/jean1/45k_python_code_chinese_instruction
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data:
+      license: apache-2.0
+      pretty_name: Multilingual Context-Aware Instruction Dataset for Indian Use Cases
+    disabled: false
+    downloads: 13
+    gated: false
+    last_modified: '2026-04-07T10:59:46.000Z'
+    license: apache-2.0
+    likes: 0
+    private: false
+    repo_id: karanverma19/multilingual-indian-instruction-dataset
+    sha: bdd55bae90fec08f07762c2247f8303310da09b6
+    siblings_count: 0
+    tags:
+    - format:csv
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - license:apache-2.0
+    - modality:text
+    - region:us
+    - size_categories:n<1K
+    url: https://huggingface.co/datasets/karanverma19/multilingual-indian-instruction-dataset
+  queries:
+  - multilingual instruction
+  repo_id: karanverma19/multilingual-indian-instruction-dataset
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 9.0
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: general_sft
+    matched:
+    - keyword: instruction dataset
+      location: title
+      strength: strong
+    - keyword: instruction
+      location: title
+      strength: medium
+    score: 9.0
+  - category: multilingual
+    matched:
+    - keyword: multilingual instruction
+      location: body
+      strength: strong
+    - keyword: multilingual
+      location: title
+      strength: medium
+    - keyword: language
+      location: body
+      strength: weak
+    - keyword: instruction
+      location: title
+      strength: weak
+    score: 7.5
+  suggested_category: general_sft
+  url: https://huggingface.co/datasets/karanverma19/multilingual-indian-instruction-dataset
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data:
+      language:
+      - kn
+      - en
+      license: cc-by-sa-4.0
+      pretty_name: Kannada SFT Instruction Pool
+      size_categories:
+      - 10K<n<100K
+      task_categories:
+      - text-generation
+    disabled: false
+    downloads: 112
+    gated: auto
+    last_modified: '2026-10-24T13:50:55.000Z'
+    license: cc-by-sa-4.0
+    likes: 1
+    private: false
+    repo_id: kumar2235/kannada-sft-instruction-pool
+    sha: 74cdf5ee5e8b8c9e3b992a5592e0c163efc8927c
+    siblings_count: 0
+    tags:
+    - chat
+    - format:json
+    - instruction-tuning
+    - kannada
+    - language:en
+    - language:kn
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - license:cc-by-sa-4.0
+    - modality:text
+    - region:us
+    - size_categories:10K<n<100K
+    - synthetic-data
+    - task_categories:text-generation
+    url: https://huggingface.co/datasets/kumar2235/kannada-sft-instruction-pool
+  queries:
+  - instruction sft
+  repo_id: kumar2235/kannada-sft-instruction-pool
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 9.5
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: general_sft
+    matched:
+    - keyword: supervised fine tuning
+      location: body
+      strength: strong
+    - keyword: instruction
+      location: title
+      strength: medium
+    - keyword: chat
+      location: body
+      strength: medium
+    - keyword: conversation
+      location: body
+      strength: medium
+    - keyword: language model
+      location: body
+      strength: weak
+    score: 9.5
+  suggested_category: general_sft
+  url: https://huggingface.co/datasets/kumar2235/kannada-sft-instruction-pool
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data: {}
+    disabled: false
+    downloads: 56
+    gated: false
+    last_modified: '2026-08-18T14:27:07.000Z'
+    license: null
+    likes: 0
+    private: false
+    repo_id: treasure4l/multilingual_instruction_tuning
+    sha: 4ab35fc0b52fb597c4ab80a9ea0924e8040ee410
+    siblings_count: 0
+    tags:
+    - format:parquet
+    - library:dask
+    - library:datasets
+    - library:mlcroissant
+    - library:polars
+    - modality:text
+    - region:us
+    - size_categories:100K<n<1M
+    url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning
+  queries:
+  - multilingual instruction
+  repo_id: treasure4l/multilingual_instruction_tuning
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 10.0
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: multilingual
+    matched:
+    - keyword: multilingual instruction
+      location: title
+      strength: strong
+    - keyword: multilingual
+      location: title
+      strength: medium
+    - keyword: instruction
+      location: title
+      strength: weak
+    score: 10.0
+  suggested_category: multilingual
+  url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning
+- first_seen_at: '2026-11-09T04:15:35Z'
+  last_counted_run: '2026-11-09T05:00:20Z'
+  last_seen_at: '2026-11-09T05:00:20Z'
+  metadata:
+    card_data: {}
+    disabled: false
+    downloads: 154
+    gated: false
+    last_modified: '2026-08-26T13:19:36.000Z'
+    license: null
+    likes: 0
+    private: false
+    repo_id: treasure4l/multilingual_instruction_tuning_plus
+    sha: 00d9a403e45c09a281bb940b7f0048abd17d4950
+    siblings_count: 0
+    tags:
+    - format:parquet
+    - library:dask
+    - library:datasets
+    - library:mlcroissant
+    - library:polars
+    - modality:text
+    - region:us
+    - size_categories:100K<n<1M
+    url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning_plus
+  queries:
+  - multilingual instruction
+  repo_id: treasure4l/multilingual_instruction_tuning_plus
+  review:
+    decontaminated: false
+    license_approved: false
+    revision_pinned: false
+    sample_inspected: false
+    text_modality_confirmed: false
+  score: 10.0
+  seen_count: 3
+  status: pending_review
+  suggested_categories:
+  - category: multilingual
+    matched:
+    - keyword: multilingual instruction
+      location: title
+      strength: strong
+    - keyword: multilingual
+      location: title
+      strength: medium
+    - keyword: instruction
+      location: title
+      strength: weak
+    score: 10.0
+  suggested_category: multilingual
+  url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning_plus
