@@ -180,7 +180,10 @@ def discovery_text(payload: dict[str, Any]) -> tuple[str, str]:
 def classify_hf(payload: dict[str, Any], config: dict[str, Any]) -> dict[str, Any] | None:
     title, body = discovery_text(payload)
     combined = title + " " + body
-    negatives = [word for word in config.get("negative", []) if word.lower() in combined]
+    def normalize_negative(value: str) -> str:
+        return " ".join(value.lower().replace("-", " ").replace("_", " ").split())
+
+    negatives = [word for word in config.get("negative", []) if normalize_negative(word) in combined]
     if negatives:
         return {"accepted": False, "reason": "negative_keywords", "matched": negatives}
     weights = config["automation"]["weights"]
@@ -241,21 +244,23 @@ def render_catalog(doc: dict[str, Any], state: dict[str, Any], config: dict[str,
     datasets = doc["datasets"]
     tiers = Counter(item["usage_tier"] for item in datasets)
     stages = Counter(stage for item in datasets for stage in item["stages"])
+    modalities = Counter(modality for item in datasets for modality in item["modalities"])
     repositories = state.get("repositories", {})
     candidates = state.get("candidates", {})
     pending = sum(item.get("status") == "pending_review" for item in candidates.values())
     lines = [
-        "# Base LLM 后训练数据自动目录",
+        "# Base 与多模态模型后训练数据自动目录",
         "",
         f"> 自动更新：{generated_at}；canonical 输入：`datasets-list.yaml`。本文件只生成视图，不改写人工许可和训练分层。",
         f"> 共 {len(datasets)} 项已收录资产；待审核候选 {pending} 项。候选数据不会自动进入训练配方。",
         "",
-        "## 分层与阶段索引",
+        "## 分层、模态与阶段索引",
         "",
         "| 维度 | 值 | 数量 |",
         "|---|---|---:|",
     ]
     lines += [f"| usage_tier | `{key}` | {value} |" for key, value in sorted(tiers.items())]
+    lines += [f"| modality | `{key}` | {value} |" for key, value in sorted(modalities.items())]
     lines += [f"| stage | `{key}` | {value} |" for key, value in sorted(stages.items())]
     lines += ["", "## 能力覆盖", "", "| 能力 | 训练候选 | 独立评测 |", "|---|---|---|"]
     for capability, rule in doc.get("coverage_requirements", {}).items():
@@ -271,8 +276,8 @@ def render_catalog(doc: dict[str, Any], state: dict[str, Any], config: dict[str,
         lines += [
             f"### {name}（`{category}`）",
             "",
-            "| ID | 阶段 | 层级 | 商用状态 | 外部元数据 | 最近修改 | 来源 |",
-            "|---|---|---|---|---|---|---|",
+            "| ID | 模态 | 阶段 | 层级 | 商用状态 | 外部元数据 | 最近修改 | 来源 |",
+            "|---|---|---|---|---|---|---|---|",
         ]
         for item in sorted(by_category[category], key=lambda row: row["id"]):
             source = item["source"]
@@ -280,7 +285,7 @@ def render_catalog(doc: dict[str, Any], state: dict[str, Any], config: dict[str,
             current = record.get("current") or {}
             status = record.get("status", "not_tracked")
             lines.append(
-                f"| `{item['id']}` | {', '.join(item['stages'])} | {item['usage_tier']} | "
+                f"| `{item['id']}` | {', '.join(item['modalities'])} | {', '.join(item['stages'])} | {item['usage_tier']} | "
                 f"{item['license']['commercial_status']} | {status} | {md(current.get('last_modified'))} | "
                 f"{citation(source['url']) if source['url'].startswith('https://') else '内部登记项'} |"
             )
@@ -288,10 +293,10 @@ def render_catalog(doc: dict[str, Any], state: dict[str, Any], config: dict[str,
     lines += [
         "## 自动化边界",
         "",
-        "- 分类、规模、许可和 `usage_tier` 以人工维护的 canonical 总表为准。",
+        "- 分类、模态、规模、许可和 `usage_tier` 以人工维护的 canonical 总表为准。",
         "- API 返回的许可仅用于变更提醒，不会自动把 `review_required` 改成可商用。",
         "- 新发现数据只进入 `datasets-candidates.yaml`，必须人工审核后才能加入 canonical 总表。",
-        "- `eval_only` 与私有／时间外评测始终禁止训练。",
+        "- 多模态资产不会自动进入现有 ERNIE 文本配方；`eval_only` 与私有／时间外评测始终禁止训练。",
         "",
     ]
     return "\n".join(lines)
@@ -309,7 +314,7 @@ def render_candidates(state: dict[str, Any], generated_at: str) -> str:
             "default_status": "pending_review",
             "auto_training_allowed": False,
             "promotion_requires": [
-                "人工确认文本模态与训练阶段", "固定 revision 和 split", "许可、上游与教师条款审查",
+                "人工确认 text/image/video/audio 模态与训练阶段", "固定 revision、config 和 split", "许可、上游媒体与教师条款审查",
                 "去重去污和样本级抽检", "加入 datasets-list.yaml 后通过完整性校验",
             ],
         },

@@ -12,6 +12,9 @@ TIERS = {"core", "optional", "research_only", "eval_only", "local_required"}
 COMMERCIAL = {"allowed_with_obligations", "noncommercial", "review_required", "internal_review_required", "eval_only"}
 VERIFICATION = {"official_checked", "official_checked_previous", "partial_official_reference", "local_definition_required"}
 RELATIONS = {"overlap", "derived_from", "contains", "decontaminated_from"}
+MODALITIES = {"text", "image", "video", "audio"}
+EXPECTED_SCOPE_MODALITIES = ["text", "image", "video", "audio"]
+SHA40 = __import__("re").compile(r"[0-9a-f]{40}")
 
 
 def validate(path: Path):
@@ -25,8 +28,10 @@ def validate(path: Path):
     if doc.get("schema_version") != "1.0":
         errors.append("schema_version 必须为 1.0")
     scope = doc.get("scope", {})
-    if scope.get("modality") != "text":
-        errors.append("scope.modality 必须为 text")
+    if scope.get("modalities") != EXPECTED_SCOPE_MODALITIES:
+        errors.append("scope.modalities 必须依次为 text/image/video/audio")
+    if not scope.get("recipe_boundary") or "文本专用" not in scope["recipe_boundary"]:
+        errors.append("缺少现有 ERNIE 文本配方与多模态资产的边界声明")
     if not scope.get("completeness_definition"):
         errors.append("缺少 completeness_definition")
     datasets = doc.get("datasets")
@@ -47,7 +52,7 @@ def validate(path: Path):
         if did in by_id:
             errors.append(f"重复 ID：{did}")
         by_id[did] = item
-        for field in ("name", "category", "stages", "usage_tier", "scale", "source", "data_format", "capabilities", "license", "access", "risks", "recommendation", "verification"):
+        for field in ("name", "category", "stages", "usage_tier", "modalities", "scale", "source", "data_format", "capabilities", "license", "access", "risks", "recommendation", "verification"):
             if field not in item:
                 errors.append(f"{loc} 缺少 {field}")
         stages = item.get("stages", [])
@@ -56,6 +61,9 @@ def validate(path: Path):
             errors.append(f"{loc}.stages 含非法值：{stages}")
         if tier not in TIERS:
             errors.append(f"{loc}.usage_tier 非法：{tier}")
+        modalities = item.get("modalities")
+        if not isinstance(modalities, list) or not modalities or len(modalities) != len(set(modalities)) or not set(modalities) <= MODALITIES:
+            errors.append(f"{loc}.modalities 必须是非空、无重复的 text/image/video/audio 子集")
         if not isinstance(item.get("capabilities"), list) or not item.get("capabilities"):
             errors.append(f"{loc}.capabilities 必须非空")
         scale = item.get("scale", {})
@@ -70,6 +78,9 @@ def validate(path: Path):
             errors.append(f"{loc}.source 必须含 provider、url、revision_policy")
         elif tier != "local_required" and not str(source["url"]).startswith("https://"):
             errors.append(f"{loc}.source.url 必须是 HTTPS 官方来源")
+        observed_revision = source.get("observed_revision") if isinstance(source, dict) else None
+        if observed_revision is not None and not SHA40.fullmatch(str(observed_revision)):
+            errors.append(f"{loc}.source.observed_revision 必须是 40 位 SHA")
         license_info = item.get("license", {})
         commercial = license_info.get("commercial_status") if isinstance(license_info, dict) else None
         if not license_info.get("id") or commercial not in COMMERCIAL:
@@ -101,9 +112,12 @@ def validate(path: Path):
             if target not in by_id:
                 errors.append(f"{did} relation 指向不存在的数据：{target}")
 
-    previous = doc.get("provenance", {}).get("previous_asset_ids", [])
+    provenance = doc.get("provenance", {})
+    previous = provenance.get("previous_asset_ids", [])
     if len(previous) != 42 or len(set(previous)) != 42:
         errors.append("previous_asset_ids 必须精确保留原有 42 个唯一 ID")
+    if provenance.get("text_assets_retained") != 114 or provenance.get("multimodal_assets_added") != 61:
+        errors.append("provenance 必须保留 114 项文本资产并登记 61 项多模态扩展")
     missing_previous = sorted(set(previous) - set(by_id))
     if missing_previous:
         errors.append(f"原有资产丢失：{missing_previous}")
@@ -147,6 +161,11 @@ def validate(path: Path):
     summary = {
         "total_assets": len(by_id), "usage_tier": dict(sorted(tier_counts.items())),
         "previous_assets_retained": len(set(previous) & set(by_id)),
+        "text_assets_retained": provenance.get("text_assets_retained"),
+        "text_only_assets": sum(item.get("modalities") == ["text"] for item in by_id.values()),
+        "multimodal_assets_added": provenance.get("multimodal_assets_added"),
+        "non_text_only_assets": sum(item.get("modalities") != ["text"] for item in by_id.values()),
+        "modality_membership": dict(sorted(Counter(modality for item in by_id.values() for modality in item.get("modalities", [])).items())),
         "required_capabilities": len(coverage),
         "commercial_status": dict(sorted(Counter(x["license"]["commercial_status"] for x in by_id.values()).items())),
     }

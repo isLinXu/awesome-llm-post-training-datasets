@@ -1,12 +1,12 @@
 schema_version: '1.0'
-generated_at: '2026-11-09T06:01:42Z'
+generated_at: '2026-11-09T09:09:52Z'
 policy:
   default_status: pending_review
   auto_training_allowed: false
   promotion_requires:
-  - 人工确认文本模态与训练阶段
-  - 固定 revision 和 split
-  - 许可、上游与教师条款审查
+  - 人工确认 text/image/video/audio 模态与训练阶段
+  - 固定 revision、config 和 split
+  - 许可、上游媒体与教师条款审查
   - 去重去污和样本级抽检
   - 加入 datasets-list.yaml 后通过完整性校验
 candidates:

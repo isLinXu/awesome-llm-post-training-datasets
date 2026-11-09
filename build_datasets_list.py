@@ -21,7 +21,7 @@ def a(id, name, category, stages, tier, value, unit, note, url, repo, lic, comm,
     assert set(caps) <= CAPS, (id, set(caps) - CAPS)
     D.append({
         "id": id, "name": name, "category": category, "stages": stages,
-        "usage_tier": tier,
+        "usage_tier": tier, "modalities": ["text"],
         "scale": {"value": value, "unit": unit, "note": note},
         "source": {"provider": "huggingface" if repo and "/" in repo else ("local" if access == "local" else "official_project"),
                    "repo_id": repo, "url": url, "split": split, "revision_policy": "pin_immutable_revision_before_use"},
@@ -203,13 +203,21 @@ COVERAGE = {
 "agent_safety": (["local_domain_safety"], ["agentharm", "agentdojo", "local_private_time_eval"]),
 }
 
+from build_multimodal_datasets import ASSETS as MM_ASSETS, DEFERRED as MM_DEFERRED, extend as extend_multimodal
+
+TEXT_ASSET_COUNT = len(D)
+extend_multimodal(D, COVERAGE, CAPS)
+assert TEXT_ASSET_COUNT == 114 and len(MM_ASSETS) == 61
+
 DOC = {
 "schema_version": "1.0",
-"metadata": {"name": "base-llm-post-training-datasets-list", "created_at": TODAY,
+"metadata": {"name": "base-and-multimodal-post-training-datasets-list", "created_at": TODAY,
              "canonical": True, "supersedes": "不覆盖训练 manifest；本文件是资产总表"},
-"scope": {"modality": "text", "base_model_target": "text-only Base LLM",
-          "completeness_definition": "核心能力、SFT/偏好/RLVR/PRM/Agent 阶段、许可治理、独立评测和本地必需物料覆盖完整；不是穷尽所有公开数据集",
-          "excluded": ["图像、音频、视频和多模态样本", "未形成可固定版本或无法确认用途的候选"]},
+"scope": {"modalities": ["text", "image", "video", "audio"],
+          "base_model_target": "text-only Base LLM and multimodal Base models with compatible processors",
+          "recipe_boundary": "commercial-default 与 research-isolated 仍为 ERNIE 文本专用；多模态资产不得自动进入这两套配方",
+          "completeness_definition": "文本、图像、视频、音频的核心能力，SFT/偏好/RLVR/PRM/Agent 阶段、许可治理、独立评测和本地必需物料覆盖完整；不是穷尽所有公开数据集",
+          "excluded": ["媒体生成、raw caption、特征对齐预训练和 mid-training", "未形成可固定版本或无法确认用途的候选", "医学影像和遥感等需专门审查的领域"]},
 "usage_tier_definitions": {
     "core": "首轮配方候选；仍需完成版本、质量、去污和许可签署，不等于已批准商用",
     "optional": "按目标和消融结果加入的补集",
@@ -217,7 +225,8 @@ DOC = {
     "eval_only": "独立评测；train_prohibited=true，严禁训练",
     "local_required": "必须由业务方建设，公共数据不能替代"},
 "provenance": {"previous_report": "llm-post-training-datasets-zh.md", "previous_asset_ids": PREVIOUS,
-               "previous_assets_retained": 42},
+               "previous_assets_retained": 42, "text_assets_retained": TEXT_ASSET_COUNT,
+               "multimodal_extension": "datasets-multimodal.yaml", "multimodal_assets_added": len(MM_ASSETS)},
 "datasets": D,
 "coverage_requirements": {k: {"required": True, "training_candidates": v[0], "eval_ids": v[1]} for k, v in COVERAGE.items()},
 "excluded_or_deferred_candidates": [
@@ -228,11 +237,12 @@ DOC = {
     {"name": "Mind2Web train", "status": "deferred", "reason": "官方声明研究用途且测试包单独分发；本版只将 1,341 测试任务列 eval_only，训练侧先用 WebLINX 研究轨迹"},
     {"name": "SWE-bench-extra", "status": "deferred", "reason": "本次原始数据卡访问返回 401；已有 SWE-Gym/SWE-smith/R2E-Gym，不为凑数纳入未核验项"},
     {"name": "LongAttn / LongABC", "status": "out_of_scope", "reason": "官方项目为长上下文继续预训练数据，不属于本 post-training 清单；不得当作长输出 SFT"},
-    {"name": "多模态数据集", "status": "out_of_scope", "reason": "本清单范围限定文本 Base LLM；WebLINX 仅保留文本化聊天轨迹，图像和语音分支不纳入"},
-    {"name": "τ-bench legacy", "status": "superseded", "reason": "旧任务已过时；本版使用 sierra-research/tau2-bench 的 τ-bench 2.0.0 text-v1，且不与 1.x 分数直接比较"}],
-"global_preflight": ["固定 repo revision、文件哈希和实际 split", "按精确/近重复/语义/母题/仓库/网站谱系去重去污",
-                    "许可、上游内容、教师服务条款和访问条件分别签署", "按有效 token、独立提示、任务和轨迹分别配比",
-                    "数学/代码/工具验证器实际重跑", "eval_only 和私有时间外评测绝不进入训练"],
+    {"name": "τ-bench legacy", "status": "superseded", "reason": "旧任务已过时；本版使用 sierra-research/tau2-bench 的 τ-bench 2.0.0 text-v1，且不与 1.x 分数直接比较"}
+] + MM_DEFERRED,
+"global_preflight": ["固定 repo revision、文件哈希和实际 split", "按精确/近重复/语义/母题/仓库/网站/媒体内容谱系去重去污",
+                    "许可、上游媒体、肖像／声音同意、教师服务条款和访问条件分别签署", "按有效 token、独立提示、媒体时长、任务和轨迹分别配比",
+                    "数学/代码/工具/坐标/时空/音频验证器实际重跑", "固定图像尺寸、视频抽帧、音频采样率、codec 和 processor",
+                    "eval_only 和私有时间外评测绝不进入训练"],
 }
 
 with (ROOT / "datasets-list.yaml").open("w", encoding="utf-8") as f:
@@ -255,18 +265,18 @@ def scale(x):
     return f'{s["value"]:,} {s["unit"]}；{s["note"]}' if s["value"] is not None else f'{s["unit"]}；{s["note"]}'
 
 lines = [
-"# Base LLM 后训练 datasets-list",
+"# Base 与多模态模型后训练 datasets-list",
 "",
-"> 范围：文本 Base LLM 的 instruction/SFT、偏好、RLVR、PRM、Agent 与独立评测数据物料。这里的“完整”是能力与治理覆盖完整，不是穷尽公开数据集，也不代表所有条目已获商用批准。",
+"> 范围：文本、图像、视频、音频 Base 模型的 instruction/SFT、偏好、RLVR、PRM、Agent 与独立评测数据物料。这里的“完整”是能力与治理覆盖完整，不是穷尽公开数据集，也不代表所有条目已获商用批准。",
 "",
 "## 1. 验收结论",
 "",
-f"- 共 **{len(D)} 项资产**：最初 **42/42 保留**；较最初新增 **{len(D)-42} 项**，其中本轮 awesome 差分新增 **36 项**（含训练补集、仅评测和本地必需）。",
+f"- 共 **{len(D)} 项资产**：文本 **{TEXT_ASSET_COUNT}/114 全部保留**，多模态扩展 **{len(MM_ASSETS)} 项**；最初 **42/42 保留**。",
 "- " + "；".join(f"**{k} {v}**" for k, v in sorted(counts.items())) + "。",
 f"- **{len(COVERAGE)} 项必需能力均有训练候选和独立评测引用**，结构覆盖已闭合；实际训练仍受版本、许可、质量、去污和验证器签署约束。",
-"- **商用默认配方尚未完全解锁**：core 只表示首轮候选，review_required、访问条件和教师条款必须继续审查；NC 数据已隔离为 research_only。",
-"- 公开数据无法替代五类本地物料：真实业务中文、无需工具负例、正常请求防过拒、领域安全、私有／时间外评测。",
-"- **eval_only 资产严禁训练**；API-Bank 的评测部分也必须与训练对话隔离。",
+"- **现有商用默认／研究隔离配方仍是 ERNIE 文本专用**：多模态资产不会自动进入；多模态 Base、processor 与硬件未指定前不伪造启动配方。",
+"- 公开数据无法替代八类本地物料：真实业务中文、无需工具负例、正常请求防过拒、领域安全、私有／时间外评测、真实业务多模态、多模态偏好／音频 RL、本地 GUI 动作安全。",
+"- **eval_only 资产严禁训练**；同 repo 的训练与测试切分、静态 GUI 轨迹与在线环境均分开管理。",
 "",
 "## 2. 推荐配方骨架（不是全量混用清单）",
 "",
@@ -282,6 +292,11 @@ f"- **{len(COVERAGE)} 项必需能力均有训练候选和独立评测引用**�
 "| 偏好/奖励模型 | HelpSteer3 或 HelpSteer2；按许可补 Arena/Skywork v0.2 | 保留同提示切分；RewardBench/RewardBench 2 仅评测 |",
 "| 安全与 Agent 安全 | Aegis 2.0 分类 + 本地政策/防过拒/工具注入数据；研究侧补 FalseReject | 危险原文不直接当普通聊天 SFT；同时测拒答、过拒、攻击成功率与任务效用 |",
 "| PRM/Agent | PRM800K；Search-R1/SWE-Gym/Nemotron RL 等按环境能力选择 | 严格切分；环境、任务、轨迹、训练子集和 RL／蒸馏配置分别计数 |",
+"| 视觉指令与文档 | PixMo Ask／Docs＋本地中文多模态；大合集按 config 消融 | 图像 SHA、隐私、上游权利和 OCR／定位格式分别验收；558K 对齐预训练不纳入 |",
+"| 多图与视频 | Mantis＋LLaVA-Video／VideoChat-Flash；Molmo2 补时空指向 | 视频数、问答数、帧数、时长和媒体 token 分开配比；固定字幕与抽帧协议 |",
+"| 多模态偏好／RLVR | 人类偏好、AI 反馈、构造负例分 profile；R1-Onevision／Visual-RFT 按任务选 | 不混标偏好来源；数学、坐标、检测和格式奖励分别重跑 |",
+"| 音频与 GUI | VoiceAssistant＋本地音频偏好；OS-Atlas action＋GUIOdyssey＋本地动作安全 | 固定 SNAC／采样率；GUI 区分 episode、action step、grounding 和在线任务成功率 |",
+"| 多模态安全 | VLGuard＋本地政策；SPA-VL／SafeVid 研究隔离 | chosen 也需安全审核；同时测 ASR、正常请求效用、幻觉和过拒 |",
 "",
 "## 3. 能力覆盖矩阵",
 "",
@@ -299,9 +314,9 @@ for k, v in sorted(commercial.items()):
     lines.append(f"| {k} | {v} | {meanings.get(k, '')} |")
 lines += ["", "## 5. 全量资产目录", ""]
 for cat in sorted(bycat):
-    lines += [f"### {cat}", "", "| ID | 阶段／层级 | 规模与版本口径 | 许可／商用状态 | 建议与主要风险 | 来源 |", "|---|---|---|---|---|---|"]
+    lines += [f"### {cat}", "", "| ID | 模态 | 阶段／层级 | 规模与版本口径 | 许可／商用状态 | 建议与主要风险 | 来源 |", "|---|---|---|---|---|---|---|"]
     for x in bycat[cat]:
-        lines.append(f'| `{x["id"]}` | {", ".join(x["stages"])}／{x["usage_tier"]} | {scale(x)} | {x["license"]["id"]}／{x["license"]["commercial_status"]} | {x["recommendation"][0]}；风险：{"；".join(x["risks"])} | {cite(x["source"]["url"])} |')
+        lines.append(f'| `{x["id"]}` | {", ".join(x["modalities"])} | {", ".join(x["stages"])}／{x["usage_tier"]} | {scale(x)} | {x["license"]["id"]}／{x["license"]["commercial_status"]} | {x["recommendation"][0]}；风险：{"；".join(x["risks"])} | {cite(x["source"]["url"])} |')
     lines.append("")
 lines += [
 "## 6. 关键去重与隔离关系", "",

@@ -1,6 +1,6 @@
 # 商用默认／研究隔离训练配方
 
-> 数据源刷新时间：`2026-11-09T06:01:42Z`。两套 Manifest 已固定 ERNIE BF16、数据 revision、config、split 和采样权重；`signoff=false` 是有意保留的开训门禁。
+> 数据源刷新时间：`2026-11-09T09:09:52Z`。两套 Manifest 已固定 ERNIE BF16、数据 revision、config、split 和采样权重；`signoff=false` 是有意保留的开训门禁。
 
 ## 1. 使用边界
 

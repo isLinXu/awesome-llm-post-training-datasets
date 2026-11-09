@@ -1,0 +1,2683 @@
+schema_version: '1.0'
+metadata:
+  name: multimodal-post-training-datasets-extension
+  created_at: '2026-11-09'
+  canonical_subset: true
+scope:
+  modalities:
+  - text
+  - image
+  - video
+  - audio
+  included:
+  - multimodal instruction/SFT
+  - preference/reward model
+  - RLVR
+  - GUI Agent
+  - independent evaluation
+  excluded:
+  - media generation
+  - raw caption pretraining
+  - feature-alignment pretraining
+  - mid-training
+datasets:
+- id: llava_instruct_150k
+  name: LLaVA-Instruct-150K
+  category: vision_sft
+  stages:
+  - sft
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 157710
+    unit: instruction_samples
+    note: 当前 FineVision 同名子集也为 157,710；不得与 558K 特征对齐集混写
+  source:
+    provider: huggingface
+    repo_id: liuhaotian/LLaVA-Instruct-150K
+    url: https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 9d451dc7629cfe0469f6ae4432b765cd603d5fcb
+  data_format: image_conversations
+  capabilities:
+  - visual_instruction
+  - multilingual_multimodal
+  license:
+    id: CC-BY-4.0 + GPT-4/upstream-terms
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - GPT-4 输出与原始图像上游条款
+  - LLaVA 项目研究／非商用约束
+  recommendation:
+  - 仅作研究视觉指令基线；与 FineVision、LLaVA-1.5、Mantis 按来源去重
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: llava15_mix665k
+  name: LLaVA-1.5 Mix665K
+  category: vision_sft
+  stages:
+  - sft
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 665000
+    unit: samples_approx
+    note: 学术任务与 GPT 生成指令混合；558K 是特征对齐预训练，不属于本资产
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/haotian-liu/LLaVA
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multi_source_image_conversations
+  capabilities:
+  - visual_instruction
+  - document_chart_ocr
+  license:
+    id: research/noncommercial + mixed-upstream
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - 多上游图像和教师条款
+  - 与 Mantis、FineVision、OneVision 大量重叠
+  recommendation:
+  - 研究隔离的经典视觉 SFT 配方基线，不进入商用默认
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: llava_instruct_150k
+    action: source_and_content_deduplicate
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: llava_onevision15_instruct_22m
+  name: LLaVA-OneVision-1.5-Instruct-Data
+  category: vision_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: 22000000
+    unit: samples_approx
+    note: 22M 官方口径、124 类；part-* 与完整 config 可能重复，不能对全部 config 行数求和
+  source:
+    provider: huggingface
+    repo_id: mvp-lab/LLaVA-OneVision-1.5-Instruct-Data
+    url: https://huggingface.co/datasets/mvp-lab/LLaVA-OneVision-1.5-Instruct-Data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 0efb7ad47f8ba36e1d262545cadec4cd8960dc5f
+  data_format: image_conversations_by_source
+  capabilities:
+  - visual_instruction
+  - visual_grounding
+  - visual_counting
+  - document_chart_ocr
+  - visual_reasoning_rlvr
+  - multilingual_multimodal
+  license:
+    id: Apache-2.0 + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 多上游许可和 GPT 教师输出
+  - 含医学等范围外 config，必须逐 config 选择
+  - 与 PixMo、FineVision、文本数学／代码数据重叠
+  recommendation:
+  - 按 config 建立配方，不做全包无差别训练；固定 22M 版本并逐来源签署
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: pixmo_docs
+    action: source_level_deduplicate
+  - type: overlap
+    target: llava_instruct_150k
+    action: source_level_deduplicate
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: finevision
+  name: FineVision
+  category: vision_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: 24000000
+    unit: samples_approx
+    note: 约 24M；200+ config 含完整集与分片，禁止直接汇总所有 config
+  source:
+    provider: huggingface
+    repo_id: HuggingFaceM4/FineVision
+    url: https://huggingface.co/datasets/HuggingFaceM4/FineVision
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 3c380a731a3429c1d04693d6ec16d7e683def84c
+  data_format: multiimage_messages_quality_ratings
+  capabilities:
+  - visual_instruction
+  - visual_grounding
+  - document_chart_ocr
+  - multiimage_video
+  - gui_agent
+  - multilingual_multimodal
+  license:
+    id: no-unified-license-in-card + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 当前卡片无统一许可字段
+  - 含 LLaVA、GUI、医学等异质来源
+  - 与 OneVision 合并必须去重
+  recommendation:
+  - 作为大规模待审混合池；逐 config 审许可、媒体权利和评测污染
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: llava_instruct_150k
+    action: source_level_deduplicate
+  - type: overlap
+    target: llava_onevision15_instruct_22m
+    action: deduplicate_before_merged46m
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: pixmo_ask_model_anything
+  name: PixMo-Ask-Model-Anything
+  category: vision_sft
+  stages:
+  - sft
+  usage_tier: core
+  modalities:
+  - text
+  - image
+  scale:
+    value: 161737
+    unit: samples
+    note: default/train 精确行数；图像通过 URL＋SHA 引用
+  source:
+    provider: huggingface
+    repo_id: allenai/pixmo-ask-model-anything
+    url: https://huggingface.co/datasets/allenai/pixmo-ask-model-anything
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 739ffd8b417737da31e5069b9c8ff6a72a7d58b6
+  data_format: image_url_question_answer
+  capabilities:
+  - visual_instruction
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 图像 URL 失效、隐私与上游图像权利
+  - 答案开放域质量需抽检
+  recommendation:
+  - 开放视觉指令主候选；下载时核对 image_sha256、可用率和隐私
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: pixmo_points
+  name: PixMo-Points
+  category: vision_grounding
+  stages:
+  - sft
+  usage_tier: core
+  modalities:
+  - text
+  - image
+  scale:
+    value: 2376222
+    unit: samples
+    note: default/train 精确行数；每行可含多个点，行数不等于点数
+  source:
+    provider: huggingface
+    repo_id: allenai/pixmo-points
+    url: https://huggingface.co/datasets/allenai/pixmo-points
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 2b5c6931e790e00ae00d4a2857e5f95d88f09a66
+  data_format: image_points_count_label
+  capabilities:
+  - visual_grounding
+  - visual_counting
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 坐标系、图像缩放和无效 URL
+  - 集合标签许可不替代图像权利审查
+  recommendation:
+  - 定位与计数主候选；固定坐标归一化和点／样本两种配比
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: pixmo_point_explanations
+  name: PixMo-Point-Explanations
+  category: vision_grounding
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: 79551
+    unit: samples
+    note: default/train 精确行数；含解析点与文本解释
+  source:
+    provider: huggingface
+    repo_id: allenai/pixmo-point-explanations
+    url: https://huggingface.co/datasets/allenai/pixmo-point-explanations
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 08a566fa00747e4c1c7e8481c350763b469c209c
+  data_format: image_question_response_points
+  capabilities:
+  - visual_grounding
+  - visual_instruction
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 文本中的点需与 parsed_response 一致
+  - 图像 URL 和隐私审查
+  recommendation:
+  - 可解释指向补集；分别监督文本和点坐标并做解析校验
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: pixmo_docs
+  name: PixMo-Docs
+  category: document_sft
+  stages:
+  - sft
+  usage_tier: core
+  modalities:
+  - text
+  - image
+  scale:
+    value: 251165
+    unit: train_samples_total
+    note: charts 116,814＋diagrams 16,551＋other 71,282＋tables 46,518；各 config 另有 1,024 validation
+  source:
+    provider: huggingface
+    repo_id: allenai/pixmo-docs
+    url: https://huggingface.co/datasets/allenai/pixmo-docs
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    config: charts,diagrams,other,tables
+    observed_revision: d887597bf4af2bc61a4210071a8cef898287e6fb
+  data_format: document_images_questions
+  capabilities:
+  - document_chart_ocr
+  - visual_instruction
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 四 config 分布不同
+  - 文档隐私、图像权利和 validation 隔离
+  recommendation:
+  - 文档／图表主候选；固定四 config train，validation 不进训练
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: pixmo_count_train
+  name: PixMo-Count train
+  category: vision_grounding
+  stages:
+  - sft
+  usage_tier: core
+  modalities:
+  - text
+  - image
+  scale:
+    value: 36916
+    unit: train_samples
+    note: train 36,916；validation/test 各 540，独立资产隔离
+  source:
+    provider: huggingface
+    repo_id: allenai/pixmo-count
+    url: https://huggingface.co/datasets/allenai/pixmo-count
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: ebf51cf70e45d12374e64d475862e4f8d21d31d0
+  data_format: image_count_points_label
+  capabilities:
+  - visual_counting
+  - visual_grounding
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 点与计数必须一致
+  - 同图跨 split 泄漏检查
+  recommendation:
+  - 计数训练主候选；只用 train，并按图像 SHA 对测试集去污
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: pixmo_cap_qa
+  name: PixMo-Cap-QA
+  category: vision_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: 271714
+    unit: samples
+    note: default/train 精确行数；caption-conditioned QA
+  source:
+    provider: huggingface
+    repo_id: allenai/pixmo-cap-qa
+    url: https://huggingface.co/datasets/allenai/pixmo-cap-qa
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: fd3ff4b2905455ab5edfd6d06039ea6027948521
+  data_format: image_caption_question_answer
+  capabilities:
+  - visual_instruction
+  - document_chart_ocr
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 依赖图像描述可能引入二阶错误
+  - 图像 URL 与文本质量
+  recommendation:
+  - 细粒度视觉问答补集；抽检问题是否真正需要图像
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mantis_instruct
+  name: Mantis-Instruct
+  category: multiimage_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: 721000
+    unit: samples_approx
+    note: 官方论文约 721K、14 个多图核心子集；当前 HF 还含单图补集，分别按 config 计数
+  source:
+    provider: huggingface
+    repo_id: TIGER-Lab/Mantis-Instruct
+    url: https://huggingface.co/datasets/TIGER-Lab/Mantis-Instruct
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    config: 14_core_configs
+    observed_revision: 01a9edfe0bb8c2582431308c5b2645a9f4796939
+  data_format: multiimage_conversations
+  capabilities:
+  - multiimage_video
+  - visual_instruction
+  - document_chart_ocr
+  license:
+    id: Apache-2.0 + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 多上游许可、视频来源和 GPT-4 输出
+  - 部分多图样本由单图拼接
+  - 与 LLaVA／DocVQA／ChartQA 重叠
+  recommendation:
+  - 按 14 个核心 config 做跨图指代、比较、推理和时序消融
+  train_prohibited: false
+  eval_isolation_required: false
+  relations:
+  - type: overlap
+    target: llava15_mix665k
+    action: source_level_deduplicate
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: llava_video_178k
+  name: LLaVA-Video-178K
+  category: video_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: 178000
+    unit: source_videos
+    note: 178K 是视频数；论文约 1.6M 指令，caption/open_ended/multi_choice 分开，不写成 178K QA
+  source:
+    provider: huggingface
+    repo_id: lmms-lab/LLaVA-Video-178K
+    url: https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    config: by_duration_and_source
+    observed_revision: 6d8c562dc26d70042a0d9704d1cae58c94b89098
+  data_format: video_instruction_by_duration_and_type
+  capabilities:
+  - multiimage_video
+  license:
+    id: no-explicit-license-in-card + mixed-video-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 当前卡片无统一许可
+  - YouTube／学术视频与 GPT-4o 条款
+  - 媒体下载漂移
+  recommendation:
+  - 按视频时长、来源和问答类型建 profile；固定媒体哈希和字幕协议
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: videochat_flash_training
+  name: VideoChat-Flash-Training-Data
+  category: video_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: video_instruction_samples
+    note: 长上下文视频指令混合包；当前 API 未提供统一切分行数
+  source:
+    provider: huggingface
+    repo_id: OpenGVLab/VideoChat-Flash-Training-Data
+    url: https://huggingface.co/datasets/OpenGVLab/VideoChat-Flash-Training-Data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: be87f5516a709be079cec8b727dd2287bf2dd70f
+  data_format: long_video_instructions
+  capabilities:
+  - multiimage_video
+  license:
+    id: Apache-2.0 + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 上游视频与教师条款
+  - 长视频存储、抽帧和时间标注成本
+  recommendation:
+  - 长视频指令补集；固定子目录、媒体清单和帧预算
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: molmo2_videotrack
+  name: Molmo2-VideoTrack
+  category: video_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: video_track_samples
+    note: default/train；当前 API 未提供固定行数
+  source:
+    provider: huggingface
+    repo_id: allenai/Molmo2-VideoTrack
+    url: https://huggingface.co/datasets/allenai/Molmo2-VideoTrack
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 5940b8225a8565f7793f7090f6bf69909237434d
+  data_format: video_temporal_tracks
+  capabilities:
+  - multiimage_video
+  - visual_grounding
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 视频上游权利和轨迹标注噪声
+  - 时间戳与帧率绑定
+  recommendation:
+  - 视频跟踪补集；固定 2fps／原始时间戳协议并验证轨迹
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: molmo2_videopoint
+  name: Molmo2-VideoPoint default
+  category: video_sft
+  stages:
+  - sft
+  usage_tier: core
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: 658340
+    unit: train_samples
+    note: default/train 精确行数；其他类别 config 不与其直接相加
+  source:
+    provider: huggingface
+    repo_id: allenai/Molmo2-VideoPoint
+    url: https://huggingface.co/datasets/allenai/Molmo2-VideoPoint
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    config: default
+    observed_revision: 65a7347ebbb501a14002418877e9a7de43510047
+  data_format: video_question_timestamped_points
+  capabilities:
+  - multiimage_video
+  - visual_grounding
+  - visual_counting
+  license:
+    id: ODC-By
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - default 与类别 config 可能重复
+  - 标注 unsure、时间戳和坐标验证
+  - 视频上游权利
+  recommendation:
+  - 时空指向主候选；固定 default/train，过滤 unsure 并验证点／时间戳
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: llava_human_preference_10k
+  name: LLaVA-Human-Preference-10K
+  category: multimodal_preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: human_preference_pairs
+    note: 名称 10K，公开项目约 9.42K；当前 API 无切分行数
+  source:
+    provider: huggingface
+    repo_id: zhiqings/LLaVA-Human-Preference-10K
+    url: https://huggingface.co/datasets/zhiqings/LLaVA-Human-Preference-10K
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: e60c9e520dde0c331f1b833ec991789ed238554c
+  data_format: image_prompt_chosen_rejected_human
+  capabilities:
+  - visual_preference_rm
+  license:
+    id: Apache-2.0 + upstream-terms
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 图像与原始响应上游条款
+  - 名称不等于精确行数
+  recommendation:
+  - 人类视觉偏好基线；固定文件后按独立提示计数
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: rlhf_v
+  name: RLHF-V
+  category: multimodal_preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 1400
+    unit: segment_level_human_corrections_approx
+    note: 约 1.4K 段级人类修正，不与整句偏好对直接等量混合
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/rlhf-v/rlhf-v
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: segment_level_human_correction
+  capabilities:
+  - visual_preference_rm
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - 细粒度修正与整句 pair 标注单位不同
+  recommendation:
+  - 非商用人类细粒度幻觉修正研究；单独建 profile
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: rlaif_v
+  name: RLAIF-V-Dataset
+  category: multimodal_preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: ai_feedback_pairs
+    note: 开源模型反馈；当前卡片未给切分行数
+  source:
+    provider: huggingface
+    repo_id: openbmb/RLAIF-V-Dataset
+    url: https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: cdfc8c13778434e38afd538b0641ea942df4af78
+  data_format: image_question_chosen_rejected_ai
+  capabilities:
+  - visual_preference_rm
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用
+  - AI 反馈偏差和上游图像权利
+  recommendation:
+  - 非商用 AI 反馈对照组；不得与人类偏好混称人工标注
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: vlfeedback
+  name: VLFeedback
+  category: multimodal_preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: 80258
+    unit: prompts
+    note: default/train 80,258 提示；多模型回答可展开 pair，但 pair 数不等于独立提示数
+  source:
+    provider: huggingface
+    repo_id: MMInstruction/VLFeedback
+    url: https://huggingface.co/datasets/MMInstruction/VLFeedback
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 137dcea93e7667decc117c54b60f7401c6903310
+  data_format: image_prompt_multi_model_ai_feedback
+  capabilities:
+  - visual_preference_rm
+  license:
+    id: no-explicit-license-in-card + GPT-4V/upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 当前无统一许可
+  - GPT-4V 反馈与多供应商输出条款
+  - 偏好对膨胀
+  recommendation:
+  - 大规模 AI 反馈补集；按独立提示切分并保留模型来源
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: povid
+  name: POVID preference data
+  category: multimodal_preference
+  stages:
+  - preference
+  - reward_model
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: constructed_preference_pairs
+    note: 构造负例偏好数据；当前 API 未给切分行数
+  source:
+    provider: huggingface
+    repo_id: YiyangAiLab/POVID_preference_data_for_VLLMs
+    url: https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 177dd9493f865950a3bec48ef6b9ffd7b50e3f73
+  data_format: image_prompt_constructed_negative
+  capabilities:
+  - visual_preference_rm
+  license:
+    id: CC-BY-4.0 + upstream-terms
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 构造负例不等于人类偏好
+  - 负例类型单一可能造成风格捷径
+  recommendation:
+  - 构造幻觉负例补集；与人工和 AI 反馈分组消融
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: r1_onevision
+  name: R1-Onevision
+  category: multimodal_reasoning
+  stages:
+  - sft
+  - rlvr
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: reasoning_samples_and_rl_tasks
+    note: 自然场景、科学、数学、OCR 和图表；SFT 与 RL 文件／配置必须分别固定
+  source:
+    provider: huggingface
+    repo_id: Fancy-MLLM/R1-Onevision
+    url: https://huggingface.co/datasets/Fancy-MLLM/R1-Onevision
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 904e96cb76d92ae40746e84c6b9809eb839937fd
+  data_format: image_formalized_reasoning_and_verifier_tasks
+  capabilities:
+  - visual_reasoning_rlvr
+  license:
+    id: Apache-2.0 + mixed-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 蒸馏轨迹不等于 RLVR 题集
+  - 不同任务验证器和上游许可不同
+  recommendation:
+  - 按任务拆分 SFT 与 RL；数学、OCR、检测等奖励分别重跑
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: visual_rft_tasks
+  name: Visual-RFT task data
+  category: multimodal_rlvr
+  stages:
+  - rlvr
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: task_specific_rl_configs
+    note: 分类、检测、grounding 等任务分别使用官方数据与奖励；不是一个无差别全量包
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://arxiv.org/html/2503.01785v1
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: image_task_prompt_rule_verifier
+  capabilities:
+  - visual_reasoning_rlvr
+  - visual_grounding
+  license:
+    id: mixed-see-task-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - COCO／LVIS／LISA 等上游许可不同
+  - IoU、分类和格式奖励不可混作通用正确性
+  recommendation:
+  - 按任务和固定切分复现；验证器签署后才进入 RLVR 配方
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: os_atlas_action_sft
+  name: OS-Atlas action fine-tuning data
+  category: gui_agent
+  stages:
+  - agent_sft
+  usage_tier: core
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: gui_action_samples
+    note: 只登记下游 action SFT；13M GUI elements 属 Base grounding 预训练，不冒充 Agent 轨迹
+  source:
+    provider: huggingface
+    repo_id: OS-Copilot/OS-Atlas-Data
+    url: https://huggingface.co/datasets/OS-Copilot/OS-Atlas-Data
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    config: action_sft_only
+    observed_revision: e3a4c90c5f6129c25efdaa0671b08a11f7cb8f3f
+  data_format: screenshot_history_action
+  capabilities:
+  - gui_agent
+  - visual_grounding
+  license:
+    id: Apache-2.0 + upstream-terms
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - grounding 与 action 子目录不同
+  - 截屏隐私、账号和坐标／动作 schema
+  recommendation:
+  - GUI 动作 SFT 候选；只选 action 子集并固定平台、历史和动作 schema
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: gui_odyssey_train
+  name: GUIOdyssey train splits
+  category: gui_agent
+  stages:
+  - agent_sft
+  usage_tier: core
+  modalities:
+  - text
+  - image
+  scale:
+    value: 8834
+    unit: episodes_total_before_split
+    note: 全集 8,834 episodes；实际训练量取决于 random/task/device/app 官方 split，不能写为单一训练行数
+  source:
+    provider: huggingface
+    repo_id: hflqf88888/GUIOdyssey
+    url: https://huggingface.co/datasets/hflqf88888/GUIOdyssey
+    split: official_train_split
+    revision_policy: pin_immutable_revision_before_use
+    config: random|task|device|app
+    observed_revision: 61632d0f3f4d51d7e9561ce4f84347dd06b2019d
+  data_format: cross_app_screenshot_action_episodes
+  capabilities:
+  - gui_agent
+  - multiimage_video
+  license:
+    id: CC-BY-4.0
+    commercial_status: allowed_with_obligations
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - episode 与 action step 不可混计
+  - 四种 split 不能交叉泄漏
+  - 截屏隐私和失败轨迹
+  recommendation:
+  - 跨 App 轨迹主候选；每次实验固定一种官方 split 和动作历史长度
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: android_control_train
+  name: AndroidControl train
+  category: gui_agent
+  stages:
+  - agent_sft
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: gui_action_episodes
+    note: High-Level／Low-Level 与训练／测试分开；当前 HF API 401，未登记精确规模
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/google-research/google-research/tree/master/android_control
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: android_screenshot_action_episodes
+  capabilities:
+  - gui_agent
+  license:
+    id: mixed-see-official-card
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 当前直接数据卡未核验
+  - 高低级指令、设备切分和测试泄漏
+  recommendation:
+  - 访问恢复后补齐 revision、许可和 split；此前只作研究候选
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: voice_assistant_400k
+  name: VoiceAssistant-400K
+  category: audio_sft
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - audio
+  scale:
+    value: 470054
+    unit: train_samples
+    note: 当前 default/train 470,054，不是名称中的 400K；question_audio＋文本答案＋answer_snac
+  source:
+    provider: huggingface
+    repo_id: gpt-omni/VoiceAssistant-400K
+    url: https://huggingface.co/datasets/gpt-omni/VoiceAssistant-400K
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 65dab707fcdd3d43dcfb834398aa9fed4116be3a
+  data_format: speech_question_text_answer_snac
+  capabilities:
+  - audio_instruction
+  license:
+    id: Apache-2.0 + GPT-4o/TTS-terms
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 英文合成语音与教师／TTS 条款
+  - 回答音频是 SNAC token 而非普通波形
+  - 缺少独立测试切分
+  recommendation:
+  - 语音助手 SFT 候选；固定采样率、SNAC codec、说话人和文本／音频 loss mask
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: vlguard_train
+  name: VLGuard train
+  category: multimodal_safety
+  stages:
+  - sft
+  usage_tier: optional
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: safety_instruction_samples
+    note: gated=auto；训练与测试文件、safe/unsafe 子集分别固定
+  source:
+    provider: huggingface
+    repo_id: ys-zong/VLGuard
+    url: https://huggingface.co/datasets/ys-zong/VLGuard
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: b0be37a1ab7accb14e10d6a0ec3ce62cfaff2d46
+  data_format: image_safety_instruction_response
+  capabilities:
+  - multimodal_safety
+  license:
+    id: MIT + gated-and-upstream-terms
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: gated_terms
+  risks:
+  - 需接受访问条件
+  - 危险图像与文本隔离
+  - 安全回答和原始 unsafe 内容不可混作普通 SFT
+  recommendation:
+  - 访问条件归档后作安全指令补集；只使用审查后的响应
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: spa_vl_train
+  name: SPA-VL train
+  category: multimodal_safety
+  stages:
+  - preference
+  - reward_model
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 93258
+    unit: preference_pairs
+    note: train 93,258；validation 7,000、HarmEval 265、HelpEval 265 独立，不相加
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://sqrtizhang.github.io/SPA-VL/
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: image_safety_preference_pairs
+  capabilities:
+  - multimodal_safety
+  - visual_preference_rm
+  license:
+    id: mixed-model-output-and-upstream
+    commercial_status: review_required
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - chosen 也可能含不安全响应
+  - 多模型输出和图像上游条款
+  - 安全与有用性需双目标
+  recommendation:
+  - 研究隔离安全偏好；分别审核 chosen/rejected， HarmEval/HelpEval 只评测
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: safe_vid_350k
+  name: SafeVid-350K
+  category: multimodal_safety
+  stages:
+  - preference
+  - reward_model
+  usage_tier: research_only
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: 350000
+    unit: video_safety_preference_pairs_approx
+    note: 官方论文约 350K 视频安全偏好对
+  source:
+    provider: huggingface
+    repo_id: yxwang/SafeVid-350K
+    url: https://huggingface.co/datasets/yxwang/SafeVid-350K
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 6e2309a536d5bccced78454511404becd8744448
+  data_format: video_safety_preference_pairs
+  capabilities:
+  - multimodal_safety
+  - visual_preference_rm
+  license:
+    id: CC-BY-NC-SA-4.0
+    commercial_status: noncommercial
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 非商用及相同方式共享
+  - 视频、文字描述和教师输出上游
+  - 静态文本安全不等于视频时序安全
+  recommendation:
+  - 非商用视频安全偏好补集；SafeVidBench 独立评测
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: local_multimodal_sft
+  name: 真实业务多模态与中文指令 SFT
+  category: local_required
+  stages:
+  - sft
+  usage_tier: local_required
+  modalities:
+  - text
+  - image
+  - video
+  - audio
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义媒体规模、时长、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_multimodal_sft
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: image_video_audio_business_messages
+  capabilities:
+  - visual_instruction
+  - multilingual_multimodal
+  - audio_instruction
+  - document_chart_ocr
+  - multiimage_video
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 媒体权利、肖像／声音同意、隐私、机密与业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 覆盖真实中文图像、文档、视频和语音请求、失败案例与人工回答；记录媒体同意、时长和有效 token
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+- id: local_multimodal_preference
+  name: 多模态人类偏好与音频 RL 物料
+  category: local_required
+  stages:
+  - preference
+  - reward_model
+  - rlvr
+  usage_tier: local_required
+  modalities:
+  - text
+  - image
+  - video
+  - audio
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义媒体规模、时长、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_multimodal_preference
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: human_and_verifiable_multimodal_preferences
+  capabilities:
+  - visual_preference_rm
+  - audio_preference_rl
+  - multimodal_safety
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 媒体权利、肖像／声音同意、隐私、机密与业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 公共音频偏好／RLVR 数据不足，由业务方建设人类语音偏好、可验证音频任务和图像／视频偏好；按独立提示切分
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+- id: local_gui_action_safety
+  name: 本地 GUI 动作与危险操作安全数据
+  category: local_required
+  stages:
+  - agent_sft
+  - agent_rl
+  - preference
+  - evaluation
+  usage_tier: local_required
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: internal_records
+    note: 由业务方定义媒体规模、时长、切分、脱敏和不可变版本
+  source:
+    provider: local
+    repo_id: null
+    url: internal://dataset-registry/local_gui_action_safety
+    split: train
+    revision_policy: pin_immutable_revision_before_use
+  data_format: gui_state_action_policy_labels
+  capabilities:
+  - gui_agent
+  - multimodal_safety
+  license:
+    id: INTERNAL
+    commercial_status: internal_review_required
+    upstream_and_teacher_terms_review_required: false
+  access: local
+  risks:
+  - 媒体权利、肖像／声音同意、隐私、机密与业务分布审查
+  - 不得上传公共训练平台
+  recommendation:
+  - 覆盖真实应用、中文界面、账号脱敏、提示注入、不可逆动作确认和正常请求防过拒；静态轨迹与在线环境同时验收
+  train_prohibited: false
+  eval_isolation_required: false
+  relations: []
+  verification:
+    status: local_definition_required
+    checked_at: '2026-11-09'
+- id: pixmo_count_test
+  name: PixMo-Count test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 540
+    unit: test_samples
+    note: 只用 test 540；train 36,916 和 validation 540 独立
+  source:
+    provider: huggingface
+    repo_id: allenai/pixmo-count
+    url: https://huggingface.co/datasets/allenai/pixmo-count
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: ebf51cf70e45d12374e64d475862e4f8d21d31d0
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_counting
+  - visual_grounding
+  license:
+    id: ODC-By
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 计数与点定位独立评测；按图像 SHA 对训练集去污
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mmmu_validation
+  name: MMMU validation
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 900
+    unit: validation_questions
+    note: 30 科目各 30；dev/test 不纳入本资产
+  source:
+    provider: huggingface
+    repo_id: MMMU/MMMU
+    url: https://huggingface.co/datasets/MMMU/MMMU
+    split: validation
+    revision_policy: pin_immutable_revision_before_use
+    config: all_subjects
+    observed_revision: 876ce5cb130f7f7e290ce4d9984357737d4db5cf
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_instruction
+  - multilingual_multimodal
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 多学科视觉理解评测；固定全部科目 validation，test 通过官方协议另测
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mmmu_pro_standard10
+  name: MMMU-Pro standard 10 options
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 1730
+    unit: test_questions
+    note: standard 10 options；不与 4 options 或 vision config 混写
+  source:
+    provider: huggingface
+    repo_id: MMMU/MMMU_Pro
+    url: https://huggingface.co/datasets/MMMU/MMMU_Pro
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    config: standard (10 options)
+    observed_revision: 0d7426df4ccb3d8704a992fe6850abee7c262127
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_reasoning_rlvr
+  - visual_instruction
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 鲁棒多学科推理评测；固定 10 options 并过滤纯文本可答泄漏检查
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mathvista_testmini
+  name: MathVista testmini
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 1000
+    unit: testmini_questions
+    note: testmini 1,000；完整 test 5,141，分数不可混写
+  source:
+    provider: huggingface
+    repo_id: AI4Math/MathVista
+    url: https://huggingface.co/datasets/AI4Math/MathVista
+    split: testmini
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 2b6ad69445fbb5695c9b165475e8decdbeb97747
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_reasoning_rlvr
+  - document_chart_ocr
+  license:
+    id: CC-BY-SA-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 视觉数学推理评测；固定 testmini、答案类型和数值精度
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mathvision_test
+  name: MathVision test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 3040
+    unit: test_questions
+    note: test 3,040；testmini 304 分开
+  source:
+    provider: huggingface
+    repo_id: MathLLMs/MathVision
+    url: https://huggingface.co/datasets/MathLLMs/MathVision
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 2837ddb3f13abaf6b3997c12d80753e5470bd46a
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_reasoning_rlvr
+  license:
+    id: MIT
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 竞赛视觉数学保留评测；solution 字段不得转训练
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: docvqa_validation
+  name: DocVQA validation
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 5349
+    unit: validation_questions
+    note: DocVQA/validation 5,349；test 5,188 和 InfographicVQA 分开
+  source:
+    provider: huggingface
+    repo_id: lmms-lab/DocVQA
+    url: https://huggingface.co/datasets/lmms-lab/DocVQA
+    split: validation
+    revision_policy: pin_immutable_revision_before_use
+    config: DocVQA
+    observed_revision: 539088ef8a8ada01ac8e2e6d4e372586748a265e
+  data_format: multimodal_evaluation
+  capabilities:
+  - document_chart_ocr
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 文档问答独立评测；固定 DocVQA config、validation 和 ANLS
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: chartqa_test
+  name: ChartQA test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 2500
+    unit: test_questions
+    note: 当前 lmms-lab default/test 2,500
+  source:
+    provider: huggingface
+    repo_id: lmms-lab/ChartQA
+    url: https://huggingface.co/datasets/lmms-lab/ChartQA
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 9e63b7df1592a1c2158e735cc1725454aef0d6d9
+  data_format: multimodal_evaluation
+  capabilities:
+  - document_chart_ocr
+  - visual_reasoning_rlvr
+  license:
+    id: no-explicit-license-in-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 图表问答评测；human／augmented 类型分别报告
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: ocrbench
+  name: OCRBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: ocr_tasks
+    note: 当前 lmms-lab HF API 401；固定官方仓库任务文件后再计数
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/Yuliang-Liu/MultimodalOCR
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - document_chart_ocr
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 多场景 OCR 独立评测；固定任务文件与答案归一化
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: mmstar
+  name: MMStar
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: test_questions
+    note: 当前 lmms-lab HF API 401；不凭二手文章填规模
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/MMStar-Benchmark/MMStar
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_instruction
+  - visual_reasoning_rlvr
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 视觉依赖综合能力评测；同时报告纯文本可答性检查
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: mantis_eval
+  name: Mantis-Eval
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: 217
+    unit: test_questions
+    note: mantis_eval/test 217；不得并入 Mantis-Instruct
+  source:
+    provider: huggingface
+    repo_id: TIGER-Lab/Mantis-Eval
+    url: https://huggingface.co/datasets/TIGER-Lab/Mantis-Eval
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    config: mantis_eval
+    observed_revision: a3d92f9eb22c31d8c2d9d5b432c5a0ff1ef6dfd5
+  data_format: multimodal_evaluation
+  capabilities:
+  - multiimage_video
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 多图跨图指代、比较和推理评测；按 category 分报
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: video_mme
+  name: Video-MME
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  - video
+  - audio
+  scale:
+    value: 2700
+    unit: test_questions
+    note: videomme/test 2,700；字幕／无字幕和时长分桶分别报告
+  source:
+    provider: huggingface
+    repo_id: lmms-lab/Video-MME
+    url: https://huggingface.co/datasets/lmms-lab/Video-MME
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    config: videomme
+    observed_revision: ead1408f75b618502df9a1d8e0950166bf0a2a0b
+  data_format: multimodal_evaluation
+  capabilities:
+  - multiimage_video
+  license:
+    id: no-explicit-license-in-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 短视频到长视频综合评测；固定字幕、FPS、帧数和媒体版本
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mlvu
+  name: MLVU
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: long_video_tasks
+    note: 当前 MLVU/MLVU HF API 401；按官方任务与 dev/test 文件固定
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/JUNJIE99/MLVU
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - multiimage_video
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 长视频多任务评测；固定任务、字幕、抽帧与生成／选择评分协议
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: longvideobench
+  name: LongVideoBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: long_video_questions
+    note: gated=auto；接受访问条件并固定发布包后计数
+  source:
+    provider: huggingface
+    repo_id: longvideobench/LongVideoBench
+    url: https://huggingface.co/datasets/longvideobench/LongVideoBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 60d1c89c1919a198b73be39c2babb213b29d6a5c
+  data_format: multimodal_evaluation
+  capabilities:
+  - multiimage_video
+  license:
+    id: CC-BY-NC-SA-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 长视频引用／推理评测；保留时间戳答案协议，NC-SA 仅限评测隔离
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: vl_rewardbench
+  name: VL-RewardBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 1247
+    unit: test_samples_current_card
+    note: 当前 default/test 1,247；论文常用 1,250，口径差异保留
+  source:
+    provider: huggingface
+    repo_id: MMInstruction/VL-RewardBench
+    url: https://huggingface.co/datasets/MMInstruction/VL-RewardBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 0e6e62701eba92818a69ce95af0ed7aa0648b176
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_preference_rm
+  license:
+    id: MIT
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 视觉奖励模型评测；按 general／hallucination／reasoning 分报并固定当前版本
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mmhal_bench
+  name: MMHal-Bench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: hallucination_questions
+    note: 固定官方问题、图像和 GPT judge 版本
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/open-compass/MMHal-Bench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - visual_preference_rm
+  - multimodal_safety
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 视觉幻觉评测；judge 输出不得反哺训练
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: mm_safetybench
+  name: MM-SafetyBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: adversarial_safety_questions
+    note: Text-only／SD／Typo／SD+Typo 分开；NC 研究评测
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/isXinLiu/MM-SafetyBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - multimodal_safety
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 视觉越狱安全评测；分别报告 ASR 与正常请求可用性
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: figstep
+  name: FigStep
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: typographic_jailbreak_prompts
+    note: 固定图像化有害指令与评估器，禁止转训练
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/ThuCCSLab/FigStep
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - multimodal_safety
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 排版图像越狱评测；危险内容隔离访问
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: safevidbench
+  name: SafeVidBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: video_safety_questions
+    note: SafeVid-350K 训练偏好与本评测严格分开
+  source:
+    provider: huggingface
+    repo_id: yxwang/SafeVid-350K
+    url: https://huggingface.co/datasets/yxwang/SafeVid-350K
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 6e2309a536d5bccced78454511404becd8744448
+  data_format: multimodal_evaluation
+  capabilities:
+  - multimodal_safety
+  license:
+    id: CC-BY-NC-SA-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 视频时序安全评测；固定视频、类别、judge 与 ASR／有用性指标
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: screenspot_v2
+  name: ScreenSpot-v2
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: gui_grounding_samples
+    note: mobile／desktop／web 分平台；当前 API 无统一切分行数
+  source:
+    provider: huggingface
+    repo_id: OS-Copilot/ScreenSpot-v2
+    url: https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c
+  data_format: multimodal_evaluation
+  capabilities:
+  - gui_agent
+  - visual_grounding
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - GUI 元素定位评测；固定坐标归一化、平台和点击命中规则
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: gui_odyssey_test
+  name: GUIOdyssey test splits
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: test_episodes
+    note: 与所选 random/task/device/app train split 一一对应
+  source:
+    provider: huggingface
+    repo_id: hflqf88888/GUIOdyssey
+    url: https://huggingface.co/datasets/hflqf88888/GUIOdyssey
+    split: official_test_split
+    revision_policy: pin_immutable_revision_before_use
+    config: random|task|device|app
+    observed_revision: 61632d0f3f4d51d7e9561ce4f84347dd06b2019d
+  data_format: multimodal_evaluation
+  capabilities:
+  - gui_agent
+  - multiimage_video
+  license:
+    id: CC-BY-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 跨 App 动作匹配与任务成功率评测；严格使用对应 test split
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: osworld_verified
+  name: OSWorld Verified
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: executable_desktop_tasks
+    note: 固定环境镜像、任务包和验证器；不是静态截图 QA
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/xlang-ai/OSWorld
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - gui_agent
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 真实桌面在线 Agent 评测；报告任务成功率、危险动作和环境版本
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: androidworld
+  name: AndroidWorld
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  - video
+  scale:
+    value: null
+    unit: executable_mobile_tasks
+    note: 固定任务套件、设备镜像和随机种子
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/google-research/android_world
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - gui_agent
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 移动在线 Agent 评测；静态动作准确率不能替代任务成功率
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: voicebench
+  name: VoiceBench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - audio
+  scale:
+    value: null
+    unit: multi_config_speech_eval
+    note: AlpacaEval／CommonEval／SD-QA／MMSU／IFEval／AdvBench 等分别固定
+  source:
+    provider: huggingface
+    repo_id: hlt-lab/voicebench
+    url: https://huggingface.co/datasets/hlt-lab/voicebench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    config: multiple_official_configs
+    observed_revision: b02edcef1330480be3a11bd6f7434ac32f05ad08
+  data_format: multimodal_evaluation
+  capabilities:
+  - audio_instruction
+  - audio_preference_rl
+  - multimodal_safety
+  license:
+    id: Apache-2.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 语音助手内容、指令、口音与安全评测；固定 TTS 声音、judge 和输出模态
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mmau
+  name: MMAU
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - audio
+  scale:
+    value: null
+    unit: audio_reasoning_questions
+    note: speech／sound／music 与 information extraction／reasoning 分报
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://sakshi113.github.io/mmau_homepage/
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - audio_instruction
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 音频理解与推理评测；固定 test／mini、选项和 judge
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: partial_official_reference
+    checked_at: '2026-11-09'
+- id: audiobench
+  name: AudioBench suite
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - audio
+  scale:
+    value: null
+    unit: versioned_audio_tasks
+    note: 50+ 数据集是套件而非同质单集；逐 config 和版本固定
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/AudioLLMs/AudioBench
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - audio_instruction
+  - multilingual_multimodal
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 语音、声场和说话人理解评测；逐任务报告，不能汇总未经核验的总行数
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: air_bench
+  name: AIR-Bench
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - audio
+  scale:
+    value: null
+    unit: audio_instruction_eval_samples
+    note: 当前数据卡 CC-BY-NC-4.0；各音频任务／维度分别固定
+  source:
+    provider: huggingface
+    repo_id: qyang1021/AIR-Bench-Dataset
+    url: https://huggingface.co/datasets/qyang1021/AIR-Bench-Dataset
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 8fa643aefd1d7248fd55fcf3e7ad22c81bbac1fa
+  data_format: multimodal_evaluation
+  capabilities:
+  - audio_instruction
+  license:
+    id: CC-BY-NC-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 开放音频指令与基础能力评测；固定 chat／foundation 维度和 judge
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: cmmmu_test
+  name: CMMMU test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 11000
+    unit: test_questions
+    note: 全集 12,012＝dev 112＋validation 900＋test 11,000；本项仅 test
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/CMMMU-Benchmark/CMMMU
+    split: test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - multilingual_multimodal
+  - visual_reasoning_rlvr
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 中文大学多学科评测；通过官方 EvalAI 协议，禁止将题解转训练
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: cmmu
+  name: CMMU validation / hosted test
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: 3603
+    unit: questions_total_official
+    note: 七学科 3,603 题；validation 下载与 hosted test 分开报告
+  source:
+    provider: official_project
+    repo_id: null
+    url: https://github.com/FlagOpen/CMMU
+    split: validation_and_hosted_test
+    revision_policy: pin_immutable_revision_before_use
+  data_format: multimodal_evaluation
+  capabilities:
+  - multilingual_multimodal
+  - visual_reasoning_rlvr
+  license:
+    id: mixed-see-official-card
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 中文教育多学科评测；填空题固定规则或 GPT judge 并分别报告
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+- id: mmbench_cn
+  name: MMBench-CN
+  category: evaluation
+  stages:
+  - evaluation
+  usage_tier: eval_only
+  modalities:
+  - text
+  - image
+  scale:
+    value: null
+    unit: chinese_multimodal_questions
+    note: dev-CN 与 test-CN 分开，CircularEval 等协议固定
+  source:
+    provider: huggingface
+    repo_id: opencompass/MMBench
+    url: https://github.com/open-compass/MMBench
+    split: dev_cn_or_test_cn_separate
+    revision_policy: pin_immutable_revision_before_use
+    observed_revision: 47abe7b8f225cbff9942881db01dc33d2313483c
+  data_format: multimodal_evaluation
+  capabilities:
+  - multilingual_multimodal
+  - visual_instruction
+  license:
+    id: CC-BY-4.0
+    commercial_status: eval_only
+    upstream_and_teacher_terms_review_required: true
+  access: public
+  risks:
+  - 公开多模态评测污染
+  - 固定媒体文件、split、prompt、抽帧／解码和评分器版本
+  recommendation:
+  - 中文综合视觉理解评测；固定 CN split 和选项循环协议
+  train_prohibited: true
+  eval_isolation_required: true
+  relations: []
+  verification:
+    status: official_checked
+    checked_at: '2026-11-09'
+coverage_requirements:
+  visual_instruction:
+    required: true
+    training_candidates:
+    - pixmo_ask_model_anything
+    - pixmo_cap_qa
+    - llava_onevision15_instruct_22m
+    - finevision
+    - llava_instruct_150k
+    - llava15_mix665k
+    - local_multimodal_sft
+    eval_ids:
+    - mmmu_validation
+    - mmstar
+    - mmbench_cn
+    - local_private_time_eval
+  visual_grounding:
+    required: true
+    training_candidates:
+    - pixmo_points
+    - pixmo_point_explanations
+    - molmo2_videopoint
+    - os_atlas_action_sft
+    - visual_rft_tasks
+    eval_ids:
+    - screenspot_v2
+    - pixmo_count_test
+    - local_private_time_eval
+  visual_counting:
+    required: true
+    training_candidates:
+    - pixmo_count_train
+    - pixmo_points
+    - molmo2_videopoint
+    - llava_onevision15_instruct_22m
+    eval_ids:
+    - pixmo_count_test
+    - local_private_time_eval
+  document_chart_ocr:
+    required: true
+    training_candidates:
+    - pixmo_docs
+    - pixmo_cap_qa
+    - llava_onevision15_instruct_22m
+    - finevision
+    - mantis_instruct
+    - local_multimodal_sft
+    eval_ids:
+    - docvqa_validation
+    - chartqa_test
+    - ocrbench
+    - mathvista_testmini
+    - local_private_time_eval
+  multiimage_video:
+    required: true
+    training_candidates:
+    - mantis_instruct
+    - llava_video_178k
+    - videochat_flash_training
+    - molmo2_videotrack
+    - molmo2_videopoint
+    - local_multimodal_sft
+    eval_ids:
+    - mantis_eval
+    - video_mme
+    - mlvu
+    - longvideobench
+    - local_private_time_eval
+  visual_reasoning_rlvr:
+    required: true
+    training_candidates:
+    - r1_onevision
+    - visual_rft_tasks
+    - llava_onevision15_instruct_22m
+    eval_ids:
+    - mmmu_pro_standard10
+    - mathvista_testmini
+    - mathvision_test
+    - chartqa_test
+    - cmmmu_test
+    - local_private_time_eval
+  visual_preference_rm:
+    required: true
+    training_candidates:
+    - llava_human_preference_10k
+    - rlhf_v
+    - rlaif_v
+    - vlfeedback
+    - povid
+    - spa_vl_train
+    - local_multimodal_preference
+    eval_ids:
+    - vl_rewardbench
+    - mmhal_bench
+    - local_private_time_eval
+  audio_instruction:
+    required: true
+    training_candidates:
+    - voice_assistant_400k
+    - local_multimodal_sft
+    eval_ids:
+    - voicebench
+    - mmau
+    - audiobench
+    - air_bench
+    - local_private_time_eval
+  audio_preference_rl:
+    required: true
+    training_candidates:
+    - local_multimodal_preference
+    eval_ids:
+    - voicebench
+    - local_private_time_eval
+  gui_agent:
+    required: true
+    training_candidates:
+    - os_atlas_action_sft
+    - gui_odyssey_train
+    - android_control_train
+    - local_gui_action_safety
+    eval_ids:
+    - screenspot_v2
+    - gui_odyssey_test
+    - osworld_verified
+    - androidworld
+    - local_private_time_eval
+  multimodal_safety:
+    required: true
+    training_candidates:
+    - vlguard_train
+    - spa_vl_train
+    - safe_vid_350k
+    - local_multimodal_preference
+    - local_gui_action_safety
+    eval_ids:
+    - mm_safetybench
+    - figstep
+    - safevidbench
+    - voicebench
+    - mmhal_bench
+    - local_private_time_eval
+  multilingual_multimodal:
+    required: true
+    training_candidates:
+    - llava_onevision15_instruct_22m
+    - finevision
+    - local_multimodal_sft
+    eval_ids:
+    - cmmmu_test
+    - cmmu
+    - mmbench_cn
+    - audiobench
+    - local_private_time_eval
+excluded_or_deferred_candidates:
+- name: Audio-FLAN
+  status: deferred
+  reason: 论文召回超 1 亿实例、80 任务且含音频生成；需先固定官方理解子集、许可和生成／理解边界，不整包纳入
+- name: AudioBench/MMAU direct HF cards
+  status: partially_verified
+  reason: 官方项目与论文已核验，但当前猜测的 HF repo 返回 401；不登记未经核实的 HF revision 或统一行数
+- name: OCRBench/MMStar/BLINK/MLVU direct HF cards
+  status: partially_verified
+  reason: 当前直接 HF API 返回 401；已保留官方项目入口和 eval_only 定义，未编造 SHA 或许可
+- name: CMMMU/CMMU direct HF cards
+  status: partially_verified
+  reason: 官方 GitHub 与论文规模已核验，直接 HF API 401；固定发布包后再补 revision
+- name: GUI-R1 / Video-R1 / VideoChat-R1
+  status: deferred
+  reason: 代码和奖励流程可召回，但本版未核验统一固定数据包；不把方法仓库当同质数据集
+- name: LLaVA 558K / LLaVA-OneVision-1.5-Mid-Training-85M
+  status: out_of_scope
+  reason: 分别是特征对齐预训练和 mid-training，不属于本后训练清单
+- name: text-to-image / speech, music and video generation
+  status: out_of_scope
+  reason: 本库覆盖后训练理解、指令、对齐与 Agent，不扩展到媒体生成数据
+- name: medical imaging / remote sensing
+  status: out_of_scope
+  reason: 保留为专门领域审查范围；OneVision/FineVision 内相关 config 默认不选

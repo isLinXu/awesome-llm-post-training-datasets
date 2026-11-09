@@ -30,13 +30,22 @@ class DatasetCatalogAutomationTest(unittest.TestCase):
         self.assertEqual(result["categories"][0]["category"], "instruction_following")
         self.assertGreaterEqual(result["categories"][0]["score"], 6.0)
 
-    def test_negative_modality_is_quarantined_out(self):
+    def test_out_of_scope_media_generation_is_quarantined_out(self):
         result = MODULE.classify_hf({
-            "id": "example/multimodal-reasoning-traces",
-            "description": "Vision-language reasoning traces with images",
+            "id": "example/text-to-image-reasoning-traces",
+            "description": "Synthetic prompts for text-to-image generation",
         }, self.config)
         self.assertFalse(result["accepted"])
         self.assertEqual(result["reason"], "negative_keywords")
+
+    def test_multimodal_reasoning_is_discoverable(self):
+        result = MODULE.classify_hf({
+            "id": "example/multimodal-reasoning-dataset",
+            "description": "Multimodal reasoning dataset with visual reasoning traces for instruction tuning",
+            "tags": ["modality:image"],
+        }, self.config)
+        self.assertTrue(result["accepted"])
+        self.assertIn("multimodal_reasoning", {item["category"] for item in result["categories"]})
 
     def test_metadata_merge_is_idempotent_and_keeps_history(self):
         current = MODULE.normalize_hf({

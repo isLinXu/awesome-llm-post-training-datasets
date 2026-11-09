@@ -1,16 +1,16 @@
 # 数据目录更新报告
 
-> 运行时间：2026-11-09T06:01:42Z；模式：metadata。
+> 运行时间：2026-11-09T09:09:52Z；模式：metadata。
 
 ## 本次概览
 
 | 指标 | 数量 |
 |---|---:|
-| canonical 资产 | 114 |
-| 已跟踪 Hugging Face 仓库 | 63 |
-| 本次成功刷新 | 63 |
+| canonical 资产 | 175 |
+| 已跟踪 Hugging Face 仓库 | 101 |
+| 本次成功刷新 | 101 |
 | 刷新失败 | 0 |
-| 元数据变化 | 1 |
+| 元数据变化 | 2 |
 | 本次新候选 | 0 |
 | 累计待审核候选 | 11 |
 | 执行发现查询 | 0 |
@@ -19,7 +19,8 @@
 
 | 仓库 | 关联资产 | 变化字段 |
 |---|---|---|
-| `allenai/tulu-3-sft-mixture` | tulu3_sft_mixture | `likes` |
+| `Salesforce/xlam-function-calling-60k` | xlam_function_calling | `likes` |
+| `princeton-nlp/SWE-bench_Verified` | swebench_verified | `likes` |
 
 ## 新发现候选（仅待审核）
 

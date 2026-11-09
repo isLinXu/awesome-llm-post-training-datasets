@@ -101,10 +101,12 @@ def check_recipe(
         if canonical_id != name:
             errors.append(f"{prefix}: canonical_id 必须与数据键一致")
         if asset is None:
-            errors.append(f"{prefix}: canonical_id 不在 114 项总表")
+            errors.append(f"{prefix}: canonical_id 不在 canonical 总表")
         else:
             if asset.get("train_prohibited") is not False or asset.get("usage_tier") == "eval_only":
                 errors.append(f"{prefix}: eval_only／禁止训练资产不得进入配方")
+            if asset.get("modalities") != ["text"]:
+                errors.append(f"{prefix}: ERNIE 文本配方只允许 modalities=[text] 的资产")
         source = dataset.get("source", {})
         if not SHA40.fullmatch(str(source.get("revision", ""))):
             errors.append(f"{prefix}: 数据 revision 必须是 40 位 SHA，不能为 main")
@@ -169,8 +171,10 @@ def main() -> int:
         return 2
 
     assets = {item.get("id"): item for item in catalog.get("datasets", [])}
-    if len(assets) != 114:
-        errors.append(f"canonical 总表应为 114 项，实际为 {len(assets)}")
+    if len(assets) < 114:
+        errors.append(f"canonical 总表至少保留原 114 项，实际仅 {len(assets)}")
+    if catalog.get("provenance", {}).get("text_assets_retained") != 114:
+        errors.append("canonical provenance 未确认原 114 项文本资产全部保留")
 
     commercial_result = check_recipe("commercial", commercial, assets, errors)
     research_result = check_recipe("research", research, assets, errors)

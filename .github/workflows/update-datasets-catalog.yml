@@ -30,7 +30,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: python scripts/update_datasets_catalog.py --discover
       - name: Validate curated catalogue
-        run: python validate_datasets_list.py datasets-list.yaml --expect-total 114
+        run: python validate_datasets_list.py datasets-list.yaml --expect-total 175
       - name: Validate recipe references and isolation
         run: python validate_training_recipes.py
       - name: Check repository documentation and links

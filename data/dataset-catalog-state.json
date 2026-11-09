@@ -874,33 +874,162 @@
       "url": "https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning_plus"
     }
   },
-  "generated_at": "2026-11-09T06:01:42Z",
+  "generated_at": "2026-11-09T09:09:52Z",
   "last_run": {
-    "assets": 114,
+    "assets": 175,
     "changes": [
       {
         "changes": {
           "likes": {
-            "new": 284,
-            "old": 283
+            "new": 758,
+            "old": 757
           }
         },
         "dataset_ids": [
-          "tulu3_sft_mixture"
+          "xlam_function_calling"
         ],
-        "repo_id": "allenai/tulu-3-sft-mixture"
+        "repo_id": "Salesforce/xlam-function-calling-60k"
+      },
+      {
+        "changes": {
+          "likes": {
+            "new": 410,
+            "old": 409
+          }
+        },
+        "dataset_ids": [
+          "swebench_verified"
+        ],
+        "repo_id": "princeton-nlp/SWE-bench_Verified"
       }
     ],
     "errors": [],
-    "generated_at": "2026-11-09T06:01:42Z",
+    "generated_at": "2026-11-09T09:09:52Z",
     "mode": "metadata",
     "new_candidates": [],
     "pending_candidates": 11,
     "queries_run": 0,
-    "refreshed_ok": 63,
-    "tracked_total": 63
+    "refreshed_ok": 101,
+    "tracked_total": 101
   },
   "repositories": {
+    "AI4Math/MathVista": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [
+            "expert-generated",
+            "found"
+          ],
+          "language": [
+            "en",
+            "zh",
+            "fa"
+          ],
+          "language_creators": [
+            "expert-generated",
+            "found"
+          ],
+          "license": "cc-by-sa-4.0",
+          "pretty_name": "MathVista",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "source_datasets": [
+            "original"
+          ],
+          "task_categories": [
+            "multiple-choice",
+            "question-answering",
+            "visual-question-answering",
+            "text-classification"
+          ]
+        },
+        "disabled": false,
+        "downloads": 38323,
+        "gated": false,
+        "last_modified": "2024-02-11T23:09:05.000Z",
+        "license": "cc-by-sa-4.0",
+        "likes": 237,
+        "private": false,
+        "repo_id": "AI4Math/MathVista",
+        "sha": "2b6ad69445fbb5695c9b165475e8decdbeb97747",
+        "siblings_count": 8,
+        "tags": [
+          "abstract-scene",
+          "algebraic-reasoning",
+          "annotations_creators:expert-generated",
+          "annotations_creators:found",
+          "arithmetic-reasoning",
+          "arxiv:2310.02255",
+          "biology",
+          "chart",
+          "chemistry",
+          "document-image",
+          "engineering",
+          "figure-qa",
+          "format:parquet",
+          "function-plot",
+          "geometry-diagram",
+          "geometry-qa",
+          "geometry-reasoning",
+          "language:en",
+          "language:fa",
+          "language:zh",
+          "language_creators:expert-generated",
+          "language_creators:found",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-sa-4.0",
+          "logical-reasoning",
+          "math-qa",
+          "math-word-problem",
+          "mathematics",
+          "medical-image",
+          "modality:image",
+          "modality:text",
+          "multi-modal-qa",
+          "multilinguality:monolingual",
+          "natural-science",
+          "numeric-common-sense",
+          "physics",
+          "plot",
+          "puzzle-test",
+          "region:us",
+          "science",
+          "scientific-figure",
+          "scientific-reasoning",
+          "size_categories:1K<n<10K",
+          "source_datasets:original",
+          "statistical-reasoning",
+          "synthetic-scene",
+          "table",
+          "task_categories:multiple-choice",
+          "task_categories:question-answering",
+          "task_categories:text-classification",
+          "task_categories:visual-question-answering",
+          "task_ids:closed-domain-qa",
+          "task_ids:multi-class-classification",
+          "task_ids:multiple-choice-qa",
+          "task_ids:open-domain-qa",
+          "task_ids:visual-question-answering",
+          "textbook-qa",
+          "vqa"
+        ],
+        "url": "https://huggingface.co/datasets/AI4Math/MathVista"
+      },
+      "dataset_ids": [
+        "mathvista_testmini"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "AI4Math/MathVista",
+      "status": "ok"
+    },
     "AmazonScience/FalseReject": {
       "current": {
         "card_data": {
@@ -952,8 +1081,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "AmazonScience/FalseReject",
       "status": "ok"
     },
@@ -993,8 +1122,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Anthropic/hh-rlhf",
       "status": "ok"
     },
@@ -1037,8 +1166,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "BAAI/COIG-PC-Lite",
       "status": "ok"
     },
@@ -1096,8 +1225,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "BAAI/Infinity-Instruct",
       "status": "ok"
     },
@@ -1153,8 +1282,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "BAAI/TACO",
       "status": "ok"
     },
@@ -1205,8 +1334,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "BytedTsinghua-SIA/DAPO-Math-17k",
       "status": "ok"
     },
@@ -1237,8 +1366,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "BytedTsinghua-SIA/Enigmata-Data",
       "status": "ok"
     },
@@ -1276,8 +1405,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "BytedTsinghua-SIA/Enigmata-Eval",
       "status": "ok"
     },
@@ -1561,8 +1690,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "CohereLabs/aya_collection",
       "status": "ok"
     },
@@ -1768,8 +1897,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "CohereLabs/aya_dataset",
       "status": "ok"
     },
@@ -1822,9 +1951,56 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k",
+      "status": "ok"
+    },
+    "Fancy-MLLM/R1-Onevision": {
+      "current": {
+        "card_data": {
+          "license": "apache-2.0",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 3883,
+        "gated": false,
+        "last_modified": "2025-03-18T15:25:45.000Z",
+        "license": "apache-2.0",
+        "likes": 47,
+        "private": false,
+        "repo_id": "Fancy-MLLM/R1-Onevision",
+        "sha": "904e96cb76d92ae40746e84c6b9809eb839937fd",
+        "siblings_count": 32,
+        "tags": [
+          "arxiv:2503.10615",
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/Fancy-MLLM/R1-Onevision"
+      },
+      "dataset_ids": [
+        "r1_onevision"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "Fancy-MLLM/R1-Onevision",
       "status": "ok"
     },
     "HuggingFaceH4/MATH-500": {
@@ -1868,8 +2044,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "HuggingFaceH4/MATH-500",
       "status": "ok"
     },
@@ -1922,8 +2098,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "HuggingFaceH4/mt_bench_prompts",
       "status": "ok"
     },
@@ -1971,9 +2147,51 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "HuggingFaceH4/no_robots",
+      "status": "ok"
+    },
+    "HuggingFaceM4/FineVision": {
+      "current": {
+        "card_data": {
+          "size_categories": [
+            "10M<n<100M"
+          ]
+        },
+        "disabled": false,
+        "downloads": 134831,
+        "gated": false,
+        "last_modified": "2025-10-21T10:12:56.000Z",
+        "license": null,
+        "likes": 543,
+        "private": false,
+        "repo_id": "HuggingFaceM4/FineVision",
+        "sha": "3c380a731a3429c1d04693d6ec16d7e683def84c",
+        "siblings_count": 9501,
+        "tags": [
+          "arxiv:2510.17269",
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:10M<n<100M"
+        ],
+        "url": "https://huggingface.co/datasets/HuggingFaceM4/FineVision"
+      },
+      "dataset_ids": [
+        "finevision"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "HuggingFaceM4/FineVision",
       "status": "ok"
     },
     "Idavidrein/gpqa": {
@@ -2031,8 +2249,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Idavidrein/gpqa",
       "status": "ok"
     },
@@ -2080,9 +2298,366 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "KbsdJames/Omni-MATH",
+      "status": "ok"
+    },
+    "MMInstruction/VL-RewardBench": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "mit",
+          "pretty_name": "VLRewardBench",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "task_categories": [
+            "image-to-text"
+          ]
+        },
+        "disabled": false,
+        "downloads": 632,
+        "gated": false,
+        "last_modified": "2025-05-19T10:50:44.000Z",
+        "license": "mit",
+        "likes": 17,
+        "private": false,
+        "repo_id": "MMInstruction/VL-RewardBench",
+        "sha": "0e6e62701eba92818a69ce95af0ed7aa0648b176",
+        "siblings_count": 5,
+        "tags": [
+          "arxiv:2411.17451",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:mit",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "rlhf",
+          "size_categories:1K<n<10K",
+          "task_categories:image-to-text",
+          "vlm"
+        ],
+        "url": "https://huggingface.co/datasets/MMInstruction/VL-RewardBench"
+      },
+      "dataset_ids": [
+        "vl_rewardbench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "MMInstruction/VL-RewardBench",
+      "status": "ok"
+    },
+    "MMInstruction/VLFeedback": {
+      "current": {
+        "card_data": {
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "visual-question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 3051,
+        "gated": false,
+        "last_modified": "2024-10-17T05:40:23.000Z",
+        "license": null,
+        "likes": 51,
+        "private": false,
+        "repo_id": "MMInstruction/VLFeedback",
+        "sha": "137dcea93e7667decc117c54b60f7401c6903310",
+        "siblings_count": 14,
+        "tags": [
+          "arxiv:2312.10665",
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/MMInstruction/VLFeedback"
+      },
+      "dataset_ids": [
+        "vlfeedback"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "MMInstruction/VLFeedback",
+      "status": "ok"
+    },
+    "MMMU/MMMU": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "mmmu",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "question-answering",
+            "visual-question-answering",
+            "multiple-choice"
+          ]
+        },
+        "disabled": false,
+        "downloads": 92932,
+        "gated": false,
+        "last_modified": "2026-10-05T02:04:29.000Z",
+        "license": "apache-2.0",
+        "likes": 346,
+        "private": false,
+        "repo_id": "MMMU/MMMU",
+        "sha": "876ce5cb130f7f7e290ce4d9984357737d4db5cf",
+        "siblings_count": 94,
+        "tags": [
+          "accounting",
+          "agriculture",
+          "architecture",
+          "art",
+          "art_theory",
+          "arxiv:2311.16502",
+          "basic_medical_science",
+          "biology",
+          "business",
+          "chemistry",
+          "clinical",
+          "computer_science",
+          "design",
+          "economics",
+          "electronics",
+          "energy_and_power",
+          "engineering",
+          "finance",
+          "format:parquet",
+          "geography",
+          "health",
+          "history",
+          "humanities",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "literature",
+          "manage",
+          "marketing",
+          "materials",
+          "math",
+          "mechanical_engineering",
+          "medical",
+          "medicine",
+          "modality:image",
+          "modality:text",
+          "music",
+          "pharmacy",
+          "physics",
+          "psychology",
+          "public_health",
+          "region:us",
+          "science",
+          "size_categories:10K<n<100K",
+          "social_science",
+          "sociology",
+          "task_categories:multiple-choice",
+          "task_categories:question-answering",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/MMMU/MMMU"
+      },
+      "dataset_ids": [
+        "mmmu_validation"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "MMMU/MMMU",
+      "status": "ok"
+    },
+    "MMMU/MMMU_Pro": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "question-answering",
+            "visual-question-answering",
+            "multiple-choice"
+          ]
+        },
+        "disabled": false,
+        "downloads": 35760,
+        "gated": false,
+        "last_modified": "2026-10-05T01:55:47.000Z",
+        "license": "apache-2.0",
+        "likes": 102,
+        "private": false,
+        "repo_id": "MMMU/MMMU_Pro",
+        "sha": "0d7426df4ccb3d8704a992fe6850abee7c262127",
+        "siblings_count": 11,
+        "tags": [
+          "art",
+          "arxiv:2409.02813",
+          "benchmark:eval-yaml",
+          "benchmark:official",
+          "biology",
+          "chemistry",
+          "engineering",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "math",
+          "medical",
+          "modality:image",
+          "modality:text",
+          "music",
+          "region:us",
+          "science",
+          "size_categories:1K<n<10K",
+          "task_categories:multiple-choice",
+          "task_categories:question-answering",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/MMMU/MMMU_Pro"
+      },
+      "dataset_ids": [
+        "mmmu_pro_standard10"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "MMMU/MMMU_Pro",
+      "status": "ok"
+    },
+    "MathLLMs/MathVision": {
+      "current": {
+        "card_data": {
+          "annotations_creators": [
+            "expert-generated",
+            "found"
+          ],
+          "language": [
+            "en"
+          ],
+          "language_creators": [
+            "expert-generated",
+            "found"
+          ],
+          "license": "mit",
+          "pretty_name": "MATH-V",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "task_categories": [
+            "question-answering",
+            "multiple-choice",
+            "visual-question-answering",
+            "text-generation",
+            "image-to-text",
+            "image-text-to-text"
+          ]
+        },
+        "disabled": false,
+        "downloads": 14733,
+        "gated": false,
+        "last_modified": "2026-06-10T07:04:16.000Z",
+        "license": "mit",
+        "likes": 184,
+        "private": false,
+        "repo_id": "MathLLMs/MathVision",
+        "sha": "2837ddb3f13abaf6b3997c12d80753e5470bd46a",
+        "siblings_count": 6,
+        "tags": [
+          "abstract-scene",
+          "annotations_creators:expert-generated",
+          "annotations_creators:found",
+          "arxiv:2402.14804",
+          "arxiv:2501.12599",
+          "chart",
+          "document-image",
+          "figure-qa",
+          "format:parquet",
+          "function-plot",
+          "geometry-diagram",
+          "geometry-qa",
+          "language:en",
+          "language_creators:expert-generated",
+          "language_creators:found",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:mit",
+          "math-qa",
+          "math-word-problem",
+          "mathematics",
+          "modality:image",
+          "modality:text",
+          "multi-modal-qa",
+          "plot",
+          "puzzle-test",
+          "reasoning",
+          "region:us",
+          "science",
+          "scientific-figure",
+          "size_categories:1K<n<10K",
+          "synthetic-scene",
+          "table",
+          "task_categories:image-text-to-text",
+          "task_categories:image-to-text",
+          "task_categories:multiple-choice",
+          "task_categories:question-answering",
+          "task_categories:text-generation",
+          "task_categories:visual-question-answering",
+          "textbook-qa",
+          "vqa"
+        ],
+        "url": "https://huggingface.co/datasets/MathLLMs/MathVision"
+      },
+      "dataset_ids": [
+        "mathvision_test"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "MathLLMs/MathVision",
       "status": "ok"
     },
     "McGill-NLP/WebLINX": {
@@ -2135,8 +2710,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "McGill-NLP/WebLINX",
       "status": "ok"
     },
@@ -2187,9 +2762,123 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Nanbeige/ToolMind",
+      "status": "ok"
+    },
+    "OS-Copilot/OS-Atlas-Data": {
+      "current": {
+        "card_data": {
+          "license": "apache-2.0"
+        },
+        "disabled": false,
+        "downloads": 14458,
+        "gated": false,
+        "last_modified": "2024-12-04T10:26:47.000Z",
+        "license": "apache-2.0",
+        "likes": 49,
+        "private": false,
+        "repo_id": "OS-Copilot/OS-Atlas-Data",
+        "sha": "e3a4c90c5f6129c25efdaa0671b08a11f7cb8f3f",
+        "siblings_count": 43,
+        "tags": [
+          "arxiv:2005.03776",
+          "arxiv:2010.04295",
+          "arxiv:2107.13731",
+          "arxiv:2401.10935",
+          "arxiv:2405.14573",
+          "arxiv:2406.17557",
+          "arxiv:2407.17490",
+          "arxiv:2410.23218",
+          "license:apache-2.0",
+          "region:us"
+        ],
+        "url": "https://huggingface.co/datasets/OS-Copilot/OS-Atlas-Data"
+      },
+      "dataset_ids": [
+        "os_atlas_action_sft"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "OS-Copilot/OS-Atlas-Data",
+      "status": "ok"
+    },
+    "OS-Copilot/ScreenSpot-v2": {
+      "current": {
+        "card_data": {
+          "license": "apache-2.0"
+        },
+        "disabled": false,
+        "downloads": 5602,
+        "gated": false,
+        "last_modified": "2025-02-10T11:15:38.000Z",
+        "license": "apache-2.0",
+        "likes": 33,
+        "private": false,
+        "repo_id": "OS-Copilot/ScreenSpot-v2",
+        "sha": "5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c",
+        "siblings_count": 6,
+        "tags": [
+          "license:apache-2.0",
+          "modality:image",
+          "region:us"
+        ],
+        "url": "https://huggingface.co/datasets/OS-Copilot/ScreenSpot-v2"
+      },
+      "dataset_ids": [
+        "screenspot_v2"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "OS-Copilot/ScreenSpot-v2",
+      "status": "ok"
+    },
+    "OpenGVLab/VideoChat-Flash-Training-Data": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "task_categories": [
+            "video-text-to-text"
+          ]
+        },
+        "disabled": false,
+        "downloads": 11957,
+        "gated": false,
+        "last_modified": "2025-06-24T07:51:17.000Z",
+        "license": "apache-2.0",
+        "likes": 19,
+        "private": false,
+        "repo_id": "OpenGVLab/VideoChat-Flash-Training-Data",
+        "sha": "be87f5516a709be079cec8b727dd2287bf2dd70f",
+        "siblings_count": 84175,
+        "tags": [
+          "arxiv:2501.00574",
+          "language:en",
+          "license:apache-2.0",
+          "region:us",
+          "task_categories:video-text-to-text"
+        ],
+        "url": "https://huggingface.co/datasets/OpenGVLab/VideoChat-Flash-Training-Data"
+      },
+      "dataset_ids": [
+        "videochat_flash_training"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "OpenGVLab/VideoChat-Flash-Training-Data",
       "status": "ok"
     },
     "Qwen/ProcessBench": {
@@ -2236,8 +2925,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Qwen/ProcessBench",
       "status": "ok"
     },
@@ -2262,7 +2951,7 @@
         "gated": "auto",
         "last_modified": "2025-01-24T19:25:58.000Z",
         "license": "cc-by-4.0",
-        "likes": 757,
+        "likes": 758,
         "private": false,
         "repo_id": "Salesforce/xlam-function-calling-60k",
         "sha": "26d14ebfe18b1f7b524bd39b404b50af5dc97866",
@@ -2294,9 +2983,66 @@
       ],
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "history": [
+        {
+          "changes": {
+            "likes": {
+              "new": 758,
+              "old": 757
+            }
+          },
+          "observed_at": "2026-11-09T09:09:52Z",
+          "previous": {
+            "card_data": {
+              "language": [
+                "en"
+              ],
+              "license": "cc-by-4.0",
+              "size_categories": [
+                "10K<n<100K"
+              ],
+              "task_categories": [
+                "question-answering",
+                "text-generation",
+                "reinforcement-learning"
+              ]
+            },
+            "disabled": false,
+            "downloads": 15001,
+            "gated": "auto",
+            "last_modified": "2025-01-24T19:25:58.000Z",
+            "license": "cc-by-4.0",
+            "likes": 757,
+            "private": false,
+            "repo_id": "Salesforce/xlam-function-calling-60k",
+            "sha": "26d14ebfe18b1f7b524bd39b404b50af5dc97866",
+            "siblings_count": 6,
+            "tags": [
+              "LLM Agent",
+              "arxiv:2406.18518",
+              "code",
+              "format:json",
+              "function-calling",
+              "language:en",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:pandas",
+              "library:polars",
+              "license:cc-by-4.0",
+              "modality:text",
+              "region:us",
+              "size_categories:10K<n<100K",
+              "synthetic",
+              "task_categories:question-answering",
+              "task_categories:reinforcement-learning",
+              "task_categories:text-generation"
+            ],
+            "url": "https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k"
+          }
+        }
+      ],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Salesforce/xlam-function-calling-60k",
       "status": "ok"
     },
@@ -2454,8 +3200,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "ServiceNow-AI/M2Lingual",
       "status": "ok"
     },
@@ -2491,8 +3237,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Skywork/Skywork-OR1-RL-Data",
       "status": "ok"
     },
@@ -2528,8 +3274,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
       "status": "ok"
     },
@@ -2589,8 +3335,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "SynthLabsAI/Big-Math-RL-Verified",
       "status": "ok"
     },
@@ -2646,9 +3392,153 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "TIGER-Lab/MMLU-Pro",
+      "status": "ok"
+    },
+    "TIGER-Lab/Mantis-Eval": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "pretty_name": "Mantis-Eval",
+          "size_categories": [
+            "n<1K"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 1139,
+        "gated": false,
+        "last_modified": "2024-11-15T06:43:06.000Z",
+        "license": "apache-2.0",
+        "likes": 6,
+        "private": false,
+        "repo_id": "TIGER-Lab/Mantis-Eval",
+        "sha": "a3d92f9eb22c31d8c2d9d5b432c5a0ff1ef6dfd5",
+        "siblings_count": 3,
+        "tags": [
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:n<1K",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/TIGER-Lab/Mantis-Eval"
+      },
+      "dataset_ids": [
+        "mantis_eval"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "TIGER-Lab/Mantis-Eval",
+      "status": "ok"
+    },
+    "TIGER-Lab/Mantis-Instruct": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "size_categories": [
+            "100K<n<1M"
+          ]
+        },
+        "disabled": false,
+        "downloads": 5270,
+        "gated": false,
+        "last_modified": "2024-12-25T01:43:11.000Z",
+        "license": "apache-2.0",
+        "likes": 41,
+        "private": false,
+        "repo_id": "TIGER-Lab/Mantis-Instruct",
+        "sha": "01a9edfe0bb8c2582431308c5b2645a9f4796939",
+        "siblings_count": 45,
+        "tags": [
+          "arxiv:2405.01483",
+          "format:parquet",
+          "instruction-following",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "lmm",
+          "mllm",
+          "modality:text",
+          "multi-image",
+          "multimodal",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "vlm"
+        ],
+        "url": "https://huggingface.co/datasets/TIGER-Lab/Mantis-Instruct"
+      },
+      "dataset_ids": [
+        "mantis_instruct"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "TIGER-Lab/Mantis-Instruct",
+      "status": "ok"
+    },
+    "YiyangAiLab/POVID_preference_data_for_VLLMs": {
+      "current": {
+        "card_data": {
+          "license": "cc-by-4.0"
+        },
+        "disabled": false,
+        "downloads": 199,
+        "gated": false,
+        "last_modified": "2024-04-01T08:56:50.000Z",
+        "license": "cc-by-4.0",
+        "likes": 8,
+        "private": false,
+        "repo_id": "YiyangAiLab/POVID_preference_data_for_VLLMs",
+        "sha": "177dd9493f865950a3bec48ef6b9ffd7b50e3f73",
+        "siblings_count": 3,
+        "tags": [
+          "format:json",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs"
+      },
+      "dataset_ids": [
+        "povid"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "YiyangAiLab/POVID_preference_data_for_VLLMs",
       "status": "ok"
     },
     "agentica-org/DeepScaleR-Preview-Dataset": {
@@ -2692,8 +3582,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "agentica-org/DeepScaleR-Preview-Dataset",
       "status": "ok"
     },
@@ -2733,8 +3623,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "ai-safety-institute/AgentHarm",
       "status": "ok"
     },
@@ -2793,8 +3683,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "akoksal/LongForm",
       "status": "ok"
     },
@@ -2988,9 +3878,90 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "allenai/Dolci-Instruct-SFT",
+      "status": "ok"
+    },
+    "allenai/Molmo2-VideoPoint": {
+      "current": {
+        "card_data": {
+          "license": "odc-by"
+        },
+        "disabled": false,
+        "downloads": 1135,
+        "gated": false,
+        "last_modified": "2026-03-16T01:32:31.000Z",
+        "license": "odc-by",
+        "likes": 10,
+        "private": false,
+        "repo_id": "allenai/Molmo2-VideoPoint",
+        "sha": "65a7347ebbb501a14002418877e9a7de43510047",
+        "siblings_count": 15,
+        "tags": [
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/Molmo2-VideoPoint"
+      },
+      "dataset_ids": [
+        "molmo2_videopoint"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/Molmo2-VideoPoint",
+      "status": "ok"
+    },
+    "allenai/Molmo2-VideoTrack": {
+      "current": {
+        "card_data": {
+          "license": "odc-by"
+        },
+        "disabled": false,
+        "downloads": 416,
+        "gated": false,
+        "last_modified": "2025-12-16T15:37:13.000Z",
+        "license": "odc-by",
+        "likes": 5,
+        "private": false,
+        "repo_id": "allenai/Molmo2-VideoTrack",
+        "sha": "5940b8225a8565f7793f7090f6bf69909237434d",
+        "siblings_count": 34,
+        "tags": [
+          "format:optimized-parquet",
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:odc-by",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/Molmo2-VideoTrack"
+      },
+      "dataset_ids": [
+        "molmo2_videotrack"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/Molmo2-VideoTrack",
       "status": "ok"
     },
     "allenai/llama-3.1-tulu-3-8b-preference-mixture": {
@@ -3027,9 +3998,285 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "allenai/llama-3.1-tulu-3-8b-preference-mixture",
+      "status": "ok"
+    },
+    "allenai/pixmo-ask-model-anything": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "odc-by",
+          "task_categories": [
+            "visual-question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 974,
+        "gated": false,
+        "last_modified": "2024-12-05T18:45:02.000Z",
+        "license": "odc-by",
+        "likes": 8,
+        "private": false,
+        "repo_id": "allenai/pixmo-ask-model-anything",
+        "sha": "739ffd8b417737da31e5069b9c8ff6a72a7d58b6",
+        "siblings_count": 3,
+        "tags": [
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/pixmo-ask-model-anything"
+      },
+      "dataset_ids": [
+        "pixmo_ask_model_anything"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/pixmo-ask-model-anything",
+      "status": "ok"
+    },
+    "allenai/pixmo-cap-qa": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en",
+            "ko"
+          ],
+          "license": "odc-by",
+          "task_categories": [
+            "visual-question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 395,
+        "gated": false,
+        "last_modified": "2024-12-05T18:49:29.000Z",
+        "license": "odc-by",
+        "likes": 12,
+        "private": false,
+        "repo_id": "allenai/pixmo-cap-qa",
+        "sha": "fd3ff4b2905455ab5edfd6d06039ea6027948521",
+        "siblings_count": 3,
+        "tags": [
+          "format:parquet",
+          "language:en",
+          "language:ko",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/pixmo-cap-qa"
+      },
+      "dataset_ids": [
+        "pixmo_cap_qa"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/pixmo-cap-qa",
+      "status": "ok"
+    },
+    "allenai/pixmo-count": {
+      "current": {
+        "card_data": {
+          "license": "odc-by",
+          "task_categories": [
+            "visual-question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 2219,
+        "gated": false,
+        "last_modified": "2024-11-30T04:08:58.000Z",
+        "license": "odc-by",
+        "likes": 11,
+        "private": false,
+        "repo_id": "allenai/pixmo-count",
+        "sha": "ebf51cf70e45d12374e64d475862e4f8d21d31d0",
+        "siblings_count": 5,
+        "tags": [
+          "arxiv:2201.02605",
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/pixmo-count"
+      },
+      "dataset_ids": [
+        "pixmo_count_test",
+        "pixmo_count_train"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/pixmo-count",
+      "status": "ok"
+    },
+    "allenai/pixmo-docs": {
+      "current": {
+        "card_data": {
+          "license": "odc-by",
+          "task_categories": [
+            "visual-question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 7143,
+        "gated": false,
+        "last_modified": "2025-02-24T17:25:46.000Z",
+        "license": "odc-by",
+        "likes": 35,
+        "private": false,
+        "repo_id": "allenai/pixmo-docs",
+        "sha": "d887597bf4af2bc61a4210071a8cef898287e6fb",
+        "siblings_count": 116,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:odc-by",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/pixmo-docs"
+      },
+      "dataset_ids": [
+        "pixmo_docs"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/pixmo-docs",
+      "status": "ok"
+    },
+    "allenai/pixmo-point-explanations": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "odc-by",
+          "task_categories": [
+            "visual-question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 216,
+        "gated": false,
+        "last_modified": "2024-12-05T18:45:24.000Z",
+        "license": "odc-by",
+        "likes": 12,
+        "private": false,
+        "repo_id": "allenai/pixmo-point-explanations",
+        "sha": "08a566fa00747e4c1c7e8481c350763b469c209c",
+        "siblings_count": 3,
+        "tags": [
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:odc-by",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/pixmo-point-explanations"
+      },
+      "dataset_ids": [
+        "pixmo_point_explanations"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/pixmo-point-explanations",
+      "status": "ok"
+    },
+    "allenai/pixmo-points": {
+      "current": {
+        "card_data": {
+          "license": "odc-by"
+        },
+        "disabled": false,
+        "downloads": 5159,
+        "gated": false,
+        "last_modified": "2024-11-27T22:12:24.000Z",
+        "license": "odc-by",
+        "likes": 49,
+        "private": false,
+        "repo_id": "allenai/pixmo-points",
+        "sha": "2b5c6931e790e00ae00d4a2857e5f95d88f09a66",
+        "siblings_count": 4,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:odc-by",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M"
+        ],
+        "url": "https://huggingface.co/datasets/allenai/pixmo-points"
+      },
+      "dataset_ids": [
+        "pixmo_points"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "allenai/pixmo-points",
       "status": "ok"
     },
     "allenai/reward-bench": {
@@ -3083,8 +4330,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "allenai/reward-bench",
       "status": "ok"
     },
@@ -3135,8 +4382,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "allenai/reward-bench-2",
       "status": "ok"
     },
@@ -3603,8 +4850,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "allenai/tulu-3-sft-mixture",
       "status": "ok"
     },
@@ -3655,8 +4902,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "allenai/tulu-3-sft-personas-instruction-following",
       "status": "ok"
     },
@@ -3711,8 +4958,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "argilla/ifeval-like-data",
       "status": "ok"
     },
@@ -3761,8 +5008,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "berkeley-nest/Nectar",
       "status": "ok"
     },
@@ -3814,8 +5061,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "databricks/databricks-dolly-15k",
       "status": "ok"
     },
@@ -3885,8 +5132,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "deepmind/code_contests",
       "status": "ok"
     },
@@ -3937,8 +5184,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "facebook/natural_reasoning",
       "status": "ok"
     },
@@ -3987,9 +5234,191 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "glaiveai/glaive-function-calling-v2",
+      "status": "ok"
+    },
+    "gpt-omni/VoiceAssistant-400K": {
+      "current": {
+        "card_data": {
+          "license": "apache-2.0"
+        },
+        "disabled": false,
+        "downloads": 4540,
+        "gated": false,
+        "last_modified": "2024-09-13T12:01:42.000Z",
+        "license": "apache-2.0",
+        "likes": 101,
+        "private": false,
+        "repo_id": "gpt-omni/VoiceAssistant-400K",
+        "sha": "65dab707fcdd3d43dcfb834398aa9fed4116be3a",
+        "siblings_count": 327,
+        "tags": [
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:audio",
+          "modality:text",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/gpt-omni/VoiceAssistant-400K"
+      },
+      "dataset_ids": [
+        "voice_assistant_400k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "gpt-omni/VoiceAssistant-400K",
+      "status": "ok"
+    },
+    "hflqf88888/GUIOdyssey": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "size_categories": [
+            "1K<n<10K"
+          ]
+        },
+        "disabled": false,
+        "downloads": 7076,
+        "gated": false,
+        "last_modified": "2025-08-04T02:22:43.000Z",
+        "license": "cc-by-4.0",
+        "likes": 15,
+        "private": false,
+        "repo_id": "hflqf88888/GUIOdyssey",
+        "sha": "61632d0f3f4d51d7e9561ce4f84347dd06b2019d",
+        "siblings_count": 8350,
+        "tags": [
+          "GUI",
+          "arxiv:2406.08451",
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-4.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/hflqf88888/GUIOdyssey"
+      },
+      "dataset_ids": [
+        "gui_odyssey_test",
+        "gui_odyssey_train"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "hflqf88888/GUIOdyssey",
+      "status": "ok"
+    },
+    "hlt-lab/voicebench": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0"
+        },
+        "disabled": false,
+        "downloads": 8463,
+        "gated": false,
+        "last_modified": "2025-04-19T16:49:38.000Z",
+        "license": "apache-2.0",
+        "likes": 18,
+        "private": false,
+        "repo_id": "hlt-lab/voicebench",
+        "sha": "b02edcef1330480be3a11bd6f7434ac32f05ad08",
+        "siblings_count": 76,
+        "tags": [
+          "arxiv:2410.17196",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:audio",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/hlt-lab/voicebench"
+      },
+      "dataset_ids": [
+        "voicebench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "hlt-lab/voicebench",
+      "status": "ok"
+    },
+    "liuhaotian/LLaVA-Instruct-150K": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-4.0",
+          "pretty_name": "LLaVA Visual Instruct 150K",
+          "size_categories": [
+            "100K<n<1M"
+          ],
+          "task_categories": [
+            "visual-question-answering",
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 5537,
+        "gated": false,
+        "last_modified": "2024-01-03T01:59:20.000Z",
+        "license": "cc-by-4.0",
+        "likes": 649,
+        "private": false,
+        "repo_id": "liuhaotian/LLaVA-Instruct-150K",
+        "sha": "9d451dc7629cfe0469f6ae4432b765cd603d5fcb",
+        "siblings_count": 8,
+        "tags": [
+          "language:en",
+          "license:cc-by-4.0",
+          "region:us",
+          "size_categories:100K<n<1M",
+          "task_categories:question-answering",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K"
+      },
+      "dataset_ids": [
+        "llava_instruct_150k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "liuhaotian/LLaVA-Instruct-150K",
       "status": "ok"
     },
     "lmarena-ai/arena-human-preference-140k": {
@@ -4029,9 +5458,226 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "lmarena-ai/arena-human-preference-140k",
+      "status": "ok"
+    },
+    "lmms-lab/ChartQA": {
+      "current": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 17711,
+        "gated": false,
+        "last_modified": "2024-03-08T05:04:43.000Z",
+        "license": null,
+        "likes": 27,
+        "private": false,
+        "repo_id": "lmms-lab/ChartQA",
+        "sha": "9e63b7df1592a1c2158e735cc1725454aef0d6d9",
+        "siblings_count": 3,
+        "tags": [
+          "arxiv:2203.10244",
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/lmms-lab/ChartQA"
+      },
+      "dataset_ids": [
+        "chartqa_test"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "lmms-lab/ChartQA",
+      "status": "ok"
+    },
+    "lmms-lab/DocVQA": {
+      "current": {
+        "card_data": {
+          "license": "apache-2.0"
+        },
+        "disabled": false,
+        "downloads": 44790,
+        "gated": false,
+        "last_modified": "2024-04-18T05:14:35.000Z",
+        "license": "apache-2.0",
+        "likes": 90,
+        "private": false,
+        "repo_id": "lmms-lab/DocVQA",
+        "sha": "539088ef8a8ada01ac8e2e6d4e372586748a265e",
+        "siblings_count": 58,
+        "tags": [
+          "arxiv:2007.00398",
+          "format:parquet",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:image",
+          "modality:text",
+          "region:us",
+          "size_categories:10K<n<100K"
+        ],
+        "url": "https://huggingface.co/datasets/lmms-lab/DocVQA"
+      },
+      "dataset_ids": [
+        "docvqa_validation"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "lmms-lab/DocVQA",
+      "status": "ok"
+    },
+    "lmms-lab/LLaVA-Video-178K": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "task_categories": [
+            "visual-question-answering",
+            "video-text-to-text"
+          ]
+        },
+        "disabled": false,
+        "downloads": 108856,
+        "gated": false,
+        "last_modified": "2024-10-11T04:59:25.000Z",
+        "license": null,
+        "likes": 214,
+        "private": false,
+        "repo_id": "lmms-lab/LLaVA-Video-178K",
+        "sha": "6d8c562dc26d70042a0d9704d1cae58c94b89098",
+        "siblings_count": 302,
+        "tags": [
+          "arxiv:2410.02713",
+          "language:en",
+          "modality:text",
+          "modality:video",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "task_categories:video-text-to-text",
+          "task_categories:visual-question-answering",
+          "video"
+        ],
+        "url": "https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K"
+      },
+      "dataset_ids": [
+        "llava_video_178k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "lmms-lab/LLaVA-Video-178K",
+      "status": "ok"
+    },
+    "lmms-lab/Video-MME": {
+      "current": {
+        "card_data": {},
+        "disabled": false,
+        "downloads": 70746,
+        "gated": false,
+        "last_modified": "2024-07-04T08:14:20.000Z",
+        "license": null,
+        "likes": 98,
+        "private": false,
+        "repo_id": "lmms-lab/Video-MME",
+        "sha": "ead1408f75b618502df9a1d8e0950166bf0a2a0b",
+        "siblings_count": 24,
+        "tags": [
+          "format:parquet",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "modality:text",
+          "modality:video",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/lmms-lab/Video-MME"
+      },
+      "dataset_ids": [
+        "video_mme"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "lmms-lab/Video-MME",
+      "status": "ok"
+    },
+    "longvideobench/LongVideoBench": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-sa-4.0",
+          "pretty_name": "longvideobench",
+          "task_categories": [
+            "multiple-choice",
+            "visual-question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 22351,
+        "gated": "auto",
+        "last_modified": "2024-10-14T05:43:04.000Z",
+        "license": "cc-by-nc-sa-4.0",
+        "likes": 61,
+        "private": false,
+        "repo_id": "longvideobench/LongVideoBench",
+        "sha": "60d1c89c1919a198b73be39c2babb213b29d6a5c",
+        "siblings_count": 38,
+        "tags": [
+          "arxiv:2407.15754",
+          "format:parquet",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:cc-by-nc-sa-4.0",
+          "long context",
+          "long video understanding",
+          "modality:tabular",
+          "modality:text",
+          "multimodal",
+          "neurips 2024",
+          "region:us",
+          "size_categories:1K<n<10K",
+          "task_categories:multiple-choice",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/longvideobench/LongVideoBench"
+      },
+      "dataset_ids": [
+        "longvideobench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "longvideobench/LongVideoBench",
       "status": "ok"
     },
     "lukaemon/bbh": {
@@ -4066,8 +5712,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "lukaemon/bbh",
       "status": "ok"
     },
@@ -4118,9 +5764,62 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "m-a-p/CodeFeedback-Filtered-Instruction",
+      "status": "ok"
+    },
+    "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "apache-2.0",
+          "task_categories": [
+            "image-text-to-text"
+          ]
+        },
+        "disabled": false,
+        "downloads": 71429,
+        "gated": false,
+        "last_modified": "2026-07-16T16:14:35.000Z",
+        "license": "apache-2.0",
+        "likes": 91,
+        "private": false,
+        "repo_id": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data",
+        "sha": "0efb7ad47f8ba36e1d262545cadec4cd8960dc5f",
+        "siblings_count": 8751,
+        "tags": [
+          "arxiv:2509.23661",
+          "dataset-collection",
+          "image-captioning",
+          "instruction-tuning",
+          "language:en",
+          "large-language-model",
+          "license:apache-2.0",
+          "lmm",
+          "modality:image",
+          "modality:text",
+          "multimodal",
+          "pretraining",
+          "region:us",
+          "size_categories:10M<n<100M",
+          "task_categories:image-text-to-text",
+          "vision-language-model",
+          "vqa"
+        ],
+        "url": "https://huggingface.co/datasets/mvp-lab/LLaVA-OneVision-1.5-Instruct-Data"
+      },
+      "dataset_ids": [
+        "llava_onevision15_instruct_22m"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data",
       "status": "ok"
     },
     "nvidia/Aegis-AI-Content-Safety-Dataset-2.0": {
@@ -4176,8 +5875,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
       "status": "ok"
     },
@@ -4227,8 +5926,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/HelpSteer2",
       "status": "ok"
     },
@@ -4306,8 +6005,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/HelpSteer3",
       "status": "ok"
     },
@@ -4350,8 +6049,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/Nemotron-Cascade-2-RL-data",
       "status": "ok"
     },
@@ -4389,8 +6088,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/Nemotron-Cascade-2-SFT-Data",
       "status": "ok"
     },
@@ -4443,8 +6142,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/OpenCodeInstruct",
       "status": "ok"
     },
@@ -4492,8 +6191,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/OpenCodeReasoning",
       "status": "ok"
     },
@@ -4548,8 +6247,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/OpenMathInstruct-2",
       "status": "ok"
     },
@@ -4604,8 +6303,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "nvidia/OpenMathReasoning",
       "status": "ok"
     },
@@ -4655,8 +6354,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "open-r1/Mixture-of-Thoughts",
       "status": "ok"
     },
@@ -4727,8 +6426,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "openai/gsm8k",
       "status": "ok"
     },
@@ -4763,8 +6462,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "openai/summarize_from_feedback",
       "status": "ok"
     },
@@ -4800,9 +6499,72 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "openai/webgpt_comparisons",
+      "status": "ok"
+    },
+    "openbmb/RLAIF-V-Dataset": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-4.0",
+          "pretty_name": "RLAIF-V-Dataset",
+          "size_categories": [
+            "10K<n<100K"
+          ],
+          "task_categories": [
+            "image-text-to-text",
+            "visual-question-answering",
+            "any-to-any"
+          ]
+        },
+        "disabled": false,
+        "downloads": 2074,
+        "gated": false,
+        "last_modified": "2025-10-14T08:35:37.000Z",
+        "license": "cc-by-nc-4.0",
+        "likes": 227,
+        "private": false,
+        "repo_id": "openbmb/RLAIF-V-Dataset",
+        "sha": "cdfc8c13778434e38afd538b0641ea942df4af78",
+        "siblings_count": 16,
+        "tags": [
+          "arxiv:2312.00849",
+          "arxiv:2405.17220",
+          "arxiv:2509.18154",
+          "feedback",
+          "format:parquet",
+          "language:en",
+          "library:dask",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:polars",
+          "license:cc-by-nc-4.0",
+          "mllm",
+          "modality:image",
+          "modality:text",
+          "multimodal",
+          "preference-alignment",
+          "region:us",
+          "size_categories:10K<n<100K",
+          "task_categories:any-to-any",
+          "task_categories:image-text-to-text",
+          "task_categories:visual-question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset"
+      },
+      "dataset_ids": [
+        "rlaif_v"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "openbmb/RLAIF-V-Dataset",
       "status": "ok"
     },
     "openbmb/UltraFeedback": {
@@ -4851,9 +6613,41 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "openbmb/UltraFeedback",
+      "status": "ok"
+    },
+    "opencompass/MMBench": {
+      "current": {
+        "card_data": {
+          "license": "cc-by-4.0"
+        },
+        "disabled": false,
+        "downloads": 200,
+        "gated": false,
+        "last_modified": "2023-09-13T02:11:05.000Z",
+        "license": "cc-by-4.0",
+        "likes": 1,
+        "private": false,
+        "repo_id": "opencompass/MMBench",
+        "sha": "47abe7b8f225cbff9942881db01dc33d2313483c",
+        "siblings_count": 2,
+        "tags": [
+          "license:cc-by-4.0",
+          "region:us"
+        ],
+        "url": "https://huggingface.co/datasets/opencompass/MMBench"
+      },
+      "dataset_ids": [
+        "mmbench_cn"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "opencompass/MMBench",
       "status": "ok"
     },
     "princeton-nlp/SWE-bench_Verified": {
@@ -4864,7 +6658,7 @@
         "gated": false,
         "last_modified": "2025-02-18T23:48:55.000Z",
         "license": null,
-        "likes": 409,
+        "likes": 410,
         "private": false,
         "repo_id": "princeton-nlp/SWE-bench_Verified",
         "sha": "c104f840cc67f8b6eec6f759ebc8b2693d585d4a",
@@ -4886,10 +6680,92 @@
       ],
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "history": [
+        {
+          "changes": {
+            "likes": {
+              "new": 410,
+              "old": 409
+            }
+          },
+          "observed_at": "2026-11-09T09:09:52Z",
+          "previous": {
+            "card_data": {},
+            "disabled": false,
+            "downloads": 168984,
+            "gated": false,
+            "last_modified": "2025-02-18T23:48:55.000Z",
+            "license": null,
+            "likes": 409,
+            "private": false,
+            "repo_id": "princeton-nlp/SWE-bench_Verified",
+            "sha": "c104f840cc67f8b6eec6f759ebc8b2693d585d4a",
+            "siblings_count": 3,
+            "tags": [
+              "format:parquet",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:pandas",
+              "library:polars",
+              "modality:text",
+              "region:us",
+              "size_categories:n<1K"
+            ],
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified"
+          }
+        }
+      ],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "princeton-nlp/SWE-bench_Verified",
+      "status": "ok"
+    },
+    "qyang1021/AIR-Bench-Dataset": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-4.0",
+          "size_categories": [
+            "10B<n<100B"
+          ],
+          "task_categories": [
+            "question-answering"
+          ]
+        },
+        "disabled": false,
+        "downloads": 9086,
+        "gated": false,
+        "last_modified": "2024-05-12T08:45:15.000Z",
+        "license": "cc-by-nc-4.0",
+        "likes": 8,
+        "private": false,
+        "repo_id": "qyang1021/AIR-Bench-Dataset",
+        "sha": "8fa643aefd1d7248fd55fcf3e7ad22c81bbac1fa",
+        "siblings_count": 25780,
+        "tags": [
+          "format:audiofolder",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "license:cc-by-nc-4.0",
+          "modality:audio",
+          "region:us",
+          "size_categories:n<1K",
+          "task_categories:question-answering"
+        ],
+        "url": "https://huggingface.co/datasets/qyang1021/AIR-Bench-Dataset"
+      },
+      "dataset_ids": [
+        "air_bench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "qyang1021/AIR-Bench-Dataset",
       "status": "ok"
     },
     "sorry-bench/sorry-bench-202503": {
@@ -4952,8 +6828,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T05:00:20Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "sorry-bench/sorry-bench-202503",
       "status": "ok"
     },
@@ -5012,8 +6888,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "stanfordnlp/SHP",
       "status": "ok"
     },
@@ -5058,9 +6934,99 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "teknium/OpenHermes-2.5",
+      "status": "ok"
+    },
+    "ys-zong/VLGuard": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "mit",
+          "size_categories": [
+            "1K<n<10K"
+          ],
+          "task_categories": [
+            "image-to-text"
+          ]
+        },
+        "disabled": false,
+        "downloads": 919,
+        "gated": "auto",
+        "last_modified": "2025-01-19T00:32:34.000Z",
+        "license": "mit",
+        "likes": 21,
+        "private": false,
+        "repo_id": "ys-zong/VLGuard",
+        "sha": "b0be37a1ab7accb14e10d6a0ec3ce62cfaff2d46",
+        "siblings_count": 7,
+        "tags": [
+          "arxiv:2402.02207",
+          "format:imagefolder",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "license:mit",
+          "modality:image",
+          "region:us",
+          "size_categories:1K<n<10K",
+          "task_categories:image-to-text"
+        ],
+        "url": "https://huggingface.co/datasets/ys-zong/VLGuard"
+      },
+      "dataset_ids": [
+        "vlguard_train"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "ys-zong/VLGuard",
+      "status": "ok"
+    },
+    "yxwang/SafeVid-350K": {
+      "current": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": "cc-by-nc-sa-4.0",
+          "size_categories": [
+            "100K<n<1M"
+          ]
+        },
+        "disabled": false,
+        "downloads": 93,
+        "gated": false,
+        "last_modified": "2025-11-27T11:30:31.000Z",
+        "license": "cc-by-nc-sa-4.0",
+        "likes": 6,
+        "private": false,
+        "repo_id": "yxwang/SafeVid-350K",
+        "sha": "6e2309a536d5bccced78454511404becd8744448",
+        "siblings_count": 92,
+        "tags": [
+          "language:en",
+          "license:cc-by-nc-sa-4.0",
+          "region:us",
+          "size_categories:100K<n<1M"
+        ],
+        "url": "https://huggingface.co/datasets/yxwang/SafeVid-350K"
+      },
+      "dataset_ids": [
+        "safe_vid_350k",
+        "safevidbench"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "yxwang/SafeVid-350K",
       "status": "ok"
     },
     "zai-org/LongAlign-10k": {
@@ -5111,8 +7077,8 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "zai-org/LongAlign-10k",
       "status": "ok"
     },
@@ -5169,15 +7135,55 @@
       "error": null,
       "first_seen_at": "2026-11-09T04:15:35Z",
       "history": [],
-      "last_checked_at": "2026-11-09T06:01:42Z",
-      "last_success_at": "2026-11-09T06:01:42Z",
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
       "repo_id": "zai-org/LongCite-45k",
+      "status": "ok"
+    },
+    "zhiqings/LLaVA-Human-Preference-10K": {
+      "current": {
+        "card_data": {
+          "license": "apache-2.0"
+        },
+        "disabled": false,
+        "downloads": 298,
+        "gated": false,
+        "last_modified": "2023-09-27T01:03:58.000Z",
+        "license": "apache-2.0",
+        "likes": 35,
+        "private": false,
+        "repo_id": "zhiqings/LLaVA-Human-Preference-10K",
+        "sha": "e60c9e520dde0c331f1b833ec991789ed238554c",
+        "siblings_count": 3,
+        "tags": [
+          "format:json",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:apache-2.0",
+          "modality:tabular",
+          "modality:text",
+          "region:us",
+          "size_categories:1K<n<10K"
+        ],
+        "url": "https://huggingface.co/datasets/zhiqings/LLaVA-Human-Preference-10K"
+      },
+      "dataset_ids": [
+        "llava_human_preference_10k"
+      ],
+      "error": null,
+      "first_seen_at": "2026-11-09T09:09:52Z",
+      "history": [],
+      "last_checked_at": "2026-11-09T09:09:52Z",
+      "last_success_at": "2026-11-09T09:09:52Z",
+      "repo_id": "zhiqings/LLaVA-Human-Preference-10K",
       "status": "ok"
     }
   },
   "schema_version": "1.0",
   "source_catalog": {
     "path": "datasets-list.yaml",
-    "sha256": "ab6b7a19d12c16dc29eea91db92d5c677425697585cd934907f69f5bd33125ae"
+    "sha256": "d3082d9ab40e08379779dd9e45ca53a738fb2f96d05897155dfe44bcd8456399"
   }
 }

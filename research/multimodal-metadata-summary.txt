@@ -1,0 +1,239 @@
+liuhaotian/LLaVA-Instruct-150K
+  error=None license=cc-by-4.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+mvp-lab/LLaVA-OneVision-1.5-Instruct-Data
+  error=None license=apache-2.0 gated=False
+  counts=CLEVR/train=513923, CLEVR-Math/train=5254, Docmatix/train=563353, Docmatix-part-00-of-10/train=56336, Docmatix-part-01-of-10/train=56336, Docmatix-part-02-of-10/train=56336, Docmatix-part-03-of-10/train=56336, Docmatix-part-04-of-10/train=56336, Docmatix-part-05-of-10/train=56336, Docmatix-part-06-of-10/train=56336, Docmatix-part-07-of-10/train=56336, Docmatix-part-08-of-10/train=56336, ... 173 more
+  fields=id, image, conversations, data_source
+
+HuggingFaceM4/FineVision
+  error=None license=None gated=False
+  counts=CoSyn_400k_chart/train=116814, CoSyn_400k_chemical/train=8942, CoSyn_400k_circuit/train=10470, CoSyn_400k_diagram/train=34963, CoSyn_400k_document/train=71282, CoSyn_400k_graphic/train=26968, CoSyn_400k_math/train=66714, CoSyn_400k_music/train=11969, CoSyn_400k_nutrition/train=6931, CoSyn_400k_table/train=46518, DoclingMatix/train=1270910, LLaVA_Instruct_150K/train=157710, ... 173 more
+  fields=images, texts, source, relevance_ratings, relevance_min, visual_dependency_ratings, visual_dependency_min, image_correspondence_ratings, image_correspondence_min, formatting_ratings, formatting_min
+
+allenai/pixmo-ask-model-anything
+  error=None license=odc-by gated=False
+  counts=default/train=161737
+  fields=image_url, image_sha256, question, answer
+
+allenai/pixmo-points
+  error=None license=odc-by gated=False
+  counts=default/train=2376222
+  fields=image_url, image_sha256, points, count, label, collection_method
+
+allenai/pixmo-point-explanations
+  error=None license=odc-by gated=False
+  counts=default/train=79551
+  fields=image_url, image_sha256, question, response, parsed_response, alt_text, inline_text, points
+
+allenai/pixmo-docs
+  error=None license=odc-by gated=False
+  counts=charts/train=116814, charts/validation=1024, diagrams/train=16551, diagrams/validation=1024, other/train=71282, other/validation=1024, tables/train=46518, tables/validation=1024
+  fields=image, image_id, questions
+
+allenai/pixmo-count
+  error=None license=odc-by gated=False
+  counts=default/validation=540, default/train=36916, default/test=540
+  fields=image_url, image_sha256, count, points, label
+
+allenai/pixmo-cap-qa
+  error=None license=odc-by gated=False
+  counts=default/train=271714
+  fields=image_url, question, answer, messages
+
+TIGER-Lab/Mantis-Instruct
+  error=None license=apache-2.0 gated=False
+  counts=birds-to-words/train=2649, birds-to-words/val=322, chartqa/train=28299, chartqa/val=1920, coinstruct/train=150918, contrastive_caption/train=35984, docvqa/train=39463, dreamsim/train=15941, dreamsim/val=1958, dvqa/train=200000, iconqa/train=64462, imagecode/train=16594, ... 9 more
+  fields=id, images, conversation, source
+
+lmms-lab/LLaVA-Video-178K
+  error=None license=None gated=False
+  counts=unavailable
+  fields=unavailable
+
+OpenGVLab/VideoChat-Flash-Training-Data
+  error=None license=apache-2.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+allenai/Molmo2-VideoTrack
+  error=None license=odc-by gated=False
+  counts=unavailable
+  fields=unavailable
+
+allenai/Molmo2-VideoPoint
+  error=None license=odc-by gated=False
+  counts=action_or_event/train=175168, animal/train=23750, anomaly/train=15204, comparative reference/train=48015, default/train=658340, indirect reference/train=39567, object/train=267749, referring expression/train=60902, spatial reference/train=27985
+  fields=video_id, question, label, count, two_fps_timestamps, points, raw_frames, raw_timestamps, annotator_unsure, category, video_duration, video_source, clip_start, clip_end, __index_level_0__
+
+zhiqings/LLaVA-Human-Preference-10K
+  error=None license=apache-2.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+openbmb/RLAIF-V-Dataset
+  error=None license=cc-by-nc-4.0 gated=False
+  counts=unavailable
+  fields=ds_name, image, question, chosen, rejected, origin_dataset, origin_split, idx, image_path
+
+MMInstruction/VLFeedback
+  error=None license=None gated=False
+  counts=default/train=80258
+  fields=id, prompt, models, completions, image
+
+YiyangAiLab/POVID_preference_data_for_VLLMs
+  error=None license=cc-by-4.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+Fancy-MLLM/R1-Onevision
+  error=None license=apache-2.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+OS-Copilot/OS-Atlas-Data
+  error=None license=apache-2.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+google-research-datasets/android_control
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+hflqf88888/GUIOdyssey
+  error=None license=cc-by-4.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+gpt-omni/VoiceAssistant-400K
+  error=None license=apache-2.0 gated=False
+  counts=default/train=470054
+  fields=split_name, index, round, question, question_audio, answer, answer_snac
+
+ys-zong/VLGuard
+  error=None license=mit gated=auto
+  counts=unavailable
+  fields=unavailable
+
+yxwang/SafeVid-350K
+  error=None license=cc-by-nc-sa-4.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+MMMU/MMMU
+  error=None license=apache-2.0 gated=False
+  counts=Accounting/dev=5, Accounting/validation=30, Accounting/test=380, Agriculture/dev=5, Agriculture/validation=30, Agriculture/test=287, Architecture_and_Engineering/dev=5, Architecture_and_Engineering/validation=30, Architecture_and_Engineering/test=551, Art/dev=5, Art/validation=30, Art/test=231, ... 78 more
+  fields=id, question, options, explanation, image_1, image_2, image_3, image_4, image_5, image_6, image_7, img_type, answer, topic_difficulty, question_type, subfield
+
+MMMU/MMMU_Pro
+  error=None license=apache-2.0 gated=False
+  counts=standard (10 options)/test=1730, standard (4 options)/test=1730, vision/test=1730
+  fields=id, question, options, explanation, image_1, image_2, image_3, image_4, image_5, image_6, image_7, img_type, answer, topic_difficulty, subject
+
+AI4Math/MathVista
+  error=None license=cc-by-sa-4.0 gated=False
+  counts=default/testmini=1000, default/test=5141
+  fields=pid, question, image, decoded_image, choices, unit, precision, answer, question_type, answer_type, metadata, query
+
+MathLLMs/MathVision
+  error=None license=mit gated=False
+  counts=default/test=3040, default/testmini=304
+  fields=id, question, options, image, decoded_image, answer, solution, level, subject
+
+lmms-lab/DocVQA
+  error=None license=apache-2.0 gated=False
+  counts=DocVQA/validation=5349, DocVQA/test=5188, InfographicVQA/validation=2801, InfographicVQA/test=3288
+  fields=questionId, question, question_types, image, docId, ucsf_document_id, ucsf_document_page_no, answers, data_split
+
+lmms-lab/ChartQA
+  error=None license=None gated=False
+  counts=default/test=2500
+  fields=type, question, answer, image
+
+lmms-lab/OCRBench
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+lmms-lab/MMStar
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+lmms-lab/BLINK
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+TIGER-Lab/Mantis-Eval
+  error=None license=apache-2.0 gated=False
+  counts=mantis_eval/test=217
+  fields=id, question_type, question, images, options, answer, data_source, category
+
+lmms-lab/Video-MME
+  error=None license=None gated=False
+  counts=videomme/test=2700
+  fields=video_id, duration, domain, sub_category, url, videoID, question_id, task_type, question, options, answer
+
+MLVU/MLVU
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+longvideobench/LongVideoBench
+  error=None license=cc-by-nc-sa-4.0 gated=auto
+  counts=unavailable
+  fields=unavailable
+
+MMInstruction/VL-RewardBench
+  error=None license=mit gated=False
+  counts=default/test=1247
+  fields=id, query, response, image, human_ranking, models, judge, rationale, query_source, ground_truth
+
+zhiqings/VL-RewardBench
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+OS-Copilot/ScreenSpot-v2
+  error=None license=apache-2.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+CMMMU-Benchmark/CMMMU
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+FlagOpen/CMMU
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+opencompass/MMBench
+  error=None license=cc-by-4.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+AudioLLMs/MMAU
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+AudioLLMs/AudioBench
+  error=HTTP Error 401: Unauthorized license=None gated=None
+  counts=unavailable
+  fields=unavailable
+
+qyang1021/AIR-Bench-Dataset
+  error=None license=cc-by-nc-4.0 gated=False
+  counts=unavailable
+  fields=unavailable
+
+hlt-lab/voicebench
+  error=None license=apache-2.0 gated=False
+  counts=advbench/test=520, alpacaeval/test=199, alpacaeval_full/test=636, alpacaeval_speaker/en_AU_Wavenet_A_1.0_0.0_0.0=636, alpacaeval_speaker/en_AU_Wavenet_B_1.0_0.0_0.0=636, alpacaeval_speaker/en_IN_Wavenet_A_1.0_0.0_0.0=636, alpacaeval_speaker/en_IN_Wavenet_B_1.0_0.0_0.0=636, alpacaeval_speaker/en_GB_Wavenet_A_1.0_0.0_0.0=636, alpacaeval_speaker/en_GB_Wavenet_B_1.0_0.0_0.0=636, alpacaeval_speaker/en_US_Wavenet_A_1.0_0.0_0.0=636, alpacaeval_speaker/en_US_Wavenet_C_1.0_0.0_0.0=636, alpacaeval_speaker/en_US_Wavenet_A_1.5_0.0_0.0=636, ... 31 more
+  fields=audio, prompt

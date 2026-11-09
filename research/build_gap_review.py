@@ -7,7 +7,11 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DOC = yaml.safe_load((ROOT / "datasets-list.yaml").read_text(encoding="utf-8"))
-DATASETS = DOC["datasets"]
+MM_DOC = yaml.safe_load((ROOT / "datasets-multimodal.yaml").read_text(encoding="utf-8"))
+MM_IDS = {item["id"] for item in MM_DOC["datasets"]}
+# 本报告记录历史上的文本 awesome 差分，不能把后续多模态扩展倒写进旧结论。
+DATASETS = [item for item in DOC["datasets"] if item["id"] not in MM_IDS]
+TEXT_COVERAGE = dict(list(DOC["coverage_requirements"].items())[:26])
 BY_ID = {x["id"]: x for x in DATASETS}
 PREVIOUS = set(DOC["provenance"]["previous_asset_ids"])
 ROUND2_IDS = {
@@ -27,7 +31,7 @@ TRAINING_NEW = [x for x in NEW if x["usage_tier"] != "eval_only"]
 EVAL_NEW = [x for x in NEW if x["usage_tier"] == "eval_only"]
 assert len(DATASETS) == 114 and len(NEW) == 36
 assert len(TRAINING_NEW) == 18 and len(EVAL_NEW) == 18
-assert len(DOC["coverage_requirements"]) == 26
+assert len(TEXT_COVERAGE) == 26
 
 
 def cite(url, label="官方来源"):
@@ -130,7 +134,7 @@ lines = [
 "",
 "## 1. 执行结论",
 "",
-f"本轮从 GitHub awesome 清单召回候选，再逐项回到官方项目、Hugging Face 元数据或数据卡核验，最终将总表从 **78 项扩展到 {len(DATASETS)} 项**，新增 **{len(NEW)} 项**。新增部分包括 **{len(TRAINING_NEW)} 项训练／研究资产**和 **{len(EVAL_NEW)} 项 eval_only 资产**；旧 **{len(PREVIOUS)} 项全部保留**。能力维度由 **23 项扩展到 {len(DOC['coverage_requirements'])} 项**，新增 `long_output`、`browser_agent`、`agent_safety`。",
+f"本轮从 GitHub awesome 清单召回候选，再逐项回到官方项目、Hugging Face 元数据或数据卡核验，最终将总表从 **78 项扩展到 {len(DATASETS)} 项**，新增 **{len(NEW)} 项**。新增部分包括 **{len(TRAINING_NEW)} 项训练／研究资产**和 **{len(EVAL_NEW)} 项 eval_only 资产**；旧 **{len(PREVIOUS)} 项全部保留**。能力维度由 **23 项扩展到 {len(TEXT_COVERAGE)} 项**，新增 `long_output`、`browser_agent`、`agent_safety`。",
 "",
 "这次复核的重点不是数量，而是纠正“论文口径、当前数据卡口径、配置口径、构造样本口径”混用的问题。所有公开评测都设置为 `train_prohibited=true`；同仓库的训练和测试切分也拆成不同资产。许可不清、官方页面不可访问、版本无法固定或属于继续预训练的候选没有为凑数晋升，而是保留在延期或范围外清单。",
 "",
@@ -146,7 +150,7 @@ f"| **合计** | **78** | **{len(DATASETS)}** | **+{len(DATASETS)-78}** |",
 "",
 "| 指标 | 上一版 | 当前 | 说明 |",
 "|---|---:|---:|---|",
-f"| 必需能力 | 23 | {len(DOC['coverage_requirements'])} | 新增长输出、浏览 Agent、Agent 安全 |",
+f"| 必需能力 | 23 | {len(TEXT_COVERAGE)} | 新增长输出、浏览 Agent、Agent 安全 |",
 f"| 旧资产保留 | 42/42 | {len(PREVIOUS & set(BY_ID))}/42 | 无旧 ID 丢失 |",
 "| 训练／研究新增 | 0 | 18 | core、optional、research_only 分层 |",
 "| 独立评测新增 | 0 | 18 | 全部 eval_only |",
@@ -275,4 +279,4 @@ lines += [
 ]
 
 (ROOT / "awesome-datasets-gap-review.md").write_text("\n".join(lines), encoding="utf-8")
-print(f"Wrote awesome-datasets-gap-review.md: {len(DATASETS)} assets, {len(NEW)} new, {len(DOC['coverage_requirements'])} capabilities")
+print(f"Wrote awesome-datasets-gap-review.md: {len(DATASETS)} assets, {len(NEW)} new, {len(TEXT_COVERAGE)} capabilities")

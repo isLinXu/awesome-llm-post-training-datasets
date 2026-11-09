@@ -1,0 +1,4076 @@
+[
+  {
+    "repo": "liuhaotian/LLaVA-Instruct-150K",
+    "error": null,
+    "sha": "9d451dc7629cfe0469f6ae4432b765cd603d5fcb",
+    "last_modified": "2024-01-03T01:59:20.000Z",
+    "gated": false,
+    "license": "cc-by-4.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data",
+    "error": null,
+    "sha": "0efb7ad47f8ba36e1d262545cadec4cd8960dc5f",
+    "last_modified": "2026-07-16T16:14:35.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "CLEVR",
+        "name": "train",
+        "num_examples": 513923
+      },
+      {
+        "config": "CLEVR-Math",
+        "name": "train",
+        "num_examples": 5254
+      },
+      {
+        "config": "Docmatix",
+        "name": "train",
+        "num_examples": 563353
+      },
+      {
+        "config": "Docmatix-part-00-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-01-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-02-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-03-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-04-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-05-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-06-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-07-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-08-of-10",
+        "name": "train",
+        "num_examples": 56336
+      },
+      {
+        "config": "Docmatix-part-09-of-10",
+        "name": "train",
+        "num_examples": 56329
+      },
+      {
+        "config": "Evol-Instruct-GPT4-Turbo",
+        "name": "train",
+        "num_examples": 142990
+      },
+      {
+        "config": "FigureQA",
+        "name": "train",
+        "num_examples": 117236
+      },
+      {
+        "config": "GEOS",
+        "name": "train",
+        "num_examples": 539
+      },
+      {
+        "config": "GeoQA+",
+        "name": "train",
+        "num_examples": 26810
+      },
+      {
+        "config": "Geometry3K",
+        "name": "train",
+        "num_examples": 23706
+      },
+      {
+        "config": "IconQA",
+        "name": "train",
+        "num_examples": 32284
+      },
+      {
+        "config": "OmniDocBench_train",
+        "name": "train",
+        "num_examples": 967
+      },
+      {
+        "config": "PMC-VQA",
+        "name": "train",
+        "num_examples": 36632
+      },
+      {
+        "config": "Super-CLEVR",
+        "name": "train",
+        "num_examples": 8607
+      },
+      {
+        "config": "VisualWebInstruct",
+        "name": "train",
+        "num_examples": 262484
+      },
+      {
+        "config": "VizWiz",
+        "name": "train",
+        "num_examples": 20398
+      },
+      {
+        "config": "ai2d",
+        "name": "train",
+        "num_examples": 25283
+      },
+      {
+        "config": "alfredplpl",
+        "name": "train",
+        "num_examples": 46140
+      },
+      {
+        "config": "alfworld",
+        "name": "train",
+        "num_examples": 52149
+      },
+      {
+        "config": "allava",
+        "name": "train",
+        "num_examples": 195333
+      },
+      {
+        "config": "allava_instruct_laion4v",
+        "name": "train",
+        "num_examples": 49817
+      },
+      {
+        "config": "allava_instruct_vflan4v",
+        "name": "train",
+        "num_examples": 19884
+      },
+      {
+        "config": "allenai_pixmo_docs",
+        "name": "train",
+        "num_examples": 250673
+      },
+      {
+        "config": "amc_aime",
+        "name": "train",
+        "num_examples": 1253
+      },
+      {
+        "config": "aokvqa",
+        "name": "train",
+        "num_examples": 22848
+      },
+      {
+        "config": "aops_forum",
+        "name": "train",
+        "num_examples": 9228
+      },
+      {
+        "config": "arxiv_figs",
+        "name": "train",
+        "num_examples": 150907
+      },
+      {
+        "config": "arxivqa",
+        "name": "train",
+        "num_examples": 94800
+      },
+      {
+        "config": "cambrian",
+        "name": "train",
+        "num_examples": 106372
+      },
+      {
+        "config": "chart2text",
+        "name": "train",
+        "num_examples": 65445
+      },
+      {
+        "config": "chartqa",
+        "name": "train",
+        "num_examples": 18202
+      },
+      {
+        "config": "chrome_writting",
+        "name": "train",
+        "num_examples": 8012
+      },
+      {
+        "config": "cn_k12",
+        "name": "train",
+        "num_examples": 83547
+      },
+      {
+        "config": "coco",
+        "name": "train",
+        "num_examples": 96034
+      },
+      {
+        "config": "code_feedback_66k",
+        "name": "train",
+        "num_examples": 20100
+      },
+      {
+        "config": "datikz",
+        "name": "train",
+        "num_examples": 60687
+      },
+      {
+        "config": "diagram",
+        "name": "train",
+        "num_examples": 300
+      },
+      {
+        "config": "docvqa_train",
+        "name": "train",
+        "num_examples": 45230
+      },
+      {
+        "config": "dvqa",
+        "name": "train",
+        "num_examples": 368334
+      },
+      {
+        "config": "dvqa-part-00-of-10",
+        "name": "train",
+        "num_examples": 36834
+      },
+      {
+        "config": "finqa",
+        "name": "train",
+        "num_examples": 1982
+      },
+      {
+        "config": "geo170k_align",
+        "name": "train",
+        "num_examples": 59550
+      },
+      {
+        "config": "geo170k_qa",
+        "name": "train",
+        "num_examples": 133522
+      },
+      {
+        "config": "geo3k",
+        "name": "train",
+        "num_examples": 2089
+      },
+      {
+        "config": "geomverse",
+        "name": "train",
+        "num_examples": 15559
+      },
+      {
+        "config": "gpt4o",
+        "name": "train",
+        "num_examples": 71071
+      },
+      {
+        "config": "gpt4v",
+        "name": "train",
+        "num_examples": 15
+      },
+      {
+        "config": "gqa",
+        "name": "train",
+        "num_examples": 71239
+      },
+      {
+        "config": "gsm8k",
+        "name": "train",
+        "num_examples": 2287
+      },
+      {
+        "config": "hateful_memes",
+        "name": "train",
+        "num_examples": 15547
+      },
+      {
+        "config": "hitab",
+        "name": "train",
+        "num_examples": 4893
+      },
+      {
+        "config": "hme100k",
+        "name": "train",
+        "num_examples": 72384
+      },
+      {
+        "config": "iam",
+        "name": "train",
+        "num_examples": 5782
+      },
+      {
+        "config": "idk",
+        "name": "train",
+        "num_examples": 16361
+      },
+      {
+        "config": "ifeval_like",
+        "name": "train",
+        "num_examples": 549844
+      },
+      {
+        "config": "iiit",
+        "name": "train",
+        "num_examples": 1903
+      },
+      {
+        "config": "image_textualization",
+        "name": "train",
+        "num_examples": 99214
+      },
+      {
+        "config": "infographic_azuregpt4v",
+        "name": "train",
+        "num_examples": 1987
+      },
+      {
+        "config": "infographic_vqa",
+        "name": "train",
+        "num_examples": 12599
+      },
+      {
+        "config": "intergps",
+        "name": "train",
+        "num_examples": 2339
+      },
+      {
+        "config": "invoices-and-receipts_ocr",
+        "name": "train",
+        "num_examples": 5084
+      },
+      {
+        "config": "laion_220k",
+        "name": "train",
+        "num_examples": 217277
+      },
+      {
+        "config": "latex_ocr",
+        "name": "train",
+        "num_examples": 75984
+      },
+      {
+        "config": "llava_cot_100k",
+        "name": "train",
+        "num_examples": 98229
+      },
+      {
+        "config": "llava_instruct",
+        "name": "train",
+        "num_examples": 731871
+      },
+      {
+        "config": "llava_wild",
+        "name": "train",
+        "num_examples": 54240
+      },
+      {
+        "config": "llavar",
+        "name": "train",
+        "num_examples": 19796
+      },
+      {
+        "config": "llrv_gpt4v",
+        "name": "train",
+        "num_examples": 13820
+      },
+      {
+        "config": "lrv_chart",
+        "name": "train",
+        "num_examples": 1348
+      },
+      {
+        "config": "magpie_pro",
+        "name": "train",
+        "num_examples": 1035157
+      },
+      {
+        "config": "magpie_ultra",
+        "name": "train",
+        "num_examples": 621690
+      },
+      {
+        "config": "mapqa",
+        "name": "train",
+        "num_examples": 52581
+      },
+      {
+        "config": "math",
+        "name": "train",
+        "num_examples": 2244
+      },
+      {
+        "config": "mathinstruct_262k",
+        "name": "train",
+        "num_examples": 79064
+      },
+      {
+        "config": "mathqa",
+        "name": "train",
+        "num_examples": 29837
+      },
+      {
+        "config": "mavis_math_metagen",
+        "name": "train",
+        "num_examples": 126252
+      },
+      {
+        "config": "ocr",
+        "name": "train",
+        "num_examples": 272699
+      },
+      {
+        "config": "ocrvqa",
+        "name": "train",
+        "num_examples": 795837
+      },
+      {
+        "config": "olympiads",
+        "name": "train",
+        "num_examples": 45559
+      },
+      {
+        "config": "oodvqa",
+        "name": "train",
+        "num_examples": 184
+      },
+      {
+        "config": "open_orca",
+        "name": "train",
+        "num_examples": 994896
+      },
+      {
+        "config": "openmathinstruct",
+        "name": "train",
+        "num_examples": 2000000
+      },
+      {
+        "config": "orca_994k",
+        "name": "train",
+        "num_examples": 300672
+      },
+      {
+        "config": "orca_agentinstruct",
+        "name": "train",
+        "num_examples": 1045962
+      },
+      {
+        "config": "oroikon_chart_captioning",
+        "name": "train",
+        "num_examples": 7033
+      },
+      {
+        "config": "pathvqa",
+        "name": "train",
+        "num_examples": 39044
+      },
+      {
+        "config": "plotqa",
+        "name": "train",
+        "num_examples": 161940
+      },
+      {
+        "config": "plotqa-part-00-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-01-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-02-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-03-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-04-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-05-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-06-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-07-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-08-of-10",
+        "name": "train",
+        "num_examples": 16195
+      },
+      {
+        "config": "plotqa-part-09-of-10",
+        "name": "train",
+        "num_examples": 16185
+      },
+      {
+        "config": "raven",
+        "name": "train",
+        "num_examples": 26272
+      },
+      {
+        "config": "rects",
+        "name": "train",
+        "num_examples": 17008
+      },
+      {
+        "config": "rendered_text",
+        "name": "train",
+        "num_examples": 18921
+      },
+      {
+        "config": "robut_sqa",
+        "name": "train",
+        "num_examples": 12236
+      },
+      {
+        "config": "robut_wikisql",
+        "name": "train",
+        "num_examples": 153386
+      },
+      {
+        "config": "robut_wtq",
+        "name": "train",
+        "num_examples": 39997
+      },
+      {
+        "config": "rootsautomation",
+        "name": "train",
+        "num_examples": 306115
+      },
+      {
+        "config": "scienceqa",
+        "name": "train",
+        "num_examples": 1563
+      },
+      {
+        "config": "screen2words",
+        "name": "train",
+        "num_examples": 15671
+      },
+      {
+        "config": "screen_qa",
+        "name": "train",
+        "num_examples": 70259
+      },
+      {
+        "config": "sharegpt4o",
+        "name": "train",
+        "num_examples": 129950
+      },
+      {
+        "config": "sharegpt4v",
+        "name": "train",
+        "num_examples": 284071
+      },
+      {
+        "config": "sharegpt4v-part-00-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-01-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-03-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-04-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-05-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-06-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-07-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-08-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sharegpt4v-part-09-of-10",
+        "name": "train",
+        "num_examples": 28403
+      },
+      {
+        "config": "sharegpt4v-part00-of-10",
+        "name": "train",
+        "num_examples": 28408
+      },
+      {
+        "config": "sherlock",
+        "name": "train",
+        "num_examples": 24458
+      },
+      {
+        "config": "sroie_data",
+        "name": "train",
+        "num_examples": 31896
+      },
+      {
+        "config": "st_vqa",
+        "name": "train",
+        "num_examples": 32307
+      },
+      {
+        "config": "svit",
+        "name": "train",
+        "num_examples": 985150
+      },
+      {
+        "config": "svit-part-00-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-01-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-02-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-03-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-04-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-05-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-06-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-07-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-08-of-10",
+        "name": "train",
+        "num_examples": 98516
+      },
+      {
+        "config": "svit-part-09-of-10",
+        "name": "train",
+        "num_examples": 98506
+      },
+      {
+        "config": "synthetic_amc",
+        "name": "train",
+        "num_examples": 18880
+      },
+      {
+        "config": "synthetic_math",
+        "name": "train",
+        "num_examples": 50627
+      },
+      {
+        "config": "tabmwp",
+        "name": "train",
+        "num_examples": 56071
+      },
+      {
+        "config": "tallyqa",
+        "name": "train",
+        "num_examples": 107956
+      },
+      {
+        "config": "tat_qa",
+        "name": "train",
+        "num_examples": 1775
+      },
+      {
+        "config": "textcaps",
+        "name": "train",
+        "num_examples": 21877
+      },
+      {
+        "config": "textocr_gpt4v",
+        "name": "train",
+        "num_examples": 25105
+      },
+      {
+        "config": "textvqa",
+        "name": "train",
+        "num_examples": 8448
+      },
+      {
+        "config": "tinychart_train",
+        "name": "train",
+        "num_examples": 1097422
+      },
+      {
+        "config": "tqa",
+        "name": "train",
+        "num_examples": 107227
+      },
+      {
+        "config": "unigeo",
+        "name": "train",
+        "num_examples": 18819
+      },
+      {
+        "config": "ureader_cap",
+        "name": "train",
+        "num_examples": 91093
+      },
+      {
+        "config": "ureader_chart",
+        "name": "train",
+        "num_examples": 420743
+      },
+      {
+        "config": "ureader_ie",
+        "name": "train",
+        "num_examples": 17319
+      },
+      {
+        "config": "ureader_kg",
+        "name": "train",
+        "num_examples": 37456
+      },
+      {
+        "config": "ureader_ocr",
+        "name": "train",
+        "num_examples": 2678
+      },
+      {
+        "config": "ureader_qa",
+        "name": "train",
+        "num_examples": 252261
+      },
+      {
+        "config": "ureader_tr",
+        "name": "train",
+        "num_examples": 101650
+      },
+      {
+        "config": "vflan",
+        "name": "train",
+        "num_examples": 446478
+      },
+      {
+        "config": "vg",
+        "name": "train",
+        "num_examples": 138045
+      },
+      {
+        "config": "viquae",
+        "name": "train",
+        "num_examples": 4125
+      },
+      {
+        "config": "vision_flan",
+        "name": "train",
+        "num_examples": 350501
+      },
+      {
+        "config": "vision_oritented",
+        "name": "train",
+        "num_examples": 14262
+      },
+      {
+        "config": "vistext",
+        "name": "train",
+        "num_examples": 15447
+      },
+      {
+        "config": "visual7w",
+        "name": "train",
+        "num_examples": 46687
+      },
+      {
+        "config": "visual_chat",
+        "name": "train",
+        "num_examples": 25903
+      },
+      {
+        "config": "visualmrc",
+        "name": "train",
+        "num_examples": 4937
+      },
+      {
+        "config": "vqaas",
+        "name": "train",
+        "num_examples": 5871
+      },
+      {
+        "config": "vqarad",
+        "name": "train",
+        "num_examples": 2689
+      },
+      {
+        "config": "vsr",
+        "name": "train",
+        "num_examples": 3797
+      },
+      {
+        "config": "websight",
+        "name": "train",
+        "num_examples": 27843
+      },
+      {
+        "config": "wikipedia_2m",
+        "name": "train",
+        "num_examples": 2011747
+      },
+      {
+        "config": "wit",
+        "name": "train",
+        "num_examples": 646469
+      },
+      {
+        "config": "wit-part-00-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-01-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-02-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-03-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-04-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-05-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-06-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-07-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-08-of-10",
+        "name": "train",
+        "num_examples": 64748
+      },
+      {
+        "config": "wit-part-09-of-10",
+        "name": "train",
+        "num_examples": 64742
+      },
+      {
+        "config": "wizardlm",
+        "name": "train",
+        "num_examples": 43068
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "image",
+        "dtype": "image"
+      },
+      {
+        "name": "conversations",
+        "dtype": null
+      },
+      {
+        "name": "data_source",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "HuggingFaceM4/FineVision",
+    "error": null,
+    "sha": "3c380a731a3429c1d04693d6ec16d7e683def84c",
+    "last_modified": "2025-10-21T10:12:56.000Z",
+    "gated": false,
+    "license": null,
+    "splits": [
+      {
+        "config": "CoSyn_400k_chart",
+        "name": "train",
+        "num_examples": 116814
+      },
+      {
+        "config": "CoSyn_400k_chemical",
+        "name": "train",
+        "num_examples": 8942
+      },
+      {
+        "config": "CoSyn_400k_circuit",
+        "name": "train",
+        "num_examples": 10470
+      },
+      {
+        "config": "CoSyn_400k_diagram",
+        "name": "train",
+        "num_examples": 34963
+      },
+      {
+        "config": "CoSyn_400k_document",
+        "name": "train",
+        "num_examples": 71282
+      },
+      {
+        "config": "CoSyn_400k_graphic",
+        "name": "train",
+        "num_examples": 26968
+      },
+      {
+        "config": "CoSyn_400k_math",
+        "name": "train",
+        "num_examples": 66714
+      },
+      {
+        "config": "CoSyn_400k_music",
+        "name": "train",
+        "num_examples": 11969
+      },
+      {
+        "config": "CoSyn_400k_nutrition",
+        "name": "train",
+        "num_examples": 6931
+      },
+      {
+        "config": "CoSyn_400k_table",
+        "name": "train",
+        "num_examples": 46518
+      },
+      {
+        "config": "DoclingMatix",
+        "name": "train",
+        "num_examples": 1270910
+      },
+      {
+        "config": "LLaVA_Instruct_150K",
+        "name": "train",
+        "num_examples": 157710
+      },
+      {
+        "config": "SynthChartNet",
+        "name": "train",
+        "num_examples": 500000
+      },
+      {
+        "config": "SynthCodeNet",
+        "name": "train",
+        "num_examples": 499983
+      },
+      {
+        "config": "SynthFormulaNet",
+        "name": "train",
+        "num_examples": 499997
+      },
+      {
+        "config": "Unichart",
+        "name": "train",
+        "num_examples": 611925
+      },
+      {
+        "config": "a_okvqa",
+        "name": "train",
+        "num_examples": 54602
+      },
+      {
+        "config": "aguvis-stage-1",
+        "name": "train",
+        "num_examples": 458957
+      },
+      {
+        "config": "ai2d_merged",
+        "name": "train",
+        "num_examples": 4858
+      },
+      {
+        "config": "alfworldgpt",
+        "name": "train",
+        "num_examples": 45073
+      },
+      {
+        "config": "allava_laion",
+        "name": "train",
+        "num_examples": 468664
+      },
+      {
+        "config": "allava_vflan",
+        "name": "train",
+        "num_examples": 177078
+      },
+      {
+        "config": "aokvqa",
+        "name": "train",
+        "num_examples": 16539
+      },
+      {
+        "config": "art",
+        "name": "train",
+        "num_examples": 5492
+      },
+      {
+        "config": "arxivqa",
+        "name": "train",
+        "num_examples": 100000
+      },
+      {
+        "config": "bentham",
+        "name": "train",
+        "num_examples": 10843
+      },
+      {
+        "config": "blockdiagramcomputerized",
+        "name": "train",
+        "num_examples": 502
+      },
+      {
+        "config": "blockdiagramhandwritten",
+        "name": "train",
+        "num_examples": 1029
+      },
+      {
+        "config": "cambrian(filtered)_processed",
+        "name": "train",
+        "num_examples": 83123
+      },
+      {
+        "config": "captcha",
+        "name": "train",
+        "num_examples": 113062
+      },
+      {
+        "config": "chart2text",
+        "name": "train",
+        "num_examples": 26961
+      },
+      {
+        "config": "chartqa",
+        "name": "train",
+        "num_examples": 18265
+      },
+      {
+        "config": "chinesememe",
+        "name": "train",
+        "num_examples": 54212
+      },
+      {
+        "config": "chrome_writting",
+        "name": "train",
+        "num_examples": 8825
+      },
+      {
+        "config": "clevr",
+        "name": "train",
+        "num_examples": 70000
+      },
+      {
+        "config": "clevr_math",
+        "name": "train",
+        "num_examples": 70000
+      },
+      {
+        "config": "clevr_math(mathv360k)",
+        "name": "train",
+        "num_examples": 5280
+      },
+      {
+        "config": "coco_colors",
+        "name": "train",
+        "num_examples": 118287
+      },
+      {
+        "config": "cocoqa",
+        "name": "train",
+        "num_examples": 46287
+      },
+      {
+        "config": "cocotext",
+        "name": "train",
+        "num_examples": 16169
+      },
+      {
+        "config": "ctw",
+        "name": "train",
+        "num_examples": 24290
+      },
+      {
+        "config": "datik",
+        "name": "train",
+        "num_examples": 220537
+      },
+      {
+        "config": "datikz",
+        "name": "train",
+        "num_examples": 47441
+      },
+      {
+        "config": "densefusion_1m",
+        "name": "train",
+        "num_examples": 1058751
+      },
+      {
+        "config": "diagram_image_to_text",
+        "name": "train",
+        "num_examples": 300
+      },
+      {
+        "config": "docvqa",
+        "name": "train",
+        "num_examples": 10189
+      },
+      {
+        "config": "drivelm",
+        "name": "train",
+        "num_examples": 4072
+      },
+      {
+        "config": "dvqa",
+        "name": "train",
+        "num_examples": 200000
+      },
+      {
+        "config": "est_vqa",
+        "name": "train",
+        "num_examples": 19358
+      },
+      {
+        "config": "face_emotion",
+        "name": "train",
+        "num_examples": 797
+      },
+      {
+        "config": "figureqa",
+        "name": "train",
+        "num_examples": 100000
+      },
+      {
+        "config": "figureqa(mathv360k)",
+        "name": "train",
+        "num_examples": 17587
+      },
+      {
+        "config": "finqa",
+        "name": "train",
+        "num_examples": 5276
+      },
+      {
+        "config": "funsd",
+        "name": "train",
+        "num_examples": 194
+      },
+      {
+        "config": "geo170k(align)",
+        "name": "train",
+        "num_examples": 35297
+      },
+      {
+        "config": "geo170k(qa)",
+        "name": "train",
+        "num_examples": 12101
+      },
+      {
+        "config": "geo3k",
+        "name": "train",
+        "num_examples": 2091
+      },
+      {
+        "config": "geometry3k(mathv360k)",
+        "name": "train",
+        "num_examples": 9724
+      },
+      {
+        "config": "geomverse",
+        "name": "train",
+        "num_examples": 9303
+      },
+      {
+        "config": "geoqa+(mathv360k)",
+        "name": "train",
+        "num_examples": 17162
+      },
+      {
+        "config": "geos(mathv360k)",
+        "name": "train",
+        "num_examples": 498
+      },
+      {
+        "config": "google_landmarks",
+        "name": "train",
+        "num_examples": 299993
+      },
+      {
+        "config": "groundui",
+        "name": "train",
+        "num_examples": 13531
+      },
+      {
+        "config": "handwriting_forms",
+        "name": "train",
+        "num_examples": 1400
+      },
+      {
+        "config": "hateful_memes",
+        "name": "train",
+        "num_examples": 8500
+      },
+      {
+        "config": "hitab",
+        "name": "train",
+        "num_examples": 2500
+      },
+      {
+        "config": "hme100k",
+        "name": "train",
+        "num_examples": 74492
+      },
+      {
+        "config": "hw_squad",
+        "name": "train",
+        "num_examples": 20457
+      },
+      {
+        "config": "iam",
+        "name": "train",
+        "num_examples": 5663
+      },
+      {
+        "config": "iconqa",
+        "name": "train",
+        "num_examples": 27307
+      },
+      {
+        "config": "iconqa(mathv360k)",
+        "name": "train",
+        "num_examples": 22589
+      },
+      {
+        "config": "idk",
+        "name": "train",
+        "num_examples": 11123
+      },
+      {
+        "config": "iiit5k",
+        "name": "train",
+        "num_examples": 1990
+      },
+      {
+        "config": "image_textualization(filtered)",
+        "name": "train",
+        "num_examples": 99573
+      },
+      {
+        "config": "imgur5k",
+        "name": "train",
+        "num_examples": 5934
+      },
+      {
+        "config": "indoor_qa",
+        "name": "train",
+        "num_examples": 3350
+      },
+      {
+        "config": "infographic(gpt4v)",
+        "name": "train",
+        "num_examples": 1982
+      },
+      {
+        "config": "infographic_vqa",
+        "name": "train",
+        "num_examples": 4394
+      },
+      {
+        "config": "infographic_vqa_llava_format",
+        "name": "train",
+        "num_examples": 2113
+      },
+      {
+        "config": "intergps",
+        "name": "train",
+        "num_examples": 1280
+      },
+      {
+        "config": "invoices_receipts",
+        "name": "train",
+        "num_examples": 3013
+      },
+      {
+        "config": "k12_printing",
+        "name": "train",
+        "num_examples": 256636
+      },
+      {
+        "config": "laion_gpt4v",
+        "name": "train",
+        "num_examples": 9301
+      },
+      {
+        "config": "latex_handwritten",
+        "name": "train",
+        "num_examples": 39583
+      },
+      {
+        "config": "latexformulas",
+        "name": "train",
+        "num_examples": 552340
+      },
+      {
+        "config": "llavar_gpt4_20k",
+        "name": "train",
+        "num_examples": 19790
+      },
+      {
+        "config": "lnqa",
+        "name": "train",
+        "num_examples": 302780
+      },
+      {
+        "config": "localized_narratives",
+        "name": "train",
+        "num_examples": 199998
+      },
+      {
+        "config": "lrv_chart",
+        "name": "train",
+        "num_examples": 1776
+      },
+      {
+        "config": "lrv_normal(filtered)",
+        "name": "train",
+        "num_examples": 10489
+      },
+      {
+        "config": "lvis_instruct4v",
+        "name": "train",
+        "num_examples": 222711
+      },
+      {
+        "config": "mapqa",
+        "name": "train",
+        "num_examples": 37417
+      },
+      {
+        "config": "mapqa(mathv360k)",
+        "name": "train",
+        "num_examples": 5225
+      },
+      {
+        "config": "maptext",
+        "name": "train",
+        "num_examples": 200
+      },
+      {
+        "config": "mathwriting-google",
+        "name": "train",
+        "num_examples": 300000
+      },
+      {
+        "config": "mavis_math_metagen",
+        "name": "train",
+        "num_examples": 87348
+      },
+      {
+        "config": "mavis_math_rule_geo",
+        "name": "train",
+        "num_examples": 99986
+      },
+      {
+        "config": "memotion",
+        "name": "train",
+        "num_examples": 6991
+      },
+      {
+        "config": "mimic_cgd",
+        "name": "train",
+        "num_examples": 70939
+      },
+      {
+        "config": "mmc_instruct",
+        "name": "train",
+        "num_examples": 168178
+      },
+      {
+        "config": "mmevol",
+        "name": "train",
+        "num_examples": 160215
+      },
+      {
+        "config": "mmra",
+        "name": "train",
+        "num_examples": 1024
+      },
+      {
+        "config": "mmsoc_memotion",
+        "name": "train",
+        "num_examples": 6991
+      },
+      {
+        "config": "multihiertt",
+        "name": "train",
+        "num_examples": 7619
+      },
+      {
+        "config": "nlvr2",
+        "name": "train",
+        "num_examples": 50426
+      },
+      {
+        "config": "objects365_qa",
+        "name": "train",
+        "num_examples": 1665847
+      },
+      {
+        "config": "ocrvqa",
+        "name": "train",
+        "num_examples": 165746
+      },
+      {
+        "config": "olmOCR-mix-0225-books",
+        "name": "train",
+        "num_examples": 15194
+      },
+      {
+        "config": "olmOCR-mix-0225-documents",
+        "name": "train",
+        "num_examples": 228858
+      },
+      {
+        "config": "oodvqa",
+        "name": "train",
+        "num_examples": 8488
+      },
+      {
+        "config": "orand_car_a",
+        "name": "train",
+        "num_examples": 1999
+      },
+      {
+        "config": "pathvqa",
+        "name": "train",
+        "num_examples": 32632
+      },
+      {
+        "config": "pdfvqa",
+        "name": "train",
+        "num_examples": 8593
+      },
+      {
+        "config": "plotqa",
+        "name": "train",
+        "num_examples": 157070
+      },
+      {
+        "config": "pmc_vqa(mathv360k)",
+        "name": "train",
+        "num_examples": 35948
+      },
+      {
+        "config": "raven",
+        "name": "train",
+        "num_examples": 42000
+      },
+      {
+        "config": "rendered_text",
+        "name": "train",
+        "num_examples": 10000
+      },
+      {
+        "config": "robut_sqa",
+        "name": "train",
+        "num_examples": 8514
+      },
+      {
+        "config": "robut_wikisql",
+        "name": "train",
+        "num_examples": 74989
+      },
+      {
+        "config": "robut_wtq",
+        "name": "train",
+        "num_examples": 38246
+      },
+      {
+        "config": "scienceqa",
+        "name": "train",
+        "num_examples": 4976
+      },
+      {
+        "config": "scienceqa(nona_context)",
+        "name": "train",
+        "num_examples": 19208
+      },
+      {
+        "config": "screen2words",
+        "name": "train",
+        "num_examples": 15730
+      },
+      {
+        "config": "screenqa",
+        "name": "train",
+        "num_examples": 80761
+      },
+      {
+        "config": "sharegpt4o",
+        "name": "train",
+        "num_examples": 57284
+      },
+      {
+        "config": "sharegpt4v(coco)",
+        "name": "train",
+        "num_examples": 50017
+      },
+      {
+        "config": "sharegpt4v(knowledge)",
+        "name": "train",
+        "num_examples": 1988
+      },
+      {
+        "config": "sharegpt4v(llava)",
+        "name": "train",
+        "num_examples": 29986
+      },
+      {
+        "config": "sharegpt4v(sam)",
+        "name": "train",
+        "num_examples": 8990
+      },
+      {
+        "config": "sketchyvqa",
+        "name": "train",
+        "num_examples": 8000
+      },
+      {
+        "config": "slidevqa",
+        "name": "train",
+        "num_examples": 1919
+      },
+      {
+        "config": "spark",
+        "name": "train",
+        "num_examples": 3904
+      },
+      {
+        "config": "spatialsense",
+        "name": "train",
+        "num_examples": 10440
+      },
+      {
+        "config": "spot_the_diff",
+        "name": "train",
+        "num_examples": 8566
+      },
+      {
+        "config": "sroie",
+        "name": "train",
+        "num_examples": 33616
+      },
+      {
+        "config": "st_vqa",
+        "name": "train",
+        "num_examples": 17247
+      },
+      {
+        "config": "sujet_finance",
+        "name": "train",
+        "num_examples": 9801
+      },
+      {
+        "config": "super_clevr(mathv360k)",
+        "name": "train",
+        "num_examples": 8642
+      },
+      {
+        "config": "svrd",
+        "name": "train",
+        "num_examples": 4396
+      },
+      {
+        "config": "synthdog",
+        "name": "train",
+        "num_examples": 500000
+      },
+      {
+        "config": "tabmwp",
+        "name": "train",
+        "num_examples": 22722
+      },
+      {
+        "config": "tabmwp(mathv360k)",
+        "name": "train",
+        "num_examples": 22452
+      },
+      {
+        "config": "tal_ocr_eng",
+        "name": "train",
+        "num_examples": 256646
+      },
+      {
+        "config": "tallyqa",
+        "name": "train",
+        "num_examples": 98680
+      },
+      {
+        "config": "tat_dqa",
+        "name": "train",
+        "num_examples": 2207
+      },
+      {
+        "config": "tat_qa",
+        "name": "train",
+        "num_examples": 2199
+      },
+      {
+        "config": "text_OpenMathInstruct-2",
+        "name": "train",
+        "num_examples": 1000000
+      },
+      {
+        "config": "text_code_feedback",
+        "name": "train",
+        "num_examples": 66383
+      },
+      {
+        "config": "text_codefeedback_filtered_instruction",
+        "name": "train",
+        "num_examples": 156525
+      },
+      {
+        "config": "text_infinitymath",
+        "name": "train",
+        "num_examples": 101380
+      },
+      {
+        "config": "text_mathinstruct",
+        "name": "train",
+        "num_examples": 262039
+      },
+      {
+        "config": "text_mathqa",
+        "name": "train",
+        "num_examples": 394996
+      },
+      {
+        "config": "text_mathstepdpo10k",
+        "name": "train",
+        "num_examples": 10795
+      },
+      {
+        "config": "text_numinamath_cot",
+        "name": "train",
+        "num_examples": 859494
+      },
+      {
+        "config": "text_openhermes_2_5",
+        "name": "train",
+        "num_examples": 1001551
+      },
+      {
+        "config": "text_openorca",
+        "name": "train",
+        "num_examples": 4233853
+      },
+      {
+        "config": "text_orcamath",
+        "name": "train",
+        "num_examples": 200035
+      },
+      {
+        "config": "text_pythoncode25k",
+        "name": "train",
+        "num_examples": 49626
+      },
+      {
+        "config": "text_pythoncodealpaca",
+        "name": "train",
+        "num_examples": 18612
+      },
+      {
+        "config": "text_ruozhiba",
+        "name": "train",
+        "num_examples": 1496
+      },
+      {
+        "config": "text_theoremqa",
+        "name": "train",
+        "num_examples": 800
+      },
+      {
+        "config": "text_wizardlm_evol",
+        "name": "train",
+        "num_examples": 69999
+      },
+      {
+        "config": "textcaps",
+        "name": "train",
+        "num_examples": 21906
+      },
+      {
+        "config": "textocr(gpt4v)",
+        "name": "train",
+        "num_examples": 25060
+      },
+      {
+        "config": "textvqa",
+        "name": "train",
+        "num_examples": 21943
+      },
+      {
+        "config": "tqa",
+        "name": "train",
+        "num_examples": 2749
+      },
+      {
+        "config": "unigeo(mathv360k)",
+        "name": "train",
+        "num_examples": 11949
+      },
+      {
+        "config": "ureader_cap",
+        "name": "train",
+        "num_examples": 91215
+      },
+      {
+        "config": "ureader_ie",
+        "name": "train",
+        "num_examples": 17320
+      },
+      {
+        "config": "ureader_kg_processed",
+        "name": "train",
+        "num_examples": 37550
+      },
+      {
+        "config": "ureader_qa_processed",
+        "name": "train",
+        "num_examples": 252953
+      },
+      {
+        "config": "vision_flan(filtered)",
+        "name": "train",
+        "num_examples": 175964
+      },
+      {
+        "config": "vistext",
+        "name": "train",
+        "num_examples": 9969
+      },
+      {
+        "config": "visual7w",
+        "name": "train",
+        "num_examples": 14366
+      },
+      {
+        "config": "visualmrc",
+        "name": "train",
+        "num_examples": 3027
+      },
+      {
+        "config": "visualwebinstruct(filtered)",
+        "name": "train",
+        "num_examples": 263581
+      },
+      {
+        "config": "vizwiz(mathv360k)",
+        "name": "train",
+        "num_examples": 6604
+      },
+      {
+        "config": "vqaonbd",
+        "name": "train",
+        "num_examples": 39986
+      },
+      {
+        "config": "vqarad",
+        "name": "train",
+        "num_examples": 313
+      },
+      {
+        "config": "vqav2",
+        "name": "train",
+        "num_examples": 82772
+      },
+      {
+        "config": "vsr",
+        "name": "train",
+        "num_examples": 2157
+      },
+      {
+        "config": "websight",
+        "name": "train",
+        "num_examples": 10000
+      },
+      {
+        "config": "wildvision",
+        "name": "train",
+        "num_examples": 333
+      },
+      {
+        "config": "wordart",
+        "name": "train",
+        "num_examples": 4804
+      },
+      {
+        "config": "yesbut",
+        "name": "train",
+        "num_examples": 4318
+      }
+    ],
+    "features": [
+      {
+        "name": "images",
+        "dtype": null
+      },
+      {
+        "name": "texts",
+        "dtype": null
+      },
+      {
+        "name": "source",
+        "dtype": "string"
+      },
+      {
+        "name": "relevance_ratings",
+        "dtype": null
+      },
+      {
+        "name": "relevance_min",
+        "dtype": "int64"
+      },
+      {
+        "name": "visual_dependency_ratings",
+        "dtype": null
+      },
+      {
+        "name": "visual_dependency_min",
+        "dtype": "int64"
+      },
+      {
+        "name": "image_correspondence_ratings",
+        "dtype": null
+      },
+      {
+        "name": "image_correspondence_min",
+        "dtype": "int64"
+      },
+      {
+        "name": "formatting_ratings",
+        "dtype": null
+      },
+      {
+        "name": "formatting_min",
+        "dtype": "int64"
+      }
+    ]
+  },
+  {
+    "repo": "allenai/pixmo-ask-model-anything",
+    "error": null,
+    "sha": "739ffd8b417737da31e5069b9c8ff6a72a7d58b6",
+    "last_modified": "2024-12-05T18:45:02.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 161737
+      }
+    ],
+    "features": [
+      {
+        "name": "image_url",
+        "dtype": "string"
+      },
+      {
+        "name": "image_sha256",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "allenai/pixmo-points",
+    "error": null,
+    "sha": "2b5c6931e790e00ae00d4a2857e5f95d88f09a66",
+    "last_modified": "2024-11-27T22:12:24.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 2376222
+      }
+    ],
+    "features": [
+      {
+        "name": "image_url",
+        "dtype": "string"
+      },
+      {
+        "name": "image_sha256",
+        "dtype": "string"
+      },
+      {
+        "name": "points",
+        "dtype": null
+      },
+      {
+        "name": "count",
+        "dtype": "int64"
+      },
+      {
+        "name": "label",
+        "dtype": "string"
+      },
+      {
+        "name": "collection_method",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "allenai/pixmo-point-explanations",
+    "error": null,
+    "sha": "08a566fa00747e4c1c7e8481c350763b469c209c",
+    "last_modified": "2024-12-05T18:45:24.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 79551
+      }
+    ],
+    "features": [
+      {
+        "name": "image_url",
+        "dtype": "string"
+      },
+      {
+        "name": "image_sha256",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "response",
+        "dtype": "string"
+      },
+      {
+        "name": "parsed_response",
+        "dtype": "string"
+      },
+      {
+        "name": "alt_text",
+        "dtype": null
+      },
+      {
+        "name": "inline_text",
+        "dtype": null
+      },
+      {
+        "name": "points",
+        "dtype": null
+      }
+    ]
+  },
+  {
+    "repo": "allenai/pixmo-docs",
+    "error": null,
+    "sha": "d887597bf4af2bc61a4210071a8cef898287e6fb",
+    "last_modified": "2025-02-24T17:25:46.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [
+      {
+        "config": "charts",
+        "name": "train",
+        "num_examples": 116814
+      },
+      {
+        "config": "charts",
+        "name": "validation",
+        "num_examples": 1024
+      },
+      {
+        "config": "diagrams",
+        "name": "train",
+        "num_examples": 16551
+      },
+      {
+        "config": "diagrams",
+        "name": "validation",
+        "num_examples": 1024
+      },
+      {
+        "config": "other",
+        "name": "train",
+        "num_examples": 71282
+      },
+      {
+        "config": "other",
+        "name": "validation",
+        "num_examples": 1024
+      },
+      {
+        "config": "tables",
+        "name": "train",
+        "num_examples": 46518
+      },
+      {
+        "config": "tables",
+        "name": "validation",
+        "num_examples": 1024
+      }
+    ],
+    "features": [
+      {
+        "name": "image",
+        "dtype": "image"
+      },
+      {
+        "name": "image_id",
+        "dtype": "string"
+      },
+      {
+        "name": "questions",
+        "dtype": null
+      }
+    ]
+  },
+  {
+    "repo": "allenai/pixmo-count",
+    "error": null,
+    "sha": "ebf51cf70e45d12374e64d475862e4f8d21d31d0",
+    "last_modified": "2024-11-30T04:08:58.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [
+      {
+        "config": "default",
+        "name": "validation",
+        "num_examples": 540
+      },
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 36916
+      },
+      {
+        "config": "default",
+        "name": "test",
+        "num_examples": 540
+      }
+    ],
+    "features": [
+      {
+        "name": "image_url",
+        "dtype": "string"
+      },
+      {
+        "name": "image_sha256",
+        "dtype": "string"
+      },
+      {
+        "name": "count",
+        "dtype": "int32"
+      },
+      {
+        "name": "points",
+        "dtype": null
+      },
+      {
+        "name": "label",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "allenai/pixmo-cap-qa",
+    "error": null,
+    "sha": "fd3ff4b2905455ab5edfd6d06039ea6027948521",
+    "last_modified": "2024-12-05T18:49:29.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 271714
+      }
+    ],
+    "features": [
+      {
+        "name": "image_url",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "messages",
+        "dtype": null
+      }
+    ]
+  },
+  {
+    "repo": "TIGER-Lab/Mantis-Instruct",
+    "error": null,
+    "sha": "01a9edfe0bb8c2582431308c5b2645a9f4796939",
+    "last_modified": "2024-12-25T01:43:11.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "birds-to-words",
+        "name": "train",
+        "num_examples": 2649
+      },
+      {
+        "config": "birds-to-words",
+        "name": "val",
+        "num_examples": 322
+      },
+      {
+        "config": "chartqa",
+        "name": "train",
+        "num_examples": 28299
+      },
+      {
+        "config": "chartqa",
+        "name": "val",
+        "num_examples": 1920
+      },
+      {
+        "config": "coinstruct",
+        "name": "train",
+        "num_examples": 150918
+      },
+      {
+        "config": "contrastive_caption",
+        "name": "train",
+        "num_examples": 35984
+      },
+      {
+        "config": "docvqa",
+        "name": "train",
+        "num_examples": 39463
+      },
+      {
+        "config": "dreamsim",
+        "name": "train",
+        "num_examples": 15941
+      },
+      {
+        "config": "dreamsim",
+        "name": "val",
+        "num_examples": 1958
+      },
+      {
+        "config": "dvqa",
+        "name": "train",
+        "num_examples": 200000
+      },
+      {
+        "config": "iconqa",
+        "name": "train",
+        "num_examples": 64462
+      },
+      {
+        "config": "imagecode",
+        "name": "train",
+        "num_examples": 16594
+      },
+      {
+        "config": "llava_665k_multi",
+        "name": "train",
+        "num_examples": 312611
+      },
+      {
+        "config": "lrv_multi",
+        "name": "train",
+        "num_examples": 8453
+      },
+      {
+        "config": "multi_vqa",
+        "name": "train",
+        "num_examples": 4993
+      },
+      {
+        "config": "nextqa",
+        "name": "train",
+        "num_examples": 3870
+      },
+      {
+        "config": "nlvr2",
+        "name": "train",
+        "num_examples": 86373
+      },
+      {
+        "config": "nlvr2",
+        "name": "val",
+        "num_examples": 6982
+      },
+      {
+        "config": "spot-the-diff",
+        "name": "train",
+        "num_examples": 8007
+      },
+      {
+        "config": "star",
+        "name": "train",
+        "num_examples": 3032
+      },
+      {
+        "config": "visual_story_telling",
+        "name": "train",
+        "num_examples": 6661
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "images",
+        "dtype": null
+      },
+      {
+        "name": "conversation",
+        "dtype": null
+      },
+      {
+        "name": "source",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "lmms-lab/LLaVA-Video-178K",
+    "error": null,
+    "sha": "6d8c562dc26d70042a0d9704d1cae58c94b89098",
+    "last_modified": "2024-10-11T04:59:25.000Z",
+    "gated": false,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "OpenGVLab/VideoChat-Flash-Training-Data",
+    "error": null,
+    "sha": "be87f5516a709be079cec8b727dd2287bf2dd70f",
+    "last_modified": "2025-06-24T07:51:17.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "allenai/Molmo2-VideoTrack",
+    "error": null,
+    "sha": "5940b8225a8565f7793f7090f6bf69909237434d",
+    "last_modified": "2025-12-16T15:37:13.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "allenai/Molmo2-VideoPoint",
+    "error": null,
+    "sha": "65a7347ebbb501a14002418877e9a7de43510047",
+    "last_modified": "2026-03-16T01:32:31.000Z",
+    "gated": false,
+    "license": "odc-by",
+    "splits": [
+      {
+        "config": "action_or_event",
+        "name": "train",
+        "num_examples": 175168
+      },
+      {
+        "config": "animal",
+        "name": "train",
+        "num_examples": 23750
+      },
+      {
+        "config": "anomaly",
+        "name": "train",
+        "num_examples": 15204
+      },
+      {
+        "config": "comparative reference",
+        "name": "train",
+        "num_examples": 48015
+      },
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 658340
+      },
+      {
+        "config": "indirect reference",
+        "name": "train",
+        "num_examples": 39567
+      },
+      {
+        "config": "object",
+        "name": "train",
+        "num_examples": 267749
+      },
+      {
+        "config": "referring expression",
+        "name": "train",
+        "num_examples": 60902
+      },
+      {
+        "config": "spatial reference",
+        "name": "train",
+        "num_examples": 27985
+      }
+    ],
+    "features": [
+      {
+        "name": "video_id",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "label",
+        "dtype": "string"
+      },
+      {
+        "name": "count",
+        "dtype": "int64"
+      },
+      {
+        "name": "two_fps_timestamps",
+        "dtype": null
+      },
+      {
+        "name": "points",
+        "dtype": null
+      },
+      {
+        "name": "raw_frames",
+        "dtype": null
+      },
+      {
+        "name": "raw_timestamps",
+        "dtype": null
+      },
+      {
+        "name": "annotator_unsure",
+        "dtype": "bool"
+      },
+      {
+        "name": "category",
+        "dtype": "string"
+      },
+      {
+        "name": "video_duration",
+        "dtype": "float64"
+      },
+      {
+        "name": "video_source",
+        "dtype": "string"
+      },
+      {
+        "name": "clip_start",
+        "dtype": "float64"
+      },
+      {
+        "name": "clip_end",
+        "dtype": "float64"
+      },
+      {
+        "name": "__index_level_0__",
+        "dtype": "int64"
+      }
+    ]
+  },
+  {
+    "repo": "zhiqings/LLaVA-Human-Preference-10K",
+    "error": null,
+    "sha": "e60c9e520dde0c331f1b833ec991789ed238554c",
+    "last_modified": "2023-09-27T01:03:58.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "openbmb/RLAIF-V-Dataset",
+    "error": null,
+    "sha": "cdfc8c13778434e38afd538b0641ea942df4af78",
+    "last_modified": "2025-10-14T08:35:37.000Z",
+    "gated": false,
+    "license": "cc-by-nc-4.0",
+    "splits": [],
+    "features": [
+      {
+        "name": "ds_name",
+        "dtype": "string"
+      },
+      {
+        "name": "image",
+        "dtype": "image"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "chosen",
+        "dtype": "string"
+      },
+      {
+        "name": "rejected",
+        "dtype": "string"
+      },
+      {
+        "name": "origin_dataset",
+        "dtype": "string"
+      },
+      {
+        "name": "origin_split",
+        "dtype": "string"
+      },
+      {
+        "name": "idx",
+        "dtype": "string"
+      },
+      {
+        "name": "image_path",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "MMInstruction/VLFeedback",
+    "error": null,
+    "sha": "137dcea93e7667decc117c54b60f7401c6903310",
+    "last_modified": "2024-10-17T05:40:23.000Z",
+    "gated": false,
+    "license": null,
+    "splits": [
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 80258
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "prompt",
+        "dtype": "string"
+      },
+      {
+        "name": "models",
+        "dtype": null
+      },
+      {
+        "name": "completions",
+        "dtype": null
+      },
+      {
+        "name": "image",
+        "dtype": "image"
+      }
+    ]
+  },
+  {
+    "repo": "YiyangAiLab/POVID_preference_data_for_VLLMs",
+    "error": null,
+    "sha": "177dd9493f865950a3bec48ef6b9ffd7b50e3f73",
+    "last_modified": "2024-04-01T08:56:50.000Z",
+    "gated": false,
+    "license": "cc-by-4.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "Fancy-MLLM/R1-Onevision",
+    "error": null,
+    "sha": "904e96cb76d92ae40746e84c6b9809eb839937fd",
+    "last_modified": "2025-03-18T15:25:45.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "OS-Copilot/OS-Atlas-Data",
+    "error": null,
+    "sha": "e3a4c90c5f6129c25efdaa0671b08a11f7cb8f3f",
+    "last_modified": "2024-12-04T10:26:47.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "google-research-datasets/android_control",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "hflqf88888/GUIOdyssey",
+    "error": null,
+    "sha": "61632d0f3f4d51d7e9561ce4f84347dd06b2019d",
+    "last_modified": "2025-08-04T02:22:43.000Z",
+    "gated": false,
+    "license": "cc-by-4.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "gpt-omni/VoiceAssistant-400K",
+    "error": null,
+    "sha": "65dab707fcdd3d43dcfb834398aa9fed4116be3a",
+    "last_modified": "2024-09-13T12:01:42.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "default",
+        "name": "train",
+        "num_examples": 470054
+      }
+    ],
+    "features": [
+      {
+        "name": "split_name",
+        "dtype": "string"
+      },
+      {
+        "name": "index",
+        "dtype": "string"
+      },
+      {
+        "name": "round",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "question_audio",
+        "dtype": "audio"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "answer_snac",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "ys-zong/VLGuard",
+    "error": null,
+    "sha": "b0be37a1ab7accb14e10d6a0ec3ce62cfaff2d46",
+    "last_modified": "2025-01-19T00:32:34.000Z",
+    "gated": "auto",
+    "license": "mit",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "yxwang/SafeVid-350K",
+    "error": null,
+    "sha": "6e2309a536d5bccced78454511404becd8744448",
+    "last_modified": "2025-11-27T11:30:31.000Z",
+    "gated": false,
+    "license": "cc-by-nc-sa-4.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "MMMU/MMMU",
+    "error": null,
+    "sha": "876ce5cb130f7f7e290ce4d9984357737d4db5cf",
+    "last_modified": "2026-10-05T02:04:29.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "Accounting",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Accounting",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Accounting",
+        "name": "test",
+        "num_examples": 380
+      },
+      {
+        "config": "Agriculture",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Agriculture",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Agriculture",
+        "name": "test",
+        "num_examples": 287
+      },
+      {
+        "config": "Architecture_and_Engineering",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Architecture_and_Engineering",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Architecture_and_Engineering",
+        "name": "test",
+        "num_examples": 551
+      },
+      {
+        "config": "Art",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Art",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Art",
+        "name": "test",
+        "num_examples": 231
+      },
+      {
+        "config": "Art_Theory",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Art_Theory",
+        "name": "test",
+        "num_examples": 429
+      },
+      {
+        "config": "Art_Theory",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Basic_Medical_Science",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Basic_Medical_Science",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Basic_Medical_Science",
+        "name": "test",
+        "num_examples": 326
+      },
+      {
+        "config": "Biology",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Biology",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Biology",
+        "name": "test",
+        "num_examples": 345
+      },
+      {
+        "config": "Chemistry",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Chemistry",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Chemistry",
+        "name": "test",
+        "num_examples": 603
+      },
+      {
+        "config": "Clinical_Medicine",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Clinical_Medicine",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Clinical_Medicine",
+        "name": "test",
+        "num_examples": 325
+      },
+      {
+        "config": "Computer_Science",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Computer_Science",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Computer_Science",
+        "name": "test",
+        "num_examples": 371
+      },
+      {
+        "config": "Design",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Design",
+        "name": "test",
+        "num_examples": 169
+      },
+      {
+        "config": "Design",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Diagnostics_and_Laboratory_Medicine",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Diagnostics_and_Laboratory_Medicine",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Diagnostics_and_Laboratory_Medicine",
+        "name": "test",
+        "num_examples": 162
+      },
+      {
+        "config": "Economics",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Economics",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Economics",
+        "name": "test",
+        "num_examples": 267
+      },
+      {
+        "config": "Electronics",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Electronics",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Electronics",
+        "name": "test",
+        "num_examples": 256
+      },
+      {
+        "config": "Energy_and_Power",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Energy_and_Power",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Energy_and_Power",
+        "name": "test",
+        "num_examples": 432
+      },
+      {
+        "config": "Finance",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Finance",
+        "name": "test",
+        "num_examples": 355
+      },
+      {
+        "config": "Finance",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Geography",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Geography",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Geography",
+        "name": "test",
+        "num_examples": 565
+      },
+      {
+        "config": "History",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "History",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "History",
+        "name": "test",
+        "num_examples": 278
+      },
+      {
+        "config": "Literature",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Literature",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Literature",
+        "name": "test",
+        "num_examples": 112
+      },
+      {
+        "config": "Manage",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Manage",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Manage",
+        "name": "test",
+        "num_examples": 245
+      },
+      {
+        "config": "Marketing",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Marketing",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Marketing",
+        "name": "test",
+        "num_examples": 181
+      },
+      {
+        "config": "Materials",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Materials",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Materials",
+        "name": "test",
+        "num_examples": 458
+      },
+      {
+        "config": "Math",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Math",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Math",
+        "name": "test",
+        "num_examples": 505
+      },
+      {
+        "config": "Mechanical_Engineering",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Mechanical_Engineering",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Mechanical_Engineering",
+        "name": "test",
+        "num_examples": 429
+      },
+      {
+        "config": "Music",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Music",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Music",
+        "name": "test",
+        "num_examples": 334
+      },
+      {
+        "config": "Pharmacy",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Pharmacy",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Pharmacy",
+        "name": "test",
+        "num_examples": 430
+      },
+      {
+        "config": "Physics",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Physics",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Physics",
+        "name": "test",
+        "num_examples": 408
+      },
+      {
+        "config": "Psychology",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Psychology",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Psychology",
+        "name": "test",
+        "num_examples": 305
+      },
+      {
+        "config": "Public_Health",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Public_Health",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Public_Health",
+        "name": "test",
+        "num_examples": 509
+      },
+      {
+        "config": "Sociology",
+        "name": "dev",
+        "num_examples": 5
+      },
+      {
+        "config": "Sociology",
+        "name": "validation",
+        "num_examples": 30
+      },
+      {
+        "config": "Sociology",
+        "name": "test",
+        "num_examples": 252
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "options",
+        "dtype": "string"
+      },
+      {
+        "name": "explanation",
+        "dtype": "string"
+      },
+      {
+        "name": "image_1",
+        "dtype": "image"
+      },
+      {
+        "name": "image_2",
+        "dtype": "image"
+      },
+      {
+        "name": "image_3",
+        "dtype": "image"
+      },
+      {
+        "name": "image_4",
+        "dtype": "image"
+      },
+      {
+        "name": "image_5",
+        "dtype": "image"
+      },
+      {
+        "name": "image_6",
+        "dtype": "image"
+      },
+      {
+        "name": "image_7",
+        "dtype": "image"
+      },
+      {
+        "name": "img_type",
+        "dtype": "string"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "topic_difficulty",
+        "dtype": "string"
+      },
+      {
+        "name": "question_type",
+        "dtype": "string"
+      },
+      {
+        "name": "subfield",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "MMMU/MMMU_Pro",
+    "error": null,
+    "sha": "0d7426df4ccb3d8704a992fe6850abee7c262127",
+    "last_modified": "2026-10-05T01:55:47.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "standard (10 options)",
+        "name": "test",
+        "num_examples": 1730
+      },
+      {
+        "config": "standard (4 options)",
+        "name": "test",
+        "num_examples": 1730
+      },
+      {
+        "config": "vision",
+        "name": "test",
+        "num_examples": 1730
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "options",
+        "dtype": "string"
+      },
+      {
+        "name": "explanation",
+        "dtype": "string"
+      },
+      {
+        "name": "image_1",
+        "dtype": "image"
+      },
+      {
+        "name": "image_2",
+        "dtype": "image"
+      },
+      {
+        "name": "image_3",
+        "dtype": "image"
+      },
+      {
+        "name": "image_4",
+        "dtype": "image"
+      },
+      {
+        "name": "image_5",
+        "dtype": "image"
+      },
+      {
+        "name": "image_6",
+        "dtype": "image"
+      },
+      {
+        "name": "image_7",
+        "dtype": "image"
+      },
+      {
+        "name": "img_type",
+        "dtype": "string"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "topic_difficulty",
+        "dtype": "string"
+      },
+      {
+        "name": "subject",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "AI4Math/MathVista",
+    "error": null,
+    "sha": "2b6ad69445fbb5695c9b165475e8decdbeb97747",
+    "last_modified": "2024-02-11T23:09:05.000Z",
+    "gated": false,
+    "license": "cc-by-sa-4.0",
+    "splits": [
+      {
+        "config": "default",
+        "name": "testmini",
+        "num_examples": 1000
+      },
+      {
+        "config": "default",
+        "name": "test",
+        "num_examples": 5141
+      }
+    ],
+    "features": [
+      {
+        "name": "pid",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "image",
+        "dtype": "string"
+      },
+      {
+        "name": "decoded_image",
+        "dtype": "image"
+      },
+      {
+        "name": "choices",
+        "dtype": null
+      },
+      {
+        "name": "unit",
+        "dtype": "string"
+      },
+      {
+        "name": "precision",
+        "dtype": "float64"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "question_type",
+        "dtype": "string"
+      },
+      {
+        "name": "answer_type",
+        "dtype": "string"
+      },
+      {
+        "name": "metadata",
+        "dtype": null
+      },
+      {
+        "name": "query",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "MathLLMs/MathVision",
+    "error": null,
+    "sha": "2837ddb3f13abaf6b3997c12d80753e5470bd46a",
+    "last_modified": "2026-06-10T07:04:16.000Z",
+    "gated": false,
+    "license": "mit",
+    "splits": [
+      {
+        "config": "default",
+        "name": "test",
+        "num_examples": 3040
+      },
+      {
+        "config": "default",
+        "name": "testmini",
+        "num_examples": 304
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "options",
+        "dtype": null
+      },
+      {
+        "name": "image",
+        "dtype": "string"
+      },
+      {
+        "name": "decoded_image",
+        "dtype": "image"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "solution",
+        "dtype": "string"
+      },
+      {
+        "name": "level",
+        "dtype": "int64"
+      },
+      {
+        "name": "subject",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "lmms-lab/DocVQA",
+    "error": null,
+    "sha": "539088ef8a8ada01ac8e2e6d4e372586748a265e",
+    "last_modified": "2024-04-18T05:14:35.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "DocVQA",
+        "name": "validation",
+        "num_examples": 5349
+      },
+      {
+        "config": "DocVQA",
+        "name": "test",
+        "num_examples": 5188
+      },
+      {
+        "config": "InfographicVQA",
+        "name": "validation",
+        "num_examples": 2801
+      },
+      {
+        "config": "InfographicVQA",
+        "name": "test",
+        "num_examples": 3288
+      }
+    ],
+    "features": [
+      {
+        "name": "questionId",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "question_types",
+        "dtype": null
+      },
+      {
+        "name": "image",
+        "dtype": "image"
+      },
+      {
+        "name": "docId",
+        "dtype": "int64"
+      },
+      {
+        "name": "ucsf_document_id",
+        "dtype": "string"
+      },
+      {
+        "name": "ucsf_document_page_no",
+        "dtype": "string"
+      },
+      {
+        "name": "answers",
+        "dtype": null
+      },
+      {
+        "name": "data_split",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "lmms-lab/ChartQA",
+    "error": null,
+    "sha": "9e63b7df1592a1c2158e735cc1725454aef0d6d9",
+    "last_modified": "2024-03-08T05:04:43.000Z",
+    "gated": false,
+    "license": null,
+    "splits": [
+      {
+        "config": "default",
+        "name": "test",
+        "num_examples": 2500
+      }
+    ],
+    "features": [
+      {
+        "name": "type",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "image",
+        "dtype": "image"
+      }
+    ]
+  },
+  {
+    "repo": "lmms-lab/OCRBench",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "lmms-lab/MMStar",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "lmms-lab/BLINK",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "TIGER-Lab/Mantis-Eval",
+    "error": null,
+    "sha": "a3d92f9eb22c31d8c2d9d5b432c5a0ff1ef6dfd5",
+    "last_modified": "2024-11-15T06:43:06.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "mantis_eval",
+        "name": "test",
+        "num_examples": 217
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "question_type",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "images",
+        "dtype": null
+      },
+      {
+        "name": "options",
+        "dtype": null
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      },
+      {
+        "name": "data_source",
+        "dtype": "string"
+      },
+      {
+        "name": "category",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "lmms-lab/Video-MME",
+    "error": null,
+    "sha": "ead1408f75b618502df9a1d8e0950166bf0a2a0b",
+    "last_modified": "2024-07-04T08:14:20.000Z",
+    "gated": false,
+    "license": null,
+    "splits": [
+      {
+        "config": "videomme",
+        "name": "test",
+        "num_examples": 2700
+      }
+    ],
+    "features": [
+      {
+        "name": "video_id",
+        "dtype": "string"
+      },
+      {
+        "name": "duration",
+        "dtype": "string"
+      },
+      {
+        "name": "domain",
+        "dtype": "string"
+      },
+      {
+        "name": "sub_category",
+        "dtype": "string"
+      },
+      {
+        "name": "url",
+        "dtype": "string"
+      },
+      {
+        "name": "videoID",
+        "dtype": "string"
+      },
+      {
+        "name": "question_id",
+        "dtype": "string"
+      },
+      {
+        "name": "task_type",
+        "dtype": "string"
+      },
+      {
+        "name": "question",
+        "dtype": "string"
+      },
+      {
+        "name": "options",
+        "dtype": null
+      },
+      {
+        "name": "answer",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "MLVU/MLVU",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "longvideobench/LongVideoBench",
+    "error": null,
+    "sha": "60d1c89c1919a198b73be39c2babb213b29d6a5c",
+    "last_modified": "2024-10-14T05:43:04.000Z",
+    "gated": "auto",
+    "license": "cc-by-nc-sa-4.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "MMInstruction/VL-RewardBench",
+    "error": null,
+    "sha": "0e6e62701eba92818a69ce95af0ed7aa0648b176",
+    "last_modified": "2025-05-19T10:50:44.000Z",
+    "gated": false,
+    "license": "mit",
+    "splits": [
+      {
+        "config": "default",
+        "name": "test",
+        "num_examples": 1247
+      }
+    ],
+    "features": [
+      {
+        "name": "id",
+        "dtype": "string"
+      },
+      {
+        "name": "query",
+        "dtype": "string"
+      },
+      {
+        "name": "response",
+        "dtype": null
+      },
+      {
+        "name": "image",
+        "dtype": "image"
+      },
+      {
+        "name": "human_ranking",
+        "dtype": null
+      },
+      {
+        "name": "models",
+        "dtype": null
+      },
+      {
+        "name": "judge",
+        "dtype": "string"
+      },
+      {
+        "name": "rationale",
+        "dtype": "string"
+      },
+      {
+        "name": "query_source",
+        "dtype": "string"
+      },
+      {
+        "name": "ground_truth",
+        "dtype": "string"
+      }
+    ]
+  },
+  {
+    "repo": "zhiqings/VL-RewardBench",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "OS-Copilot/ScreenSpot-v2",
+    "error": null,
+    "sha": "5efbb1f1b5463a575f2eb7bc30fe29e49c15f93c",
+    "last_modified": "2025-02-10T11:15:38.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "CMMMU-Benchmark/CMMMU",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "FlagOpen/CMMU",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "opencompass/MMBench",
+    "error": null,
+    "sha": "47abe7b8f225cbff9942881db01dc33d2313483c",
+    "last_modified": "2023-09-13T02:11:05.000Z",
+    "gated": false,
+    "license": "cc-by-4.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "AudioLLMs/MMAU",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "AudioLLMs/AudioBench",
+    "error": "HTTP Error 401: Unauthorized",
+    "sha": null,
+    "last_modified": null,
+    "gated": null,
+    "license": null,
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "qyang1021/AIR-Bench-Dataset",
+    "error": null,
+    "sha": "8fa643aefd1d7248fd55fcf3e7ad22c81bbac1fa",
+    "last_modified": "2024-05-12T08:45:15.000Z",
+    "gated": false,
+    "license": "cc-by-nc-4.0",
+    "splits": [],
+    "features": []
+  },
+  {
+    "repo": "hlt-lab/voicebench",
+    "error": null,
+    "sha": "b02edcef1330480be3a11bd6f7434ac32f05ad08",
+    "last_modified": "2025-04-19T16:49:38.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "splits": [
+      {
+        "config": "advbench",
+        "name": "test",
+        "num_examples": 520
+      },
+      {
+        "config": "alpacaeval",
+        "name": "test",
+        "num_examples": 199
+      },
+      {
+        "config": "alpacaeval_full",
+        "name": "test",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_AU_Wavenet_A_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_AU_Wavenet_B_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_IN_Wavenet_A_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_IN_Wavenet_B_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_GB_Wavenet_A_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_GB_Wavenet_B_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_US_Wavenet_A_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_US_Wavenet_C_1.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_US_Wavenet_A_1.5_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_US_Wavenet_A_2.0_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "alpacaeval_speaker",
+        "name": "en_US_Wavenet_A_0.5_0.0_0.0",
+        "num_examples": 636
+      },
+      {
+        "config": "bbh",
+        "name": "test",
+        "num_examples": 1000
+      },
+      {
+        "config": "commoneval",
+        "name": "test",
+        "num_examples": 200
+      },
+      {
+        "config": "ifeval",
+        "name": "test",
+        "num_examples": 345
+      },
+      {
+        "config": "mmsu",
+        "name": "law",
+        "num_examples": 51
+      },
+      {
+        "config": "mmsu",
+        "name": "engineering",
+        "num_examples": 107
+      },
+      {
+        "config": "mmsu",
+        "name": "other",
+        "num_examples": 546
+      },
+      {
+        "config": "mmsu",
+        "name": "biology",
+        "num_examples": 172
+      },
+      {
+        "config": "mmsu",
+        "name": "business",
+        "num_examples": 236
+      },
+      {
+        "config": "mmsu",
+        "name": "economics",
+        "num_examples": 280
+      },
+      {
+        "config": "mmsu",
+        "name": "health",
+        "num_examples": 406
+      },
+      {
+        "config": "mmsu",
+        "name": "philosophy",
+        "num_examples": 305
+      },
+      {
+        "config": "mmsu",
+        "name": "psychology",
+        "num_examples": 317
+      },
+      {
+        "config": "mmsu",
+        "name": "history",
+        "num_examples": 104
+      },
+      {
+        "config": "mmsu",
+        "name": "chemistry",
+        "num_examples": 167
+      },
+      {
+        "config": "mmsu",
+        "name": "physics",
+        "num_examples": 383
+      },
+      {
+        "config": "mtbench",
+        "name": "test",
+        "num_examples": 46
+      },
+      {
+        "config": "openbookqa",
+        "name": "test",
+        "num_examples": 455
+      },
+      {
+        "config": "sd-qa",
+        "name": "aus",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "gbr",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "ind_n",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "ind_s",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "irl",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "kenya",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "nga",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "nzl",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "phl",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "usa",
+        "num_examples": 553
+      },
+      {
+        "config": "sd-qa",
+        "name": "zaf",
+        "num_examples": 553
+      },
+      {
+        "config": "wildvoice",
+        "name": "test",
+        "num_examples": 1000
+      }
+    ],
+    "features": [
+      {
+        "name": "audio",
+        "dtype": "audio"
+      },
+      {
+        "name": "prompt",
+        "dtype": "string"
+      }
+    ]
+  }
+]

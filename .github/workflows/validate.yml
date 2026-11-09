@@ -22,15 +22,19 @@ jobs:
       - name: Test catalog automation
         run: python -m unittest scripts/test_update_datasets_catalog.py -v
       - name: Validate canonical catalog
-        run: python validate_datasets_list.py datasets-list.yaml --expect-total 114
-      - name: Validate training recipes and isolation
+        run: python validate_datasets_list.py datasets-list.yaml --expect-total 175
+      - name: Validate training recipes and text-only isolation
         run: python validate_training_recipes.py
       - name: Validate ERNIE experiment references
         run: python validate_ernie55_training_plan.py config/ernie55-training-plan.yaml
-      - name: Check generated recipe files are synchronized
+      - name: Check generated files are synchronized
         run: |
+          python build_multimodal_datasets.py
+          python build_datasets_list.py
           python build_training_recipes.py
           python research/build_gap_review.py
-          git diff --exit-code -- commercial-default-manifest.yaml research-isolated-manifest.yaml training-recipes.md awesome-datasets-gap-review.md
+          python research/build_multimodal_report.py
+          python research/plot_multimodal_coverage.py
+          git diff --exit-code -- datasets-multimodal.yaml datasets-list.yaml datasets-list.md commercial-default-manifest.yaml research-isolated-manifest.yaml training-recipes.md awesome-datasets-gap-review.md multimodal-post-training-datasets-zh.md research/multimodal-asset-coverage.png
       - name: Check repository documentation and links
         run: python scripts/check_repository.py

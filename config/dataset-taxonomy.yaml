@@ -1,6 +1,6 @@
 schema_version: '1.0'
-name: base-llm-post-training-dataset-taxonomy
-scope: text-only Base LLM post-training
+name: base-and-multimodal-post-training-dataset-taxonomy
+scope: text/image/video/audio Base model post-training understanding, alignment and agents
 
 automation:
   min_score: 6.0
@@ -15,17 +15,17 @@ automation:
     medium: {title: 3.0, body: 1.5}
     weak: {title: 1.0, body: 0.5}
 
-# 自动召回只负责发现候选；以下词条用于排除明显非文本后训练数据。
+# 只排除明确范围外任务；multimodal、vision-language、video understanding 不再误杀。
+# 自动召回只进入 pending_review，媒体生成和专门领域不会自动晋升。
 negative:
-  - image segmentation
   - image generation
   - text-to-image
-  - speech recognition
-  - audio generation
-  - video understanding
   - video generation
-  - vision-language
-  - multimodal
+  - text-to-video
+  - music generation
+  - sound generation
+  - speech synthesis
+  - text-to-speech
   - medical imaging
   - remote sensing
   - recommender system
@@ -55,6 +55,19 @@ queries:
   - {category: long_output, search: long output instruction following}
   - {category: agent_browser, search: browser web navigation agent dataset}
   - {category: agent_safety, search: agent prompt injection safety benchmark}
+  - {category: vision_sft, search: visual instruction tuning dataset}
+  - {category: document_sft, search: document chart ocr instruction dataset}
+  - {category: multiimage_sft, search: multi image instruction tuning}
+  - {category: video_sft, search: video instruction tuning dataset}
+  - {category: multimodal_preference, search: vision language preference reward model}
+  - {category: multimodal_reasoning, search: multimodal reasoning instruction dataset}
+  - {category: multimodal_rlvr, search: visual rlvr verifiable reward}
+  - {category: gui_agent, search: gui agent action trajectory dataset}
+  - {category: audio_sft, search: audio speech instruction tuning dataset}
+  - {category: multimodal_safety, search: vision language safety preference dataset}
+  - {category: multimodal_evaluation, search: multimodal understanding benchmark evaluation}
+  - {category: audio_evaluation, search: audio understanding reasoning benchmark}
+  - {category: multilingual_multimodal, search: chinese multimodal instruction dataset}
 
 categories:
   general_sft:
@@ -183,6 +196,84 @@ categories:
       strong: [agent safety benchmark, prompt injection benchmark, agentharm, agentdojo]
       medium: [agent security, prompt injection, harmful agent, tool safety]
       weak: [agent, safety]
+  vision_sft:
+    name: 视觉指令与 SFT
+    keywords:
+      strong: [visual instruction tuning, vision instruction dataset, image instruction tuning, llava instruct]
+      medium: [visual instruction, vision-language, image question answering, vqa]
+      weak: [sft, multimodal, image]
+  document_sft:
+    name: 文档、图表与 OCR
+    keywords:
+      strong: [document instruction dataset, chart instruction dataset, ocr instruction dataset, document understanding sft]
+      medium: [docvqa, chartqa, ocr, document understanding, chart understanding]
+      weak: [instruction, image, reasoning]
+  multiimage_sft:
+    name: 多图交错指令
+    keywords:
+      strong: [multi-image instruction, multi image instruction, interleaved image instruction, mantis-instruct]
+      medium: [multi-image, interleaved image, cross-image reasoning, image comparison]
+      weak: [instruction, multimodal]
+  video_sft:
+    name: 视频指令与时空理解
+    keywords:
+      strong: [video instruction tuning, video instruction dataset, long video instruction, video qa training]
+      medium: [video understanding, video question answering, temporal grounding, video tracking]
+      weak: [video, multimodal, sft]
+  multimodal_preference:
+    name: 多模态偏好与奖励模型
+    keywords:
+      strong: [vision-language preference, visual preference dataset, multimodal preference dataset, vl reward model]
+      medium: [rlhf-v, rlaif-v, vlfeedback, chosen rejected, human preference]
+      weak: [dpo, reward model, image]
+  multimodal_reasoning:
+    name: 多模态推理蒸馏
+    keywords:
+      strong: [multimodal reasoning dataset, visual reasoning traces, image reasoning instruction, r1-onevision]
+      medium: [visual reasoning, multimodal reasoning, chain-of-thought, reasoning traces]
+      weak: [image, sft, reasoning]
+  multimodal_rlvr:
+    name: 多模态 RLVR
+    keywords:
+      strong: [visual rlvr, multimodal rlvr, verifiable visual reward, visual reinforcement learning verifiable]
+      medium: [visual-rft, vlm-r1, grpo, iou reward, verifiable reward]
+      weak: [reinforcement learning, image, reasoning]
+  gui_agent:
+    name: GUI Agent 与动作轨迹
+    keywords:
+      strong: [gui agent dataset, gui action trajectory, gui grounding dataset, android control, gui odyssey]
+      medium: [os-atlas, screenpot, screensport, screenspot, action matching, screenshot action]
+      weak: [agent, gui, navigation]
+  audio_sft:
+    name: 音频与语音指令
+    keywords:
+      strong: [audio instruction tuning, speech instruction dataset, voice assistant dataset, audio-language instruction]
+      medium: [speech question answering, audio understanding, spoken instruction, voiceassistant]
+      weak: [audio, speech, sft]
+  multimodal_safety:
+    name: 多模态安全与幻觉
+    keywords:
+      strong: [vision-language safety dataset, multimodal safety preference, visual safety alignment, spa-vl]
+      medium: [mm-safetybench, vlguard, safe vid, safevid, visual hallucination]
+      weak: [safety, image, preference]
+  multimodal_evaluation:
+    name: 多模态独立评测
+    keywords:
+      strong: [multimodal understanding benchmark, visual reasoning benchmark, vision-language benchmark, mmmu benchmark]
+      medium: [mathvista, mathvision, mmstar, video-mme, evaluation]
+      weak: [multimodal, benchmark]
+  audio_evaluation:
+    name: 音频独立评测
+    keywords:
+      strong: [audio understanding benchmark, audio reasoning benchmark, voice assistant benchmark, audiobench]
+      medium: [mmau, air-bench, voicebench, audio evaluation]
+      weak: [audio, speech, benchmark]
+  multilingual_multimodal:
+    name: 中文与多语言多模态
+    keywords:
+      strong: [chinese multimodal instruction, multilingual multimodal instruction, chinese vision-language dataset, cmmmu]
+      medium: [chinese multimodal, mmbench-cn, multilingual vision, cross-lingual image]
+      weak: [chinese, multilingual, multimodal]
   local_required:
     name: 本地必需物料
     keywords: {strong: [], medium: [], weak: []}

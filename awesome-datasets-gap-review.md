@@ -176,8 +176,15 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 | Mind2Web train | deferred | 官方声明研究用途且测试包单独分发；本版只将 1,341 测试任务列 eval_only，训练侧先用 WebLINX 研究轨迹 |
 | SWE-bench-extra | deferred | 本次原始数据卡访问返回 401；已有 SWE-Gym/SWE-smith/R2E-Gym，不为凑数纳入未核验项 |
 | LongAttn / LongABC | out_of_scope | 官方项目为长上下文继续预训练数据，不属于本 post-training 清单；不得当作长输出 SFT |
-| 多模态数据集 | out_of_scope | 本清单范围限定文本 Base LLM；WebLINX 仅保留文本化聊天轨迹，图像和语音分支不纳入 |
 | τ-bench legacy | superseded | 旧任务已过时；本版使用 sierra-research/tau2-bench 的 τ-bench 2.0.0 text-v1，且不与 1.x 分数直接比较 |
+| Audio-FLAN | deferred | 论文召回超 1 亿实例、80 任务且含音频生成；需先固定官方理解子集、许可和生成／理解边界，不整包纳入 |
+| AudioBench/MMAU direct HF cards | partially_verified | 官方项目与论文已核验，但当前猜测的 HF repo 返回 401；不登记未经核实的 HF revision 或统一行数 |
+| OCRBench/MMStar/BLINK/MLVU direct HF cards | partially_verified | 当前直接 HF API 返回 401；已保留官方项目入口和 eval_only 定义，未编造 SHA 或许可 |
+| CMMMU/CMMU direct HF cards | partially_verified | 官方 GitHub 与论文规模已核验，直接 HF API 401；固定发布包后再补 revision |
+| GUI-R1 / Video-R1 / VideoChat-R1 | deferred | 代码和奖励流程可召回，但本版未核验统一固定数据包；不把方法仓库当同质数据集 |
+| LLaVA 558K / LLaVA-OneVision-1.5-Mid-Training-85M | out_of_scope | 分别是特征对齐预训练和 mid-training，不属于本后训练清单 |
+| text-to-image / speech, music and video generation | out_of_scope | 本库覆盖后训练理解、指令、对齐与 Agent，不扩展到媒体生成数据 |
+| medical imaging / remote sensing | out_of_scope | 保留为专门领域审查范围；OneVision/FineVision 内相关 config 默认不选 |
 
 延期并不等于永久否决。后续只要官方数据卡恢复、固定 revision 和许可可以核验，并且资产能补真实结构缺口，就可以从候选池晋升；在此之前，自动发现结果只能进入 `pending_review`，不能自动写入 canonical 总表。
 
