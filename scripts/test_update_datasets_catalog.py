@@ -87,6 +87,29 @@ class DatasetCatalogAutomationTest(unittest.TestCase):
         self.assertEqual(state["candidates"]["example/rejected"]["status"], "rejected")
         self.assertEqual(state["candidates"]["example/pending"]["status"], "pending_review")
 
+    def test_markdown_table_names_and_ids_link_to_official_sources(self):
+        from dataset_markdown_links import link_dataset_table_entries
+        item = self.doc["datasets"][0]
+        assets = {item["id"]: item}
+        row = f"| {item['name']}<br>`{item['id']}` |"
+        linked = link_dataset_table_entries(row, assets)
+        if item["source"]["url"].startswith("https://"):
+            self.assertIn(f"[{item['name']}]({item['source']['url']})", linked)
+            self.assertIn(f"[`{item['id']}`]({item['source']['url']})", linked)
+        self.assertEqual(link_dataset_table_entries(linked, assets), linked)
+
+    def test_markdown_linker_preserves_code_and_uses_explicit_aliases(self):
+        from dataset_markdown_links import link_dataset_table_entries
+        assets = {item["id"]: item for item in self.doc["datasets"]}
+        row = "| `nvidia/OpenMathReasoning` | HelpSteer3 或 HelpSteer2；Dolly；M2Lingual |"
+        linked = link_dataset_table_entries(row, assets)
+        self.assertIn("`nvidia/OpenMathReasoning`", linked)
+        self.assertNotIn("`nvidia/[", linked)
+        self.assertIn("[HelpSteer3](https://huggingface.co/datasets/nvidia/HelpSteer3)", linked)
+        self.assertIn("[Dolly](https://huggingface.co/datasets/databricks/databricks-dolly-15k)", linked)
+        self.assertIn("[M2Lingual](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual)", linked)
+        self.assertEqual(link_dataset_table_entries(linked, assets), linked)
+
     def test_candidates_default_to_pending_review(self):
         state = {"candidates": {"example/new-data": {
             "repo_id": "example/new-data", "status": "pending_review",

@@ -297,7 +297,9 @@ def main():
     research = make_manifest("research", RESEARCH_PROFILES, assets, repositories, resolved_at)
     for filename, doc in [("commercial-default-manifest.yaml", commercial), ("research-isolated-manifest.yaml", research)]:
         (ROOT / filename).write_text(yaml.safe_dump(doc, allow_unicode=True, sort_keys=False, width=120), encoding="utf-8")
-    (ROOT / "training-recipes.md").write_text(build_report(commercial, research, resolved_at), encoding="utf-8")
+    from dataset_markdown_links import link_dataset_table_entries
+    report = link_dataset_table_entries(build_report(commercial, research, resolved_at), assets)
+    (ROOT / "training-recipes.md").write_text(report, encoding="utf-8")
     print(json.dumps({
         "commercial": {"datasets": len(commercial["datasets"]), "profiles": len(commercial["profiles"])},
         "research": {"datasets": len(research["datasets"]), "profiles": len(research["profiles"])},

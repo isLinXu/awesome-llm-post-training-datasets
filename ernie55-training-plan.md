@@ -57,16 +57,16 @@ Base 评测与模板验证
 
 | 实验 | 数据配比（采样权重） | 初始预算／长度 | 主要验收 |
 |---|---|---|---|
-| `general_public_sft` | Dolci 80%＋COIG-PC-Lite 10%＋OpenMathReasoning CoT 10% | 250M tokens／8K | 通用、多轮、IF、数学与 Base 回归 |
+| `general_public_sft` | Dolci 80%＋[COIG-PC-Lite](https://huggingface.co/datasets/BAAI/COIG-PC-Lite) 10%＋[OpenMathReasoning](https://huggingface.co/datasets/nvidia/OpenMathReasoning) CoT 10% | 250M tokens／8K | 通用、多轮、IF、数学与 Base 回归 |
 | `general_domain_sft` | Dolci 70%＋COIG 10%＋OpenMath 10%＋真实业务中文 10% | 250M tokens／8K | 私有业务集优先，不看公开榜代替业务效果 |
-| `precise_if_sft` | 通用回放 50%＋Tulu Persona IF 30%＋IFEval-like filtered 20% | 200M tokens／8K | 程序约束通过率；IFEval 严格只评测 |
-| `long_output_sft` | 通用回放 60%＋LongForm train 20%＋LongCite 20% | 200M tokens／32K | 长度、任务完成、事实、引用和一致性 |
-| `code_sft` | 通用回放 20%＋OpenCodeInstruct 80% | 250M tokens／8K | 沙箱、母题去污、LiveCodeBench／BigCodeBench |
-| `tool_sft` | xLAM 55%＋ToolACE 25%＋本地不调用负例 20% | 200M tokens／8K | Schema、实际执行、多轮并行与无需调用 |
+| `precise_if_sft` | 通用回放 50%＋Tulu Persona IF 30%＋[IFEval-like filtered](https://huggingface.co/datasets/argilla/ifeval-like-data) 20% | 200M tokens／8K | 程序约束通过率；[IFEval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) 严格只评测 |
+| `long_output_sft` | 通用回放 60%＋[LongForm](https://huggingface.co/datasets/akoksal/LongForm) train 20%＋LongCite 20% | 200M tokens／32K | 长度、任务完成、事实、引用和一致性 |
+| `code_sft` | 通用回放 20%＋[OpenCodeInstruct](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) 80% | 250M tokens／8K | 沙箱、母题去污、LiveCodeBench／BigCodeBench |
+| `tool_sft` | [xLAM](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) 55%＋[ToolACE](https://arxiv.org/html/2409.00917v1) 25%＋本地不调用负例 20% | 200M tokens／8K | Schema、实际执行、多轮并行与无需调用 |
 | `safety_sft` | 通用回放 60%＋领域政策 20%＋防过拒 20% | 200M tokens／8K | 攻击成功率、过拒率和任务效用 |
-| `preference_dpo` | HelpSteer3 Preference 100%；HelpSteer2 做独立替代 run | 从最佳 SFT 启动 | RewardBench 2＋通用／私有偏好验收 |
-| `math_rlvr` | DAPO-Math-17k 100% | 从最佳 SFT；先 pass-rate 分桶 | 答案等价验证＋数学时间外评测 |
-| `code_rlvr` | AceCode-87K 100% | 从 code_sft；沙箱签署后启动 | 隐藏测试、fail closed、防奖励攻击 |
+| `preference_dpo` | [HelpSteer3 Preference](https://huggingface.co/datasets/nvidia/HelpSteer3) 100%；[HelpSteer2](https://huggingface.co/datasets/nvidia/HelpSteer2) 做独立替代 run | 从最佳 SFT 启动 | [RewardBench 2](https://huggingface.co/datasets/allenai/reward-bench-2)＋通用／私有偏好验收 |
+| `math_rlvr` | [DAPO-Math-17k](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k) 100% | 从最佳 SFT；先 pass-rate 分桶 | 答案等价验证＋数学时间外评测 |
+| `code_rlvr` | [AceCode-87K](https://arxiv.org/html/2502.01718v4) 100% | 从 code_sft；沙箱签署后启动 | 隐藏测试、fail closed、防奖励攻击 |
 
 说明：
 

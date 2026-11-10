@@ -30,7 +30,7 @@ def asset_rows(ids):
         scale = item["scale"]
         size = f"{scale['value']:,} " if scale["value"] is not None else "未填固定值；"
         lines.append(
-            f"| `{asset_id}` | {', '.join(item['modalities'])} | {', '.join(item['stages'])}／{item['usage_tier']} | "
+            f"| {item['name']}<br>`{asset_id}` | {', '.join(item['modalities'])} | {', '.join(item['stages'])}／{item['usage_tier']} | "
             f"{size}{scale['unit']}；{scale['note']} | {item['license']['id']} | {link(asset_id, '官方来源')} |"
         )
     return lines
@@ -79,7 +79,7 @@ lines += [
     "",
     "## 3. 通用图像指令、文档、定位与计数",
     "",
-    "| ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
+    "| 数据集／ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
     "|---|---|---|---|---|---|",
 ]
 lines += asset_rows(["llava_instruct_150k", "llava15_mix665k", "llava_onevision15_instruct_22m", "finevision", "pixmo_ask_model_anything", "pixmo_points", "pixmo_point_explanations", "pixmo_docs", "pixmo_count_train", "pixmo_cap_qa"])
@@ -94,7 +94,7 @@ lines += [
     "",
     "## 4. 多图、视频与时空理解",
     "",
-    "| ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
+    "| 数据集／ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
     "|---|---|---|---|---|---|",
 ]
 lines += asset_rows(["mantis_instruct", "llava_video_178k", "videochat_flash_training", "molmo2_videotrack", "molmo2_videopoint"])
@@ -106,7 +106,7 @@ lines += [
     "",
     "## 5. 多模态偏好、推理蒸馏与 RLVR",
     "",
-    "| ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
+    "| 数据集／ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
     "|---|---|---|---|---|---|",
 ]
 lines += asset_rows(["llava_human_preference_10k", "rlhf_v", "rlaif_v", "vlfeedback", "povid", "r1_onevision", "visual_rft_tasks"])
@@ -118,7 +118,7 @@ lines += [
     "",
     "## 6. 音频指令、GUI Agent 与安全",
     "",
-    "| ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
+    "| 数据集／ID | 模态 | 阶段／层级 | 规模与口径 | 许可口径 | 来源 |",
     "|---|---|---|---|---|---|",
 ]
 lines += asset_rows(["voice_assistant_400k", "os_atlas_action_sft", "gui_odyssey_train", "android_control_train", "vlguard_train", "spa_vl_train", "safe_vid_350k", "local_multimodal_sft", "local_multimodal_preference", "local_gui_action_safety"])
@@ -186,6 +186,10 @@ lines += [
     "机器校验：`python validate_datasets_list.py datasets-list.yaml --expect-total 175`。",
     "",
 ]
-(ROOT / "multimodal-post-training-datasets-zh.md").write_text("\n".join(lines), encoding="utf-8")
+import sys
+sys.path.insert(0, str(ROOT))
+from dataset_markdown_links import link_dataset_table_entries
+report = link_dataset_table_entries("\n".join(lines), {item["id"]: item for item in DOC["datasets"]})
+(ROOT / "multimodal-post-training-datasets-zh.md").write_text(report, encoding="utf-8")
 print(f"Wrote multimodal report: {len(ASSETS)} assets, {len(MM['coverage_requirements'])} capabilities, HF {HF_OK}/{len(SNAPSHOT)}")
 print("verification:", dict(sorted(verification.items())))

@@ -1,6 +1,6 @@
 # 商用默认／研究隔离训练配方
 
-> 数据源刷新时间：`2026-11-09T09:09:52Z`。两套 Manifest 已固定 ERNIE BF16、数据 revision、config、split 和采样权重；`signoff=false` 是有意保留的开训门禁。
+> 数据源刷新时间：`2026-11-10T01:37:56Z`。两套 Manifest 已固定 ERNIE BF16、数据 revision、config、split 和采样权重；`signoff=false` 是有意保留的开训门禁。
 
 ## 1. 使用边界
 
@@ -23,10 +23,10 @@ Manifest：`commercial-default-manifest.yaml`；默认 profile：`commercial_gen
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `tulu3_sft_mixture` | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 65% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `aya_dataset` | `CohereLabs/aya_dataset` | `f9ea04583f02a8f86404ff6c58bf75fe637df8a2` | `default` | `train` | 10% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `openmath_reasoning` | `nvidia/OpenMathReasoning` | `d3d08664755704f422af97d43a7ff0ded4bd95df` | `default` | `cot` | 15% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `tulu3_persona_if` | `allenai/tulu-3-sft-personas-instruction-following` | `fe0c7d350c9b4542b8d829a6f1daa1c259f0ba0e` | `default` | `train` | 10% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 65% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`aya_dataset`](https://huggingface.co/datasets/CohereLabs/aya_dataset) | `CohereLabs/aya_dataset` | `f9ea04583f02a8f86404ff6c58bf75fe637df8a2` | `default` | `train` | 10% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`openmath_reasoning`](https://huggingface.co/datasets/nvidia/OpenMathReasoning) | `nvidia/OpenMathReasoning` | `d3d08664755704f422af97d43a7ff0ded4bd95df` | `default` | `cot` | 15% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_persona_if`](https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following) | `allenai/tulu-3-sft-personas-instruction-following` | `fe0c7d350c9b4542b8d829a6f1daa1c259f0ba0e` | `default` | `train` | 10% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_seq_len": 8192, "packing": false, "assistant_only_loss": true, "row_token_budget": 250000000}`
 
@@ -36,8 +36,8 @@ Manifest：`commercial-default-manifest.yaml`；默认 profile：`commercial_gen
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `tulu3_sft_mixture` | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 20% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `opencodeinstruct` | `nvidia/OpenCodeInstruct` | `8f3ba5bafe4d6e8db46082cf7ae6741bc370604d` | `train` | `train` | 80% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 20% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`opencodeinstruct`](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | `nvidia/OpenCodeInstruct` | `8f3ba5bafe4d6e8db46082cf7ae6741bc370604d` | `train` | `train` | 80% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_seq_len": 8192, "packing": false, "assistant_only_loss": true, "row_token_budget": 250000000}`
 
@@ -47,8 +47,8 @@ Manifest：`commercial-default-manifest.yaml`；默认 profile：`commercial_gen
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `tulu3_sft_mixture` | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 60% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `longcite_45k` | `zai-org/LongCite-45k` | `b776b01faf6e132a3d9cc373de1b46cd6630d772` | `default` | `train` | 40% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 60% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`longcite_45k`](https://huggingface.co/datasets/zai-org/LongCite-45k) | `zai-org/LongCite-45k` | `b776b01faf6e132a3d9cc373de1b46cd6630d772` | `default` | `train` | 40% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_seq_len": 32768, "packing": false, "assistant_only_loss": true, "row_token_budget": 200000000}`
 
@@ -58,7 +58,7 @@ Manifest：`commercial-default-manifest.yaml`；默认 profile：`commercial_gen
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `helpsteer3_preference` | `nvidia/HelpSteer3` | `f6d145777bcbde96137596340fab89793acd1031` | `preference` | `train` | 100% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`helpsteer3_preference`](https://huggingface.co/datasets/nvidia/HelpSteer3) | `nvidia/HelpSteer3` | `f6d145777bcbde96137596340fab89793acd1031` | `preference` | `train` | 100% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_prompt_len": 4096, "max_response_len": 4096}`
 
@@ -68,7 +68,7 @@ Manifest：`commercial-default-manifest.yaml`；默认 profile：`commercial_gen
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `dapo_math_17k` | `BytedTsinghua-SIA/DAPO-Math-17k` | `65877096c24ffa7abc4e4fa5edb95cf3413a5674` | `default` | `train` | 100% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署；固定 Math-Verify 版本；验证器签署 |
+| [`dapo_math_17k`](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k) | `BytedTsinghua-SIA/DAPO-Math-17k` | `65877096c24ffa7abc4e4fa5edb95cf3413a5674` | `default` | `train` | 100% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署；固定 Math-Verify 版本；验证器签署 |
 
 覆盖参数：`{"max_prompt_len": 4096, "max_response_len": 8192, "rollouts_per_prompt": 8, "temperature": 0.7, "curriculum": "base_model_pass_rate_buckets"}`
 
@@ -82,12 +82,12 @@ Manifest：`research-isolated-manifest.yaml`；默认 profile：`research_reason
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `openmath_reasoning` | `nvidia/OpenMathReasoning` | `d3d08664755704f422af97d43a7ff0ded4bd95df` | `default` | `cot` | 30% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `opencode_reasoning` | `nvidia/OpenCodeReasoning` | `20a1ca19c0d050fe9057fc08339d6b370ec1c67a` | `split_0` | `split_0` | 25% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `chinese_r1_distill_110k` | `Congliu/Chinese-DeepSeek-R1-Distill-data-110k` | `8520b649430617c2be4490f424d251d09d835ed3` | `default` | `train` | 15% | `review_required` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `m2lingual` | `ServiceNow-AI/M2Lingual` | `e02c0901ccabb711e3dc27ccebaf001e23ee92a4` | `full_data` | `train` | 10% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `longform` | `akoksal/LongForm` | `c4d2836f581bf1b7ad4ba1243af81b6b1b8626f1` | `default` | `train` | 10% | `review_required` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `tulu3_sft_mixture` | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 10% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`openmath_reasoning`](https://huggingface.co/datasets/nvidia/OpenMathReasoning) | `nvidia/OpenMathReasoning` | `d3d08664755704f422af97d43a7ff0ded4bd95df` | `default` | `cot` | 30% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`opencode_reasoning`](https://huggingface.co/datasets/nvidia/OpenCodeReasoning) | `nvidia/OpenCodeReasoning` | `20a1ca19c0d050fe9057fc08339d6b370ec1c67a` | `split_0` | `split_0` | 25% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`chinese_r1_distill_110k`](https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k) | `Congliu/Chinese-DeepSeek-R1-Distill-data-110k` | `8520b649430617c2be4490f424d251d09d835ed3` | `default` | `train` | 15% | `review_required` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`m2lingual`](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) | `ServiceNow-AI/M2Lingual` | `e02c0901ccabb711e3dc27ccebaf001e23ee92a4` | `full_data` | `train` | 10% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`longform`](https://huggingface.co/datasets/akoksal/LongForm) | `akoksal/LongForm` | `c4d2836f581bf1b7ad4ba1243af81b6b1b8626f1` | `default` | `train` | 10% | `review_required` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 10% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_seq_len": 16384, "packing": false, "assistant_only_loss": true, "row_token_budget": 250000000}`
 
@@ -97,8 +97,8 @@ WebLINX 1.0 chat 静态轨迹研究；不得视为动态浏览环境训练
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `weblinx` | `McGill-NLP/WebLINX` | `a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13` | `chat` | `train` | 80% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `tulu3_sft_mixture` | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 20% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`weblinx`](https://huggingface.co/datasets/McGill-NLP/WebLINX) | `McGill-NLP/WebLINX` | `a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13` | `chat` | `train` | 80% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 20% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_seq_len": 16384, "packing": false, "assistant_only_loss": true, "mask_tool_outputs": true, "row_token_budget": 200000000}`
 
@@ -108,8 +108,8 @@ FalseReject Instruct 防过拒研究；test 独立隔离，不使用 CoT 字段�
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `falsereject_train` | `AmazonScience/FalseReject` | `493ba967714ea54c6f01067e1f61e389cc2c9b3e` | `default` | `train` | 60% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
-| `tulu3_sft_mixture` | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 40% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`falsereject_train`](https://huggingface.co/datasets/AmazonScience/FalseReject) | `AmazonScience/FalseReject` | `493ba967714ea54c6f01067e1f61e389cc2c9b3e` | `default` | `train` | 60% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `allenai/tulu-3-sft-mixture` | `b14afda60f1bbebe55d5d2fa1e4df5042f97f8be` | `default` | `train` | 40% | `allowed_with_obligations` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_seq_len": 8192, "packing": false, "assistant_only_loss": true, "row_token_budget": 200000000}`
 
@@ -119,7 +119,7 @@ Tulu 3 整包偏好研究基线；含非商小子集，禁止晋升商用
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `tulu3_preference_mixture` | `allenai/llama-3.1-tulu-3-8b-preference-mixture` | `78a6f00785946cd24276c5dd075f83a143a3b1e6` | `default` | `train` | 100% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
+| [`tulu3_preference_mixture`](https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture) | `allenai/llama-3.1-tulu-3-8b-preference-mixture` | `78a6f00785946cd24276c5dd075f83a143a3b1e6` | `default` | `train` | 100% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署 |
 
 覆盖参数：`{"max_prompt_len": 4096, "max_response_len": 4096}`
 
@@ -129,7 +129,7 @@ Enigmata 非商用规则验证 RL；固定全部任务验证器和 Eval 实例�
 
 | 数据集 | HF repo | revision | config | split | 权重 | 许可状态 | 该项待签署门禁 |
 |---|---|---|---|---|---:|---|---|
-| `enigmata_data` | `BytedTsinghua-SIA/Enigmata-Data` | `95f6920c2428c762ba6a6a2038af7dbe15eb7c75` | `default` | `train` | 100% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署；固定 Enigmata Git commit；验证器签署 |
+| [`enigmata_data`](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) | `BytedTsinghua-SIA/Enigmata-Data` | `95f6920c2428c762ba6a6a2038af7dbe15eb7c75` | `default` | `train` | 100% | `noncommercial` | 上游许可审查；教师条款审查；数据质量签署；去污签署；固定 Enigmata Git commit；验证器签署 |
 
 覆盖参数：`{"max_prompt_len": 16384, "max_response_len": 4096, "rollouts_per_prompt": 8, "temperature": 0.7, "curriculum": "task_and_pass_rate_buckets"}`
 

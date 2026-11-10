@@ -12954,1966 +12954,16 @@
       "url": "https://huggingface.co/datasets/zaydsyed/TactLM-Math-Reasoning-Data"
     }
   },
-  "generated_at": "2026-11-10T00:43:48Z",
+  "generated_at": "2026-11-10T01:37:56Z",
   "last_run": {
     "assets": 175,
-    "changes": [
-      {
-        "changes": {
-          "downloads": {
-            "new": 38881,
-            "old": 38323
-          }
-        },
-        "dataset_ids": [
-          "mathvista_testmini"
-        ],
-        "repo_id": "AI4Math/MathVista"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 911,
-            "old": 890
-          }
-        },
-        "dataset_ids": [
-          "falsereject_train",
-          "falsereject_test"
-        ],
-        "repo_id": "AmazonScience/FalseReject"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 48978,
-            "old": 48971
-          },
-          "likes": {
-            "new": 2494,
-            "old": 2493
-          }
-        },
-        "dataset_ids": [
-          "hh_rlhf"
-        ],
-        "repo_id": "Anthropic/hh-rlhf"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 598,
-            "old": 589
-          }
-        },
-        "dataset_ids": [
-          "coig_pc_lite"
-        ],
-        "repo_id": "BAAI/COIG-PC-Lite"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 6252,
-            "old": 5912
-          },
-          "likes": {
-            "new": 770,
-            "old": 769
-          }
-        },
-        "dataset_ids": [
-          "infinity_instruct"
-        ],
-        "repo_id": "BAAI/Infinity-Instruct"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 27777,
-            "old": 26500
-          }
-        },
-        "dataset_ids": [
-          "taco"
-        ],
-        "repo_id": "BAAI/TACO"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 19476,
-            "old": 19519
-          }
-        },
-        "dataset_ids": [
-          "dapo_math_17k"
-        ],
-        "repo_id": "BytedTsinghua-SIA/DAPO-Math-17k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 433,
-            "old": 385
-          }
-        },
-        "dataset_ids": [
-          "enigmata_data"
-        ],
-        "repo_id": "BytedTsinghua-SIA/Enigmata-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1200,
-            "old": 1185
-          }
-        },
-        "dataset_ids": [
-          "enigmata_eval"
-        ],
-        "repo_id": "BytedTsinghua-SIA/Enigmata-Eval"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 14612,
-            "old": 14647
-          }
-        },
-        "dataset_ids": [
-          "aya_collection"
-        ],
-        "repo_id": "CohereLabs/aya_collection"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 23798,
-            "old": 24040
-          }
-        },
-        "dataset_ids": [
-          "aya_dataset"
-        ],
-        "repo_id": "CohereLabs/aya_dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2592,
-            "old": 2550
-          }
-        },
-        "dataset_ids": [
-          "chinese_r1_distill_110k"
-        ],
-        "repo_id": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 3860,
-            "old": 3883
-          }
-        },
-        "dataset_ids": [
-          "r1_onevision"
-        ],
-        "repo_id": "Fancy-MLLM/R1-Onevision"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 203531,
-            "old": 201942
-          }
-        },
-        "dataset_ids": [
-          "math_500"
-        ],
-        "repo_id": "HuggingFaceH4/MATH-500"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 19869,
-            "old": 19694
-          }
-        },
-        "dataset_ids": [
-          "mt_bench"
-        ],
-        "repo_id": "HuggingFaceH4/mt_bench_prompts"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 46605,
-            "old": 45606
-          }
-        },
-        "dataset_ids": [
-          "no_robots"
-        ],
-        "repo_id": "HuggingFaceH4/no_robots"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 133974,
-            "old": 134831
-          }
-        },
-        "dataset_ids": [
-          "finevision"
-        ],
-        "repo_id": "HuggingFaceM4/FineVision"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 97260,
-            "old": 97023
-          }
-        },
-        "dataset_ids": [
-          "gpqa_diamond"
-        ],
-        "repo_id": "Idavidrein/gpqa"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 9763,
-            "old": 10362
-          }
-        },
-        "dataset_ids": [
-          "omni_math"
-        ],
-        "repo_id": "KbsdJames/Omni-MATH"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 642,
-            "old": 632
-          }
-        },
-        "dataset_ids": [
-          "vl_rewardbench"
-        ],
-        "repo_id": "MMInstruction/VL-RewardBench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 3047,
-            "old": 3051
-          }
-        },
-        "dataset_ids": [
-          "vlfeedback"
-        ],
-        "repo_id": "MMInstruction/VLFeedback"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 92508,
-            "old": 92932
-          },
-          "likes": {
-            "new": 347,
-            "old": 346
-          }
-        },
-        "dataset_ids": [
-          "mmmu_validation"
-        ],
-        "repo_id": "MMMU/MMMU"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 35918,
-            "old": 35760
-          }
-        },
-        "dataset_ids": [
-          "mmmu_pro_standard10"
-        ],
-        "repo_id": "MMMU/MMMU_Pro"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 14891,
-            "old": 14733
-          }
-        },
-        "dataset_ids": [
-          "mathvision_test"
-        ],
-        "repo_id": "MathLLMs/MathVision"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2833,
-            "old": 2845
-          }
-        },
-        "dataset_ids": [
-          "weblinx"
-        ],
-        "repo_id": "McGill-NLP/WebLINX"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4111,
-            "old": 4084
-          }
-        },
-        "dataset_ids": [
-          "toolmind"
-        ],
-        "repo_id": "Nanbeige/ToolMind"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 14563,
-            "old": 14458
-          }
-        },
-        "dataset_ids": [
-          "os_atlas_action_sft"
-        ],
-        "repo_id": "OS-Copilot/OS-Atlas-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 5634,
-            "old": 5602
-          }
-        },
-        "dataset_ids": [
-          "screenspot_v2"
-        ],
-        "repo_id": "OS-Copilot/ScreenSpot-v2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 13250,
-            "old": 11957
-          }
-        },
-        "dataset_ids": [
-          "videochat_flash_training"
-        ],
-        "repo_id": "OpenGVLab/VideoChat-Flash-Training-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 8323,
-            "old": 8923
-          }
-        },
-        "dataset_ids": [
-          "processbench"
-        ],
-        "repo_id": "Qwen/ProcessBench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 15315,
-            "old": 15001
-          }
-        },
-        "dataset_ids": [
-          "xlam_function_calling"
-        ],
-        "repo_id": "Salesforce/xlam-function-calling-60k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 490,
-            "old": 483
-          }
-        },
-        "dataset_ids": [
-          "m2lingual"
-        ],
-        "repo_id": "ServiceNow-AI/M2Lingual"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2286,
-            "old": 2274
-          }
-        },
-        "dataset_ids": [
-          "skywork_or1_rl"
-        ],
-        "repo_id": "Skywork/Skywork-OR1-RL-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1859,
-            "old": 1896
-          }
-        },
-        "dataset_ids": [
-          "skywork_reward_preference_80k"
-        ],
-        "repo_id": "Skywork/Skywork-Reward-Preference-80K-v0.2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4896,
-            "old": 4877
-          }
-        },
-        "dataset_ids": [
-          "big_math_rl_verified"
-        ],
-        "repo_id": "SynthLabsAI/Big-Math-RL-Verified"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 377844,
-            "old": 383853
-          }
-        },
-        "dataset_ids": [
-          "mmlu_pro"
-        ],
-        "repo_id": "TIGER-Lab/MMLU-Pro"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1169,
-            "old": 1139
-          }
-        },
-        "dataset_ids": [
-          "mantis_eval"
-        ],
-        "repo_id": "TIGER-Lab/Mantis-Eval"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 5346,
-            "old": 5270
-          }
-        },
-        "dataset_ids": [
-          "mantis_instruct"
-        ],
-        "repo_id": "TIGER-Lab/Mantis-Instruct"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 206,
-            "old": 199
-          }
-        },
-        "dataset_ids": [
-          "povid"
-        ],
-        "repo_id": "YiyangAiLab/POVID_preference_data_for_VLLMs"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 45280,
-            "old": 43571
-          }
-        },
-        "dataset_ids": [
-          "deepscaler_preview"
-        ],
-        "repo_id": "agentica-org/DeepScaleR-Preview-Dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 13147,
-            "old": 13181
-          }
-        },
-        "dataset_ids": [
-          "agentharm"
-        ],
-        "repo_id": "ai-safety-institute/AgentHarm"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 547,
-            "old": 548
-          }
-        },
-        "dataset_ids": [
-          "longform",
-          "longform_test"
-        ],
-        "repo_id": "akoksal/LongForm"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 5706,
-            "old": 5643
-          },
-          "likes": {
-            "new": 67,
-            "old": 66
-          }
-        },
-        "dataset_ids": [
-          "dolci_instruct_sft"
-        ],
-        "repo_id": "allenai/Dolci-Instruct-SFT"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1145,
-            "old": 1135
-          }
-        },
-        "dataset_ids": [
-          "molmo2_videopoint"
-        ],
-        "repo_id": "allenai/Molmo2-VideoPoint"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 417,
-            "old": 416
-          }
-        },
-        "dataset_ids": [
-          "molmo2_videotrack"
-        ],
-        "repo_id": "allenai/Molmo2-VideoTrack"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4151,
-            "old": 4054
-          }
-        },
-        "dataset_ids": [
-          "tulu3_preference_mixture"
-        ],
-        "repo_id": "allenai/llama-3.1-tulu-3-8b-preference-mixture"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 971,
-            "old": 974
-          }
-        },
-        "dataset_ids": [
-          "pixmo_ask_model_anything"
-        ],
-        "repo_id": "allenai/pixmo-ask-model-anything"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 391,
-            "old": 395
-          }
-        },
-        "dataset_ids": [
-          "pixmo_cap_qa"
-        ],
-        "repo_id": "allenai/pixmo-cap-qa"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2253,
-            "old": 2219
-          }
-        },
-        "dataset_ids": [
-          "pixmo_count_train",
-          "pixmo_count_test"
-        ],
-        "repo_id": "allenai/pixmo-count"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 7198,
-            "old": 7143
-          }
-        },
-        "dataset_ids": [
-          "pixmo_docs"
-        ],
-        "repo_id": "allenai/pixmo-docs"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 212,
-            "old": 216
-          }
-        },
-        "dataset_ids": [
-          "pixmo_point_explanations"
-        ],
-        "repo_id": "allenai/pixmo-point-explanations"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 3148,
-            "old": 5159
-          }
-        },
-        "dataset_ids": [
-          "pixmo_points"
-        ],
-        "repo_id": "allenai/pixmo-points"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 16176,
-            "old": 16086
-          },
-          "likes": {
-            "new": 113,
-            "old": 112
-          }
-        },
-        "dataset_ids": [
-          "rewardbench"
-        ],
-        "repo_id": "allenai/reward-bench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 7242,
-            "old": 6719
-          }
-        },
-        "dataset_ids": [
-          "rewardbench2"
-        ],
-        "repo_id": "allenai/reward-bench-2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 26930,
-            "old": 26920
-          }
-        },
-        "dataset_ids": [
-          "tulu3_sft_mixture"
-        ],
-        "repo_id": "allenai/tulu-3-sft-mixture"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 12902,
-            "old": 13466
-          }
-        },
-        "dataset_ids": [
-          "tulu3_persona_if"
-        ],
-        "repo_id": "allenai/tulu-3-sft-personas-instruction-following"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 6419,
-            "old": 6619
-          }
-        },
-        "dataset_ids": [
-          "ifeval_like_filtered"
-        ],
-        "repo_id": "argilla/ifeval-like-data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2870,
-            "old": 2932
-          }
-        },
-        "dataset_ids": [
-          "nectar"
-        ],
-        "repo_id": "berkeley-nest/Nectar"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 51508,
-            "old": 51531
-          }
-        },
-        "dataset_ids": [
-          "dolly_15k"
-        ],
-        "repo_id": "databricks/databricks-dolly-15k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 68574,
-            "old": 64782
-          }
-        },
-        "dataset_ids": [
-          "codecontests"
-        ],
-        "repo_id": "deepmind/code_contests"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 6448,
-            "old": 6346
-          }
-        },
-        "dataset_ids": [
-          "natural_reasoning"
-        ],
-        "repo_id": "facebook/natural_reasoning"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 19980,
-            "old": 20860
-          }
-        },
-        "dataset_ids": [
-          "glaive_function_calling_v2"
-        ],
-        "repo_id": "glaiveai/glaive-function-calling-v2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4387,
-            "old": 4540
-          }
-        },
-        "dataset_ids": [
-          "voice_assistant_400k"
-        ],
-        "repo_id": "gpt-omni/VoiceAssistant-400K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 7135,
-            "old": 7076
-          }
-        },
-        "dataset_ids": [
-          "gui_odyssey_train",
-          "gui_odyssey_test"
-        ],
-        "repo_id": "hflqf88888/GUIOdyssey"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 8527,
-            "old": 8463
-          }
-        },
-        "dataset_ids": [
-          "voicebench"
-        ],
-        "repo_id": "hlt-lab/voicebench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 5643,
-            "old": 5537
-          }
-        },
-        "dataset_ids": [
-          "llava_instruct_150k"
-        ],
-        "repo_id": "liuhaotian/LLaVA-Instruct-150K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 8080,
-            "old": 8063
-          }
-        },
-        "dataset_ids": [
-          "arena_human_preference_140k"
-        ],
-        "repo_id": "lmarena-ai/arena-human-preference-140k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17887,
-            "old": 17711
-          }
-        },
-        "dataset_ids": [
-          "chartqa_test"
-        ],
-        "repo_id": "lmms-lab/ChartQA"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 43707,
-            "old": 44790
-          }
-        },
-        "dataset_ids": [
-          "docvqa_validation"
-        ],
-        "repo_id": "lmms-lab/DocVQA"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 109768,
-            "old": 108856
-          }
-        },
-        "dataset_ids": [
-          "llava_video_178k"
-        ],
-        "repo_id": "lmms-lab/LLaVA-Video-178K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 70756,
-            "old": 70746
-          }
-        },
-        "dataset_ids": [
-          "video_mme"
-        ],
-        "repo_id": "lmms-lab/Video-MME"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 23032,
-            "old": 22351
-          },
-          "likes": {
-            "new": 62,
-            "old": 61
-          }
-        },
-        "dataset_ids": [
-          "longvideobench"
-        ],
-        "repo_id": "longvideobench/LongVideoBench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 166947,
-            "old": 172994
-          }
-        },
-        "dataset_ids": [
-          "bbh"
-        ],
-        "repo_id": "lukaemon/bbh"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 23648,
-            "old": 22443
-          }
-        },
-        "dataset_ids": [
-          "codefeedback_filtered"
-        ],
-        "repo_id": "m-a-p/CodeFeedback-Filtered-Instruction"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 67727,
-            "old": 71429
-          }
-        },
-        "dataset_ids": [
-          "llava_onevision15_instruct_22m"
-        ],
-        "repo_id": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 24361,
-            "old": 24319
-          }
-        },
-        "dataset_ids": [
-          "aegis_content_safety_2"
-        ],
-        "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 28515,
-            "old": 28955
-          }
-        },
-        "dataset_ids": [
-          "helpsteer2"
-        ],
-        "repo_id": "nvidia/HelpSteer2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 19539,
-            "old": 19453
-          }
-        },
-        "dataset_ids": [
-          "helpsteer3_preference"
-        ],
-        "repo_id": "nvidia/HelpSteer3"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 364,
-            "old": 404
-          }
-        },
-        "dataset_ids": [
-          "nemotron_cascade_2_rl"
-        ],
-        "repo_id": "nvidia/Nemotron-Cascade-2-RL-data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 13144,
-            "old": 13188
-          }
-        },
-        "dataset_ids": [
-          "nemotron_cascade_2_sft"
-        ],
-        "repo_id": "nvidia/Nemotron-Cascade-2-SFT-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 54135,
-            "old": 52999
-          }
-        },
-        "dataset_ids": [
-          "opencodeinstruct"
-        ],
-        "repo_id": "nvidia/OpenCodeInstruct"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 20251,
-            "old": 20229
-          }
-        },
-        "dataset_ids": [
-          "opencode_reasoning"
-        ],
-        "repo_id": "nvidia/OpenCodeReasoning"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 101177,
-            "old": 102080
-          },
-          "likes": {
-            "new": 269,
-            "old": 268
-          }
-        },
-        "dataset_ids": [
-          "openmathinstruct2"
-        ],
-        "repo_id": "nvidia/OpenMathInstruct-2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 73446,
-            "old": 72755
-          },
-          "likes": {
-            "new": 501,
-            "old": 499
-          }
-        },
-        "dataset_ids": [
-          "openmath_reasoning"
-        ],
-        "repo_id": "nvidia/OpenMathReasoning"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17523,
-            "old": 17691
-          }
-        },
-        "dataset_ids": [
-          "mixture_of_thoughts"
-        ],
-        "repo_id": "open-r1/Mixture-of-Thoughts"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1061755,
-            "old": 1053051
-          },
-          "likes": {
-            "new": 2030,
-            "old": 2029
-          }
-        },
-        "dataset_ids": [
-          "gsm8k_test"
-        ],
-        "repo_id": "openai/gsm8k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 5865,
-            "old": 5930
-          }
-        },
-        "dataset_ids": [
-          "summarize_from_feedback"
-        ],
-        "repo_id": "openai/summarize_from_feedback"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2095,
-            "old": 2155
-          }
-        },
-        "dataset_ids": [
-          "webgpt_comparisons"
-        ],
-        "repo_id": "openai/webgpt_comparisons"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2064,
-            "old": 2074
-          }
-        },
-        "dataset_ids": [
-          "rlaif_v"
-        ],
-        "repo_id": "openbmb/RLAIF-V-Dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 20903,
-            "old": 21625
-          }
-        },
-        "dataset_ids": [
-          "ultrafeedback"
-        ],
-        "repo_id": "openbmb/UltraFeedback"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 192,
-            "old": 200
-          }
-        },
-        "dataset_ids": [
-          "mmbench_cn"
-        ],
-        "repo_id": "opencompass/MMBench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 170240,
-            "old": 168984
-          }
-        },
-        "dataset_ids": [
-          "swebench_verified"
-        ],
-        "repo_id": "princeton-nlp/SWE-bench_Verified"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 9084,
-            "old": 9086
-          }
-        },
-        "dataset_ids": [
-          "air_bench"
-        ],
-        "repo_id": "qyang1021/AIR-Bench-Dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1815,
-            "old": 1818
-          }
-        },
-        "dataset_ids": [
-          "sorry_bench_202503"
-        ],
-        "repo_id": "sorry-bench/sorry-bench-202503"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 27603,
-            "old": 27122
-          }
-        },
-        "dataset_ids": [
-          "shp"
-        ],
-        "repo_id": "stanfordnlp/SHP"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 14956,
-            "old": 14819
-          }
-        },
-        "dataset_ids": [
-          "openhermes_2_5"
-        ],
-        "repo_id": "teknium/OpenHermes-2.5"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1007,
-            "old": 919
-          }
-        },
-        "dataset_ids": [
-          "vlguard_train"
-        ],
-        "repo_id": "ys-zong/VLGuard"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 58,
-            "old": 93
-          }
-        },
-        "dataset_ids": [
-          "safe_vid_350k",
-          "safevidbench"
-        ],
-        "repo_id": "yxwang/SafeVid-350K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2224,
-            "old": 2133
-          }
-        },
-        "dataset_ids": [
-          "longalign_10k"
-        ],
-        "repo_id": "zai-org/LongAlign-10k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1474,
-            "old": 1529
-          }
-        },
-        "dataset_ids": [
-          "longcite_45k"
-        ],
-        "repo_id": "zai-org/LongCite-45k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 306,
-            "old": 298
-          }
-        },
-        "dataset_ids": [
-          "llava_human_preference_10k"
-        ],
-        "repo_id": "zhiqings/LLaVA-Human-Preference-10K"
-      }
-    ],
+    "changes": [],
     "errors": [],
-    "generated_at": "2026-11-10T00:43:48Z",
-    "mode": "metadata+discovery",
-    "new_candidates": [
-      {
-        "repo_id": "OperatorSDG/Nemotron-SFT-Instruction-Following-Chat-v2",
-        "score": 12.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "open-athena/nemotron-gym-instruction-following-structured-qwen3.5-122b-131k-opencode-sft-serveparity",
-        "score": 9.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "roisincrtai/llm-instruction-following-sft-tulu-3-mixture",
-        "score": 10.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "roisincrtai/zetagpt-instruction-following-sft-tulu-3-mixture",
-        "score": 9.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "stindardlogic/instruction-following-hard-sft-100k",
-        "score": 14.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v2-prompt-only",
-        "score": 12.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v3-prompt-only",
-        "score": 12.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "amalia-llm/amalia-Nemotron-SFT-Instruction-Following-Chat-v2",
-        "score": 16.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "SPAISS6F1/spai-ss6-corpus-thai-instruction-sft-suraponn",
-        "score": 6.5,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "duarteocarmo/smoltalk2-tulu-3-sft-personas-instruction-following-no-think-pt-pt",
-        "score": 10.5,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "nvidia/Nemotron-SFT-Instruction-Following-Chat-v3",
-        "score": 15.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "kilicai/turkish-sft-instruction-following-30k",
-        "score": 9.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "kilicai/turkish-sft-instruction-following-10k",
-        "score": 9.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "dkqkxx/chinese_instruction_sample",
-        "score": 10.0,
-        "suggested_category": "chinese"
-      },
-      {
-        "repo_id": "Snaseem2026/synthetic-multilingual-instructions",
-        "score": 12.0,
-        "suggested_category": "multilingual"
-      },
-      {
-        "repo_id": "Raftico/instructional-dialogues-multilingual",
-        "score": 7.5,
-        "suggested_category": "multilingual"
-      },
-      {
-        "repo_id": "junkim100/multilingual_instruction_tuning_lima_bactrian",
-        "score": 10.0,
-        "suggested_category": "multilingual"
-      },
-      {
-        "repo_id": "ThanThoai9x/multilingual-instruction-emotion-voice",
-        "score": 10.5,
-        "suggested_category": "multilingual"
-      },
-      {
-        "repo_id": "kuyesu22/multilingual_instruction_tuning",
-        "score": 10.5,
-        "suggested_category": "multilingual"
-      },
-      {
-        "repo_id": "ZhengLiu33/pii_instruction_dataset_multilingual",
-        "score": 9.0,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "OpenFormosa/barbet-long-context-sft",
-        "score": 9.0,
-        "suggested_category": "long_context"
-      },
-      {
-        "repo_id": "djroytburg/legible-reasoning-traces",
-        "score": 12.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "fieldsmodelorg/FM-Pochi-32B-Reasoning-Traces",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "DuoNeural/cdm-reasoning-traces-v4",
-        "score": 13.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "hikewa/dialectic-reasoning-traces",
-        "score": 12.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "AlmostNobody/High-Quality-Synthetic-Python-Dataset-with-Reasoning-Traces-Chain-of-Thought-for-LLM-Fine-Tuning",
-        "score": 15.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "ProCreations/Beam-Reasoning-Traces",
-        "score": 13.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "SalutefaceAAC/chain-of-thought-reasoning-traces",
-        "score": 15.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "MarshootLab/beam-verified-reasoning-traces",
-        "score": 9.5,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "placeholderlabs/pretrain-reasoning-traces-mix",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "placeholderlabs/pretrain-reasoning-traces-mix-long-context",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "ayushjoshi2012/agent-tool-calling-reasoning-traces",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "thenukegun10x/LFM2.5-24B-A2B-BF16-Reasoning-Traces",
-        "score": 9.5,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "CIRISAI/reasoning-traces-v2",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "CIRISAI/reasoning-traces",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "Chess-Nut-Engine/chess-reasoning-traces-seed",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "khafizovfanis/reasoning-traces-discourse",
-        "score": 9.5,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "Lab-MSP/comparative-reasoning-traces",
-        "score": 14.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "birgermoell/medqa-reasoning-traces",
-        "score": 12.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "gwejgteheg/bigmath-reasoning-traces",
-        "score": 10.5,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "Davd-b01/thinkingcap-reasoning-traces",
-        "score": 10.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "SZLHOLDINGS/ancient-math-reasoning-sft-v1",
-        "score": 12.5,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "Hemgg/non-math-reasoning-1m",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "golden-eaglet/gsm8k-math-reasoning",
-        "score": 14.5,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "zaydsyed/TactLM-Math-Reasoning-Data",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "MaksKroha/capgemini-deepseek-math-reasoning",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "hij/math_reasoning_robustness",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "amphora/math-intuition-reasoning-traces",
-        "score": 12.5,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "Ilia2003Mah/open-math-reasoning-cot-clean-v2",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "FlaneAI/Distilled-Opus5-GPT5.6sol-Math-Reasoning",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "IFM/Math-Reasoning",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "shangshang/math-reasoning-zh",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "oddadmix/arabic-math-reasoning-synth",
-        "score": 11.5,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "ar0cket1/qwen3-30b-a3b-base-reasoning-sft-nemotron-math-v4-cot4k12k-500m-supervised",
-        "score": 8.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "Uunan/turkish-math-reasoning",
-        "score": 10.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "stindardlogic/math-reasoning-sft-100k",
-        "score": 14.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "whitecircle/math-reasoning-sft",
-        "score": 11.0,
-        "suggested_category": "math"
-      },
-      {
-        "repo_id": "MatouK98/math_rlvr_filtered_audited",
-        "score": 12.5,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "clyu/math_rlvr_filtered",
-        "score": 13.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "heyalexchoi/qwen3-math-rlvr-results",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini",
-        "score": 15.5,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "openeurollm/oellm-math-rlvr",
-        "score": 16.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v2",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v1",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v0",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "MiaKim/math-rlvr-mini-sa-smollm2-0.4b-v3",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v2",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v1",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v0",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "PoSTMEDIA/rosetta-ko-math-synth-rlvr",
-        "score": 9.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v2",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v1",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v0",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-smollm2-1.7b-v2",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-smollm2-0.4b-v2",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "cs-giung/math-rlvr-mini-smollm2-0.1b-v2",
-        "score": 12.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "birgermoell/oellm-math-rlvr",
-        "score": 16.0,
-        "suggested_category": "rlvr_math"
-      },
-      {
-        "repo_id": "bunnycore/code-reasoning-distillation",
-        "score": 7.5,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "LexyJawa/Code-Reasoning",
-        "score": 7.0,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "smshahbaj/verifiable-code-reasoning",
-        "score": 10.5,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "IFM/Code-Reasoning",
-        "score": 7.0,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "abdurrehman456/combined-r1-code-reasoning-dataset",
-        "score": 9.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "lucsaint/Deepseek-V4-Reasoning-Code-2500",
-        "score": 7.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "damjanovskia/open-code-reasoning-selected",
-        "score": 7.0,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "Banaxi-Tech/Deepseek-V4-Reasoning-Code-2500",
-        "score": 7.0,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "Entity-27th/odin-c1-code-reasoning-mix",
-        "score": 7.0,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "SMH-DEV-AI/NOESIS-1M-reasoning-router-code-math-psych-opus47-deepseek4-qwen36-gemini31-r1-gpt54",
-        "score": 10.5,
-        "suggested_category": "general_sft"
-      },
-      {
-        "repo_id": "nphearum/Code-Reasoning-4k",
-        "score": 10.0,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "Lucien-shark/Linny-Code-Reasoning-Shrunken",
-        "score": 7.0,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "cublya/Code-Reasoning",
-        "score": 8.5,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "sagea-ai/SAGE-Code-Reasoning",
-        "score": 7.0,
-        "suggested_category": "code"
-      },
-      {
-        "repo_id": "naimulislam/reasoning_code_advanced_1m",
-        "score": 7.5,
-        "suggested_category": "reasoning"
-      },
-      {
-        "repo_id": "wflying/code-rlvr-15k",
-        "score": 14.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "openeurollm/oellm-code-rlvr",
-        "score": 17.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "PoSTMEDIA/rosetta-ko-code-synth-rlvr",
-        "score": 10.5,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "birgermoell/oellm-code-rlvr",
-        "score": 17.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-python",
-        "score": 11.0,
-        "suggested_category": "agent_search"
-      },
-      {
-        "repo_id": "AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-javascript",
-        "score": 11.0,
-        "suggested_category": "agent_search"
-      },
-      {
-        "repo_id": "rootacess/Code-RLVR-dataset",
-        "score": 12.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "saurabh5/code_rlvr_mixture_dpo",
-        "score": 12.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "saurabh5/klear-code-rlvr",
-        "score": 12.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "hamishivi/code_rlvr_mixture_sft",
-        "score": 12.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "hamishivi/code_rlvr_mixture_dpo",
-        "score": 12.0,
-        "suggested_category": "rlvr_code"
-      },
-      {
-        "repo_id": "somsom317/pilates-function-calling-datasets-korean",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "shaban2024/agentmujo-function-calling",
-        "score": 10.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "justinin1/hermes-function-calling-v1",
-        "score": 11.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "harsh8001/simple-calculator-for-function-calling",
-        "score": 12.5,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "harsh8001/weather-function-calling",
-        "score": 14.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "jddqd/function-calling-mix-sft",
-        "score": 13.5,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "Phettae/function-tool-calling-claude",
-        "score": 6.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "jddqd/xlam-function-calling-60k-sft",
-        "score": 13.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "springofwindslabs/function-calling-ja-trial",
-        "score": 11.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "springofwindslabs/function-calling-en-trial",
-        "score": 11.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "vxltxrllc/audio-function-calling-v1",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "Somtharu181coder/som1_Hermes_function_calling_V1",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "FranckAbgrall/glm53-flash-function-calling",
-        "score": 11.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "minpeter/hermes-function-calling-v1-parsed",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "openeurollm/function-calling-sft-oellm-64k",
-        "score": 11.5,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "SwapnilS-15/xlam-function-calling-59k",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "hussainbillah/sonicium-function-calling-dataset",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "suryatmodulus/glaive-function-calling-v2",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "nightrider18133/glaive-function-calling-v2",
-        "score": 9.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "closestfriend/glm-5.3-flash-function-calling",
-        "score": 11.0,
-        "suggested_category": "tool"
-      },
-      {
-        "repo_id": "vishalxyzabc7527/gemma4-swe-agent-sft-harness",
-        "score": 13.5,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "williamTLmiller/swe-bench-coding-agent-tasks",
-        "score": 6.5,
-        "suggested_category": "evaluation"
-      },
-      {
-        "repo_id": "skarnati20/nebius-swe-agent-small-qwen7b-activations",
-        "score": 7.0,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "irsotarriva/deepseek-v4.1-flash-top20-swe-agent",
-        "score": 7.5,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "nvidia/Nemotron-RL-Agentic-SWE-Pivot-v1",
-        "score": 7.0,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "antontuzovAI/swe-agent-successful-raw-1000",
-        "score": 12.0,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "antontuzovAI/swe-agent-successful-trajectories",
-        "score": 13.5,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "Mahmoud-queens/swe-agent-subset-selection-vectors",
-        "score": 17.5,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "Bobollinix/Nemotron-RL-Agentic-SWE-Pivot-v1",
-        "score": 7.0,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "harry1332/swe-agent-cpu-dynamorio-validated-private",
-        "score": 8.5,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "harry1332/swe-agent-cpu-dynamorio-pilot-sympy-15599",
-        "score": 7.5,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "laion/dev_set_v2_a1_nebius_swe_agent_20260820_135121",
-        "score": 7.0,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "beatsprom/ai-code-generation-swe-agents-2026",
-        "score": 14.0,
-        "suggested_category": "agent_swe"
-      },
-      {
-        "repo_id": "emgena/emgena_r1_prm_process_reward_verifier_mcp_teaser",
-        "score": 12.0,
-        "suggested_category": "process_reward"
-      },
-      {
-        "repo_id": "emgena/prm_process_reward_step_anomaly_healer_teaser",
-        "score": 9.5,
-        "suggested_category": "process_reward"
-      },
-      {
-        "repo_id": "PoSTMEDIA/rosetta-ko-instruction-following-synth-rlvr",
-        "score": 9.5,
-        "suggested_category": "general_sft"
-      }
-    ],
+    "generated_at": "2026-11-10T01:37:56Z",
+    "mode": "metadata",
+    "new_candidates": [],
     "pending_candidates": 150,
-    "queries_run": 35,
+    "queries_run": 0,
     "refreshed_ok": 101,
     "tracked_total": 101
   },
@@ -15145,8 +13195,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "AI4Math/MathVista",
       "status": "ok"
     },
@@ -15254,8 +13304,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "AmazonScience/FalseReject",
       "status": "ok"
     },
@@ -15338,8 +13388,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Anthropic/hh-rlhf",
       "status": "ok"
     },
@@ -15424,8 +13474,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "BAAI/COIG-PC-Lite",
       "status": "ok"
     },
@@ -15544,8 +13594,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "BAAI/Infinity-Instruct",
       "status": "ok"
     },
@@ -15656,8 +13706,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "BAAI/TACO",
       "status": "ok"
     },
@@ -15758,8 +13808,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "BytedTsinghua-SIA/DAPO-Math-17k",
       "status": "ok"
     },
@@ -15820,8 +13870,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "BytedTsinghua-SIA/Enigmata-Data",
       "status": "ok"
     },
@@ -15896,8 +13946,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "BytedTsinghua-SIA/Enigmata-Eval",
       "status": "ok"
     },
@@ -16464,8 +14514,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "CohereLabs/aya_collection",
       "status": "ok"
     },
@@ -16876,8 +14926,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "CohereLabs/aya_dataset",
       "status": "ok"
     },
@@ -16982,8 +15032,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k",
       "status": "ok"
     },
@@ -17074,8 +15124,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Fancy-MLLM/R1-Onevision",
       "status": "ok"
     },
@@ -17164,8 +15214,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "HuggingFaceH4/MATH-500",
       "status": "ok"
     },
@@ -17270,8 +15320,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "HuggingFaceH4/mt_bench_prompts",
       "status": "ok"
     },
@@ -17366,8 +15416,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "HuggingFaceH4/no_robots",
       "status": "ok"
     },
@@ -17448,8 +15498,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "HuggingFaceM4/FineVision",
       "status": "ok"
     },
@@ -17566,8 +15616,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Idavidrein/gpqa",
       "status": "ok"
     },
@@ -17662,8 +15712,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "KbsdJames/Omni-MATH",
       "status": "ok"
     },
@@ -17770,8 +15820,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "MMInstruction/VL-RewardBench",
       "status": "ok"
     },
@@ -17860,8 +15910,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "MMInstruction/VLFeedback",
       "status": "ok"
     },
@@ -18050,8 +16100,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "MMMU/MMMU",
       "status": "ok"
     },
@@ -18180,8 +16230,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "MMMU/MMMU_Pro",
       "status": "ok"
     },
@@ -18370,8 +16420,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "MathLLMs/MathVision",
       "status": "ok"
     },
@@ -18478,8 +16528,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "McGill-NLP/WebLINX",
       "status": "ok"
     },
@@ -18580,8 +16630,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Nanbeige/ToolMind",
       "status": "ok"
     },
@@ -18658,8 +16708,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "OS-Copilot/OS-Atlas-Data",
       "status": "ok"
     },
@@ -18722,8 +16772,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "OS-Copilot/ScreenSpot-v2",
       "status": "ok"
     },
@@ -18802,8 +16852,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "OpenGVLab/VideoChat-Flash-Training-Data",
       "status": "ok"
     },
@@ -18898,8 +16948,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Qwen/ProcessBench",
       "status": "ok"
     },
@@ -19070,8 +17120,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Salesforce/xlam-function-calling-60k",
       "status": "ok"
     },
@@ -19386,8 +17436,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "ServiceNow-AI/M2Lingual",
       "status": "ok"
     },
@@ -19458,8 +17508,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Skywork/Skywork-OR1-RL-Data",
       "status": "ok"
     },
@@ -19530,8 +17580,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
       "status": "ok"
     },
@@ -19650,8 +17700,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "SynthLabsAI/Big-Math-RL-Verified",
       "status": "ok"
     },
@@ -19762,8 +17812,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "TIGER-Lab/MMLU-Pro",
       "status": "ok"
     },
@@ -19864,8 +17914,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "TIGER-Lab/Mantis-Eval",
       "status": "ok"
     },
@@ -19968,8 +18018,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "TIGER-Lab/Mantis-Instruct",
       "status": "ok"
     },
@@ -20044,8 +18094,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "YiyangAiLab/POVID_preference_data_for_VLLMs",
       "status": "ok"
     },
@@ -20134,8 +18184,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "agentica-org/DeepScaleR-Preview-Dataset",
       "status": "ok"
     },
@@ -20214,8 +18264,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "ai-safety-institute/AgentHarm",
       "status": "ok"
     },
@@ -20331,8 +18381,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "akoksal/LongForm",
       "status": "ok"
     },
@@ -20723,8 +18773,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/Dolci-Instruct-SFT",
       "status": "ok"
     },
@@ -20801,8 +18851,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/Molmo2-VideoPoint",
       "status": "ok"
     },
@@ -20881,8 +18931,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/Molmo2-VideoTrack",
       "status": "ok"
     },
@@ -20957,8 +19007,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/llama-3.1-tulu-3-8b-preference-mixture",
       "status": "ok"
     },
@@ -21051,8 +19101,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/pixmo-ask-model-anything",
       "status": "ok"
     },
@@ -21149,8 +19199,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/pixmo-cap-qa",
       "status": "ok"
     },
@@ -21238,8 +19288,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/pixmo-count",
       "status": "ok"
     },
@@ -21324,8 +19374,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/pixmo-docs",
       "status": "ok"
     },
@@ -21418,8 +19468,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/pixmo-point-explanations",
       "status": "ok"
     },
@@ -21496,8 +19546,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/pixmo-points",
       "status": "ok"
     },
@@ -21610,8 +19660,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/reward-bench",
       "status": "ok"
     },
@@ -21712,8 +19762,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/reward-bench-2",
       "status": "ok"
     },
@@ -22412,8 +20462,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/tulu-3-sft-mixture",
       "status": "ok"
     },
@@ -22514,8 +20564,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "allenai/tulu-3-sft-personas-instruction-following",
       "status": "ok"
     },
@@ -22624,8 +20674,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "argilla/ifeval-like-data",
       "status": "ok"
     },
@@ -22722,8 +20772,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "berkeley-nest/Nectar",
       "status": "ok"
     },
@@ -22826,8 +20876,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "databricks/databricks-dolly-15k",
       "status": "ok"
     },
@@ -22966,8 +21016,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "deepmind/code_contests",
       "status": "ok"
     },
@@ -23068,8 +21118,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "facebook/natural_reasoning",
       "status": "ok"
     },
@@ -23166,8 +21216,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "glaiveai/glaive-function-calling-v2",
       "status": "ok"
     },
@@ -23244,8 +21294,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "gpt-omni/VoiceAssistant-400K",
       "status": "ok"
     },
@@ -23341,8 +21391,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "hflqf88888/GUIOdyssey",
       "status": "ok"
     },
@@ -23429,8 +21479,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "hlt-lab/voicebench",
       "status": "ok"
     },
@@ -23521,8 +21571,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "liuhaotian/LLaVA-Instruct-150K",
       "status": "ok"
     },
@@ -23603,8 +21653,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "lmarena-ai/arena-human-preference-140k",
       "status": "ok"
     },
@@ -23677,8 +21727,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "lmms-lab/ChartQA",
       "status": "ok"
     },
@@ -23757,8 +21807,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "lmms-lab/DocVQA",
       "status": "ok"
     },
@@ -23845,8 +21895,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "lmms-lab/LLaVA-Video-178K",
       "status": "ok"
     },
@@ -23917,8 +21967,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "lmms-lab/Video-MME",
       "status": "ok"
     },
@@ -24031,8 +22081,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "longvideobench/LongVideoBench",
       "status": "ok"
     },
@@ -24103,8 +22153,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "lukaemon/bbh",
       "status": "ok"
     },
@@ -24205,8 +22255,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "m-a-p/CodeFeedback-Filtered-Instruction",
       "status": "ok"
     },
@@ -24309,8 +22359,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data",
       "status": "ok"
     },
@@ -24423,8 +22473,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
       "status": "ok"
     },
@@ -24523,8 +22573,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/HelpSteer2",
       "status": "ok"
     },
@@ -24679,8 +22729,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/HelpSteer3",
       "status": "ok"
     },
@@ -24765,8 +22815,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/Nemotron-Cascade-2-RL-data",
       "status": "ok"
     },
@@ -24841,8 +22891,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/Nemotron-Cascade-2-SFT-Data",
       "status": "ok"
     },
@@ -24947,8 +22997,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/OpenCodeInstruct",
       "status": "ok"
     },
@@ -25043,8 +23093,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/OpenCodeReasoning",
       "status": "ok"
     },
@@ -25157,8 +23207,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/OpenMathInstruct-2",
       "status": "ok"
     },
@@ -25271,8 +23321,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "nvidia/OpenMathReasoning",
       "status": "ok"
     },
@@ -25371,8 +23421,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "open-r1/Mixture-of-Thoughts",
       "status": "ok"
     },
@@ -25517,8 +23567,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "openai/gsm8k",
       "status": "ok"
     },
@@ -25587,8 +23637,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "openai/summarize_from_feedback",
       "status": "ok"
     },
@@ -25659,8 +23709,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "openai/webgpt_comparisons",
       "status": "ok"
     },
@@ -25783,8 +23833,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "openbmb/RLAIF-V-Dataset",
       "status": "ok"
     },
@@ -25883,8 +23933,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "openbmb/UltraFeedback",
       "status": "ok"
     },
@@ -25945,8 +23995,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "opencompass/MMBench",
       "status": "ok"
     },
@@ -26048,8 +24098,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "princeton-nlp/SWE-bench_Verified",
       "status": "ok"
     },
@@ -26142,8 +24192,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "qyang1021/AIR-Bench-Dataset",
       "status": "ok"
     },
@@ -26270,8 +24320,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "sorry-bench/sorry-bench-202503",
       "status": "ok"
     },
@@ -26388,8 +24438,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "stanfordnlp/SHP",
       "status": "ok"
     },
@@ -26478,8 +24528,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "teknium/OpenHermes-2.5",
       "status": "ok"
     },
@@ -26574,8 +24624,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "ys-zong/VLGuard",
       "status": "ok"
     },
@@ -26653,8 +24703,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "yxwang/SafeVid-350K",
       "status": "ok"
     },
@@ -26757,8 +24807,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "zai-org/LongAlign-10k",
       "status": "ok"
     },
@@ -26871,8 +24921,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "zai-org/LongCite-45k",
       "status": "ok"
     },
@@ -26949,8 +24999,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-10T00:43:48Z",
-      "last_success_at": "2026-11-10T00:43:48Z",
+      "last_checked_at": "2026-11-10T01:37:56Z",
+      "last_success_at": "2026-11-10T01:37:56Z",
       "repo_id": "zhiqings/LLaVA-Human-Preference-10K",
       "status": "ok"
     }

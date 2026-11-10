@@ -276,7 +276,7 @@ def render_catalog(doc: dict[str, Any], state: dict[str, Any], config: dict[str,
         lines += [
             f"### {name}（`{category}`）",
             "",
-            "| ID | 模态 | 阶段 | 层级 | 商用状态 | 外部元数据 | 最近修改 | 来源 |",
+            "| 数据集／ID | 模态 | 阶段 | 层级 | 商用状态 | 外部元数据 | 最近修改 | 来源 |",
             "|---|---|---|---|---|---|---|---|",
         ]
         for item in sorted(by_category[category], key=lambda row: row["id"]):
@@ -285,7 +285,7 @@ def render_catalog(doc: dict[str, Any], state: dict[str, Any], config: dict[str,
             current = record.get("current") or {}
             status = record.get("status", "not_tracked")
             lines.append(
-                f"| `{item['id']}` | {', '.join(item['modalities'])} | {', '.join(item['stages'])} | {item['usage_tier']} | "
+                f"| {item['name']}<br>`{item['id']}` | {', '.join(item['modalities'])} | {', '.join(item['stages'])} | {item['usage_tier']} | "
                 f"{item['license']['commercial_status']} | {status} | {md(current.get('last_modified'))} | "
                 f"{citation(source['url']) if source['url'].startswith('https://') else '内部登记项'} |"
             )
@@ -351,7 +351,9 @@ def render_report(run: dict[str, Any], state: dict[str, Any]) -> str:
         lines += ["| 仓库 | 关联资产 | 变化字段 |", "|---|---|---|"]
         for change in run["changes"]:
             fields = ", ".join(f"`{key}`" for key in change["changes"])
-            lines.append(f"| `{change['repo_id']}` | {', '.join(change['dataset_ids'])} | {fields or '首次纳入跟踪'} |")
+            repo = change["repo_id"]
+            dataset_ids = ", ".join(f"`{dataset_id}`" for dataset_id in change["dataset_ids"])
+            lines.append(f"| [`{repo}`]({HF_API}/datasets/{repo}) | {dataset_ids} | {fields or '首次纳入跟踪'} |")
         lines.append("")
     lines += ["## 新发现候选（仅待审核）", ""]
     if not run["new_candidates"]:
@@ -359,7 +361,8 @@ def render_report(run: dict[str, Any], state: dict[str, Any]) -> str:
     else:
         lines += ["| 仓库 | 建议分类 | 分数 | 状态 |", "|---|---|---:|---|"]
         for item in run["new_candidates"]:
-            lines.append(f"| `{item['repo_id']}` | `{item['suggested_category']}` | {item['score']} | pending_review |")
+            repo = item["repo_id"]
+            lines.append(f"| [`{repo}`]({HF_API}/datasets/{repo}) | `{item['suggested_category']}` | {item['score']} | pending_review |")
         lines.append("")
     lines += ["## 错误与限制", ""]
     if not run["errors"]:
@@ -512,11 +515,13 @@ def main() -> int:
         "source_catalog": {"path": CATALOG.name, "sha256": sha256(CATALOG)},
         "last_run": run,
     })
+    from dataset_markdown_links import link_dataset_table_entries
+    assets = {item["id"]: item for item in doc["datasets"]}
     outputs = {
         STATE: json_text(state),
         CANDIDATES: render_candidates(state, generated_at),
-        CATALOG_MD: render_catalog(doc, state, config, generated_at),
-        REPORT_MD: render_report(run, state),
+        CATALOG_MD: link_dataset_table_entries(render_catalog(doc, state, config, generated_at), assets),
+        REPORT_MD: link_dataset_table_entries(render_report(run, state), assets),
     }
     changed = [path.name for path, text in outputs.items() if write_if_changed(path, text, args.dry_run)]
     result = {

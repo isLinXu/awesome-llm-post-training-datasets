@@ -176,22 +176,22 @@ lines += [
 "",
 "这些条目补的是明确结构缺口或高价值经典基线，而不是把 awesome 中出现的所有名字机械合并。人工小集、长输出、精确指令、数学代码、偏好、RLVR、PRM、工具、浏览、中文多语言和安全均有新增；其中 NC 数据已单独隔离，许可待审项也不能因为标为 optional 就绕过门禁。",
 "",
-"| ID | 层级 | 当前官方规模口径 | 收录理由 | 来源 |",
+"| 数据集／ID | 层级 | 当前官方规模口径 | 收录理由 | 来源 |",
 "|---|---|---|---|---|",
 ]
 for x in TRAINING_NEW:
-    lines.append(f"| `{x['id']}` | {x['usage_tier']} | {scale(x)} | {REASONS[x['id']]} | {cite(x['source']['url'])} |")
+    lines.append(f"| {x['name']}<br>`{x['id']}` | {x['usage_tier']} | {scale(x)} | {REASONS[x['id']]} | {cite(x['source']['url'])} |")
 lines += [
 "",
 "### 4.2 独立评测资产",
 "",
 "新增评测用于闭合训练能力的独立验收，不得转成训练提示、蒸馏输入或偏好对。尤其是 AgentHarm 的 canary、Mind2Web 的测试分发约束、GPQA 的 gated 条款、SORRY-Bench 的第三方转移限制，以及 τ-bench 的版本不可比性，都必须随数据版本一起归档。",
 "",
-"| ID | 当前官方规模口径 | 覆盖目的 | 来源 |",
+"| 数据集／ID | 当前官方规模口径 | 覆盖目的 | 来源 |",
 "|---|---|---|---|",
 ]
 for x in EVAL_NEW:
-    lines.append(f"| `{x['id']}` | {scale(x)} | {REASONS[x['id']]} | {cite(x['source']['url'])} |")
+    lines.append(f"| {x['name']}<br>`{x['id']}` | {scale(x)} | {REASONS[x['id']]} | {cite(x['source']['url'])} |")
 lines += [
 "",
 "## 5. 官方核验对二手口径的纠正",
@@ -278,5 +278,9 @@ lines += [
 "",
 ]
 
-(ROOT / "awesome-datasets-gap-review.md").write_text("\n".join(lines), encoding="utf-8")
+import sys
+sys.path.insert(0, str(ROOT))
+from dataset_markdown_links import link_dataset_table_entries
+report = link_dataset_table_entries("\n".join(lines), {item["id"]: item for item in DOC["datasets"]})
+(ROOT / "awesome-datasets-gap-review.md").write_text(report, encoding="utf-8")
 print(f"Wrote awesome-datasets-gap-review.md: {len(DATASETS)} assets, {len(NEW)} new, {len(TEXT_COVERAGE)} capabilities")

@@ -21,6 +21,7 @@ REQUIRED = [
     "multimodal-post-training-datasets-zh.md",
     "build_datasets_list.py",
     "build_multimodal_datasets.py",
+    "dataset_markdown_links.py",
     "research/build_multimodal_report.py",
     "research/plot_multimodal_coverage.py",
     "research/multimodal-asset-coverage.png",
@@ -62,6 +63,9 @@ def check() -> tuple[list[str], int, int]:
     errors: list[str] = []
     local_links = 0
     files = markdown_files()
+    sys.path.insert(0, str(ROOT))
+    from dataset_markdown_links import link_dataset_table_entries, load_assets, validate_primary_catalog
+    assets = load_assets()
     for required in REQUIRED:
         if not (ROOT / required).is_file():
             errors.append(f"缺少必需文件：{required}")
@@ -75,6 +79,11 @@ def check() -> tuple[list[str], int, int]:
         # research/cards 是上游数据卡归档，其中的相对链接指向原仓库，而非本仓库。
         if relative.parts[:2] == ("research", "cards"):
             continue
+        linked = link_dataset_table_entries(text, assets)
+        if linked != text:
+            errors.append(f"{relative}: 表格仍有未链接的 canonical 数据集名称或 ID")
+        if any(re.search(r"\[[^\]]+\]\(", match.group(0)) for match in re.finditer(r"`[^`\n]+`", text)):
+            errors.append(f"{relative}: 代码字段中嵌入了 Markdown 链接")
         for match in LINK_RE.finditer(text):
             target = match.group(1).strip("<>")
             if target.startswith(("https://", "http://", "mailto:", "#")):
@@ -94,6 +103,11 @@ def check() -> tuple[list[str], int, int]:
                 errors.append(f"{relative}: 本地链接越出仓库 {target}")
             elif not resolved.exists():
                 errors.append(f"{relative}: 本地链接目标不存在 {target}")
+    for catalog_name in ("datasets-list.md", "datasets-catalog.md"):
+        catalog_path = ROOT / catalog_name
+        if catalog_path.is_file():
+            catalog_text = catalog_path.read_text(encoding="utf-8")
+            errors.extend(f"{catalog_name}: {error}" for error in validate_primary_catalog(catalog_text, assets))
     return errors, len(files), local_links
 
 

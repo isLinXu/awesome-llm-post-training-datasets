@@ -292,8 +292,8 @@ f"- **{len(COVERAGE)} 项必需能力均有训练候选和独立评测引用**�
 "| 偏好/奖励模型 | HelpSteer3 或 HelpSteer2；按许可补 Arena/Skywork v0.2 | 保留同提示切分；RewardBench/RewardBench 2 仅评测 |",
 "| 安全与 Agent 安全 | Aegis 2.0 分类 + 本地政策/防过拒/工具注入数据；研究侧补 FalseReject | 危险原文不直接当普通聊天 SFT；同时测拒答、过拒、攻击成功率与任务效用 |",
 "| PRM/Agent | PRM800K；Search-R1/SWE-Gym/Nemotron RL 等按环境能力选择 | 严格切分；环境、任务、轨迹、训练子集和 RL／蒸馏配置分别计数 |",
-"| 视觉指令与文档 | PixMo Ask／Docs＋本地中文多模态；大合集按 config 消融 | 图像 SHA、隐私、上游权利和 OCR／定位格式分别验收；558K 对齐预训练不纳入 |",
-"| 多图与视频 | Mantis＋LLaVA-Video／VideoChat-Flash；Molmo2 补时空指向 | 视频数、问答数、帧数、时长和媒体 token 分开配比；固定字幕与抽帧协议 |",
+"| 视觉指令与文档 | PixMo-Ask-Model-Anything／PixMo-Docs＋本地中文多模态；大合集按 config 消融 | 图像 SHA、隐私、上游权利和 OCR／定位格式分别验收；558K 对齐预训练不纳入 |",
+"| 多图与视频 | Mantis＋LLaVA-Video／VideoChat-Flash；Molmo2-VideoPoint 补时空指向 | 视频数、问答数、帧数、时长和媒体 token 分开配比；固定字幕与抽帧协议 |",
 "| 多模态偏好／RLVR | 人类偏好、AI 反馈、构造负例分 profile；R1-Onevision／Visual-RFT 按任务选 | 不混标偏好来源；数学、坐标、检测和格式奖励分别重跑 |",
 "| 音频与 GUI | VoiceAssistant＋本地音频偏好；OS-Atlas action＋GUIOdyssey＋本地动作安全 | 固定 SNAC／采样率；GUI 区分 episode、action step、grounding 和在线任务成功率 |",
 "| 多模态安全 | VLGuard＋本地政策；SPA-VL／SafeVid 研究隔离 | chosen 也需安全审核；同时测 ASR、正常请求效用、幻觉和过拒 |",
@@ -314,9 +314,9 @@ for k, v in sorted(commercial.items()):
     lines.append(f"| {k} | {v} | {meanings.get(k, '')} |")
 lines += ["", "## 5. 全量资产目录", ""]
 for cat in sorted(bycat):
-    lines += [f"### {cat}", "", "| ID | 模态 | 阶段／层级 | 规模与版本口径 | 许可／商用状态 | 建议与主要风险 | 来源 |", "|---|---|---|---|---|---|---|"]
+    lines += [f"### {cat}", "", "| 数据集／ID | 模态 | 阶段／层级 | 规模与版本口径 | 许可／商用状态 | 建议与主要风险 | 来源 |", "|---|---|---|---|---|---|---|"]
     for x in bycat[cat]:
-        lines.append(f'| `{x["id"]}` | {", ".join(x["modalities"])} | {", ".join(x["stages"])}／{x["usage_tier"]} | {scale(x)} | {x["license"]["id"]}／{x["license"]["commercial_status"]} | {x["recommendation"][0]}；风险：{"；".join(x["risks"])} | {cite(x["source"]["url"])} |')
+        lines.append(f'| {x["name"]}<br>`{x["id"]}` | {", ".join(x["modalities"])} | {", ".join(x["stages"])}／{x["usage_tier"]} | {scale(x)} | {x["license"]["id"]}／{x["license"]["commercial_status"]} | {x["recommendation"][0]}；风险：{"；".join(x["risks"])} | {cite(x["source"]["url"])} |')
     lines.append("")
 lines += [
 "## 6. 关键去重与隔离关系", "",
@@ -341,7 +341,9 @@ lines += [
 for x in DOC["global_preflight"]:
     lines.append(f"- [ ] {x}")
 lines += ["", "机器校验：`python validate_datasets_list.py datasets-list.yaml`。", ""]
-(ROOT / "datasets-list.md").write_text("\n".join(lines), encoding="utf-8")
+from dataset_markdown_links import link_dataset_table_entries
+report = link_dataset_table_entries("\n".join(lines), {item["id"]: item for item in D})
+(ROOT / "datasets-list.md").write_text(report, encoding="utf-8")
 print(f"Wrote {len(D)} assets, {len(COVERAGE)} required capabilities")
 print("usage_tier:", dict(sorted(counts.items())))
 print("commercial_status:", dict(sorted(commercial.items())))

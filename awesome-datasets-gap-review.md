@@ -36,21 +36,21 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 
 | awesome／官方项目 | 召回方向 | 本轮处理 | 链接 |
 |---|---|---|---|
-| `jianzhnie/awesome-instruction-datasets` | 通用指令、SFT、偏好 | 召回 Dolly、LongForm、OpenMathInstruct-2 等；规模与许可回到官方卡片 | [GitHub](https://github.com/jianzhnie/awesome-instruction-datasets) |
+| `jianzhnie/awesome-instruction-datasets` | 通用指令、SFT、偏好 | 召回 [Dolly](https://huggingface.co/datasets/databricks/databricks-dolly-15k)、[LongForm](https://huggingface.co/datasets/akoksal/LongForm)、[OpenMathInstruct-2](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) 等；规模与许可回到官方卡片 | [GitHub](https://github.com/jianzhnie/awesome-instruction-datasets) |
 | `mlabonne/llm-datasets` | 通用、指令、偏好、安全 | 用于查漏，不直接采用二手许可或样本数 | [GitHub](https://github.com/mlabonne/llm-datasets) |
 | `haolpku/Awesome-LLM-Data-Preparation` | 数据准备、合成、过滤、去污 | 把生成、过滤、验证和谱系纳入训练前门禁 | [GitHub](https://github.com/haolpku/Awesome-LLM-Data-Preparation) |
 | `sailxjx/awesome-RLHF` | RLHF、人类偏好、奖励模型 | 补 WebGPT、Summarize-from-Feedback 等经典研究项 | [GitHub](https://github.com/sailxjx/awesome-RLHF) |
-| `opendilab/awesome-RLHF` | RLHF、DPO、奖励模型 | 核对 HelpSteer3、Tulu Preference 与 RewardBench 系列 | [GitHub](https://github.com/opendilab/awesome-RLHF) |
-| `opendilab/awesome-RLVR` | 数学、代码、通用 RLVR | 补 Nemotron RL、Enigmata；区分 RLVR 与蒸馏 | [GitHub](https://github.com/opendilab/awesome-RLVR) |
-| `RenBing-Sumeru/Awesome-LLM-Reasoning-Data` | 推理蒸馏、数学、过程监督 | 补 OpenMathInstruct-2、PathFinder-PRM 与中文 R1 蒸馏 | [GitHub](https://github.com/RenBing-Sumeru/Awesome-LLM-Reasoning-Data) |
-| `declare-lab/PathFinder-PRM` | PRM 官方项目 | 400K 三维步级标签；作为 PRM800K 派生项而非独立无风险数据 | [GitHub](https://github.com/declare-lab/PathFinder-PRM) |
+| `opendilab/awesome-RLHF` | RLHF、DPO、奖励模型 | 核对 [HelpSteer3](https://huggingface.co/datasets/nvidia/HelpSteer3)、Tulu Preference 与 [RewardBench](https://huggingface.co/datasets/allenai/reward-bench) 系列 | [GitHub](https://github.com/opendilab/awesome-RLHF) |
+| `opendilab/awesome-RLVR` | 数学、代码、通用 RLVR | 补 [Nemotron RL](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data)、Enigmata；区分 RLVR 与蒸馏 | [GitHub](https://github.com/opendilab/awesome-RLVR) |
+| `RenBing-Sumeru/Awesome-LLM-Reasoning-Data` | 推理蒸馏、数学、过程监督 | 补 [OpenMathInstruct-2](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2)、PathFinder-PRM 与中文 R1 蒸馏 | [GitHub](https://github.com/RenBing-Sumeru/Awesome-LLM-Reasoning-Data) |
+| `declare-lab/PathFinder-PRM` | PRM 官方项目 | 400K 三维步级标签；作为 [PRM800K](https://github.com/openai/prm800k) 派生项而非独立无风险数据 | [GitHub](https://github.com/declare-lab/PathFinder-PRM) |
 | `Lhy723/awesome-ai-agent-evaluation` | 工具、网页、软件工程 Agent | 补 Mind2Web、τ-bench、AgentHarm 等独立评测 | [GitHub](https://github.com/Lhy723/awesome-ai-agent-evaluation) |
 | `philschmid/ai-agent-benchmark-compendium` | Agent 工具与环境 | 区分静态轨迹、动态环境、工具调用和任务效用 | [GitHub](https://github.com/philschmid/ai-agent-benchmark-compendium) |
-| `EvanThomasLuke/Awesome-AI-Security-Benchmarks` | 越狱、红队、Agent 安全 | 补 HarmBench、StrongREJECT、AgentDojo | [GitHub](https://github.com/EvanThomasLuke/Awesome-AI-Security-Benchmarks) |
+| `EvanThomasLuke/Awesome-AI-Security-Benchmarks` | 越狱、红队、Agent 安全 | 补 [HarmBench](https://github.com/centerforaisafety/HarmBench)、[StrongREJECT](https://github.com/dsbowen/strong_reject)、[AgentDojo](https://github.com/ethz-spylab/agentdojo) | [GitHub](https://github.com/EvanThomasLuke/Awesome-AI-Security-Benchmarks) |
 | `ant-research/awesome-mllm-guardrails` | 安全、拒答、过拒 | 只吸收文本部分；多模态数据保持范围外 | [GitHub](https://github.com/ant-research/awesome-mllm-guardrails) |
 | `AiHubCN/Awesome-Chinese-LLM` | 中文指令、中文推理 | 补中文 R1 蒸馏；上游 NC 与事实性继续复核 | [GitHub](https://github.com/AiHubCN/Awesome-Chinese-LLM) |
 | `RUCAIBox/awesome-llm-pretraining` | 预训练与长上下文数据 | 识别 LongABC 属 CPT，不错误纳入后训练长输出 | [GitHub](https://github.com/RUCAIBox/awesome-llm-pretraining) |
-| `BenchGecko/awesome-llm-benchmarks` | 通用、推理、代码、长文评测 | 补 Omni-MATH、GPQA、RULER、BigCodeBench、MT-Bench | [GitHub](https://github.com/BenchGecko/awesome-llm-benchmarks) |
+| `BenchGecko/awesome-llm-benchmarks` | 通用、推理、代码、长文评测 | 补 [Omni-MATH](https://huggingface.co/datasets/KbsdJames/Omni-MATH)、GPQA、[RULER](https://github.com/NVIDIA/RULER)、BigCodeBench、[MT-Bench](https://huggingface.co/datasets/HuggingFaceH4/mt_bench_prompts) | [GitHub](https://github.com/BenchGecko/awesome-llm-benchmarks) |
 
 ## 4. 本轮新增资产
 
@@ -58,51 +58,51 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 
 这些条目补的是明确结构缺口或高价值经典基线，而不是把 awesome 中出现的所有名字机械合并。人工小集、长输出、精确指令、数学代码、偏好、RLVR、PRM、工具、浏览、中文多语言和安全均有新增；其中 NC 数据已单独隔离，许可待审项也不能因为标为 optional 就绕过门禁。
 
-| ID | 层级 | 当前官方规模口径 | 收录理由 | 来源 |
+| 数据集／ID | 层级 | 当前官方规模口径 | 收录理由 | 来源 |
 |---|---|---|---|---|
-| `dolly_15k` | core | 15,000 instruction_records | 补可商用人工指令小集与风格基线 | [官方来源](https://huggingface.co/datasets/databricks/databricks-dolly-15k) |
-| `longform` | optional | 23,652 train_samples | 补长输出训练，不再以长输入替代长输出 | [官方来源](https://huggingface.co/datasets/akoksal/LongForm) |
-| `ifeval_like_filtered` | optional | 56,339 filtered_samples | 补可验证约束 SFT；只用 filtered 配置 | [官方来源](https://huggingface.co/datasets/argilla/ifeval-like-data) |
-| `openmathinstruct2` | core | 13,972,791 problem_solution_pairs | 补大规模数学指令与公平降采样消融 | [官方来源](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) |
-| `opencodeinstruct` | core | 5,000,000 instruction_response_pairs | 补 500 万代码指令与执行过滤字段 | [官方来源](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) |
-| `codefeedback_filtered` | optional | 156,000 samples_approx | 补高复杂度单轮代码指令 | [官方来源](https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction) |
-| `helpsteer3_preference` | core | 40,476 preference_samples | 补多域、多轮、多语言人工偏好 | [官方来源](https://huggingface.co/datasets/nvidia/HelpSteer3) |
-| `tulu3_preference_mixture` | research_only | 272,898 preference_pairs | 保留经典偏好配方研究基线，整体非商用隔离 | [官方来源](https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture) |
-| `nemotron_cascade_2_rl` | optional | 73,809 config_rows_total | 补 IF、通用、SWE 与 on-policy distillation 配置 | [官方来源](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data) |
-| `toolmind` | optional | 360,000 assistant_turn_samples | 补大规模多轮工具轨迹与执行过滤 | [官方来源](https://huggingface.co/datasets/Nanbeige/ToolMind) |
-| `enigmata_data` | research_only | 未填固定值；generator_tasks | 补规则可验证逻辑谜题 RLVR | [官方来源](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) |
-| `pathfinder_prm` | research_only | 400,000 samples_approx | 补三维步级错误监督 | [官方来源](https://github.com/declare-lab/PathFinder-PRM) |
-| `weblinx` | research_only | 未填固定值；chat_turns | 补文本化网页导航研究轨迹 | [官方来源](https://huggingface.co/datasets/McGill-NLP/WebLINX) |
-| `falsereject_train` | research_only | 14,624 training_prompts | 补带标准/CoT 响应的防过拒训练 | [官方来源](https://huggingface.co/datasets/AmazonScience/FalseReject) |
-| `m2lingual` | research_only | 173,672 dataset_rows | 补多语言多轮指令研究数据 | [官方来源](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) |
-| `chinese_r1_distill_110k` | optional | 110,000 samples | 补中文通用与数学推理蒸馏 | [官方来源](https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k) |
-| `webgpt_comparisons` | research_only | 19,578 comparisons | 补带引用答案的人类偏好研究 | [官方来源](https://huggingface.co/datasets/openai/webgpt_comparisons) |
-| `summarize_from_feedback` | research_only | 未填固定值；comparison_and_axis_rows | 补经典摘要人类偏好研究 | [官方来源](https://huggingface.co/datasets/openai/summarize_from_feedback) |
+| [Databricks Dolly 15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k)<br>[`dolly_15k`](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | core | 15,000 instruction_records | 补可商用人工指令小集与风格基线 | [官方来源](https://huggingface.co/datasets/databricks/databricks-dolly-15k) |
+| [LongForm](https://huggingface.co/datasets/akoksal/LongForm)<br>[`longform`](https://huggingface.co/datasets/akoksal/LongForm) | optional | 23,652 train_samples | 补长输出训练，不再以长输入替代长输出 | [官方来源](https://huggingface.co/datasets/akoksal/LongForm) |
+| [IFEval-like Data filtered](https://huggingface.co/datasets/argilla/ifeval-like-data)<br>[`ifeval_like_filtered`](https://huggingface.co/datasets/argilla/ifeval-like-data) | optional | 56,339 filtered_samples | 补可验证约束 SFT；只用 filtered 配置 | [官方来源](https://huggingface.co/datasets/argilla/ifeval-like-data) |
+| [OpenMathInstruct-2](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2)<br>[`openmathinstruct2`](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) | core | 13,972,791 problem_solution_pairs | 补大规模数学指令与公平降采样消融 | [官方来源](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) |
+| [OpenCodeInstruct](https://huggingface.co/datasets/nvidia/OpenCodeInstruct)<br>[`opencodeinstruct`](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | core | 5,000,000 instruction_response_pairs | 补 500 万代码指令与执行过滤字段 | [官方来源](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) |
+| [CodeFeedback-Filtered-Instruction](https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction)<br>[`codefeedback_filtered`](https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction) | optional | 156,000 samples_approx | 补高复杂度单轮代码指令 | [官方来源](https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction) |
+| [HelpSteer3 Preference](https://huggingface.co/datasets/nvidia/HelpSteer3)<br>[`helpsteer3_preference`](https://huggingface.co/datasets/nvidia/HelpSteer3) | core | 40,476 preference_samples | 补多域、多轮、多语言人工偏好 | [官方来源](https://huggingface.co/datasets/nvidia/HelpSteer3) |
+| [Tulu 3 8B Preference Mixture](https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture)<br>[`tulu3_preference_mixture`](https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture) | research_only | 272,898 preference_pairs | 保留经典偏好配方研究基线，整体非商用隔离 | [官方来源](https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture) |
+| [Nemotron-Cascade-2-RL-data](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data)<br>[`nemotron_cascade_2_rl`](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data) | optional | 73,809 config_rows_total | 补 IF、通用、SWE 与 on-policy distillation 配置 | [官方来源](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data) |
+| [ToolMind](https://huggingface.co/datasets/Nanbeige/ToolMind)<br>[`toolmind`](https://huggingface.co/datasets/Nanbeige/ToolMind) | optional | 360,000 assistant_turn_samples | 补大规模多轮工具轨迹与执行过滤 | [官方来源](https://huggingface.co/datasets/Nanbeige/ToolMind) |
+| [Enigmata-Data](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data)<br>[`enigmata_data`](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) | research_only | 未填固定值；generator_tasks | 补规则可验证逻辑谜题 RLVR | [官方来源](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) |
+| [PathFinder-PRM 400K](https://github.com/declare-lab/PathFinder-PRM)<br>[`pathfinder_prm`](https://github.com/declare-lab/PathFinder-PRM) | research_only | 400,000 samples_approx | 补三维步级错误监督 | [官方来源](https://github.com/declare-lab/PathFinder-PRM) |
+| [WebLINX 1.0 chat train](https://huggingface.co/datasets/McGill-NLP/WebLINX)<br>[`weblinx`](https://huggingface.co/datasets/McGill-NLP/WebLINX) | research_only | 未填固定值；chat_turns | 补文本化网页导航研究轨迹 | [官方来源](https://huggingface.co/datasets/McGill-NLP/WebLINX) |
+| [FalseReject train](https://huggingface.co/datasets/AmazonScience/FalseReject)<br>[`falsereject_train`](https://huggingface.co/datasets/AmazonScience/FalseReject) | research_only | 14,624 training_prompts | 补带标准/CoT 响应的防过拒训练 | [官方来源](https://huggingface.co/datasets/AmazonScience/FalseReject) |
+| [M2Lingual full_data](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual)<br>[`m2lingual`](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) | research_only | 173,672 dataset_rows | 补多语言多轮指令研究数据 | [官方来源](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) |
+| [Chinese DeepSeek R1 Distill 110K](https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k)<br>[`chinese_r1_distill_110k`](https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k) | optional | 110,000 samples | 补中文通用与数学推理蒸馏 | [官方来源](https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k) |
+| [WebGPT Comparisons](https://huggingface.co/datasets/openai/webgpt_comparisons)<br>[`webgpt_comparisons`](https://huggingface.co/datasets/openai/webgpt_comparisons) | research_only | 19,578 comparisons | 补带引用答案的人类偏好研究 | [官方来源](https://huggingface.co/datasets/openai/webgpt_comparisons) |
+| [Summarize from Feedback](https://huggingface.co/datasets/openai/summarize_from_feedback)<br>[`summarize_from_feedback`](https://huggingface.co/datasets/openai/summarize_from_feedback) | research_only | 未填固定值；comparison_and_axis_rows | 补经典摘要人类偏好研究 | [官方来源](https://huggingface.co/datasets/openai/summarize_from_feedback) |
 
 ### 4.2 独立评测资产
 
 新增评测用于闭合训练能力的独立验收，不得转成训练提示、蒸馏输入或偏好对。尤其是 AgentHarm 的 canary、Mind2Web 的测试分发约束、GPQA 的 gated 条款、SORRY-Bench 的第三方转移限制，以及 τ-bench 的版本不可比性，都必须随数据版本一起归档。
 
-| ID | 当前官方规模口径 | 覆盖目的 | 来源 |
+| 数据集／ID | 当前官方规模口径 | 覆盖目的 | 来源 |
 |---|---|---|---|
-| `longform_test` | 2,045 test_samples | 长输出独立测试 | [官方来源](https://huggingface.co/datasets/akoksal/LongForm) |
-| `omni_math` | 4,428 competition_problems | 高难奥林匹克数学评测 | [官方来源](https://huggingface.co/datasets/KbsdJames/Omni-MATH) |
-| `gpqa_diamond` | 198 questions | 研究生级科学知识与推理评测 | [官方来源](https://huggingface.co/datasets/Idavidrein/gpqa) |
-| `ruler` | 未填固定值；configurable_tasks | 可配置长上下文评测 | [官方来源](https://github.com/NVIDIA/RULER) |
-| `bigcodebench` | 1,140 full_tasks | 实用代码生成执行评测 | [官方来源](https://github.com/bigcode-project/bigcodebench) |
-| `mgsm` | 250 parallel_problems_per_language | 多语言数学与跨语言母题去污目标 | [官方来源](https://arxiv.org/abs/2210.03057) |
-| `mt_bench` | 80 multi_turn_prompts | 通用多轮对话评测 | [官方来源](https://huggingface.co/datasets/HuggingFaceH4/mt_bench_prompts) |
-| `rewardbench2` | 1,865 test_samples | 新一代六类奖励模型评测 | [官方来源](https://huggingface.co/datasets/allenai/reward-bench-2) |
-| `prmbench` | 未填固定值；step_level_evaluation_samples | 细粒度过程奖励评测 | [官方来源](https://github.com/ssmisya/PRMBench) |
-| `harmbench` | 未填固定值；red_teaming_behaviors | 标准化自动红队评测 | [官方来源](https://github.com/centerforaisafety/HarmBench) |
-| `strongreject` | 313 forbidden_prompts | 越狱攻击与空攻击基线评测 | [官方来源](https://github.com/dsbowen/strong_reject) |
-| `sorry_bench_202503` | 9,240 unsafe_instructions | 细粒度、多变换安全拒答评测 | [官方来源](https://huggingface.co/datasets/sorry-bench/sorry-bench-202503) |
-| `agentharm` | 44 public_test_base_behaviors | Agent 有害/良性行为安全评测 | [官方来源](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) |
-| `mind2web_test` | 1,341 test_tasks | 跨任务、网站和领域浏览评测 | [官方来源](https://github.com/OSU-NLP-Group/Mind2Web) |
-| `agentdojo` | 未填固定值；dynamic_attack_defense_tasks | 动态提示注入攻防评测 | [官方来源](https://github.com/ethz-spylab/agentdojo) |
-| `enigmata_eval` | 4,758 puzzle_instances | 逻辑谜题独立评测 | [官方来源](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval) |
-| `falsereject_test` | 1,187 human_annotated_prompts | 人工标注防过拒评测 | [官方来源](https://huggingface.co/datasets/AmazonScience/FalseReject) |
-| `tau_bench_2_text` | 900 single_trial_calls | 六语言政策约束多轮工具 Agent 评测 | [官方来源](https://github.com/sierra-research/tau2-bench) |
+| [LongForm test](https://huggingface.co/datasets/akoksal/LongForm)<br>[`longform_test`](https://huggingface.co/datasets/akoksal/LongForm) | 2,045 test_samples | 长输出独立测试 | [官方来源](https://huggingface.co/datasets/akoksal/LongForm) |
+| [Omni-MATH](https://huggingface.co/datasets/KbsdJames/Omni-MATH)<br>[`omni_math`](https://huggingface.co/datasets/KbsdJames/Omni-MATH) | 4,428 competition_problems | 高难奥林匹克数学评测 | [官方来源](https://huggingface.co/datasets/KbsdJames/Omni-MATH) |
+| [GPQA Diamond](https://huggingface.co/datasets/Idavidrein/gpqa)<br>[`gpqa_diamond`](https://huggingface.co/datasets/Idavidrein/gpqa) | 198 questions | 研究生级科学知识与推理评测 | [官方来源](https://huggingface.co/datasets/Idavidrein/gpqa) |
+| [RULER](https://github.com/NVIDIA/RULER)<br>[`ruler`](https://github.com/NVIDIA/RULER) | 未填固定值；configurable_tasks | 可配置长上下文评测 | [官方来源](https://github.com/NVIDIA/RULER) |
+| [BigCodeBench Full / Hard](https://github.com/bigcode-project/bigcodebench)<br>[`bigcodebench`](https://github.com/bigcode-project/bigcodebench) | 1,140 full_tasks | 实用代码生成执行评测 | [官方来源](https://github.com/bigcode-project/bigcodebench) |
+| [MGSM](https://arxiv.org/abs/2210.03057)<br>[`mgsm`](https://arxiv.org/abs/2210.03057) | 250 parallel_problems_per_language | 多语言数学与跨语言母题去污目标 | [官方来源](https://arxiv.org/abs/2210.03057) |
+| [MT-Bench](https://huggingface.co/datasets/HuggingFaceH4/mt_bench_prompts)<br>[`mt_bench`](https://huggingface.co/datasets/HuggingFaceH4/mt_bench_prompts) | 80 multi_turn_prompts | 通用多轮对话评测 | [官方来源](https://huggingface.co/datasets/HuggingFaceH4/mt_bench_prompts) |
+| [RewardBench 2](https://huggingface.co/datasets/allenai/reward-bench-2)<br>[`rewardbench2`](https://huggingface.co/datasets/allenai/reward-bench-2) | 1,865 test_samples | 新一代六类奖励模型评测 | [官方来源](https://huggingface.co/datasets/allenai/reward-bench-2) |
+| [PRMBench](https://github.com/ssmisya/PRMBench)<br>[`prmbench`](https://github.com/ssmisya/PRMBench) | 未填固定值；step_level_evaluation_samples | 细粒度过程奖励评测 | [官方来源](https://github.com/ssmisya/PRMBench) |
+| [HarmBench](https://github.com/centerforaisafety/HarmBench)<br>[`harmbench`](https://github.com/centerforaisafety/HarmBench) | 未填固定值；red_teaming_behaviors | 标准化自动红队评测 | [官方来源](https://github.com/centerforaisafety/HarmBench) |
+| [StrongREJECT](https://github.com/dsbowen/strong_reject)<br>[`strongreject`](https://github.com/dsbowen/strong_reject) | 313 forbidden_prompts | 越狱攻击与空攻击基线评测 | [官方来源](https://github.com/dsbowen/strong_reject) |
+| [SORRY-Bench 2025/03](https://huggingface.co/datasets/sorry-bench/sorry-bench-202503)<br>[`sorry_bench_202503`](https://huggingface.co/datasets/sorry-bench/sorry-bench-202503) | 9,240 unsafe_instructions | 细粒度、多变换安全拒答评测 | [官方来源](https://huggingface.co/datasets/sorry-bench/sorry-bench-202503) |
+| [AgentHarm public test](https://huggingface.co/datasets/ai-safety-institute/AgentHarm)<br>[`agentharm`](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | 44 public_test_base_behaviors | Agent 有害/良性行为安全评测 | [官方来源](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) |
+| [Mind2Web test](https://github.com/OSU-NLP-Group/Mind2Web)<br>[`mind2web_test`](https://github.com/OSU-NLP-Group/Mind2Web) | 1,341 test_tasks | 跨任务、网站和领域浏览评测 | [官方来源](https://github.com/OSU-NLP-Group/Mind2Web) |
+| [AgentDojo](https://github.com/ethz-spylab/agentdojo)<br>[`agentdojo`](https://github.com/ethz-spylab/agentdojo) | 未填固定值；dynamic_attack_defense_tasks | 动态提示注入攻防评测 | [官方来源](https://github.com/ethz-spylab/agentdojo) |
+| [Enigmata-Eval](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval)<br>[`enigmata_eval`](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval) | 4,758 puzzle_instances | 逻辑谜题独立评测 | [官方来源](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval) |
+| [FalseReject test](https://huggingface.co/datasets/AmazonScience/FalseReject)<br>[`falsereject_test`](https://huggingface.co/datasets/AmazonScience/FalseReject) | 1,187 human_annotated_prompts | 人工标注防过拒评测 | [官方来源](https://huggingface.co/datasets/AmazonScience/FalseReject) |
+| [τ-bench 2.0 text-v1](https://github.com/sierra-research/tau2-bench)<br>[`tau_bench_2_text`](https://github.com/sierra-research/tau2-bench) | 900 single_trial_calls | 六语言政策约束多轮工具 Agent 评测 | [官方来源](https://github.com/sierra-research/tau2-bench) |
 
 ## 5. 官方核验对二手口径的纠正
 
@@ -110,14 +110,14 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 
 | 数据集 | 二手或易误用口径 | 本版处理 |
 |---|---|---|
-| OpenCodeInstruct | 二手清单可能写错组织 | 固定为 `nvidia/OpenCodeInstruct`；5,000,000 条，CC-BY-4.0 [官方来源](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) |
-| FalseReject | 论文约 15K train／1.1K test | 当前卡片为 14,624 train＋1,187 test；两响应字段不等于两份独立提示 [官方来源](https://huggingface.co/datasets/AmazonScience/FalseReject) |
-| M2Lingual | 182K IR pairs／约 175K conversations | 当前 `full_data` 元数据为 173,672 行；行、pair、conversation 不混写 [官方来源](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) |
-| HelpSteer3 | 把所有配置加成一个规模 | 本清单仅 Preference 40,476；Feedback/Edit 等配置分开 [官方来源](https://huggingface.co/datasets/nvidia/HelpSteer3) |
+| [OpenCodeInstruct](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | 二手清单可能写错组织 | 固定为 `nvidia/OpenCodeInstruct`；5,000,000 条，CC-BY-4.0 [官方来源](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) |
+| [FalseReject](https://huggingface.co/datasets/AmazonScience/FalseReject) | 论文约 15K train／1.1K test | 当前卡片为 14,624 train＋1,187 test；两响应字段不等于两份独立提示 [官方来源](https://huggingface.co/datasets/AmazonScience/FalseReject) |
+| [M2Lingual](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) | 182K IR pairs／约 175K conversations | 当前 `full_data` 元数据为 173,672 行；行、pair、conversation 不混写 [官方来源](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) |
+| [HelpSteer3](https://huggingface.co/datasets/nvidia/HelpSteer3) | 把所有配置加成一个规模 | 本清单仅 Preference 40,476；Feedback/Edit 等配置分开 [官方来源](https://huggingface.co/datasets/nvidia/HelpSteer3) |
 | Nemotron-Cascade-2-RL | 把全包称同质 RLVR | IF-RL、multi-domain-RL、MOPD、SWE-RL 四配置；MOPD 是蒸馏 [官方来源](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data) |
-| IFEval-like | 模糊写 100K–1M | default 550,000；filtered 56,339；名称不代表已对 IFEval 去污 [官方来源](https://huggingface.co/datasets/argilla/ifeval-like-data) |
+| [IFEval-like](https://huggingface.co/datasets/argilla/ifeval-like-data) | 模糊写 100K–1M | default 550,000；filtered 56,339；名称不代表已对 [IFEval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) 去污 [官方来源](https://huggingface.co/datasets/argilla/ifeval-like-data) |
 | Tulu 3 Preference | 只看 ODC-BY 推断可商用 | 官方明确部分子集非商用；整包 research_only [官方来源](https://huggingface.co/datasets/allenai/llama-3.1-tulu-3-8b-preference-mixture) |
-| Enigmata-Data | 用二手 418K 当固定官方规模 | 生成器规模不猜数；官方卡片 CC-BY-NC-4.0，Eval 另为 Apache-2.0 [官方来源](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) |
+| [Enigmata-Data](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) | 用二手 418K 当固定官方规模 | 生成器规模不猜数；官方卡片 CC-BY-NC-4.0，Eval 另为 Apache-2.0 [官方来源](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) |
 | AgentHarm | 把论文 440 augmented 当当前公开下载量 | 当前 public test 44 base／176 augmented；validation 8／32；canary 禁训 [官方来源](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) |
 | SORRY-Bench | 用代码 MIT 代替数据许可 | 2025/03 数据为 gated 自定义协议，含禁止第三方转移条款 [官方来源](https://huggingface.co/datasets/sorry-bench/sorry-bench-202503) |
 | τ-bench | 继续引用旧 τ-bench 或猜测独立 τ³ 仓库 | 当前官方维护在 `sierra-research/tau2-bench`；本版固定 2.0.0 text-v1 |
@@ -127,13 +127,13 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 
 | 类型 | 代表项 | 本版处理 |
 |---|---|---|
-| 已有通用主集 | Dolci、Tulu 3 SFT、SmolTalk2、OpenHermes、Infinity-Instruct | 保留 canonical 项；大合集不直接相加，继续来源级去重 |
-| 已有数学推理 | OpenMathReasoning、NuminaMath、Mixture-of-Thoughts、DAPO、DeepScaleR | 新增 OpenMathInstruct-2 是不同配方与规模补集，仍按 GSM8K/MATH 母题去污 |
-| 已有代码推理 | OpenCodeReasoning、TACO、CodeContests、KodCode、Magicoder | OpenCodeInstruct/CodeFeedback 补指令风格；不替代可执行 RLVR 题目库 |
-| 已有偏好 | HelpSteer2、HH-RLHF、UltraFeedback、Nectar、Arena、Skywork | HelpSteer3 固定 Preference；Tulu 整包非商用；WebGPT/摘要偏好仅研究 |
-| 已有工具 | xLAM、ToolACE、Glaive、ToolBench、API-Bank | ToolMind 按来源去重；τ-bench 公开任务不得经增广回流训练 |
-| 已有安全 | Aegis、WildGuardMix、PKU-SafeRLHF、XSTest | FalseReject 补训练，HarmBench/StrongREJECT/SORRY/AgentHarm 补不同评测面 |
-| 已有 PRM | PRM800K、Math-Shepherd、ProcessBench | PathFinder 标为 PRM800K 派生；PRMBench 只作评测 |
+| 已有通用主集 | Dolci、Tulu 3 SFT、[SmolTalk2](https://huggingface.co/blog/smollm3)、OpenHermes、[Infinity-Instruct](https://huggingface.co/datasets/BAAI/Infinity-Instruct) | 保留 canonical 项；大合集不直接相加，继续来源级去重 |
+| 已有数学推理 | [OpenMathReasoning](https://huggingface.co/datasets/nvidia/OpenMathReasoning)、NuminaMath、Mixture-of-Thoughts、DAPO、[DeepScaleR](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset) | 新增 [OpenMathInstruct-2](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) 是不同配方与规模补集，仍按 [GSM8K](https://huggingface.co/datasets/openai/gsm8k)/MATH 母题去污 |
+| 已有代码推理 | [OpenCodeReasoning](https://huggingface.co/datasets/nvidia/OpenCodeReasoning)、[TACO](https://huggingface.co/datasets/BAAI/TACO)、[CodeContests](https://huggingface.co/datasets/deepmind/code_contests)、KodCode、Magicoder | [OpenCodeInstruct](https://huggingface.co/datasets/nvidia/OpenCodeInstruct)/CodeFeedback 补指令风格；不替代可执行 RLVR 题目库 |
+| 已有偏好 | [HelpSteer2](https://huggingface.co/datasets/nvidia/HelpSteer2)、[HH-RLHF](https://huggingface.co/datasets/Anthropic/hh-rlhf)、[UltraFeedback](https://huggingface.co/datasets/openbmb/UltraFeedback)、[Nectar](https://huggingface.co/datasets/berkeley-nest/Nectar)、[Arena](https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k)、Skywork | [HelpSteer3](https://huggingface.co/datasets/nvidia/HelpSteer3) 固定 Preference；Tulu 整包非商用；WebGPT/摘要偏好仅研究 |
+| 已有工具 | [xLAM](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k)、[ToolACE](https://arxiv.org/html/2409.00917v1)、Glaive、[ToolBench](https://github.com/OpenBMB/ToolBench)、[API-Bank](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/api-bank) | [ToolMind](https://huggingface.co/datasets/Nanbeige/ToolMind) 按来源去重；τ-bench 公开任务不得经增广回流训练 |
+| 已有安全 | Aegis、WildGuardMix、PKU-SafeRLHF、[XSTest](https://github.com/paul-rottger/exaggerated-safety) | [FalseReject](https://huggingface.co/datasets/AmazonScience/FalseReject) 补训练，[HarmBench](https://github.com/centerforaisafety/HarmBench)/[StrongREJECT](https://github.com/dsbowen/strong_reject)/SORRY/AgentHarm 补不同评测面 |
+| 已有 PRM | [PRM800K](https://github.com/openai/prm800k)、[Math-Shepherd](https://arxiv.org/abs/2312.08935)、[ProcessBench](https://huggingface.co/datasets/Qwen/ProcessBench) | PathFinder 标为 [PRM800K](https://github.com/openai/prm800k) 派生；[PRMBench](https://github.com/ssmisya/PRMBench) 只作评测 |
 | 不再重复收录 | awesome 中同一项目的镜像、改名和二手搬运 | 只保留官方 canonical 来源；401 的镜像不作为已核验项 |
 
 重复项的处理依赖内容、母题、网站、仓库、来源和教师谱系，而不是只按名称判断。特别是 Aya/M2Lingual、ToolMind/xLAM/ToolACE、PRM800K/PathFinder、GSM8K/MGSM/中文数学蒸馏之间，即使文本哈希不同，也可能存在同源或翻译泄漏。
@@ -142,14 +142,14 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 
 | 风险 | 代表资产 | 必须执行的控制 |
 |---|---|---|
-| 许可仅看合集标签 | Tulu Preference、Infinity-Instruct、中文 R1 蒸馏、ToolMind | 分别审合集、上游样本、教师输出和访问协议；任一层未过则不进入默认商用配方 |
-| 非商用与相同方式共享 | M2Lingual、WebLINX、FalseReject、Enigmata-Data | 统一 research_only；NC/SA 不与商用 core 混合 |
-| 教师服务条款 | IFEval-like、LongForm、CodeFeedback、WebGPT、中文 R1 蒸馏 | 记录教师模型、生成日期和条款版本；数据卡许可不自动覆盖教师输出 |
-| 母题与跨语言污染 | OpenMathInstruct-2、Numina、PRM800K、中文 R1 蒸馏 | 对 MATH/GSM8K/Omni-MATH/MGSM 做母题、翻译和语义去污，而非只做字符串哈希 |
-| 同 repo 切分泄漏 | LongForm、FalseReject、Enigmata、WebLINX | train/test 拆资产；test 一律 eval_only，文件哈希与 split 固定 |
-| 静态轨迹误当动态环境 | WebLINX、ToolMind、API-Bank | 文本轨迹用于 SFT；动态网页/工具环境另行回放，分别报告任务效用与安全 |
-| 危险内容与用途限制 | SORRY-Bench、AgentHarm、HarmBench、StrongREJECT | 隔离访问、保留 canary、遵守用途和转移限制；只用于安全评测或获批研究 |
-| 规模口径膨胀 | HelpSteer3、ToolMind、M2Lingual、Nemotron RL | 分开记录独立提示、行、turn、轨迹、任务、配置和构造偏好对 |
+| 许可仅看合集标签 | Tulu Preference、[Infinity-Instruct](https://huggingface.co/datasets/BAAI/Infinity-Instruct)、中文 R1 蒸馏、[ToolMind](https://huggingface.co/datasets/Nanbeige/ToolMind) | 分别审合集、上游样本、教师输出和访问协议；任一层未过则不进入默认商用配方 |
+| 非商用与相同方式共享 | [M2Lingual](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual)、[WebLINX](https://huggingface.co/datasets/McGill-NLP/WebLINX)、[FalseReject](https://huggingface.co/datasets/AmazonScience/FalseReject)、[Enigmata-Data](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) | 统一 research_only；NC/SA 不与商用 core 混合 |
+| 教师服务条款 | [IFEval-like](https://huggingface.co/datasets/argilla/ifeval-like-data)、[LongForm](https://huggingface.co/datasets/akoksal/LongForm)、CodeFeedback、WebGPT、中文 R1 蒸馏 | 记录教师模型、生成日期和条款版本；数据卡许可不自动覆盖教师输出 |
+| 母题与跨语言污染 | [OpenMathInstruct-2](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2)、Numina、[PRM800K](https://github.com/openai/prm800k)、中文 R1 蒸馏 | 对 MATH/[GSM8K](https://huggingface.co/datasets/openai/gsm8k)/[Omni-MATH](https://huggingface.co/datasets/KbsdJames/Omni-MATH)/[MGSM](https://arxiv.org/abs/2210.03057) 做母题、翻译和语义去污，而非只做字符串哈希 |
+| 同 repo 切分泄漏 | [LongForm](https://huggingface.co/datasets/akoksal/LongForm)、[FalseReject](https://huggingface.co/datasets/AmazonScience/FalseReject)、Enigmata、[WebLINX](https://huggingface.co/datasets/McGill-NLP/WebLINX) | train/test 拆资产；test 一律 eval_only，文件哈希与 split 固定 |
+| 静态轨迹误当动态环境 | [WebLINX](https://huggingface.co/datasets/McGill-NLP/WebLINX)、[ToolMind](https://huggingface.co/datasets/Nanbeige/ToolMind)、[API-Bank](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/api-bank) | 文本轨迹用于 SFT；动态网页/工具环境另行回放，分别报告任务效用与安全 |
+| 危险内容与用途限制 | SORRY-Bench、AgentHarm、[HarmBench](https://github.com/centerforaisafety/HarmBench)、[StrongREJECT](https://github.com/dsbowen/strong_reject) | 隔离访问、保留 canary、遵守用途和转移限制；只用于安全评测或获批研究 |
+| 规模口径膨胀 | [HelpSteer3](https://huggingface.co/datasets/nvidia/HelpSteer3)、[ToolMind](https://huggingface.co/datasets/Nanbeige/ToolMind)、[M2Lingual](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual)、[Nemotron RL](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data) | 分开记录独立提示、行、turn、轨迹、任务、配置和构造偏好对 |
 
 许可判断必须分层：代码许可、数据许可、上游内容许可、模型输出条款、 gated 访问协议和实际产品用途不是同一件事。`allowed_with_obligations` 也只表示官方许可字段相对明确，并不等于已完成法务签署；`review_required` 和 `noncommercial` 不得进入默认商用训练包。
 
@@ -157,9 +157,9 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 
 | 新能力 | 当前训练候选 | 当前独立评测 | 已闭合的部分 | 尚未闭合的部分 |
 |---|---|---|---|---|
-| `long_output` | LongForm | LongForm test＋私有时间外评测 | 长输出不再由长输入数据代替 | 事实一致性、跨章节依赖、多文档冲突、业务长文 |
-| `browser_agent` | WebLINX 研究轨迹 | Mind2Web＋私有时间外评测 | 静态轨迹与跨网站评测已有结构入口 | 可商用训练、动态环境、账号安全、在线回放 |
-| `agent_safety` | 本地领域安全与政策样本 | AgentHarm＋AgentDojo＋私有评测 | 有害行为、良性行为和提示注入攻防进入矩阵 | 真实工具返回注入、数据外泄、危险动作与业务政策 |
+| `long_output` | [LongForm](https://huggingface.co/datasets/akoksal/LongForm) | [LongForm test](https://huggingface.co/datasets/akoksal/LongForm)＋私有时间外评测 | 长输出不再由长输入数据代替 | 事实一致性、跨章节依赖、多文档冲突、业务长文 |
+| `browser_agent` | [WebLINX](https://huggingface.co/datasets/McGill-NLP/WebLINX) 研究轨迹 | Mind2Web＋私有时间外评测 | 静态轨迹与跨网站评测已有结构入口 | 可商用训练、动态环境、账号安全、在线回放 |
+| `agent_safety` | 本地领域安全与政策样本 | AgentHarm＋[AgentDojo](https://github.com/ethz-spylab/agentdojo)＋私有评测 | 有害行为、良性行为和提示注入攻防进入矩阵 | 真实工具返回注入、数据外泄、危险动作与业务政策 |
 
 除三个新维度外，中文精确指令、多语言人工偏好和开放式通用推理奖励仍然不足。IFEval-like、M2Lingual 和中文 R1 蒸馏主要是合成数据，不能替代中文人工约束数据与多语言人工偏好；Enigmata 只证明规则谜题可以 RLVR，不代表科学问答、开放写作和通用推理都有可靠自动奖励。
 
@@ -171,20 +171,20 @@ awesome 项目只承担召回职责，不能替代官方数据卡。下表保留
 |---|---|---|
 | PRISM Alignment | deferred | 本次官方数据卡访问返回 401，未核验当前字段、许可和规模，不写成已核验推荐项 |
 | Skywork-SynPref-40M | deferred | 论文可核实 40M 池与 26M 精选子集，但当前官方 HF API/README 返回 401，固定数据包与许可未核验 |
-| Qwen AutoIF | deferred | 官方数据卡本次返回 401；已有 Tulu Persona IF、IFEval-like filtered 与 VerInstruct，不凭二手清单晋升 |
-| WebDancer / WebSailor | deferred | 当前未形成可核验的固定训练数据卡与许可；WebLINX 仅补非商用静态轨迹，动态环境仍须专项建设 |
-| Mind2Web train | deferred | 官方声明研究用途且测试包单独分发；本版只将 1,341 测试任务列 eval_only，训练侧先用 WebLINX 研究轨迹 |
-| SWE-bench-extra | deferred | 本次原始数据卡访问返回 401；已有 SWE-Gym/SWE-smith/R2E-Gym，不为凑数纳入未核验项 |
+| Qwen AutoIF | deferred | 官方数据卡本次返回 401；已有 Tulu Persona IF、[IFEval-like filtered](https://huggingface.co/datasets/argilla/ifeval-like-data) 与 [VerInstruct](https://aclanthology.org/2025.emnlp-main.1542/)，不凭二手清单晋升 |
+| WebDancer / WebSailor | deferred | 当前未形成可核验的固定训练数据卡与许可；[WebLINX](https://huggingface.co/datasets/McGill-NLP/WebLINX) 仅补非商用静态轨迹，动态环境仍须专项建设 |
+| Mind2Web train | deferred | 官方声明研究用途且测试包单独分发；本版只将 1,341 测试任务列 eval_only，训练侧先用 [WebLINX](https://huggingface.co/datasets/McGill-NLP/WebLINX) 研究轨迹 |
+| SWE-bench-extra | deferred | 本次原始数据卡访问返回 401；已有 [SWE-Gym](https://arxiv.org/abs/2412.21139)/[SWE-smith](https://github.com/SWE-bench/SWE-smith)/[R2E-Gym](https://r2e-gym.github.io/)，不为凑数纳入未核验项 |
 | LongAttn / LongABC | out_of_scope | 官方项目为长上下文继续预训练数据，不属于本 post-training 清单；不得当作长输出 SFT |
 | τ-bench legacy | superseded | 旧任务已过时；本版使用 sierra-research/tau2-bench 的 τ-bench 2.0.0 text-v1，且不与 1.x 分数直接比较 |
 | Audio-FLAN | deferred | 论文召回超 1 亿实例、80 任务且含音频生成；需先固定官方理解子集、许可和生成／理解边界，不整包纳入 |
-| AudioBench/MMAU direct HF cards | partially_verified | 官方项目与论文已核验，但当前猜测的 HF repo 返回 401；不登记未经核实的 HF revision 或统一行数 |
-| OCRBench/MMStar/BLINK/MLVU direct HF cards | partially_verified | 当前直接 HF API 返回 401；已保留官方项目入口和 eval_only 定义，未编造 SHA 或许可 |
-| CMMMU/CMMU direct HF cards | partially_verified | 官方 GitHub 与论文规模已核验，直接 HF API 401；固定发布包后再补 revision |
+| [AudioBench](https://github.com/AudioLLMs/AudioBench)/[MMAU](https://sakshi113.github.io/mmau_homepage/) direct HF cards | partially_verified | 官方项目与论文已核验，但当前猜测的 HF repo 返回 401；不登记未经核实的 HF revision 或统一行数 |
+| [OCRBench](https://github.com/Yuliang-Liu/MultimodalOCR)/[MMStar](https://github.com/MMStar-Benchmark/MMStar)/BLINK/[MLVU](https://github.com/JUNJIE99/MLVU) direct HF cards | partially_verified | 当前直接 HF API 返回 401；已保留官方项目入口和 eval_only 定义，未编造 SHA 或许可 |
+| [CMMMU](https://github.com/CMMMU-Benchmark/CMMMU)/CMMU direct HF cards | partially_verified | 官方 GitHub 与论文规模已核验，直接 HF API 401；固定发布包后再补 revision |
 | GUI-R1 / Video-R1 / VideoChat-R1 | deferred | 代码和奖励流程可召回，但本版未核验统一固定数据包；不把方法仓库当同质数据集 |
 | LLaVA 558K / LLaVA-OneVision-1.5-Mid-Training-85M | out_of_scope | 分别是特征对齐预训练和 mid-training，不属于本后训练清单 |
 | text-to-image / speech, music and video generation | out_of_scope | 本库覆盖后训练理解、指令、对齐与 Agent，不扩展到媒体生成数据 |
-| medical imaging / remote sensing | out_of_scope | 保留为专门领域审查范围；OneVision/FineVision 内相关 config 默认不选 |
+| medical imaging / remote sensing | out_of_scope | 保留为专门领域审查范围；OneVision/[FineVision](https://huggingface.co/datasets/HuggingFaceM4/FineVision) 内相关 config 默认不选 |
 
 延期并不等于永久否决。后续只要官方数据卡恢复、固定 revision 和许可可以核验，并且资产能补真实结构缺口，就可以从候选池晋升；在此之前，自动发现结果只能进入 `pending_review`，不能自动写入 canonical 总表。
 
