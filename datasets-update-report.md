@@ -1,6 +1,6 @@
 # 数据目录更新报告
 
-> 运行时间：2026-11-18T23:25:18Z；模式：metadata+discovery。
+> 运行时间：2026-11-19T23:37:31Z；模式：metadata+discovery。
 
 ## 本次概览
 
@@ -12,7 +12,7 @@
 | 刷新失败 | 0 |
 | 元数据变化 | 100 |
 | 本次新候选 | 2 |
-| 累计待审核候选 | 173 |
+| 累计待审核候选 | 175 |
 | 执行发现查询 | 35 |
 
 ## 元数据变化
@@ -21,11 +21,10 @@
 |---|---|---|
 | [`AI4Math/MathVista`](https://huggingface.co/datasets/AI4Math/MathVista) | [`mathvista_testmini`](https://huggingface.co/datasets/AI4Math/MathVista) | `downloads` |
 | [`AmazonScience/FalseReject`](https://huggingface.co/datasets/AmazonScience/FalseReject) | [`falsereject_train`](https://huggingface.co/datasets/AmazonScience/FalseReject), [`falsereject_test`](https://huggingface.co/datasets/AmazonScience/FalseReject) | `downloads` |
-| [`Anthropic/hh-rlhf`](https://huggingface.co/datasets/Anthropic/hh-rlhf) | [`hh_rlhf`](https://huggingface.co/datasets/Anthropic/hh-rlhf) | `downloads`, `likes` |
-| [`BAAI/COIG-PC-Lite`](https://huggingface.co/datasets/BAAI/COIG-PC-Lite) | [`coig_pc_lite`](https://huggingface.co/datasets/BAAI/COIG-PC-Lite) | `downloads` |
+| [`Anthropic/hh-rlhf`](https://huggingface.co/datasets/Anthropic/hh-rlhf) | [`hh_rlhf`](https://huggingface.co/datasets/Anthropic/hh-rlhf) | `downloads` |
 | [`BAAI/Infinity-Instruct`](https://huggingface.co/datasets/BAAI/Infinity-Instruct) | [`infinity_instruct`](https://huggingface.co/datasets/BAAI/Infinity-Instruct) | `downloads` |
 | [`BAAI/TACO`](https://huggingface.co/datasets/BAAI/TACO) | [`taco`](https://huggingface.co/datasets/BAAI/TACO) | `downloads` |
-| [`BytedTsinghua-SIA/DAPO-Math-17k`](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k) | [`dapo_math_17k`](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k) | `downloads` |
+| [`BytedTsinghua-SIA/DAPO-Math-17k`](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k) | [`dapo_math_17k`](https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k) | `downloads`, `likes` |
 | [`BytedTsinghua-SIA/Enigmata-Data`](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) | [`enigmata_data`](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Data) | `downloads` |
 | [`BytedTsinghua-SIA/Enigmata-Eval`](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval) | [`enigmata_eval`](https://huggingface.co/datasets/BytedTsinghua-SIA/Enigmata-Eval) | `downloads` |
 | [`CohereLabs/aya_collection`](https://huggingface.co/datasets/CohereLabs/aya_collection) | [`aya_collection`](https://huggingface.co/datasets/CohereLabs/aya_collection) | `downloads` |
@@ -53,10 +52,11 @@
 | [`ServiceNow-AI/M2Lingual`](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) | [`m2lingual`](https://huggingface.co/datasets/ServiceNow-AI/M2Lingual) | `downloads` |
 | [`Skywork/Skywork-OR1-RL-Data`](https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data) | [`skywork_or1_rl`](https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data) | `downloads` |
 | [`Skywork/Skywork-Reward-Preference-80K-v0.2`](https://huggingface.co/datasets/Skywork/Skywork-Reward-Preference-80K-v0.2) | [`skywork_reward_preference_80k`](https://huggingface.co/datasets/Skywork/Skywork-Reward-Preference-80K-v0.2) | `downloads` |
-| [`SynthLabsAI/Big-Math-RL-Verified`](https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified) | [`big_math_rl_verified`](https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified) | `downloads` |
-| [`TIGER-Lab/MMLU-Pro`](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) | [`mmlu_pro`](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) | `downloads`, `likes` |
+| [`SynthLabsAI/Big-Math-RL-Verified`](https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified) | [`big_math_rl_verified`](https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified) | `downloads`, `likes` |
+| [`TIGER-Lab/MMLU-Pro`](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) | [`mmlu_pro`](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) | `downloads` |
 | [`TIGER-Lab/Mantis-Eval`](https://huggingface.co/datasets/TIGER-Lab/Mantis-Eval) | [`mantis_eval`](https://huggingface.co/datasets/TIGER-Lab/Mantis-Eval) | `downloads` |
 | [`TIGER-Lab/Mantis-Instruct`](https://huggingface.co/datasets/TIGER-Lab/Mantis-Instruct) | [`mantis_instruct`](https://huggingface.co/datasets/TIGER-Lab/Mantis-Instruct) | `downloads` |
+| [`YiyangAiLab/POVID_preference_data_for_VLLMs`](https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs) | [`povid`](https://huggingface.co/datasets/YiyangAiLab/POVID_preference_data_for_VLLMs) | `downloads` |
 | [`agentica-org/DeepScaleR-Preview-Dataset`](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset) | [`deepscaler_preview`](https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset) | `downloads` |
 | [`ai-safety-institute/AgentHarm`](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | [`agentharm`](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) | `downloads` |
 | [`akoksal/LongForm`](https://huggingface.co/datasets/akoksal/LongForm) | [`longform`](https://huggingface.co/datasets/akoksal/LongForm), [`longform_test`](https://huggingface.co/datasets/akoksal/LongForm) | `downloads` |
@@ -72,14 +72,14 @@
 | [`allenai/pixmo-points`](https://huggingface.co/datasets/allenai/pixmo-points) | [`pixmo_points`](https://huggingface.co/datasets/allenai/pixmo-points) | `downloads` |
 | [`allenai/reward-bench`](https://huggingface.co/datasets/allenai/reward-bench) | [`rewardbench`](https://huggingface.co/datasets/allenai/reward-bench) | `downloads` |
 | [`allenai/reward-bench-2`](https://huggingface.co/datasets/allenai/reward-bench-2) | [`rewardbench2`](https://huggingface.co/datasets/allenai/reward-bench-2) | `downloads` |
-| [`allenai/tulu-3-sft-mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `downloads`, `likes` |
+| [`allenai/tulu-3-sft-mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | [`tulu3_sft_mixture`](https://huggingface.co/datasets/allenai/tulu-3-sft-mixture) | `downloads` |
 | [`allenai/tulu-3-sft-personas-instruction-following`](https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following) | [`tulu3_persona_if`](https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following) | `downloads` |
 | [`argilla/ifeval-like-data`](https://huggingface.co/datasets/argilla/ifeval-like-data) | [`ifeval_like_filtered`](https://huggingface.co/datasets/argilla/ifeval-like-data) | `downloads` |
 | [`berkeley-nest/Nectar`](https://huggingface.co/datasets/berkeley-nest/Nectar) | [`nectar`](https://huggingface.co/datasets/berkeley-nest/Nectar) | `downloads` |
-| [`databricks/databricks-dolly-15k`](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | [`dolly_15k`](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | `downloads` |
+| [`databricks/databricks-dolly-15k`](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | [`dolly_15k`](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | `downloads`, `likes` |
 | [`deepmind/code_contests`](https://huggingface.co/datasets/deepmind/code_contests) | [`codecontests`](https://huggingface.co/datasets/deepmind/code_contests) | `downloads` |
 | [`facebook/natural_reasoning`](https://huggingface.co/datasets/facebook/natural_reasoning) | [`natural_reasoning`](https://huggingface.co/datasets/facebook/natural_reasoning) | `downloads` |
-| [`glaiveai/glaive-function-calling-v2`](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | [`glaive_function_calling_v2`](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | `downloads`, `likes` |
+| [`glaiveai/glaive-function-calling-v2`](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | [`glaive_function_calling_v2`](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | `downloads` |
 | [`gpt-omni/VoiceAssistant-400K`](https://huggingface.co/datasets/gpt-omni/VoiceAssistant-400K) | [`voice_assistant_400k`](https://huggingface.co/datasets/gpt-omni/VoiceAssistant-400K) | `downloads` |
 | [`hflqf88888/GUIOdyssey`](https://huggingface.co/datasets/hflqf88888/GUIOdyssey) | [`gui_odyssey_train`](https://huggingface.co/datasets/hflqf88888/GUIOdyssey), [`gui_odyssey_test`](https://huggingface.co/datasets/hflqf88888/GUIOdyssey) | `downloads` |
 | [`hlt-lab/voicebench`](https://huggingface.co/datasets/hlt-lab/voicebench) | [`voicebench`](https://huggingface.co/datasets/hlt-lab/voicebench) | `downloads` |
@@ -95,13 +95,13 @@
 | [`mvp-lab/LLaVA-OneVision-1.5-Instruct-Data`](https://huggingface.co/datasets/mvp-lab/LLaVA-OneVision-1.5-Instruct-Data) | [`llava_onevision15_instruct_22m`](https://huggingface.co/datasets/mvp-lab/LLaVA-OneVision-1.5-Instruct-Data) | `downloads` |
 | [`nvidia/Aegis-AI-Content-Safety-Dataset-2.0`](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0) | [`aegis_content_safety_2`](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0) | `downloads` |
 | [`nvidia/HelpSteer2`](https://huggingface.co/datasets/nvidia/HelpSteer2) | [`helpsteer2`](https://huggingface.co/datasets/nvidia/HelpSteer2) | `downloads` |
-| [`nvidia/HelpSteer3`](https://huggingface.co/datasets/nvidia/HelpSteer3) | [`helpsteer3_preference`](https://huggingface.co/datasets/nvidia/HelpSteer3) | `downloads` |
+| [`nvidia/HelpSteer3`](https://huggingface.co/datasets/nvidia/HelpSteer3) | [`helpsteer3_preference`](https://huggingface.co/datasets/nvidia/HelpSteer3) | `downloads`, `likes` |
 | [`nvidia/Nemotron-Cascade-2-RL-data`](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data) | [`nemotron_cascade_2_rl`](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data) | `downloads` |
 | [`nvidia/Nemotron-Cascade-2-SFT-Data`](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data) | [`nemotron_cascade_2_sft`](https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data) | `downloads` |
-| [`nvidia/OpenCodeInstruct`](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | [`opencodeinstruct`](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | `downloads`, `likes` |
-| [`nvidia/OpenCodeReasoning`](https://huggingface.co/datasets/nvidia/OpenCodeReasoning) | [`opencode_reasoning`](https://huggingface.co/datasets/nvidia/OpenCodeReasoning) | `downloads`, `likes` |
-| [`nvidia/OpenMathInstruct-2`](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) | [`openmathinstruct2`](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) | `downloads`, `likes` |
-| [`nvidia/OpenMathReasoning`](https://huggingface.co/datasets/nvidia/OpenMathReasoning) | [`openmath_reasoning`](https://huggingface.co/datasets/nvidia/OpenMathReasoning) | `downloads`, `likes` |
+| [`nvidia/OpenCodeInstruct`](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | [`opencodeinstruct`](https://huggingface.co/datasets/nvidia/OpenCodeInstruct) | `downloads` |
+| [`nvidia/OpenCodeReasoning`](https://huggingface.co/datasets/nvidia/OpenCodeReasoning) | [`opencode_reasoning`](https://huggingface.co/datasets/nvidia/OpenCodeReasoning) | `downloads` |
+| [`nvidia/OpenMathInstruct-2`](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) | [`openmathinstruct2`](https://huggingface.co/datasets/nvidia/OpenMathInstruct-2) | `downloads` |
+| [`nvidia/OpenMathReasoning`](https://huggingface.co/datasets/nvidia/OpenMathReasoning) | [`openmath_reasoning`](https://huggingface.co/datasets/nvidia/OpenMathReasoning) | `downloads` |
 | [`open-r1/Mixture-of-Thoughts`](https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts) | [`mixture_of_thoughts`](https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts) | `downloads` |
 | [`openai/gsm8k`](https://huggingface.co/datasets/openai/gsm8k) | [`gsm8k_test`](https://huggingface.co/datasets/openai/gsm8k) | `downloads`, `likes` |
 | [`openai/summarize_from_feedback`](https://huggingface.co/datasets/openai/summarize_from_feedback) | [`summarize_from_feedback`](https://huggingface.co/datasets/openai/summarize_from_feedback) | `downloads` |
@@ -124,8 +124,8 @@
 
 | 仓库 | 建议分类 | 分数 | 状态 |
 |---|---|---:|---|
-| [`HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v3`](https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v3) | `general_sft` | 12.5 | pending_review |
-| [`HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v2`](https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v2) | `general_sft` | 12.5 | pending_review |
+| [`dusersad12/xlam-function-calling-60k`](https://huggingface.co/datasets/dusersad12/xlam-function-calling-60k) | `tool` | 9.0 | pending_review |
+| [`dusersad12/hermes-function-calling-v1`](https://huggingface.co/datasets/dusersad12/hermes-function-calling-v1) | `tool` | 9.0 | pending_review |
 
 ## 错误与限制
 
