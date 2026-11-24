@@ -1,5 +1,5 @@
 schema_version: '1.0'
-generated_at: '2026-11-22T22:30:27Z'
+generated_at: '2026-11-24T03:21:52Z'
 policy:
   default_status: pending_review
   auto_training_allowed: false
@@ -11,14 +11,14 @@ policy:
   - 加入 datasets-list.yaml 后通过完整性校验
 candidates:
 - first_seen_at: '2026-11-11T23:29:53Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: 96kevinli29/Multilingual-Math-Reasoning-Eval
     url: https://huggingface.co/datasets/96kevinli29/Multilingual-Math-Reasoning-Eval
     last_modified: '2026-11-11T16:29:12.000Z'
     sha: ea32711bebbdb92ad6d9be52a2d456da19048fe1
-    downloads: 223
+    downloads: 252
     likes: 0
     gated: false
     private: false
@@ -87,7 +87,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.5
-  seen_count: 12
+  seen_count: 13
   status: pending_review
   suggested_categories:
   - category: math
@@ -132,15 +132,15 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/96kevinli29/Multilingual-Math-Reasoning-Eval
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: AlmostNobody/High-Quality-Synthetic-Python-Dataset-with-Reasoning-Traces-Chain-of-Thought-for-LLM-Fine-Tuning
     url: https://huggingface.co/datasets/AlmostNobody/High-Quality-Synthetic-Python-Dataset-with-Reasoning-Traces-Chain-of-Thought-for-LLM-Fine-Tuning
     last_modified: '2026-11-02T07:37:08.000Z'
     sha: 6ff7d9a0ec38f46fcd408907328f99e77609820a
     downloads: 135
-    likes: 7
+    likes: 8
     gated: false
     private: false
     disabled: false
@@ -178,7 +178,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 15.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -196,14 +196,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/AlmostNobody/High-Quality-Synthetic-Python-Dataset-with-Reasoning-Traces-Chain-of-Thought-for-LLM-Fine-Tuning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-javascript
     url: https://huggingface.co/datasets/AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-javascript
     last_modified: '2026-03-10T05:28:38.000Z'
     sha: de4f2e7b7e392ea06cb57f3444facb0990e3ab17
-    downloads: 40
+    downloads: 39
     likes: 0
     gated: false
     private: false
@@ -246,7 +246,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_search
@@ -270,14 +270,14 @@ candidates:
   suggested_category: agent_search
   url: https://huggingface.co/datasets/AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-javascript
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-python
     url: https://huggingface.co/datasets/AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-python
     last_modified: '2026-03-10T05:30:40.000Z'
     sha: 0196647557163c279997e70d7d41426144aa28b4
-    downloads: 32
+    downloads: 28
     likes: 0
     gated: false
     private: false
@@ -320,7 +320,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_search
@@ -344,8 +344,8 @@ candidates:
   suggested_category: agent_search
   url: https://huggingface.co/datasets/AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-python
 - first_seen_at: '2026-11-12T22:45:59Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: BH-Language-AI/bs-agent-function-calling-v01
     url: https://huggingface.co/datasets/BH-Language-AI/bs-agent-function-calling-v01
@@ -390,7 +390,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 11
+  seen_count: 12
   status: pending_review
   suggested_categories:
   - category: tool
@@ -408,14 +408,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/BH-Language-AI/bs-agent-function-calling-v01
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Banaxi-Tech/Deepseek-V4-Reasoning-Code-2500
     url: https://huggingface.co/datasets/Banaxi-Tech/Deepseek-V4-Reasoning-Code-2500
     last_modified: '2026-05-24T11:53:07.000Z'
     sha: 4fe95cc9ffb21c820d22f162f94c232d57e48a62
-    downloads: 165
+    downloads: 167
     likes: 13
     gated: false
     private: false
@@ -462,7 +462,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -480,14 +480,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/Banaxi-Tech/Deepseek-V4-Reasoning-Code-2500
 - first_seen_at: '2026-11-17T00:50:45Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: BeardedMonster/glaive-function-calling-v2
     url: https://huggingface.co/datasets/BeardedMonster/glaive-function-calling-v2
     last_modified: '2026-11-16T00:39:37.000Z'
     sha: 5f9040732cfa172debe48201e9a78fddad4ecfe1
-    downloads: 53
+    downloads: 54
     likes: 0
     gated: false
     private: false
@@ -532,7 +532,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 7
+  seen_count: 8
   status: pending_review
   suggested_categories:
   - category: tool
@@ -550,14 +550,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/BeardedMonster/glaive-function-calling-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Bobollinix/Nemotron-RL-Agentic-SWE-Pivot-v1
     url: https://huggingface.co/datasets/Bobollinix/Nemotron-RL-Agentic-SWE-Pivot-v1
     last_modified: '2026-09-20T02:45:24.000Z'
     sha: ae94789f6814c0fc8aaffb8ba240b3749f2b7794
-    downloads: 180
+    downloads: 176
     likes: 0
     gated: false
     private: false
@@ -589,7 +589,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -610,14 +610,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/Bobollinix/Nemotron-RL-Agentic-SWE-Pivot-v1
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: CIRISAI/reasoning-traces
     url: https://huggingface.co/datasets/CIRISAI/reasoning-traces
     last_modified: '2026-10-14T13:52:15.000Z'
     sha: 5a975c322e47cba8c19cb652a0d708c119200cd9
-    downloads: 103
+    downloads: 94
     likes: 0
     gated: false
     private: false
@@ -666,7 +666,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -681,14 +681,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/CIRISAI/reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: CIRISAI/reasoning-traces-v2
     url: https://huggingface.co/datasets/CIRISAI/reasoning-traces-v2
     last_modified: '2026-10-14T13:52:16.000Z'
     sha: 5ae1e39d60f342cb82311eca55dde05cd96cc7ed
-    downloads: 99
+    downloads: 97
     likes: 0
     gated: false
     private: false
@@ -755,7 +755,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -770,8 +770,8 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/CIRISAI/reasoning-traces-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Chess-Nut-Engine/chess-reasoning-traces-seed
     url: https://huggingface.co/datasets/Chess-Nut-Engine/chess-reasoning-traces-seed
@@ -820,7 +820,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -940,8 +940,8 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/Davd-b01/thinkingcap-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: DuoNeural/cdm-reasoning-traces-v4
     url: https://huggingface.co/datasets/DuoNeural/cdm-reasoning-traces-v4
@@ -991,7 +991,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -1015,8 +1015,8 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/DuoNeural/cdm-reasoning-traces-v4
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Entity-27th/odin-c1-code-reasoning-mix
     url: https://huggingface.co/datasets/Entity-27th/odin-c1-code-reasoning-mix
@@ -1051,7 +1051,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -1066,8 +1066,8 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/Entity-27th/odin-c1-code-reasoning-mix
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: FlaneAI/Distilled-Opus5-GPT5.6sol-Math-Reasoning
     url: https://huggingface.co/datasets/FlaneAI/Distilled-Opus5-GPT5.6sol-Math-Reasoning
@@ -1095,7 +1095,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -1178,14 +1178,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/FranckAbgrall/glm53-flash-function-calling
 - first_seen_at: '2026-11-14T21:33:04Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/JetBrains-Research__agent-trajectories-swe-bench-test-minus-verified
     url: https://huggingface.co/datasets/HYUKI5/JetBrains-Research__agent-trajectories-swe-bench-test-minus-verified
     last_modified: '2026-11-14T02:41:57.000Z'
     sha: c037b69209b813bbbf192a4595f06892095484a2
-    downloads: 69
+    downloads: 72
     likes: 0
     gated: false
     private: false
@@ -1236,7 +1236,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 9
+  seen_count: 10
   status: pending_review
   suggested_categories:
   - category: agent_search
@@ -1254,14 +1254,14 @@ candidates:
   suggested_category: agent_search
   url: https://huggingface.co/datasets/HYUKI5/JetBrains-Research__agent-trajectories-swe-bench-test-minus-verified
 - first_seen_at: '2026-11-17T00:50:45Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/Kwai-Klear__SWE-smith-mini_swe_agent_plus-trajectories-66k
     url: https://huggingface.co/datasets/HYUKI5/Kwai-Klear__SWE-smith-mini_swe_agent_plus-trajectories-66k
     last_modified: '2026-11-16T11:37:30.000Z'
     sha: ba3704c1e29c5f338d183dd56a04127511d243fa
-    downloads: 134
+    downloads: 145
     likes: 0
     gated: false
     private: false
@@ -1302,7 +1302,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 7
+  seen_count: 8
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -1320,8 +1320,8 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/HYUKI5/Kwai-Klear__SWE-smith-mini_swe_agent_plus-trajectories-66k
 - first_seen_at: '2026-11-11T23:29:53Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/NousResearch__hermes-function-calling-v1
     url: https://huggingface.co/datasets/HYUKI5/NousResearch__hermes-function-calling-v1
@@ -1379,7 +1379,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 12
+  seen_count: 13
   status: pending_review
   suggested_categories:
   - category: tool
@@ -1397,14 +1397,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/HYUKI5/NousResearch__hermes-function-calling-v1
 - first_seen_at: '2026-11-11T23:29:53Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/SWE-Factory__DeepSWE-Agent-Kimi-K2-Trajectories-2.8K
     url: https://huggingface.co/datasets/HYUKI5/SWE-Factory__DeepSWE-Agent-Kimi-K2-Trajectories-2.8K
     last_modified: '2026-11-12T07:12:50.000Z'
     sha: 0c9922f0874486a0c1573fb731349cf8fc7be53b
-    downloads: 132
+    downloads: 140
     likes: 0
     gated: false
     private: false
@@ -1445,7 +1445,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 12
+  seen_count: 13
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -1463,14 +1463,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/HYUKI5/SWE-Factory__DeepSWE-Agent-Kimi-K2-Trajectories-2.8K
 - first_seen_at: '2026-11-17T00:50:45Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/glaiveai__glaive-function-calling-v2
     url: https://huggingface.co/datasets/HYUKI5/glaiveai__glaive-function-calling-v2
     last_modified: '2026-11-16T06:44:41.000Z'
     sha: 2a5d16ab3542586abdf2e4d258f15301966bb95a
-    downloads: 49
+    downloads: 51
     likes: 0
     gated: false
     private: false
@@ -1521,7 +1521,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 7
+  seen_count: 8
   status: pending_review
   suggested_categories:
   - category: tool
@@ -1536,14 +1536,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/HYUKI5/glaiveai__glaive-function-calling-v2
 - first_seen_at: '2026-11-13T22:41:41Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/gorilla-llm__Berkeley-Function-Calling-Leaderboard
     url: https://huggingface.co/datasets/HYUKI5/gorilla-llm__Berkeley-Function-Calling-Leaderboard
     last_modified: '2026-11-13T04:17:47.000Z'
     sha: 0a1a2aeae8fc203710cf525dfba8ed19fe3de448
-    downloads: 87
+    downloads: 91
     likes: 0
     gated: false
     private: false
@@ -1581,7 +1581,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 10
+  seen_count: 11
   status: pending_review
   suggested_categories:
   - category: tool
@@ -1599,14 +1599,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/HYUKI5/gorilla-llm__Berkeley-Function-Calling-Leaderboard
 - first_seen_at: '2026-11-17T00:50:45Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/lambda__hermes-agent-reasoning-traces
     url: https://huggingface.co/datasets/HYUKI5/lambda__hermes-agent-reasoning-traces
     last_modified: '2026-11-16T11:38:50.000Z'
     sha: 5d62e052eeef7c27ac6f09b515f61784034bc31f
-    downloads: 64
+    downloads: 72
     likes: 0
     gated: false
     private: false
@@ -1657,7 +1657,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 7
+  seen_count: 8
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -1675,16 +1675,27 @@ candidates:
   last_counted_run: '2026-11-22T22:30:27Z'
   last_seen_at: '2026-11-22T22:30:27Z'
   metadata:
-    repo_id: HYUKI5/lmarena-ai__arena-human-preference-55k
-    url: https://huggingface.co/datasets/HYUKI5/lmarena-ai__arena-human-preference-55k
-    last_modified: '2026-11-16T06:34:21.000Z'
-    sha: ff4244881a238f503b7e33ec25e91a271c45c360
-    downloads: 45
-    likes: 0
-    gated: false
-    private: false
+    card_data:
+      language:
+      - en
+      license: apache-2.0
+      pretty_name: lmarena-ai/arena-human-preference-55k (mirror)
+      size_categories:
+      - 10K<n<100K
+      source_datasets:
+      - lmarena-ai/arena-human-preference-55k
+      task_categories:
+      - text-classification
     disabled: false
+    downloads: 45
+    gated: false
+    last_modified: '2026-11-16T06:34:21.000Z'
     license: apache-2.0
+    likes: 0
+    private: false
+    repo_id: HYUKI5/lmarena-ai__arena-human-preference-55k
+    sha: ff4244881a238f503b7e33ec25e91a271c45c360
+    siblings_count: 0
     tags:
     - annot-unknown
     - arxiv:2403.04132
@@ -1709,56 +1720,56 @@ candidates:
     - source_datasets:lmarena-ai/arena-human-preference-55k
     - task_categories:text-classification
     - use-unclear
-    siblings_count: 0
-    card_data:
-      language:
-      - en
-      license: apache-2.0
-      task_categories:
-      - text-classification
-      size_categories:
-      - 10K<n<100K
-      pretty_name: lmarena-ai/arena-human-preference-55k (mirror)
-      source_datasets:
-      - lmarena-ai/arena-human-preference-55k
+    url: https://huggingface.co/datasets/HYUKI5/lmarena-ai__arena-human-preference-55k
   queries:
   - human preference
   repo_id: HYUKI5/lmarena-ai__arena-human-preference-55k
   review:
-    text_modality_confirmed: false
+    decontaminated: false
     license_approved: false
     revision_pinned: false
-    decontaminated: false
     sample_inspected: false
+    text_modality_confirmed: false
   score: 9.0
   seen_count: 7
   status: pending_review
   suggested_categories:
   - category: preference
-    score: 9.0
     matched:
     - keyword: human preference
+      location: title
       strength: strong
-      location: title
     - keyword: preference
-      strength: medium
       location: title
+      strength: medium
+    score: 9.0
   suggested_category: preference
   url: https://huggingface.co/datasets/HYUKI5/lmarena-ai__arena-human-preference-55k
 - first_seen_at: '2026-11-17T00:50:45Z'
   last_counted_run: '2026-11-22T22:30:27Z'
   last_seen_at: '2026-11-22T22:30:27Z'
   metadata:
-    repo_id: HYUKI5/lmsys__lmsys-arena-human-preference-55k
-    url: https://huggingface.co/datasets/HYUKI5/lmsys__lmsys-arena-human-preference-55k
-    last_modified: '2026-11-16T06:34:26.000Z'
-    sha: 0f889cf302e765a809a2bdc226aa465843d266b0
-    downloads: 46
-    likes: 0
-    gated: false
-    private: false
+    card_data:
+      language:
+      - en
+      license: apache-2.0
+      pretty_name: lmsys/lmsys-arena-human-preference-55k (mirror)
+      size_categories:
+      - 10K<n<100K
+      source_datasets:
+      - lmsys/lmsys-arena-human-preference-55k
+      task_categories:
+      - text-classification
     disabled: false
+    downloads: 46
+    gated: false
+    last_modified: '2026-11-16T06:34:26.000Z'
     license: apache-2.0
+    likes: 0
+    private: false
+    repo_id: HYUKI5/lmsys__lmsys-arena-human-preference-55k
+    sha: 0f889cf302e765a809a2bdc226aa465843d266b0
+    siblings_count: 0
     tags:
     - annot-natural
     - arxiv:2403.04132
@@ -1783,51 +1794,40 @@ candidates:
     - source_datasets:lmsys/lmsys-arena-human-preference-55k
     - task_categories:text-classification
     - use-noncommercial
-    siblings_count: 0
-    card_data:
-      language:
-      - en
-      license: apache-2.0
-      task_categories:
-      - text-classification
-      size_categories:
-      - 10K<n<100K
-      pretty_name: lmsys/lmsys-arena-human-preference-55k (mirror)
-      source_datasets:
-      - lmsys/lmsys-arena-human-preference-55k
+    url: https://huggingface.co/datasets/HYUKI5/lmsys__lmsys-arena-human-preference-55k
   queries:
   - human preference
   repo_id: HYUKI5/lmsys__lmsys-arena-human-preference-55k
   review:
-    text_modality_confirmed: false
+    decontaminated: false
     license_approved: false
     revision_pinned: false
-    decontaminated: false
     sample_inspected: false
+    text_modality_confirmed: false
   score: 9.0
   seen_count: 7
   status: pending_review
   suggested_categories:
   - category: preference
-    score: 9.0
     matched:
     - keyword: human preference
+      location: title
       strength: strong
-      location: title
     - keyword: preference
-      strength: medium
       location: title
+      strength: medium
+    score: 9.0
   suggested_category: preference
   url: https://huggingface.co/datasets/HYUKI5/lmsys__lmsys-arena-human-preference-55k
 - first_seen_at: '2026-11-17T00:50:45Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/nebius__SWE-agent-trajectories
     url: https://huggingface.co/datasets/HYUKI5/nebius__SWE-agent-trajectories
     last_modified: '2026-11-16T11:08:06.000Z'
     sha: 405cfb7abb8aaa5a937c070cfde5cc9ed1361b86
-    downloads: 62
+    downloads: 68
     likes: 0
     gated: false
     private: false
@@ -1870,7 +1870,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 7
+  seen_count: 8
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -1888,14 +1888,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/HYUKI5/nebius__SWE-agent-trajectories
 - first_seen_at: '2026-11-17T00:50:45Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/nvidia__Nemotron-RL-Agentic-Function-Calling-Pivot-v1
     url: https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-RL-Agentic-Function-Calling-Pivot-v1
     last_modified: '2026-11-16T06:45:17.000Z'
     sha: d6aab5011a334fcf8d995af4f22d707039dd0996
-    downloads: 49
+    downloads: 55
     likes: 0
     gated: false
     private: false
@@ -1936,7 +1936,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 7
+  seen_count: 8
   status: pending_review
   suggested_categories:
   - category: tool
@@ -1954,14 +1954,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-RL-Agentic-Function-Calling-Pivot-v1
 - first_seen_at: '2026-11-18T23:25:18Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v2
     url: https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v2
     last_modified: '2026-11-18T20:40:57.000Z'
     sha: 9ba84f74a08cb8f00789b3d119b2c40a74a8520f
-    downloads: 36
+    downloads: 39
     likes: 0
     gated: false
     private: false
@@ -2003,7 +2003,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.5
-  seen_count: 5
+  seen_count: 6
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -2024,14 +2024,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v2
 - first_seen_at: '2026-11-18T23:25:18Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v3
     url: https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v3
     last_modified: '2026-11-18T20:45:33.000Z'
     sha: 98ef7e14b35913f85844961f53fdef8a9ff11f6b
-    downloads: 54
+    downloads: 57
     likes: 0
     gated: false
     private: false
@@ -2088,7 +2088,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.5
-  seen_count: 5
+  seen_count: 6
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -2109,8 +2109,8 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v3
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Hemgg/non-math-reasoning-1m
     url: https://huggingface.co/datasets/Hemgg/non-math-reasoning-1m
@@ -2143,7 +2143,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -2161,14 +2161,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/Hemgg/non-math-reasoning-1m
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: IFM/Code-Reasoning
     url: https://huggingface.co/datasets/IFM/Code-Reasoning
     last_modified: '2026-09-02T07:01:01.000Z'
     sha: e971bd7801485b24bb217dcde9d46f4bad42ea00
-    downloads: 48893
+    downloads: 55608
     likes: 105
     gated: false
     private: false
@@ -2205,7 +2205,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -2229,14 +2229,14 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/IFM/Code-Reasoning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: IFM/Math-Reasoning
     url: https://huggingface.co/datasets/IFM/Math-Reasoning
     last_modified: '2026-09-02T07:01:02.000Z'
     sha: e249295774c3a66943e1483dbf53e0c811bc41dd
-    downloads: 118224
+    downloads: 118548
     likes: 38
     gated: false
     private: false
@@ -2273,7 +2273,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -2299,37 +2299,15 @@ candidates:
       location: title
   suggested_category: math
   url: https://huggingface.co/datasets/IFM/Math-Reasoning
-- repo_id: ITLL/deep-reasoning-traces
-  url: https://huggingface.co/datasets/ITLL/deep-reasoning-traces
-  status: pending_review
-  first_seen_at: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
-  suggested_category: reasoning
-  score: 15.0
-  suggested_categories:
-  - category: reasoning
-    score: 15.0
-    matched:
-    - keyword: reasoning traces
-      strength: strong
-      location: title
-    - keyword: reasoning dataset
-      strength: strong
-      location: body
-    - keyword: chain of thought
-      strength: strong
-      location: body
-    - keyword: reasoning
-      strength: medium
-      location: title
-  queries:
-  - reasoning traces
+- first_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ITLL/deep-reasoning-traces
     url: https://huggingface.co/datasets/ITLL/deep-reasoning-traces
     last_modified: '2026-11-22T21:52:01.000Z'
     sha: 15dbb6c2cd1f3c542c2ca06ce3e703f278d414fe
-    downloads: 0
+    downloads: 26
     likes: 0
     gated: false
     private: false
@@ -2362,17 +2340,39 @@ candidates:
       size_categories:
       - n<1K
       pretty_name: Deep Reasoning Traces
+  queries:
+  - reasoning traces
+  repo_id: ITLL/deep-reasoning-traces
   review:
     text_modality_confirmed: false
     license_approved: false
     revision_pinned: false
     decontaminated: false
     sample_inspected: false
-  seen_count: 1
-  last_counted_run: '2026-11-22T22:30:27Z'
+  score: 15.0
+  seen_count: 2
+  status: pending_review
+  suggested_categories:
+  - category: reasoning
+    score: 15.0
+    matched:
+    - keyword: reasoning traces
+      strength: strong
+      location: title
+    - keyword: reasoning dataset
+      strength: strong
+      location: body
+    - keyword: chain of thought
+      strength: strong
+      location: body
+    - keyword: reasoning
+      strength: medium
+      location: title
+  suggested_category: reasoning
+  url: https://huggingface.co/datasets/ITLL/deep-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Ilia2003Mah/open-math-reasoning-cot-clean-v2
     url: https://huggingface.co/datasets/Ilia2003Mah/open-math-reasoning-cot-clean-v2
@@ -2406,7 +2406,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -2424,8 +2424,8 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/Ilia2003Mah/open-math-reasoning-cot-clean-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Lab-MSP/comparative-reasoning-traces
     url: https://huggingface.co/datasets/Lab-MSP/comparative-reasoning-traces
@@ -2475,7 +2475,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 14.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -2499,14 +2499,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/Lab-MSP/comparative-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: LexyJawa/Code-Reasoning
     url: https://huggingface.co/datasets/LexyJawa/Code-Reasoning
     last_modified: '2026-09-18T12:20:45.000Z'
     sha: a4d5754247599ba11da7d042b122b48466b137b7
-    downloads: 1554
+    downloads: 1626
     likes: 0
     gated: false
     private: false
@@ -2543,7 +2543,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -2567,8 +2567,8 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/LexyJawa/Code-Reasoning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Lucien-shark/Linny-Code-Reasoning-Shrunken
     url: https://huggingface.co/datasets/Lucien-shark/Linny-Code-Reasoning-Shrunken
@@ -2603,7 +2603,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -2618,14 +2618,14 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/Lucien-shark/Linny-Code-Reasoning-Shrunken
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Mahmoud-queens/swe-agent-subset-selection-vectors
     url: https://huggingface.co/datasets/Mahmoud-queens/swe-agent-subset-selection-vectors
     last_modified: '2026-09-21T03:47:14.000Z'
     sha: d86e29eeeee0367e0226806870c2488fd2e0678d
-    downloads: 66
+    downloads: 67
     likes: 0
     gated: false
     private: false
@@ -2654,7 +2654,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 17.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -2678,14 +2678,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/Mahmoud-queens/swe-agent-subset-selection-vectors
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: MaksKroha/capgemini-deepseek-math-reasoning
     url: https://huggingface.co/datasets/MaksKroha/capgemini-deepseek-math-reasoning
     last_modified: '2026-10-13T08:21:27.000Z'
     sha: bcb1a3acc527236c90010b8e740a32436d3f99d8
-    downloads: 87
+    downloads: 120
     likes: 0
     gated: auto
     private: false
@@ -2718,7 +2718,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -2736,14 +2736,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/MaksKroha/capgemini-deepseek-math-reasoning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: MarshootLab/beam-verified-reasoning-traces
     url: https://huggingface.co/datasets/MarshootLab/beam-verified-reasoning-traces
     last_modified: '2026-10-27T18:12:49.000Z'
     sha: 651d27e5295632f4d9694fcbbbd55f6dfb1bc9ce
-    downloads: 1420
+    downloads: 1260
     likes: 2
     gated: false
     private: false
@@ -2790,7 +2790,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -2808,14 +2808,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/MarshootLab/beam-verified-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: MatouK98/math_rlvr_filtered_audited
     url: https://huggingface.co/datasets/MatouK98/math_rlvr_filtered_audited
     last_modified: '2026-11-04T08:55:45.000Z'
     sha: 40b7c1ccd98f5eb70e91b148e5ee7819429111a6
-    downloads: 458
+    downloads: 450
     likes: 2
     gated: false
     private: false
@@ -2855,7 +2855,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -2944,8 +2944,8 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/MiaKim/math-rlvr-mini-sa-smollm2-0.4b-v3
 - first_seen_at: '2026-11-13T22:41:41Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Offlin33er/glm-5.3-flash-function-calling
     url: https://huggingface.co/datasets/Offlin33er/glm-5.3-flash-function-calling
@@ -2991,7 +2991,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.5
-  seen_count: 10
+  seen_count: 11
   status: pending_review
   suggested_categories:
   - category: tool
@@ -3015,14 +3015,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/Offlin33er/glm-5.3-flash-function-calling
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: OpenFormosa/barbet-long-context-sft
     url: https://huggingface.co/datasets/OpenFormosa/barbet-long-context-sft
     last_modified: '2026-11-05T05:14:30.000Z'
     sha: a5a7ba51e3d8b857668501ec67ca5d63a30728b5
-    downloads: 23179
+    downloads: 28898
     likes: 3
     gated: false
     private: false
@@ -3069,7 +3069,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: long_context
@@ -3084,14 +3084,14 @@ candidates:
   suggested_category: long_context
   url: https://huggingface.co/datasets/OpenFormosa/barbet-long-context-sft
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: OperatorSDG/Nemotron-SFT-Instruction-Following-Chat-v2
     url: https://huggingface.co/datasets/OperatorSDG/Nemotron-SFT-Instruction-Following-Chat-v2
     last_modified: '2026-09-08T13:16:13.000Z'
     sha: 0bd71caa7a933f49c2607b5655b0ef25dfc8536b
-    downloads: 37
+    downloads: 38
     likes: 0
     gated: false
     private: false
@@ -3120,7 +3120,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -3141,16 +3141,17 @@ candidates:
   last_counted_run: '2026-11-22T22:30:27Z'
   last_seen_at: '2026-11-22T22:30:27Z'
   metadata:
-    repo_id: Phettae/function-tool-calling-claude
-    url: https://huggingface.co/datasets/Phettae/function-tool-calling-claude
-    last_modified: '2026-10-25T08:13:13.000Z'
-    sha: b0b814f0316fa340bebe968c29a88ca2e1c98c91
-    downloads: 49
-    likes: 0
-    gated: false
-    private: false
+    card_data: {}
     disabled: false
+    downloads: 49
+    gated: false
+    last_modified: '2026-10-25T08:13:13.000Z'
     license: null
+    likes: 0
+    private: false
+    repo_id: Phettae/function-tool-calling-claude
+    sha: b0b814f0316fa340bebe968c29a88ca2e1c98c91
+    siblings_count: 0
     tags:
     - format:json
     - library:datasets
@@ -3160,32 +3161,31 @@ candidates:
     - modality:text
     - region:us
     - size_categories:n<1K
-    siblings_count: 0
-    card_data: {}
+    url: https://huggingface.co/datasets/Phettae/function-tool-calling-claude
   queries:
   - function calling
   repo_id: Phettae/function-tool-calling-claude
   review:
-    text_modality_confirmed: false
+    decontaminated: false
     license_approved: false
     revision_pinned: false
-    decontaminated: false
     sample_inspected: false
+    text_modality_confirmed: false
   score: 6.0
   seen_count: 14
   status: pending_review
   suggested_categories:
   - category: tool
-    score: 6.0
     matched:
     - keyword: tool calling
-      strength: strong
       location: title
+      strength: strong
+    score: 6.0
   suggested_category: tool
   url: https://huggingface.co/datasets/Phettae/function-tool-calling-claude
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: PoSTMEDIA/rosetta-ko-code-synth-rlvr
     url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-code-synth-rlvr
@@ -3234,7 +3234,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -3255,8 +3255,8 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-code-synth-rlvr
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: PoSTMEDIA/rosetta-ko-instruction-following-synth-rlvr
     url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-rlvr
@@ -3306,7 +3306,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -3324,8 +3324,8 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-rlvr
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: PoSTMEDIA/rosetta-ko-instruction-following-synth-sft
     url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft
@@ -3377,7 +3377,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -3395,14 +3395,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think
     url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think
     last_modified: '2026-09-11T15:29:08.000Z'
     sha: 0c1ecfebeeec051b0ba84b5b0dc1e92f8fa2cc20
-    downloads: 120
+    downloads: 121
     likes: 0
     gated: auto
     private: false
@@ -3446,7 +3446,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -3464,14 +3464,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: PoSTMEDIA/rosetta-ko-math-synth-rlvr
     url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-math-synth-rlvr
     last_modified: '2026-09-11T15:29:20.000Z'
     sha: 440ddbb9b426f7a7cb38295f590c0f40fd1ee889
-    downloads: 86
+    downloads: 186
     likes: 0
     gated: auto
     private: false
@@ -3508,7 +3508,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -3526,14 +3526,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/PoSTMEDIA/rosetta-ko-math-synth-rlvr
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ProCreations/Beam-Reasoning-Traces
     url: https://huggingface.co/datasets/ProCreations/Beam-Reasoning-Traces
     last_modified: '2026-11-02T01:29:15.000Z'
     sha: 318a5ceb102d10a2c55694f1d05faa65bca5f353
-    downloads: 1011
+    downloads: 962
     likes: 5
     gated: false
     private: false
@@ -3581,7 +3581,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -3605,14 +3605,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/ProCreations/Beam-Reasoning-Traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Raftico/instructional-dialogues-multilingual
     url: https://huggingface.co/datasets/Raftico/instructional-dialogues-multilingual
     last_modified: '2025-06-14T18:32:16.000Z'
     sha: 11ddda73e515ed0f936091ba02215cf4b6e2f2af
-    downloads: 66
+    downloads: 67
     likes: 2
     gated: false
     private: false
@@ -3652,7 +3652,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -3673,14 +3673,14 @@ candidates:
   suggested_category: multilingual
   url: https://huggingface.co/datasets/Raftico/instructional-dialogues-multilingual
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: SMH-DEV-AI/NOESIS-1M-reasoning-router-code-math-psych-opus47-deepseek4-qwen36-gemini31-r1-gpt54
     url: https://huggingface.co/datasets/SMH-DEV-AI/NOESIS-1M-reasoning-router-code-math-psych-opus47-deepseek4-qwen36-gemini31-r1-gpt54
     last_modified: '2026-05-05T23:17:49.000Z'
     sha: d1e4127246b1379e2afeeabba52f81f023ee38ed
-    downloads: 99
+    downloads: 97
     likes: 1
     gated: false
     private: false
@@ -3786,7 +3786,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -3816,14 +3816,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/SMH-DEV-AI/NOESIS-1M-reasoning-router-code-math-psych-opus47-deepseek4-qwen36-gemini31-r1-gpt54
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: SPAISS6F1/spai-ss6-corpus-thai-instruction-sft-suraponn
     url: https://huggingface.co/datasets/SPAISS6F1/spai-ss6-corpus-thai-instruction-sft-suraponn
     last_modified: '2026-06-06T22:15:18.000Z'
     sha: d06399b42877d2e72f9ee54f2e3a302d474811bd
-    downloads: 24
+    downloads: 23
     likes: 0
     gated: false
     private: false
@@ -3867,7 +3867,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 6.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -3885,14 +3885,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/SPAISS6F1/spai-ss6-corpus-thai-instruction-sft-suraponn
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: SZLHOLDINGS/ancient-math-reasoning-sft-v1
     url: https://huggingface.co/datasets/SZLHOLDINGS/ancient-math-reasoning-sft-v1
-    last_modified: '2026-11-20T05:44:36.000Z'
-    sha: 0e4161a166b9c60ed47fe53f0ff9eb14f434e0df
-    downloads: 942
+    last_modified: '2026-11-23T23:59:18.000Z'
+    sha: 7a3fa7d4712909fee967441c98e8f735e0a45a40
+    downloads: 999
     likes: 0
     gated: false
     private: false
@@ -3913,6 +3913,7 @@ candidates:
     - region:us
     - size_categories:n<1K
     - szl-holdings
+    - training-data
     siblings_count: 0
     card_data:
       language:
@@ -3928,7 +3929,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -3952,14 +3953,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/SZLHOLDINGS/ancient-math-reasoning-sft-v1
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: SalutefaceAAC/chain-of-thought-reasoning-traces
     url: https://huggingface.co/datasets/SalutefaceAAC/chain-of-thought-reasoning-traces
     last_modified: '2026-10-30T19:10:54.000Z'
     sha: 28681be208cb8225364afd2aee0b65fa4942c4bc
-    downloads: 407
+    downloads: 420
     likes: 10
     gated: false
     private: false
@@ -4007,7 +4008,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 15.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -4024,15 +4025,97 @@ candidates:
       location: title
   suggested_category: reasoning
   url: https://huggingface.co/datasets/SalutefaceAAC/chain-of-thought-reasoning-traces
+- repo_id: ScalarPrime/math-reasoning-traces-100
+  url: https://huggingface.co/datasets/ScalarPrime/math-reasoning-traces-100
+  status: pending_review
+  first_seen_at: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
+  suggested_category: reasoning
+  score: 12.0
+  suggested_categories:
+  - category: reasoning
+    score: 12.0
+    matched:
+    - keyword: reasoning traces
+      strength: strong
+      location: title
+    - keyword: chain of thought
+      strength: strong
+      location: body
+    - keyword: reasoning
+      strength: medium
+      location: title
+  - category: math
+    score: 11.5
+    matched:
+    - keyword: math reasoning
+      strength: strong
+      location: title
+    - keyword: math
+      strength: medium
+      location: title
+    - keyword: gsm8k
+      strength: medium
+      location: body
+    - keyword: reasoning
+      strength: weak
+      location: title
+  queries:
+  - math reasoning
+  - reasoning traces
+  metadata:
+    repo_id: ScalarPrime/math-reasoning-traces-100
+    url: https://huggingface.co/datasets/ScalarPrime/math-reasoning-traces-100
+    last_modified: '2026-11-24T03:20:48.000Z'
+    sha: 7d22eb31ba9edc8366160bce0287978a0d870056
+    downloads: 0
+    likes: 0
+    gated: false
+    private: false
+    disabled: false
+    license: mit
+    tags:
+    - arxiv:2103.03874
+    - arxiv:2110.14168
+    - arxiv:2508.10925
+    - chain-of-thought
+    - gsm8k
+    - language:en
+    - license:mit
+    - math
+    - math-dataset
+    - reasoning
+    - region:us
+    - size_categories:n<1K
+    - synthetic
+    - task_categories:text-generation
+    siblings_count: 0
+    card_data:
+      language:
+      - en
+      license: mit
+      task_categories:
+      - text-generation
+      size_categories:
+      - n<1K
+      pretty_name: Verified Math Reasoning Traces (100-Row Sample)
+  review:
+    text_modality_confirmed: false
+    license_approved: false
+    revision_pinned: false
+    decontaminated: false
+    sample_inspected: false
+  seen_count: 1
+  last_counted_run: '2026-11-24T03:21:52Z'
 - first_seen_at: '2026-11-15T21:52:10Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Sergiogpn/glm5.3-flash-function-calling
     url: https://huggingface.co/datasets/Sergiogpn/glm5.3-flash-function-calling
     last_modified: '2026-11-15T04:27:13.000Z'
     sha: 66394ac89176322f9c5656a4d7234febdf61b06f
-    downloads: 99
+    downloads: 103
     likes: 0
     gated: false
     private: false
@@ -4067,7 +4150,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 8
+  seen_count: 9
   status: pending_review
   suggested_categories:
   - category: tool
@@ -4085,14 +4168,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/Sergiogpn/glm5.3-flash-function-calling
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Snaseem2026/synthetic-multilingual-instructions
     url: https://huggingface.co/datasets/Snaseem2026/synthetic-multilingual-instructions
     last_modified: '2026-01-14T11:27:09.000Z'
     sha: a15f62ba9b7edc2284e7d83659161b363874a619
-    downloads: 110
+    downloads: 108
     likes: 0
     gated: false
     private: false
@@ -4150,7 +4233,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -4297,8 +4380,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/SwapnilS-15/xlam-function-calling-59k
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ThanThoai9x/multilingual-instruction-emotion-voice
     url: https://huggingface.co/datasets/ThanThoai9x/multilingual-instruction-emotion-voice
@@ -4332,7 +4415,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -4353,14 +4436,14 @@ candidates:
   suggested_category: multilingual
   url: https://huggingface.co/datasets/ThanThoai9x/multilingual-instruction-emotion-voice
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: Uunan/turkish-math-reasoning
     url: https://huggingface.co/datasets/Uunan/turkish-math-reasoning
     last_modified: '2026-07-21T11:46:55.000Z'
     sha: 849c54b175ed020fb05503ea6cf2aa96172f4582
-    downloads: 194
+    downloads: 523
     likes: 0
     gated: false
     private: false
@@ -4400,7 +4483,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -4430,14 +4513,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/Uunan/turkish-math-reasoning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ZhengLiu33/pii_instruction_dataset_multilingual
     url: https://huggingface.co/datasets/ZhengLiu33/pii_instruction_dataset_multilingual
     last_modified: '2024-12-27T05:49:32.000Z'
     sha: fbd2ec0430e0396960a135484f0ef2979e6126f9
-    downloads: 23
+    downloads: 25
     likes: 0
     gated: false
     private: false
@@ -4464,7 +4547,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -4479,8 +4562,8 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/ZhengLiu33/pii_instruction_dataset_multilingual
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: abdurrehman456/combined-r1-code-reasoning-dataset
     url: https://huggingface.co/datasets/abdurrehman456/combined-r1-code-reasoning-dataset
@@ -4506,7 +4589,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -4530,14 +4613,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/abdurrehman456/combined-r1-code-reasoning-dataset
 - first_seen_at: '2026-11-13T22:41:41Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ai4he/procedural-math-reasoning-robustness
     url: https://huggingface.co/datasets/ai4he/procedural-math-reasoning-robustness
     last_modified: '2026-11-12T22:53:00.000Z'
     sha: c98c6c050d7d083da0c679dcc00a1f4e084d2d6a
-    downloads: 72
+    downloads: 95
     likes: 0
     gated: false
     private: false
@@ -4578,7 +4661,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.5
-  seen_count: 10
+  seen_count: 11
   status: pending_review
   suggested_categories:
   - category: math
@@ -4599,14 +4682,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/ai4he/procedural-math-reasoning-robustness
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: amalia-llm/amalia-Nemotron-SFT-Instruction-Following-Chat-v2
     url: https://huggingface.co/datasets/amalia-llm/amalia-Nemotron-SFT-Instruction-Following-Chat-v2
     last_modified: '2026-06-30T09:23:38.000Z'
     sha: da4a72bd04ce6adb87ceb6bd845ca113ca170e4b
-    downloads: 86
+    downloads: 87
     likes: 0
     gated: false
     private: false
@@ -4643,7 +4726,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 16.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -4667,14 +4750,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/amalia-llm/amalia-Nemotron-SFT-Instruction-Following-Chat-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: amphora/math-intuition-reasoning-traces
     url: https://huggingface.co/datasets/amphora/math-intuition-reasoning-traces
     last_modified: '2026-09-11T09:37:15.000Z'
     sha: 65a81ce2ac6d11cda8ca1ee0ff4775499fbfd7e1
-    downloads: 102
+    downloads: 103
     likes: 1
     gated: false
     private: false
@@ -4716,7 +4799,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -4737,8 +4820,8 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/amphora/math-intuition-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: antontuzovAI/swe-agent-successful-raw-1000
     url: https://huggingface.co/datasets/antontuzovAI/swe-agent-successful-raw-1000
@@ -4778,7 +4861,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -4802,14 +4885,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/antontuzovAI/swe-agent-successful-raw-1000
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: antontuzovAI/swe-agent-successful-trajectories
     url: https://huggingface.co/datasets/antontuzovAI/swe-agent-successful-trajectories
     last_modified: '2026-09-22T13:00:04.000Z'
     sha: 6c8d835bd280fab72816f65e03c9d99491b36696
-    downloads: 55
+    downloads: 56
     likes: 0
     gated: false
     private: false
@@ -4843,7 +4926,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -4870,14 +4953,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/antontuzovAI/swe-agent-successful-trajectories
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ar0cket1/qwen3-30b-a3b-base-reasoning-sft-nemotron-math-v4-cot4k12k-500m-supervised
     url: https://huggingface.co/datasets/ar0cket1/qwen3-30b-a3b-base-reasoning-sft-nemotron-math-v4-cot4k12k-500m-supervised
     last_modified: '2026-07-26T00:03:15.000Z'
     sha: 81c771fc4dd29fc70e52a26b64c797ee41ff3773
-    downloads: 461
+    downloads: 450
     likes: 1
     gated: false
     private: false
@@ -4912,7 +4995,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 8.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -4933,14 +5016,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/ar0cket1/qwen3-30b-a3b-base-reasoning-sft-nemotron-math-v4-cot4k12k-500m-supervised
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ayushjoshi2012/agent-tool-calling-reasoning-traces
     url: https://huggingface.co/datasets/ayushjoshi2012/agent-tool-calling-reasoning-traces
     last_modified: '2026-10-24T07:56:49.000Z'
     sha: b1b1631a20c496c81122e93b4f8bb9f823567b28
-    downloads: 92
+    downloads: 85
     likes: 0
     gated: false
     private: false
@@ -4989,7 +5072,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -5096,14 +5179,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/beatsprom/ai-code-generation-swe-agents-2026
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits
     url: https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits
     last_modified: '2026-07-01T11:51:32.000Z'
     sha: 93cb14e4ad410af5d76481d72d749f819bca320e
-    downloads: 17
+    downloads: 28
     likes: 0
     gated: false
     private: false
@@ -5130,7 +5213,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -5151,14 +5234,14 @@ candidates:
   suggested_category: multilingual
   url: https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits
     url: https://huggingface.co/datasets/bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits
     last_modified: '2026-07-01T11:52:54.000Z'
     sha: 46d129c8765bb612ba635c6b021ec6d75f83c600
-    downloads: 394
+    downloads: 375
     likes: 0
     gated: false
     private: false
@@ -5185,7 +5268,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -5209,16 +5292,27 @@ candidates:
   last_counted_run: '2026-11-22T22:30:27Z'
   last_seen_at: '2026-11-22T22:30:27Z'
   metadata:
-    repo_id: birgermoell/medqa-reasoning-traces
-    url: https://huggingface.co/datasets/birgermoell/medqa-reasoning-traces
-    last_modified: '2026-09-23T10:29:24.000Z'
-    sha: 82fe04a7165fdafc5bacb7f6a988d4d0763d6d9a
-    downloads: 1037
-    likes: 0
-    gated: false
-    private: false
+    card_data:
+      language:
+      - en
+      license: other
+      pretty_name: MedQA with LLM Reasoning Traces
+      size_categories:
+      - 10K<n<100K
+      source_datasets:
+      - bigbio/med_qa
+      task_categories:
+      - question-answering
     disabled: false
+    downloads: 1037
+    gated: false
+    last_modified: '2026-09-23T10:29:24.000Z'
     license: other
+    likes: 0
+    private: false
+    repo_id: birgermoell/medqa-reasoning-traces
+    sha: 82fe04a7165fdafc5bacb7f6a988d4d0763d6d9a
+    siblings_count: 0
     tags:
     - chain-of-thought
     - format:parquet
@@ -5239,54 +5333,43 @@ candidates:
     - task_categories:question-answering
     - task_ids:multiple-choice-qa
     - usmle
-    siblings_count: 0
-    card_data:
-      language:
-      - en
-      license: other
-      task_categories:
-      - question-answering
-      size_categories:
-      - 10K<n<100K
-      pretty_name: MedQA with LLM Reasoning Traces
-      source_datasets:
-      - bigbio/med_qa
+    url: https://huggingface.co/datasets/birgermoell/medqa-reasoning-traces
   queries:
   - reasoning traces
   repo_id: birgermoell/medqa-reasoning-traces
   review:
-    text_modality_confirmed: false
+    decontaminated: false
     license_approved: false
     revision_pinned: false
-    decontaminated: false
     sample_inspected: false
+    text_modality_confirmed: false
   score: 12.0
   seen_count: 14
   status: pending_review
   suggested_categories:
   - category: reasoning
-    score: 12.0
     matched:
     - keyword: reasoning traces
-      strength: strong
       location: title
+      strength: strong
     - keyword: chain of thought
-      strength: strong
       location: body
+      strength: strong
     - keyword: reasoning
-      strength: medium
       location: title
+      strength: medium
+    score: 12.0
   suggested_category: reasoning
   url: https://huggingface.co/datasets/birgermoell/medqa-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: birgermoell/oellm-code-rlvr
     url: https://huggingface.co/datasets/birgermoell/oellm-code-rlvr
     last_modified: '2026-08-24T06:46:14.000Z'
     sha: e1cae7711049e3b5ff021fb3e9c752424882998c
-    downloads: 104
+    downloads: 101
     likes: 0
     gated: false
     private: false
@@ -5335,7 +5418,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 17.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -5362,14 +5445,14 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/birgermoell/oellm-code-rlvr
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: birgermoell/oellm-math-rlvr
     url: https://huggingface.co/datasets/birgermoell/oellm-math-rlvr
     last_modified: '2026-08-21T07:10:39.000Z'
     sha: 0ffc9d6dc82717c25733b3172f4dbd63e48bab68
-    downloads: 70
+    downloads: 73
     likes: 0
     gated: false
     private: false
@@ -5461,7 +5544,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 16.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -5506,8 +5589,8 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/birgermoell/oellm-math-rlvr
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: bunnycore/code-reasoning-distillation
     url: https://huggingface.co/datasets/bunnycore/code-reasoning-distillation
@@ -5556,7 +5639,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -5573,6 +5656,78 @@ candidates:
       location: body
   suggested_category: code
   url: https://huggingface.co/datasets/bunnycore/code-reasoning-distillation
+- repo_id: campobertin/financial-algorithmic-trading-function-calling
+  url: https://huggingface.co/datasets/campobertin/financial-algorithmic-trading-function-calling
+  status: pending_review
+  first_seen_at: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
+  suggested_category: tool
+  score: 12.5
+  suggested_categories:
+  - category: tool
+    score: 12.5
+    matched:
+    - keyword: function calling
+      strength: strong
+      location: title
+    - keyword: tool calling
+      strength: strong
+      location: body
+    - keyword: function call
+      strength: medium
+      location: title
+    - keyword: agent
+      strength: weak
+      location: body
+  queries:
+  - function calling
+  metadata:
+    repo_id: campobertin/financial-algorithmic-trading-function-calling
+    url: https://huggingface.co/datasets/campobertin/financial-algorithmic-trading-function-calling
+    last_modified: '2026-11-23T18:19:20.000Z'
+    sha: 80d0e57a81e17a44c52ae242a3ad2e80ca55b452
+    downloads: 0
+    likes: 0
+    gated: false
+    private: false
+    disabled: false
+    license: mit
+    tags:
+    - algorithmic-trading
+    - fintech
+    - format:json
+    - function-calling
+    - language:en
+    - library:datasets
+    - library:mlcroissant
+    - library:pandas
+    - library:polars
+    - license:mit
+    - modality:text
+    - quant-finance
+    - region:us
+    - size_categories:n<1K
+    - synthetic
+    - task_categories:question-answering
+    - task_categories:text-generation
+    siblings_count: 0
+    card_data:
+      language:
+      - en
+      license: mit
+      task_categories:
+      - text-generation
+      - question-answering
+      size_categories:
+      - n<1K
+  review:
+    text_modality_confirmed: false
+    license_approved: false
+    revision_pinned: false
+    decontaminated: false
+    sample_inspected: false
+  seen_count: 1
+  last_counted_run: '2026-11-24T03:21:52Z'
 - first_seen_at: '2026-11-10T00:43:48Z'
   last_counted_run: '2026-11-10T22:24:51Z'
   last_seen_at: '2026-11-10T22:24:51Z'
@@ -5645,14 +5800,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/closestfriend/glm-5.3-flash-function-calling
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: clyu/math_rlvr_filtered
     url: https://huggingface.co/datasets/clyu/math_rlvr_filtered
     last_modified: '2026-10-25T04:29:03.000Z'
     sha: c2c43ca628491152c81c4b71d4e2008d9a2d19e9
-    downloads: 185
+    downloads: 191
     likes: 0
     gated: false
     private: false
@@ -5694,7 +5849,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -5730,14 +5885,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/clyu/math_rlvr_filtered
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini
     last_modified: '2026-10-15T05:58:03.000Z'
     sha: d90b58cb2db8c5682a1643f8ca26268094ef7ba6
-    downloads: 74
+    downloads: 82
     likes: 0
     gated: false
     private: false
@@ -5775,7 +5930,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 15.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -5802,8 +5957,8 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini
 - first_seen_at: '2026-11-13T22:41:41Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-llama3-3.2b
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-llama3-3.2b
@@ -5847,7 +6002,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 10
+  seen_count: 11
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -5865,14 +6020,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-llama3-3.2b
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v0
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v0
     last_modified: '2026-09-12T09:50:41.000Z'
     sha: 974caab63f5b18006ff42f06d09d181eafe8bb36
-    downloads: 240
+    downloads: 247
     likes: 1
     gated: false
     private: false
@@ -5899,7 +6054,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -5917,14 +6072,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v0
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v1
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v1
     last_modified: '2026-09-12T09:52:45.000Z'
     sha: ca0773d3efc03a29e40232ac28f99502d3e54a4f
-    downloads: 147
+    downloads: 154
     likes: 1
     gated: false
     private: false
@@ -5951,7 +6106,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -5969,14 +6124,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v1
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v2
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v2
     last_modified: '2026-09-12T09:54:18.000Z'
     sha: 3de73812072676843741d8dd8c32d6111380b0a1
-    downloads: 94
+    downloads: 102
     likes: 0
     gated: false
     private: false
@@ -6003,7 +6158,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6021,14 +6176,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v0
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v0
     last_modified: '2026-09-11T10:40:43.000Z'
     sha: c79a5c2ed455d4af3e891a4a6cab4ca137774c03
-    downloads: 168
+    downloads: 177
     likes: 0
     gated: false
     private: false
@@ -6055,7 +6210,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6073,14 +6228,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v0
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v1
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v1
     last_modified: '2026-09-11T10:42:54.000Z'
     sha: f171d789ff1b3ce003e571af3dc41b5ff7a14a56
-    downloads: 286
+    downloads: 314
     likes: 0
     gated: false
     private: false
@@ -6107,7 +6262,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6125,14 +6280,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v1
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v2
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v2
     last_modified: '2026-09-11T10:44:29.000Z'
     sha: 3eefc4a89464005fade42620558349155f862af0
-    downloads: 281
+    downloads: 309
     likes: 0
     gated: false
     private: false
@@ -6159,7 +6314,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6177,14 +6332,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v0
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v0
     last_modified: '2026-09-17T14:22:13.000Z'
     sha: b4c789deb61e70dcf1051b7d021ba48d2f031c01
-    downloads: 146
+    downloads: 166
     likes: 0
     gated: false
     private: false
@@ -6211,7 +6366,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6229,14 +6384,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v0
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v1
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v1
     last_modified: '2026-09-17T14:24:02.000Z'
     sha: 9575c7b50c343085cca5fa8b9c6aa28c4aa4cf63
-    downloads: 190
+    downloads: 217
     likes: 0
     gated: false
     private: false
@@ -6263,7 +6418,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6281,14 +6436,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v1
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v2
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v2
     last_modified: '2026-09-17T14:26:22.000Z'
     sha: 972a81f02c0f4ab8c215ee6537e6548fe737904e
-    downloads: 177
+    downloads: 186
     likes: 0
     gated: false
     private: false
@@ -6315,7 +6470,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6333,14 +6488,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-smollm2-0.1b-v2
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-smollm2-0.1b-v2
     last_modified: '2026-09-03T09:13:16.000Z'
     sha: 710dc7cf90cb0d19302a7c06eed3429a76ad2270
-    downloads: 125
+    downloads: 168
     likes: 0
     gated: false
     private: false
@@ -6367,7 +6522,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6385,8 +6540,8 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-smollm2-0.1b-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-smollm2-0.4b-v2
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-smollm2-0.4b-v2
@@ -6419,7 +6574,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6437,14 +6592,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-smollm2-0.4b-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cs-giung/math-rlvr-mini-smollm2-1.7b-v2
     url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-smollm2-1.7b-v2
     last_modified: '2026-09-04T08:51:26.000Z'
     sha: 6e2b41eb0e956bc665ee158b3af96dae4f0f98cd
-    downloads: 177
+    downloads: 291
     likes: 0
     gated: false
     private: false
@@ -6471,7 +6626,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -6489,14 +6644,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/cs-giung/math-rlvr-mini-smollm2-1.7b-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: cublya/Code-Reasoning
     url: https://huggingface.co/datasets/cublya/Code-Reasoning
     last_modified: '2026-01-31T14:23:15.000Z'
     sha: c7a7182ba20d92c126b9594eb6924ea9ace5afd8
-    downloads: 46
+    downloads: 49
     likes: 0
     gated: false
     private: false
@@ -6530,7 +6685,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 8.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -6548,8 +6703,8 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/cublya/Code-Reasoning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: damjanovskia/open-code-reasoning-selected
     url: https://huggingface.co/datasets/damjanovskia/open-code-reasoning-selected
@@ -6582,7 +6737,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -6597,14 +6752,14 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/damjanovskia/open-code-reasoning-selected
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: djroytburg/legible-reasoning-traces
     url: https://huggingface.co/datasets/djroytburg/legible-reasoning-traces
     last_modified: '2026-11-06T07:01:54.000Z'
     sha: 1eebd7e2a34125a4e937536d57b3862a69d714ad
-    downloads: 4394
+    downloads: 4397
     likes: 0
     gated: manual
     private: false
@@ -6642,7 +6797,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -6660,8 +6815,8 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/djroytburg/legible-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: dkqkxx/chinese_instruction_sample
     url: https://huggingface.co/datasets/dkqkxx/chinese_instruction_sample
@@ -6687,7 +6842,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: chinese
@@ -6705,14 +6860,14 @@ candidates:
   suggested_category: chinese
   url: https://huggingface.co/datasets/dkqkxx/chinese_instruction_sample
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: dlface/code_instructions_120k_alpaca_chinese
     url: https://huggingface.co/datasets/dlface/code_instructions_120k_alpaca_chinese
     last_modified: '2024-05-14T14:18:19.000Z'
     sha: 56e3369bc22b05bbb936768e50301aa61ff5e250
-    downloads: 133
+    downloads: 125
     likes: 2
     gated: false
     private: false
@@ -6739,7 +6894,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 6.0
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: code
@@ -6751,14 +6906,14 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/dlface/code_instructions_120k_alpaca_chinese
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: duarteocarmo/smoltalk2-tulu-3-sft-personas-instruction-following-no-think-pt-pt
     url: https://huggingface.co/datasets/duarteocarmo/smoltalk2-tulu-3-sft-personas-instruction-following-no-think-pt-pt
     last_modified: '2026-06-05T09:28:03.000Z'
     sha: 9c68afbbcf63705e0a39cea2b7cf835258766ea6
-    downloads: 15
+    downloads: 8
     likes: 0
     gated: false
     private: false
@@ -6786,7 +6941,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -6804,14 +6959,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/duarteocarmo/smoltalk2-tulu-3-sft-personas-instruction-following-no-think-pt-pt
 - first_seen_at: '2026-11-19T23:37:31Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: dusersad12/hermes-function-calling-v1
     url: https://huggingface.co/datasets/dusersad12/hermes-function-calling-v1
     last_modified: '2026-11-20T19:37:22.000Z'
     sha: 7c2061e950094a25c2ede01e11e0069036d538ef
-    downloads: 65
+    downloads: 70
     likes: 0
     gated: false
     private: false
@@ -6838,7 +6993,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 4
+  seen_count: 5
   status: pending_review
   suggested_categories:
   - category: tool
@@ -6853,14 +7008,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/dusersad12/hermes-function-calling-v1
 - first_seen_at: '2026-11-19T23:37:31Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: dusersad12/xlam-function-calling-60k
     url: https://huggingface.co/datasets/dusersad12/xlam-function-calling-60k
     last_modified: '2026-11-20T19:37:27.000Z'
     sha: 58f4e5f616e714fb384edba97a97304dfd189874
-    downloads: 314
+    downloads: 330
     likes: 0
     gated: false
     private: false
@@ -6880,7 +7035,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 4
+  seen_count: 5
   status: pending_review
   suggested_categories:
   - category: tool
@@ -6895,8 +7050,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/dusersad12/xlam-function-calling-60k
 - first_seen_at: '2026-11-17T23:52:07Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: elpillin/local-llm-function-calling-json-sample
     url: https://huggingface.co/datasets/elpillin/local-llm-function-calling-json-sample
@@ -6945,7 +7100,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.5
-  seen_count: 6
+  seen_count: 7
   status: pending_review
   suggested_categories:
   - category: tool
@@ -6966,14 +7121,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/elpillin/local-llm-function-calling-json-sample
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: emgena/emgena_r1_prm_process_reward_verifier_mcp_teaser
     url: https://huggingface.co/datasets/emgena/emgena_r1_prm_process_reward_verifier_mcp_teaser
     last_modified: '2026-11-21T08:18:22.000Z'
     sha: 8db88dcb21eadb2c8da10045582e2ab700d2e5ed
-    downloads: 123
+    downloads: 119
     likes: 0
     gated: false
     private: false
@@ -7017,7 +7172,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: process_reward
@@ -7035,14 +7190,14 @@ candidates:
   suggested_category: process_reward
   url: https://huggingface.co/datasets/emgena/emgena_r1_prm_process_reward_verifier_mcp_teaser
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: emgena/prm_process_reward_step_anomaly_healer_teaser
     url: https://huggingface.co/datasets/emgena/prm_process_reward_step_anomaly_healer_teaser
     last_modified: '2026-11-21T09:02:17.000Z'
     sha: aea5c607475eac16528acc577b589e976b276161
-    downloads: 89
+    downloads: 92
     likes: 0
     gated: false
     private: false
@@ -7086,7 +7241,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: process_reward
@@ -7101,14 +7256,14 @@ candidates:
   suggested_category: process_reward
   url: https://huggingface.co/datasets/emgena/prm_process_reward_step_anomaly_healer_teaser
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4
     url: https://huggingface.co/datasets/ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4
     last_modified: '2026-10-16T13:50:18.000Z'
     sha: 5b38b2a92a3093cf025b14c43cdbf0e19b89315b
-    downloads: 580
+    downloads: 601
     likes: 2
     gated: false
     private: false
@@ -7144,7 +7299,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.5
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -7165,14 +7320,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: fieldsmodelorg/FM-Pochi-32B-Reasoning-Traces
     url: https://huggingface.co/datasets/fieldsmodelorg/FM-Pochi-32B-Reasoning-Traces
     last_modified: '2026-11-05T20:01:52.000Z'
     sha: 6b5beb032208fac83dc5a102001b59cf05e93d5a
-    downloads: 148
+    downloads: 147
     likes: 0
     gated: false
     private: false
@@ -7199,7 +7354,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -7214,14 +7369,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/fieldsmodelorg/FM-Pochi-32B-Reasoning-Traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: golden-eaglet/gsm8k-math-reasoning
     url: https://huggingface.co/datasets/golden-eaglet/gsm8k-math-reasoning
     last_modified: '2026-11-02T16:49:03.000Z'
     sha: 8a4670e666bf71bfda0833eb8b9f2421d35c1985
-    downloads: 129
+    downloads: 136
     likes: 0
     gated: false
     private: false
@@ -7272,7 +7427,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 14.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -7296,14 +7451,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/golden-eaglet/gsm8k-math-reasoning
 - first_seen_at: '2026-11-10T22:24:51Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: goodgentleman918/ai-data-quality-llm-evaluation-benchmark
     url: https://huggingface.co/datasets/goodgentleman918/ai-data-quality-llm-evaluation-benchmark
     last_modified: '2026-11-10T14:10:18.000Z'
     sha: 9ad9fcace2887fff1cc7991141978ad4674d014a
-    downloads: 112
+    downloads: 115
     likes: 1
     gated: false
     private: false
@@ -7342,7 +7497,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.0
-  seen_count: 13
+  seen_count: 14
   status: pending_review
   suggested_categories:
   - category: evaluation
@@ -7436,8 +7591,8 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/gwejgteheg/bigmath-reasoning-traces
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: hamishivi/code_rlvr_mixture_dpo
     url: https://huggingface.co/datasets/hamishivi/code_rlvr_mixture_dpo
@@ -7471,7 +7626,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -7489,8 +7644,8 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/hamishivi/code_rlvr_mixture_dpo
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: hamishivi/code_rlvr_mixture_sft
     url: https://huggingface.co/datasets/hamishivi/code_rlvr_mixture_sft
@@ -7524,7 +7679,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -7592,14 +7747,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/hardik-dwivedi/xlam-function-calling-60k-dpo-mutation
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: harry1332/swe-agent-cpu-dynamorio-pilot-sympy-15599
     url: https://huggingface.co/datasets/harry1332/swe-agent-cpu-dynamorio-pilot-sympy-15599
     last_modified: '2026-09-17T05:24:31.000Z'
     sha: 096fab275cf2a7509d8ecddf6b7427342268078f
-    downloads: 73
+    downloads: 72
     likes: 0
     gated: false
     private: false
@@ -7634,7 +7789,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -7652,14 +7807,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/harry1332/swe-agent-cpu-dynamorio-pilot-sympy-15599
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: harry1332/swe-agent-cpu-dynamorio-validated-private
     url: https://huggingface.co/datasets/harry1332/swe-agent-cpu-dynamorio-validated-private
     last_modified: '2026-09-17T16:15:49.000Z'
     sha: 290e6f884a34c6f04997e171940c8126a73c1724
-    downloads: 62
+    downloads: 63
     likes: 0
     gated: false
     private: false
@@ -7683,7 +7838,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 8.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -7701,8 +7856,8 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/harry1332/swe-agent-cpu-dynamorio-validated-private
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: harsh8001/simple-calculator-for-function-calling
     url: https://huggingface.co/datasets/harsh8001/simple-calculator-for-function-calling
@@ -7741,7 +7896,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -7762,8 +7917,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/harsh8001/simple-calculator-for-function-calling
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: harsh8001/weather-function-calling
     url: https://huggingface.co/datasets/harsh8001/weather-function-calling
@@ -7801,7 +7956,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 14.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -7825,14 +7980,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/harsh8001/weather-function-calling
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: heyalexchoi/qwen3-math-rlvr-results
     url: https://huggingface.co/datasets/heyalexchoi/qwen3-math-rlvr-results
     last_modified: '2026-10-15T10:10:26.000Z'
     sha: 0240e8942720021bb846901dd2744af3283a9a07
-    downloads: 103
+    downloads: 99
     likes: 0
     gated: false
     private: false
@@ -7852,7 +8007,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -7870,8 +8025,8 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/heyalexchoi/qwen3-math-rlvr-results
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: hij/math_reasoning_robustness
     url: https://huggingface.co/datasets/hij/math_reasoning_robustness
@@ -7897,7 +8052,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -7915,14 +8070,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/hij/math_reasoning_robustness
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: hikewa/dialectic-reasoning-traces
     url: https://huggingface.co/datasets/hikewa/dialectic-reasoning-traces
     last_modified: '2026-11-03T00:42:22.000Z'
     sha: 651f789902875ede109cf9e4f581b98755c8d2b1
-    downloads: 92
+    downloads: 94
     likes: 0
     gated: false
     private: false
@@ -7959,7 +8114,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -8029,14 +8184,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/hussainbillah/sonicium-function-calling-dataset
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: irsotarriva/deepseek-v4.1-flash-top20-swe-agent
     url: https://huggingface.co/datasets/irsotarriva/deepseek-v4.1-flash-top20-swe-agent
     last_modified: '2026-10-12T17:38:50.000Z'
     sha: da44499b01250fee6c6074681a28c1c1b6d192a9
-    downloads: 276
+    downloads: 281
     likes: 0
     gated: false
     private: false
@@ -8087,7 +8242,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -8105,8 +8260,8 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/irsotarriva/deepseek-v4.1-flash-top20-swe-agent
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v2-prompt-only
     url: https://huggingface.co/datasets/jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v2-prompt-only
@@ -8147,7 +8302,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -8165,8 +8320,8 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v2-prompt-only
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v3-prompt-only
     url: https://huggingface.co/datasets/jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v3-prompt-only
@@ -8199,7 +8354,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -8217,8 +8372,8 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v3-prompt-only
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: jddqd/function-calling-mix-sft
     url: https://huggingface.co/datasets/jddqd/function-calling-mix-sft
@@ -8272,7 +8427,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -8371,14 +8526,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/jddqd/xlam-function-calling-60k-sft
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: jean1/45k_python_code_chinese_instruction
     url: https://huggingface.co/datasets/jean1/45k_python_code_chinese_instruction
     last_modified: '2024-04-19T00:00:57.000Z'
     sha: 39cfffc0023b2dc42e329bfb00a3fd5ac7e601ba
-    downloads: 116
+    downloads: 117
     likes: 6
     gated: false
     private: false
@@ -8405,7 +8560,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.5
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: chinese
@@ -8426,14 +8581,14 @@ candidates:
   suggested_category: chinese
   url: https://huggingface.co/datasets/jean1/45k_python_code_chinese_instruction
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: junkim100/multilingual_instruction_tuning_lima_bactrian
     url: https://huggingface.co/datasets/junkim100/multilingual_instruction_tuning_lima_bactrian
     last_modified: '2025-06-01T17:26:29.000Z'
     sha: 05deb09264483572b572a8e4c135dbd6f5f85643
-    downloads: 75
+    downloads: 77
     likes: 0
     gated: false
     private: false
@@ -8460,7 +8615,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -8478,8 +8633,8 @@ candidates:
   suggested_category: multilingual
   url: https://huggingface.co/datasets/junkim100/multilingual_instruction_tuning_lima_bactrian
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: justinin1/hermes-function-calling-v1
     url: https://huggingface.co/datasets/justinin1/hermes-function-calling-v1
@@ -8528,7 +8683,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -8549,8 +8704,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/justinin1/hermes-function-calling-v1
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: karanverma19/multilingual-indian-instruction-dataset
     url: https://huggingface.co/datasets/karanverma19/multilingual-indian-instruction-dataset
@@ -8586,7 +8741,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -8616,14 +8771,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/karanverma19/multilingual-indian-instruction-dataset
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: khafizovfanis/reasoning-traces-discourse
     url: https://huggingface.co/datasets/khafizovfanis/reasoning-traces-discourse
     last_modified: '2026-10-07T18:24:15.000Z'
     sha: b6f2e9b4715bbc3405256e8169354683b94b041d
-    downloads: 33
+    downloads: 34
     likes: 0
     gated: false
     private: false
@@ -8659,7 +8814,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -8779,14 +8934,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/kilicai/turkish-sft-instruction-following-30k
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: kumar2235/kannada-sft-instruction-pool
     url: https://huggingface.co/datasets/kumar2235/kannada-sft-instruction-pool
     last_modified: '2026-10-24T13:50:55.000Z'
     sha: 74cdf5ee5e8b8c9e3b992a5592e0c163efc8927c
-    downloads: 151
+    downloads: 92
     likes: 1
     gated: auto
     private: false
@@ -8830,7 +8985,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -8854,14 +9009,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/kumar2235/kannada-sft-instruction-pool
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: kuyesu22/multilingual_instruction_tuning
     url: https://huggingface.co/datasets/kuyesu22/multilingual_instruction_tuning
     last_modified: '2025-04-16T05:59:43.000Z'
     sha: 05ce7b1e540b3efbddb17ead66c950c4cf4fe204
-    downloads: 58
+    downloads: 62
     likes: 0
     gated: false
     private: false
@@ -8888,7 +9043,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -8958,14 +9113,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/laion/dev_set_v2_a1_nebius_swe_agent_20260820_135121
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: lucsaint/Deepseek-V4-Reasoning-Code-2500
     url: https://huggingface.co/datasets/lucsaint/Deepseek-V4-Reasoning-Code-2500
     last_modified: '2026-07-18T17:35:55.000Z'
     sha: 2bf2e5f192fffe5aa703516dd1bc1ac087382f09
-    downloads: 66
+    downloads: 65
     likes: 0
     gated: false
     private: false
@@ -9012,7 +9167,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -9087,14 +9242,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/minpeter/hermes-function-calling-v1-parsed
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: naimulislam/reasoning_code_advanced_1m
     url: https://huggingface.co/datasets/naimulislam/reasoning_code_advanced_1m
     last_modified: '2025-12-20T18:12:24.000Z'
     sha: f54944b093a4d337ee59acec200d453e39648bbf
-    downloads: 56
+    downloads: 61
     likes: 1
     gated: false
     private: false
@@ -9141,7 +9296,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -9218,8 +9373,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/nightrider18133/glaive-function-calling-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: nphearum/Code-Reasoning-4k
     url: https://huggingface.co/datasets/nphearum/Code-Reasoning-4k
@@ -9276,7 +9431,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -9297,14 +9452,14 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/nphearum/Code-Reasoning-4k
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: nvidia/Nemotron-RL-Agentic-SWE-Pivot-v1
     url: https://huggingface.co/datasets/nvidia/Nemotron-RL-Agentic-SWE-Pivot-v1
     last_modified: '2026-09-29T05:43:48.000Z'
     sha: d2b67746ca0087e73c4675b56bcc139b99354963
-    downloads: 1520
+    downloads: 1487
     likes: 16
     gated: false
     private: false
@@ -9338,7 +9493,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -9359,14 +9514,14 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/nvidia/Nemotron-RL-Agentic-SWE-Pivot-v1
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: nvidia/Nemotron-SFT-Instruction-Following-Chat-v3
     url: https://huggingface.co/datasets/nvidia/Nemotron-SFT-Instruction-Following-Chat-v3
     last_modified: '2026-06-04T04:37:43.000Z'
     sha: be3b3e04ef605ac9d3f8f35b9d5a632f4a3a3402
-    downloads: 8576
+    downloads: 8790
     likes: 27
     gated: false
     private: false
@@ -9417,7 +9572,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 15.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -9438,14 +9593,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/nvidia/Nemotron-SFT-Instruction-Following-Chat-v3
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: oddadmix/arabic-math-reasoning-synth
     url: https://huggingface.co/datasets/oddadmix/arabic-math-reasoning-synth
     last_modified: '2026-08-28T10:33:52.000Z'
     sha: dc22ebaeda0f74daafae938213ff02d7b1019828
-    downloads: 139
+    downloads: 135
     likes: 0
     gated: false
     private: false
@@ -9488,7 +9643,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -9518,8 +9673,8 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/oddadmix/arabic-math-reasoning-synth
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: open-athena/nemotron-gym-instruction-following-structured-qwen3.5-122b-131k-opencode-sft-serveparity
     url: https://huggingface.co/datasets/open-athena/nemotron-gym-instruction-following-structured-qwen3.5-122b-131k-opencode-sft-serveparity
@@ -9554,7 +9709,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -9648,14 +9803,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/openeurollm/function-calling-sft-oellm-64k
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: openeurollm/oellm-code-rlvr
     url: https://huggingface.co/datasets/openeurollm/oellm-code-rlvr
     last_modified: '2026-09-24T14:12:28.000Z'
     sha: ef3c674ce28617d14e8b265e6106d1c36d2c8c3c
-    downloads: 119
+    downloads: 124
     likes: 0
     gated: false
     private: false
@@ -9704,7 +9859,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 17.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -9731,14 +9886,14 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/openeurollm/oellm-code-rlvr
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: openeurollm/oellm-math-rlvr
     url: https://huggingface.co/datasets/openeurollm/oellm-math-rlvr
     last_modified: '2026-09-24T14:12:31.000Z'
     sha: de5df504325781a5d78e236446bebdaa4a92424e
-    downloads: 145
+    downloads: 147
     likes: 0
     gated: false
     private: false
@@ -9830,7 +9985,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 16.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_math
@@ -9875,14 +10030,14 @@ candidates:
   suggested_category: rlvr_math
   url: https://huggingface.co/datasets/openeurollm/oellm-math-rlvr
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: placeholderlabs/pretrain-reasoning-traces-mix
     url: https://huggingface.co/datasets/placeholderlabs/pretrain-reasoning-traces-mix
     last_modified: '2026-10-26T05:42:14.000Z'
     sha: d1d3f7544e5485fe1d81a442e5b9c891f2a1e601
-    downloads: 841
+    downloads: 829
     likes: 0
     gated: false
     private: false
@@ -9911,7 +10066,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -9926,14 +10081,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/placeholderlabs/pretrain-reasoning-traces-mix
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: placeholderlabs/pretrain-reasoning-traces-mix-long-context
     url: https://huggingface.co/datasets/placeholderlabs/pretrain-reasoning-traces-mix-long-context
     last_modified: '2026-10-26T05:42:13.000Z'
     sha: 2f626c85300ddc916b9893afca9870b1ca7985d8
-    downloads: 82
+    downloads: 80
     likes: 0
     gated: false
     private: false
@@ -9962,7 +10117,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -9977,14 +10132,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/placeholderlabs/pretrain-reasoning-traces-mix-long-context
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: roisincrtai/llm-instruction-following-sft-tulu-3-mixture
     url: https://huggingface.co/datasets/roisincrtai/llm-instruction-following-sft-tulu-3-mixture
     last_modified: '2026-08-13T19:58:46.000Z'
     sha: 4db2008f9ec88988c84ce3734e621883ee4ac595
-    downloads: 56
+    downloads: 54
     likes: 0
     gated: false
     private: false
@@ -10011,7 +10166,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -10029,14 +10184,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/roisincrtai/llm-instruction-following-sft-tulu-3-mixture
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: roisincrtai/zetagpt-instruction-following-sft-tulu-3-mixture
     url: https://huggingface.co/datasets/roisincrtai/zetagpt-instruction-following-sft-tulu-3-mixture
     last_modified: '2026-08-12T16:55:56.000Z'
     sha: 01973ee9abfe40a8f4b8a9c50e35eb5bb16b31d1
-    downloads: 18
+    downloads: 15
     likes: 0
     gated: false
     private: false
@@ -10063,7 +10218,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -10078,14 +10233,14 @@ candidates:
   suggested_category: general_sft
   url: https://huggingface.co/datasets/roisincrtai/zetagpt-instruction-following-sft-tulu-3-mixture
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: rootacess/Code-RLVR-dataset
     url: https://huggingface.co/datasets/rootacess/Code-RLVR-dataset
     last_modified: '2026-02-11T14:26:17.000Z'
     sha: 081a79ccb8d94c982b4ee53a96cbf7dcb0c6cd0e
-    downloads: 19
+    downloads: 18
     likes: 0
     gated: false
     private: false
@@ -10113,7 +10268,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -10131,14 +10286,14 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/rootacess/Code-RLVR-dataset
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: sagea-ai/SAGE-Code-Reasoning
     url: https://huggingface.co/datasets/sagea-ai/SAGE-Code-Reasoning
     last_modified: '2026-01-04T19:33:37.000Z'
     sha: 00a7519a5bab8968c4f7ae12fd7c5b689c74c9df
-    downloads: 404
+    downloads: 423
     likes: 3
     gated: false
     private: false
@@ -10167,7 +10322,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: code
@@ -10182,14 +10337,14 @@ candidates:
   suggested_category: code
   url: https://huggingface.co/datasets/sagea-ai/SAGE-Code-Reasoning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: saurabh5/code_rlvr_mixture_dpo
     url: https://huggingface.co/datasets/saurabh5/code_rlvr_mixture_dpo
     last_modified: '2025-11-11T22:31:11.000Z'
     sha: ea641f212c72ccc4d5747ce270eb8cd57b249100
-    downloads: 28
+    downloads: 29
     likes: 0
     gated: false
     private: false
@@ -10217,7 +10372,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -10235,8 +10390,8 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/saurabh5/code_rlvr_mixture_dpo
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: saurabh5/klear-code-rlvr
     url: https://huggingface.co/datasets/saurabh5/klear-code-rlvr
@@ -10272,7 +10427,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 12.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -10290,14 +10445,14 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/saurabh5/klear-code-rlvr
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: shaban2024/agentmujo-function-calling
     url: https://huggingface.co/datasets/shaban2024/agentmujo-function-calling
     last_modified: '2026-11-03T07:01:21.000Z'
     sha: e365fe29950e933d6afe585fa4ba1721edd278bc
-    downloads: 157
+    downloads: 159
     likes: 1
     gated: false
     private: false
@@ -10336,7 +10491,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -10354,8 +10509,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/shaban2024/agentmujo-function-calling
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: shangshang/math-reasoning-zh
     url: https://huggingface.co/datasets/shangshang/math-reasoning-zh
@@ -10395,7 +10550,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
@@ -10425,8 +10580,8 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/shangshang/math-reasoning-zh
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: skarnati20/nebius-swe-agent-small-qwen7b-activations
     url: https://huggingface.co/datasets/skarnati20/nebius-swe-agent-small-qwen7b-activations
@@ -10460,7 +10615,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 7.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -10475,8 +10630,8 @@ candidates:
   suggested_category: agent_swe
   url: https://huggingface.co/datasets/skarnati20/nebius-swe-agent-small-qwen7b-activations
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: smshahbaj/verifiable-code-reasoning
     url: https://huggingface.co/datasets/smshahbaj/verifiable-code-reasoning
@@ -10528,7 +10683,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -10570,14 +10725,14 @@ candidates:
   suggested_category: rlvr_code
   url: https://huggingface.co/datasets/smshahbaj/verifiable-code-reasoning
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: somsom317/pilates-function-calling-datasets-korean
     url: https://huggingface.co/datasets/somsom317/pilates-function-calling-datasets-korean
     last_modified: '2026-11-05T07:11:14.000Z'
     sha: 70e14823d6cd6bc22c36a694417bade19b61deab
-    downloads: 60
+    downloads: 63
     likes: 0
     gated: false
     private: false
@@ -10604,7 +10759,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -10619,14 +10774,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/somsom317/pilates-function-calling-datasets-korean
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: springofwindslabs/function-calling-en-trial
     url: https://huggingface.co/datasets/springofwindslabs/function-calling-en-trial
-    last_modified: '2026-11-19T11:12:31.000Z'
-    sha: f2a603aa9810603d9c4c9b84bb27a99d2d24e127
-    downloads: 74
+    last_modified: '2026-11-24T02:47:11.000Z'
+    sha: 9f6d0708c1fc81546b3b40383e85d31bea7ba861
+    downloads: 75
     likes: 0
     gated: false
     private: false
@@ -10669,7 +10824,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -10690,14 +10845,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/springofwindslabs/function-calling-en-trial
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: springofwindslabs/function-calling-ja-trial
     url: https://huggingface.co/datasets/springofwindslabs/function-calling-ja-trial
-    last_modified: '2026-11-19T11:12:35.000Z'
-    sha: 74c850c1d950196521a2d2004122c26a790c4bf1
-    downloads: 77
+    last_modified: '2026-11-24T02:47:13.000Z'
+    sha: 78464799b4c9310b919d32c2733d44b6a28ff726
+    downloads: 76
     likes: 0
     gated: false
     private: false
@@ -10741,7 +10896,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 11.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: tool
@@ -10762,8 +10917,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/springofwindslabs/function-calling-ja-trial
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: stindardlogic/instruction-following-hard-sft-100k
     url: https://huggingface.co/datasets/stindardlogic/instruction-following-hard-sft-100k
@@ -10815,7 +10970,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 14.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: general_sft
@@ -10857,16 +11012,26 @@ candidates:
   last_counted_run: '2026-11-22T22:30:27Z'
   last_seen_at: '2026-11-22T22:30:27Z'
   metadata:
-    repo_id: stindardlogic/math-reasoning-sft-100k
-    url: https://huggingface.co/datasets/stindardlogic/math-reasoning-sft-100k
-    last_modified: '2026-07-18T03:50:51.000Z'
-    sha: 9d257a82de8c4815669745819cbce83614660b04
-    downloads: 80
-    likes: 1
-    gated: false
-    private: false
+    card_data:
+      language:
+      - en
+      license: apache-2.0
+      pretty_name: Math Reasoning SFT (100K)
+      size_categories:
+      - 100K<n<1M
+      task_categories:
+      - text-generation
+      - question-answering
     disabled: false
+    downloads: 80
+    gated: false
+    last_modified: '2026-07-18T03:50:51.000Z'
     license: apache-2.0
+    likes: 1
+    private: false
+    repo_id: stindardlogic/math-reasoning-sft-100k
+    sha: 9d257a82de8c4815669745819cbce83614660b04
+    siblings_count: 0
     tags:
     - algebra
     - arithmetic
@@ -10893,51 +11058,41 @@ candidates:
     - task_categories:question-answering
     - task_categories:text-generation
     - word-problems
-    siblings_count: 0
-    card_data:
-      language:
-      - en
-      license: apache-2.0
-      task_categories:
-      - text-generation
-      - question-answering
-      size_categories:
-      - 100K<n<1M
-      pretty_name: Math Reasoning SFT (100K)
+    url: https://huggingface.co/datasets/stindardlogic/math-reasoning-sft-100k
   queries:
   - math reasoning
   repo_id: stindardlogic/math-reasoning-sft-100k
   review:
-    text_modality_confirmed: false
+    decontaminated: false
     license_approved: false
     revision_pinned: false
-    decontaminated: false
     sample_inspected: false
+    text_modality_confirmed: false
   score: 14.0
   seen_count: 14
   status: pending_review
   suggested_categories:
   - category: math
-    score: 14.0
     matched:
     - keyword: math reasoning
+      location: title
       strength: strong
-      location: title
     - keyword: math
-      strength: medium
       location: title
+      strength: medium
     - keyword: mathematics
-      strength: medium
       location: body
+      strength: medium
     - keyword: solution
-      strength: medium
       location: body
+      strength: medium
     - keyword: reasoning
-      strength: weak
       location: title
+      strength: weak
     - keyword: sft
-      strength: weak
       location: title
+      strength: weak
+    score: 14.0
   suggested_category: math
   url: https://huggingface.co/datasets/stindardlogic/math-reasoning-sft-100k
 - first_seen_at: '2026-11-10T00:43:48Z'
@@ -11000,14 +11155,14 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/suryatmodulus/glaive-function-calling-v2
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: thenukegun10x/LFM2.5-24B-A2B-BF16-Reasoning-Traces
     url: https://huggingface.co/datasets/thenukegun10x/LFM2.5-24B-A2B-BF16-Reasoning-Traces
     last_modified: '2026-10-19T09:21:05.000Z'
     sha: 6595e775025869d0f9bb2dc959a56b22c11d099c
-    downloads: 48
+    downloads: 51
     likes: 0
     gated: false
     private: false
@@ -11057,7 +11212,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 9.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: reasoning
@@ -11087,14 +11242,14 @@ candidates:
   suggested_category: reasoning
   url: https://huggingface.co/datasets/thenukegun10x/LFM2.5-24B-A2B-BF16-Reasoning-Traces
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: treasure4l/multilingual_instruction_tuning
     url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning
     last_modified: '2026-08-18T14:27:07.000Z'
     sha: 4ab35fc0b52fb597c4ab80a9ea0924e8040ee410
-    downloads: 56
+    downloads: 53
     likes: 0
     gated: false
     private: false
@@ -11121,7 +11276,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -11139,14 +11294,14 @@ candidates:
   suggested_category: multilingual
   url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning
 - first_seen_at: '2026-11-09T04:15:35Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: treasure4l/multilingual_instruction_tuning_plus
     url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning_plus
     last_modified: '2026-08-26T13:19:36.000Z'
     sha: 00d9a403e45c09a281bb940b7f0048abd17d4950
-    downloads: 150
+    downloads: 154
     likes: 0
     gated: false
     private: false
@@ -11173,7 +11328,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 17
+  seen_count: 18
   status: pending_review
   suggested_categories:
   - category: multilingual
@@ -11191,14 +11346,14 @@ candidates:
   suggested_category: multilingual
   url: https://huggingface.co/datasets/treasure4l/multilingual_instruction_tuning_plus
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: vishalxyzabc7527/gemma4-swe-agent-sft-harness
     url: https://huggingface.co/datasets/vishalxyzabc7527/gemma4-swe-agent-sft-harness
     last_modified: '2026-11-06T19:46:19.000Z'
     sha: 7b3c7d619fa3c2f5d24a33bce5b413dcc48b2680
-    downloads: 676
+    downloads: 684
     likes: 1
     gated: false
     private: false
@@ -11237,7 +11392,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 13.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: agent_swe
@@ -11326,8 +11481,8 @@ candidates:
   suggested_category: tool
   url: https://huggingface.co/datasets/vxltxrllc/audio-function-calling-v1
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: wflying/code-rlvr-15k
     url: https://huggingface.co/datasets/wflying/code-rlvr-15k
@@ -11376,7 +11531,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 14.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: rlvr_code
@@ -11504,14 +11659,14 @@ candidates:
   suggested_category: math
   url: https://huggingface.co/datasets/whitecircle/math-reasoning-sft
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: williamTLmiller/swe-bench-coding-agent-tasks
     url: https://huggingface.co/datasets/williamTLmiller/swe-bench-coding-agent-tasks
     last_modified: '2026-11-12T03:58:29.000Z'
     sha: bd5f048f28a2d799d8a5308c64f6f9127fccb226
-    downloads: 602
+    downloads: 564
     likes: 0
     gated: false
     private: false
@@ -11579,7 +11734,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 6.5
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: evaluation
@@ -11600,14 +11755,14 @@ candidates:
   suggested_category: evaluation
   url: https://huggingface.co/datasets/williamTLmiller/swe-bench-coding-agent-tasks
 - first_seen_at: '2026-11-10T00:43:48Z'
-  last_counted_run: '2026-11-22T22:30:27Z'
-  last_seen_at: '2026-11-22T22:30:27Z'
+  last_counted_run: '2026-11-24T03:21:52Z'
+  last_seen_at: '2026-11-24T03:21:52Z'
   metadata:
     repo_id: zaydsyed/TactLM-Math-Reasoning-Data
     url: https://huggingface.co/datasets/zaydsyed/TactLM-Math-Reasoning-Data
     last_modified: '2026-10-24T20:21:02.000Z'
     sha: d3b948bf2b2994bb32195a0778108fae426b11aa
-    downloads: 200
+    downloads: 189
     likes: 2
     gated: false
     private: false
@@ -11649,7 +11804,7 @@ candidates:
     decontaminated: false
     sample_inspected: false
   score: 10.0
-  seen_count: 14
+  seen_count: 15
   status: pending_review
   suggested_categories:
   - category: math
