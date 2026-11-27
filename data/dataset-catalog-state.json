@@ -2,8 +2,8 @@
   "candidates": {
     "96kevinli29/Multilingual-Math-Reasoning-Eval": {
       "first_seen_at": "2026-11-11T23:29:53Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -86,7 +86,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.5,
-      "seen_count": 15,
+      "seen_count": 16,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -163,8 +163,8 @@
     },
     "AlmostNobody/High-Quality-Synthetic-Python-Dataset-with-Reasoning-Traces-Chain-of-Thought-for-LLM-Fine-Tuning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -217,7 +217,7 @@
         "text_modality_confirmed": false
       },
       "score": 15.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -247,8 +247,8 @@
     },
     "AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-javascript": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -305,7 +305,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -345,8 +345,8 @@
     },
     "AmanPriyanshu/RLVR-Env-Retrieval-Source-code-search-net-python": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -403,7 +403,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -443,8 +443,8 @@
     },
     "BH-Language-AI/bs-agent-function-calling-v01": {
       "first_seen_at": "2026-11-12T22:45:59Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -496,7 +496,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 14,
+      "seen_count": 15,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -526,8 +526,8 @@
     },
     "Banaxi-Tech/Deepseek-V4-Reasoning-Code-2500": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -588,7 +588,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -618,8 +618,8 @@
     },
     "BeardedMonster/glaive-function-calling-v2": {
       "first_seen_at": "2026-11-17T00:50:45Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -679,7 +679,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 10,
+      "seen_count": 11,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -709,8 +709,8 @@
     },
     "Bobollinix/Nemotron-RL-Agentic-SWE-Pivot-v1": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "cc-by-4.0"
@@ -753,7 +753,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -788,8 +788,8 @@
     },
     "CIRISAI/reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -852,7 +852,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -877,8 +877,8 @@
     },
     "CIRISAI/reasoning-traces-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -959,7 +959,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -984,8 +984,8 @@
     },
     "Chess-Nut-Engine/chess-reasoning-traces-seed": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -1042,7 +1042,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1203,8 +1203,8 @@
     },
     "DuoNeural/cdm-reasoning-traces-v4": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -1262,7 +1262,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1302,8 +1302,8 @@
     },
     "Entity-27th/odin-c1-code-reasoning-mix": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -1342,7 +1342,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1367,8 +1367,8 @@
     },
     "FlaneAI/Distilled-Opus5-GPT5.6sol-Math-Reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "mit"
@@ -1401,7 +1401,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1516,8 +1516,8 @@
     },
     "HYUKI5/JetBrains-Research__agent-trajectories-swe-bench-test-minus-verified": {
       "first_seen_at": "2026-11-14T21:33:04Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -1583,7 +1583,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 12,
+      "seen_count": 13,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1613,8 +1613,8 @@
     },
     "HYUKI5/Kwai-Klear__SWE-smith-mini_swe_agent_plus-trajectories-66k": {
       "first_seen_at": "2026-11-17T00:50:45Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "mit",
@@ -1667,7 +1667,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 10,
+      "seen_count": 11,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1697,8 +1697,8 @@
     },
     "HYUKI5/NousResearch__hermes-function-calling-v1": {
       "first_seen_at": "2026-11-11T23:29:53Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -1764,7 +1764,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 15,
+      "seen_count": 16,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1794,8 +1794,8 @@
     },
     "HYUKI5/SWE-Factory__DeepSWE-Agent-Kimi-K2-Trajectories-2.8K": {
       "first_seen_at": "2026-11-11T23:29:53Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "mit",
@@ -1848,7 +1848,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 15,
+      "seen_count": 16,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1878,8 +1878,8 @@
     },
     "HYUKI5/glaiveai__glaive-function-calling-v2": {
       "first_seen_at": "2026-11-17T00:50:45Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -1945,7 +1945,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 10,
+      "seen_count": 11,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -1970,8 +1970,8 @@
     },
     "HYUKI5/gorilla-llm__Berkeley-Function-Calling-Leaderboard": {
       "first_seen_at": "2026-11-13T22:41:41Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -2022,7 +2022,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 13,
+      "seen_count": 14,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2052,8 +2052,8 @@
     },
     "HYUKI5/lambda__hermes-agent-reasoning-traces": {
       "first_seen_at": "2026-11-17T00:50:45Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -2119,7 +2119,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 10,
+      "seen_count": 11,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2330,8 +2330,8 @@
     },
     "HYUKI5/nebius__SWE-agent-trajectories": {
       "first_seen_at": "2026-11-17T00:50:45Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "cc-by-4.0",
@@ -2387,7 +2387,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 10,
+      "seen_count": 11,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2417,8 +2417,8 @@
     },
     "HYUKI5/nvidia__Nemotron-RL-Agentic-Function-Calling-Pivot-v1": {
       "first_seen_at": "2026-11-17T00:50:45Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "cc-by-4.0",
@@ -2471,7 +2471,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 10,
+      "seen_count": 11,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2501,8 +2501,8 @@
     },
     "HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v2": {
       "first_seen_at": "2026-11-18T23:25:18Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -2561,7 +2561,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.5,
-      "seen_count": 8,
+      "seen_count": 9,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2596,8 +2596,8 @@
     },
     "HYUKI5/nvidia__Nemotron-SFT-Instruction-Following-Chat-v3": {
       "first_seen_at": "2026-11-18T23:25:18Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -2675,7 +2675,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.5,
-      "seen_count": 8,
+      "seen_count": 9,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2710,8 +2710,8 @@
     },
     "Hemgg/non-math-reasoning-1m": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -2748,7 +2748,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2778,8 +2778,8 @@
     },
     "IFM/Code-Reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "apache-2.0",
@@ -2828,7 +2828,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2869,8 +2869,8 @@
     },
     "IFM/Math-Reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "apache-2.0",
@@ -2919,7 +2919,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -2965,8 +2965,8 @@
     },
     "ITLL/deep-reasoning-traces": {
       "first_seen_at": "2026-11-22T22:30:27Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -3022,7 +3022,7 @@
         "text_modality_confirmed": false
       },
       "score": 15.0,
-      "seen_count": 4,
+      "seen_count": 5,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3057,8 +3057,8 @@
     },
     "Ilia2003Mah/open-math-reasoning-cot-clean-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -3096,7 +3096,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3126,8 +3126,8 @@
     },
     "Lab-MSP/comparative-reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -3185,7 +3185,7 @@
         "text_modality_confirmed": false
       },
       "score": 14.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3225,8 +3225,8 @@
     },
     "LexyJawa/Code-Reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "apache-2.0",
@@ -3275,7 +3275,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3316,8 +3316,8 @@
     },
     "Lucien-shark/Linny-Code-Reasoning-Shrunken": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "unknown"
@@ -3357,7 +3357,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3382,8 +3382,8 @@
     },
     "Mahmoud-queens/swe-agent-subset-selection-vectors": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "pretty_name": "Trajectory embeddings for benchmark subset selection of software engineering agents",
@@ -3424,7 +3424,7 @@
         "text_modality_confirmed": false
       },
       "score": 17.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3464,8 +3464,8 @@
     },
     "MaksKroha/capgemini-deepseek-math-reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -3511,7 +3511,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3541,8 +3541,8 @@
     },
     "MarshootLab/beam-verified-reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -3603,7 +3603,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3633,8 +3633,8 @@
     },
     "MatouK98/math_rlvr_filtered_audited": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -3687,7 +3687,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3817,8 +3817,8 @@
     },
     "Offlin33er/glm-5.3-flash-function-calling": {
       "first_seen_at": "2026-11-13T22:41:41Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -3834,12 +3834,12 @@
         "disabled": false,
         "downloads": 267,
         "gated": false,
-        "last_modified": "2026-11-14T05:58:13.000Z",
+        "last_modified": "2026-11-26T23:27:30.000Z",
         "license": null,
         "likes": 0,
         "private": false,
         "repo_id": "Offlin33er/glm-5.3-flash-function-calling",
-        "sha": "e8791f1b89751c749282f5dd16807130e4bca694",
+        "sha": "e0484a6b634a5f26f2164cbbae88d73b840fef8e",
         "siblings_count": 0,
         "tags": [
           "conversational",
@@ -3871,8 +3871,8 @@
         "sample_inspected": false,
         "text_modality_confirmed": false
       },
-      "score": 12.5,
-      "seen_count": 13,
+      "score": 10.5,
+      "seen_count": 14,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3892,19 +3892,9 @@
               "keyword": "tool use",
               "location": "body",
               "strength": "medium"
-            },
-            {
-              "keyword": "api",
-              "location": "body",
-              "strength": "medium"
-            },
-            {
-              "keyword": "agent",
-              "location": "body",
-              "strength": "weak"
             }
           ],
-          "score": 12.5
+          "score": 10.5
         }
       ],
       "suggested_category": "tool",
@@ -3912,8 +3902,8 @@
     },
     "OpenFormosa/barbet-long-context-sft": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -3973,7 +3963,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -3998,8 +3988,8 @@
     },
     "OperatorSDG/Nemotron-SFT-Instruction-Following-Chat-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4044,7 +4034,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4132,8 +4122,8 @@
     },
     "PoSTMEDIA/rosetta-ko-code-synth-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4190,7 +4180,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4225,8 +4215,8 @@
     },
     "PoSTMEDIA/rosetta-ko-instruction-following-synth-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4284,7 +4274,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4314,8 +4304,8 @@
     },
     "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4375,7 +4365,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4405,8 +4395,8 @@
     },
     "PoSTMEDIA/rosetta-ko-instruction-following-synth-sft-think": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4464,7 +4454,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4494,8 +4484,8 @@
     },
     "PoSTMEDIA/rosetta-ko-math-synth-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4546,7 +4536,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4576,8 +4566,8 @@
     },
     "ProCreations/Beam-Reasoning-Traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4639,7 +4629,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4679,8 +4669,8 @@
     },
     "Raftico/instructional-dialogues-multilingual": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "cc-by-4.0"
@@ -4731,7 +4721,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4766,8 +4756,8 @@
     },
     "SMH-DEV-AI/NOESIS-1M-reasoning-router-code-math-psych-opus47-deepseek4-qwen36-gemini31-r1-gpt54": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4887,7 +4877,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -4938,8 +4928,8 @@
     },
     "SPAISS6F1/spai-ss6-corpus-thai-instruction-sft-suraponn": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -4996,7 +4986,7 @@
         "text_modality_confirmed": false
       },
       "score": 6.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5026,8 +5016,8 @@
     },
     "SZLHOLDINGS/ancient-math-reasoning-sft-v1": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -5038,12 +5028,12 @@
         "disabled": false,
         "downloads": 1071,
         "gated": false,
-        "last_modified": "2026-11-25T23:43:15.000Z",
+        "last_modified": "2026-11-26T23:17:33.000Z",
         "license": "apache-2.0",
         "likes": 0,
         "private": false,
         "repo_id": "SZLHOLDINGS/ancient-math-reasoning-sft-v1",
-        "sha": "8cf4a749a924c672af20b4ea11f507b01bc724cd",
+        "sha": "5ab1ff55b279e73c966c9f93fefa3ab01cd839ea",
         "siblings_count": 0,
         "tags": [
           "ancient-mathematics",
@@ -5076,7 +5066,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5116,8 +5106,8 @@
     },
     "SalutefaceAAC/chain-of-thought-reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -5179,7 +5169,7 @@
         "text_modality_confirmed": false
       },
       "score": 15.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5209,8 +5199,8 @@
     },
     "ScalarPrime/math-reasoning-traces-100": {
       "first_seen_at": "2026-11-24T03:21:52Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -5272,7 +5262,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 3,
+      "seen_count": 4,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5328,8 +5318,8 @@
     },
     "Sergiogpn/glm5.3-flash-function-calling": {
       "first_seen_at": "2026-11-15T21:52:10Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "mit",
@@ -5376,7 +5366,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 11,
+      "seen_count": 12,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5406,8 +5396,8 @@
     },
     "Snaseem2026/synthetic-multilingual-instructions": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -5479,7 +5469,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5687,8 +5677,8 @@
     },
     "ThanThoai9x/multilingual-instruction-emotion-voice": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -5726,7 +5716,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5761,8 +5751,8 @@
     },
     "Uunan/turkish-math-reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -5816,7 +5806,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5867,8 +5857,8 @@
     },
     "ZhengLiu33/pii_instruction_dataset_multilingual": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -5905,7 +5895,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -5930,8 +5920,8 @@
     },
     "abdurrehman456/combined-r1-code-reasoning-dataset": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -5961,7 +5951,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6002,8 +5992,8 @@
     },
     "ai4he/procedural-math-reasoning-robustness": {
       "first_seen_at": "2026-11-13T22:41:41Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -6058,7 +6048,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.5,
-      "seen_count": 13,
+      "seen_count": 14,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6093,8 +6083,8 @@
     },
     "amalia-llm/amalia-Nemotron-SFT-Instruction-Following-Chat-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -6144,7 +6134,7 @@
         "text_modality_confirmed": false
       },
       "score": 16.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6184,8 +6174,8 @@
     },
     "amphora/math-intuition-reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -6241,7 +6231,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6276,8 +6266,8 @@
     },
     "antontuzovAI/swe-agent-successful-raw-1000": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "cc-by-4.0"
@@ -6322,7 +6312,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6362,8 +6352,8 @@
     },
     "antontuzovAI/swe-agent-successful-trajectories": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "cc-by-4.0"
@@ -6408,7 +6398,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6453,8 +6443,8 @@
     },
     "ar0cket1/qwen3-30b-a3b-base-reasoning-sft-nemotron-math-v4-cot4k12k-500m-supervised": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -6505,7 +6495,7 @@
         "text_modality_confirmed": false
       },
       "score": 8.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6540,8 +6530,8 @@
     },
     "ayushjoshi2012/agent-tool-calling-reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -6604,7 +6594,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6754,8 +6744,8 @@
     },
     "bhavyagoyal-lexsi/slaab-finance-multilingual-instruction-splits": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -6792,7 +6782,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6827,8 +6817,8 @@
     },
     "bhavyagoyal-lexsi/slaab-medical-multilingual-instruction-splits": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -6865,7 +6855,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -6994,8 +6984,8 @@
     },
     "birgermoell/oellm-code-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -7058,7 +7048,7 @@
         "text_modality_confirmed": false
       },
       "score": 17.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7103,8 +7093,8 @@
     },
     "birgermoell/oellm-math-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -7210,7 +7200,7 @@
         "text_modality_confirmed": false
       },
       "score": 16.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7286,8 +7276,8 @@
     },
     "bunnycore/code-reasoning-distillation": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -7344,7 +7334,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7374,8 +7364,8 @@
     },
     "campobertin/financial-algorithmic-trading-function-calling": {
       "first_seen_at": "2026-11-24T03:21:52Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -7433,7 +7423,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.5,
-      "seen_count": 3,
+      "seen_count": 4,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7561,8 +7551,8 @@
     },
     "clyu/math_rlvr_filtered": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -7618,7 +7608,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7679,8 +7669,8 @@
     },
     "cs-giung/math-rlvr-mini": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -7732,7 +7722,7 @@
         "text_modality_confirmed": false
       },
       "score": 15.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7777,8 +7767,8 @@
     },
     "cs-giung/math-rlvr-mini-llama3-3.2b": {
       "first_seen_at": "2026-11-13T22:41:41Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -7830,7 +7820,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 13,
+      "seen_count": 14,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7860,8 +7850,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v0": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -7898,7 +7888,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7928,8 +7918,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v1": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -7966,7 +7956,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -7996,8 +7986,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-0.1b-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8034,7 +8024,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8064,8 +8054,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v0": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8102,7 +8092,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8132,8 +8122,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v1": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8170,7 +8160,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8200,8 +8190,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-0.4b-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8238,7 +8228,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8268,8 +8258,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v0": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8306,7 +8296,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8336,8 +8326,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v1": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8374,7 +8364,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8404,8 +8394,8 @@
     },
     "cs-giung/math-rlvr-mini-sa-smollm2-1.7b-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8442,7 +8432,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8472,8 +8462,8 @@
     },
     "cs-giung/math-rlvr-mini-smollm2-0.1b-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8510,7 +8500,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8540,8 +8530,8 @@
     },
     "cs-giung/math-rlvr-mini-smollm2-0.4b-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8578,7 +8568,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8608,8 +8598,8 @@
     },
     "cs-giung/math-rlvr-mini-smollm2-1.7b-v2": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8646,7 +8636,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8676,8 +8666,8 @@
     },
     "cublya/Code-Reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "size_categories": [
@@ -8724,7 +8714,7 @@
         "text_modality_confirmed": false
       },
       "score": 8.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8754,8 +8744,8 @@
     },
     "damjanovskia/open-code-reasoning-selected": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8792,7 +8782,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8817,8 +8807,8 @@
     },
     "djroytburg/legible-reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -8870,7 +8860,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8900,8 +8890,8 @@
     },
     "dkqkxx/chinese_instruction_sample": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8931,7 +8921,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -8961,8 +8951,8 @@
     },
     "dlface/code_instructions_120k_alpaca_chinese": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -8999,7 +8989,7 @@
         "text_modality_confirmed": false
       },
       "score": 6.0,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9019,8 +9009,8 @@
     },
     "duarteocarmo/smoltalk2-tulu-3-sft-personas-instruction-following-no-think-pt-pt": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -9058,7 +9048,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9088,8 +9078,8 @@
     },
     "dusersad12/hermes-function-calling-v1": {
       "first_seen_at": "2026-11-19T23:37:31Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -9126,7 +9116,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 7,
+      "seen_count": 8,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9151,8 +9141,8 @@
     },
     "dusersad12/xlam-function-calling-60k": {
       "first_seen_at": "2026-11-19T23:37:31Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -9182,7 +9172,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 7,
+      "seen_count": 8,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9207,8 +9197,8 @@
     },
     "elpillin/local-llm-function-calling-json-sample": {
       "first_seen_at": "2026-11-17T23:52:07Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -9265,7 +9255,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.5,
-      "seen_count": 9,
+      "seen_count": 10,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9300,8 +9290,8 @@
     },
     "emgena/emgena_r1_prm_process_reward_verifier_mcp_teaser": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -9358,7 +9348,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9388,8 +9378,8 @@
     },
     "emgena/prm_process_reward_step_anomaly_healer_teaser": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -9446,7 +9436,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9471,8 +9461,8 @@
     },
     "ffdafdsaf/Nemotron-SFT-Instruction-Following-Chat-v4": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -9524,7 +9514,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.5,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9559,8 +9549,8 @@
     },
     "fieldsmodelorg/FM-Pochi-32B-Reasoning-Traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -9597,7 +9587,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9622,8 +9612,8 @@
     },
     "golden-eaglet/gsm8k-math-reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "annotations_creators": [
@@ -9694,7 +9684,7 @@
         "text_modality_confirmed": false
       },
       "score": 14.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9734,8 +9724,8 @@
     },
     "goodgentleman918/ai-data-quality-llm-evaluation-benchmark": {
       "first_seen_at": "2026-11-10T22:24:51Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -9788,7 +9778,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.0,
-      "seen_count": 16,
+      "seen_count": 17,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9926,8 +9916,8 @@
     },
     "hamishivi/code_rlvr_mixture_dpo": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -9965,7 +9955,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -9995,8 +9985,8 @@
     },
     "hamishivi/code_rlvr_mixture_sft": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -10034,7 +10024,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10128,8 +10118,8 @@
     },
     "harry1332/swe-agent-cpu-dynamorio-pilot-sympy-15599": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -10176,7 +10166,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10206,8 +10196,8 @@
     },
     "harry1332/swe-agent-cpu-dynamorio-validated-private": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "pretty_name": "Validated DynamoRIO CPU traces of one mini-SWE-agent task"
@@ -10242,7 +10232,7 @@
         "text_modality_confirmed": false
       },
       "score": 8.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10272,8 +10262,8 @@
     },
     "harsh8001/simple-calculator-for-function-calling": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -10316,7 +10306,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10351,8 +10341,8 @@
     },
     "harsh8001/weather-function-calling": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -10394,7 +10384,7 @@
         "text_modality_confirmed": false
       },
       "score": 14.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10434,8 +10424,8 @@
     },
     "heyalexchoi/qwen3-math-rlvr-results": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -10465,7 +10455,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10495,8 +10485,8 @@
     },
     "hij/math_reasoning_robustness": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -10526,7 +10516,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10556,8 +10546,8 @@
     },
     "hikewa/dialectic-reasoning-traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -10608,7 +10598,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10705,8 +10695,8 @@
     },
     "irsotarriva/deepseek-v4.1-flash-top20-swe-agent": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -10772,7 +10762,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10802,8 +10792,8 @@
     },
     "jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v2-prompt-only": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "pretty_name": "Nemotron-SFT-Instruction-Following-Chat-v2-prompt-only",
@@ -10850,7 +10840,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10880,8 +10870,8 @@
     },
     "jamesdborin/Nemotron-SFT-Instruction-Following-Chat-v3-prompt-only": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "pretty_name": "Nemotron-SFT-Instruction-Following-Chat-v3-prompt-only",
@@ -10920,7 +10910,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -10950,8 +10940,8 @@
     },
     "jddqd/function-calling-mix-sft": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -11013,7 +11003,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11154,8 +11144,8 @@
     },
     "jean1/45k_python_code_chinese_instruction": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -11192,7 +11182,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.5,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11227,8 +11217,8 @@
     },
     "junkim100/multilingual_instruction_tuning_lima_bactrian": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -11265,7 +11255,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11295,8 +11285,8 @@
     },
     "justinin1/hermes-function-calling-v1": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -11352,7 +11342,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11387,8 +11377,8 @@
     },
     "karanverma19/multilingual-indian-instruction-dataset": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "apache-2.0",
@@ -11429,7 +11419,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11480,8 +11470,8 @@
     },
     "khafizovfanis/reasoning-traces-discourse": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -11530,7 +11520,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11690,8 +11680,8 @@
     },
     "kumar2235/kannada-sft-instruction-pool": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -11749,7 +11739,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11789,8 +11779,8 @@
     },
     "kuyesu22/multilingual_instruction_tuning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -11827,7 +11817,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -11925,8 +11915,8 @@
     },
     "lucsaint/Deepseek-V4-Reasoning-Code-2500": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -11987,7 +11977,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -12091,8 +12081,8 @@
     },
     "naimulislam/reasoning_code_advanced_1m": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -12153,7 +12143,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -12260,8 +12250,8 @@
     },
     "nphearum/Code-Reasoning-4k": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -12326,7 +12316,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -12361,8 +12351,8 @@
     },
     "nvidia/Nemotron-RL-Agentic-SWE-Pivot-v1": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "cc-by-4.0"
@@ -12407,7 +12397,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -12547,10 +12537,98 @@
       "suggested_category": "general_sft",
       "url": "https://huggingface.co/datasets/nvidia/Nemotron-SFT-Instruction-Following-Chat-v3"
     },
+    "nvidia/Nemotron-SFT-Instruction-Following-Chat-v4": {
+      "first_seen_at": "2026-11-27T01:02:03Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
+      "metadata": {
+        "card_data": {
+          "language": [
+            "en"
+          ],
+          "license": [
+            "openmdw-1.1"
+          ],
+          "task_categories": [
+            "text-generation"
+          ]
+        },
+        "disabled": false,
+        "downloads": 2993,
+        "gated": false,
+        "last_modified": "2026-11-26T04:00:17.000Z",
+        "license": [
+          "openmdw-1.1"
+        ],
+        "likes": 5,
+        "private": false,
+        "repo_id": "nvidia/Nemotron-SFT-Instruction-Following-Chat-v4",
+        "sha": "53cb67a8ecb33dc445f9f3a2d23460d02ec7c3c6",
+        "siblings_count": 0,
+        "tags": [
+          "format:json",
+          "language:en",
+          "library:datasets",
+          "library:mlcroissant",
+          "library:pandas",
+          "library:polars",
+          "license:openmdw-1.1",
+          "modality:text",
+          "region:us",
+          "size_categories:1M<n<10M",
+          "task_categories:text-generation"
+        ],
+        "url": "https://huggingface.co/datasets/nvidia/Nemotron-SFT-Instruction-Following-Chat-v4"
+      },
+      "queries": [
+        "instruction sft"
+      ],
+      "repo_id": "nvidia/Nemotron-SFT-Instruction-Following-Chat-v4",
+      "review": {
+        "decontaminated": false,
+        "license_approved": false,
+        "revision_pinned": false,
+        "sample_inspected": false,
+        "text_modality_confirmed": false
+      },
+      "score": 13.5,
+      "seen_count": 1,
+      "status": "pending_review",
+      "suggested_categories": [
+        {
+          "category": "general_sft",
+          "matched": [
+            {
+              "keyword": "instruction following",
+              "location": "title",
+              "strength": "strong"
+            },
+            {
+              "keyword": "instruction",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "chat",
+              "location": "title",
+              "strength": "medium"
+            },
+            {
+              "keyword": "conversation",
+              "location": "body",
+              "strength": "medium"
+            }
+          ],
+          "score": 13.5
+        }
+      ],
+      "suggested_category": "general_sft",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-SFT-Instruction-Following-Chat-v4"
+    },
     "oddadmix/arabic-math-reasoning-synth": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -12607,7 +12685,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -12658,8 +12736,8 @@
     },
     "open-athena/nemotron-gym-instruction-following-structured-qwen3.5-122b-131k-opencode-sft-serveparity": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -12698,7 +12776,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -12831,8 +12909,8 @@
     },
     "openeurollm/oellm-code-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -12895,7 +12973,7 @@
         "text_modality_confirmed": false
       },
       "score": 17.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -12940,8 +13018,8 @@
     },
     "openeurollm/oellm-math-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -13047,7 +13125,7 @@
         "text_modality_confirmed": false
       },
       "score": 16.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13123,8 +13201,8 @@
     },
     "placeholderlabs/pretrain-reasoning-traces-mix": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "pretty_name": "Locus-1 Pretrain: Agent reasoning traces (regular)"
@@ -13164,7 +13242,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13189,8 +13267,8 @@
     },
     "placeholderlabs/pretrain-reasoning-traces-mix-long-context": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "pretty_name": "Locus-1 Pretrain: Agent reasoning traces (long-context)"
@@ -13230,7 +13308,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13255,8 +13333,8 @@
     },
     "roisincrtai/llm-instruction-following-sft-tulu-3-mixture": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -13293,7 +13371,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13323,8 +13401,8 @@
     },
     "roisincrtai/zetagpt-instruction-following-sft-tulu-3-mixture": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -13361,7 +13439,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13386,8 +13464,8 @@
     },
     "rootacess/Code-RLVR-dataset": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -13425,7 +13503,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13455,8 +13533,8 @@
     },
     "sag-uniroma2/FrameLLaMA-Multilingual-Instructions": {
       "first_seen_at": "2026-11-26T01:00:39Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -13477,12 +13555,12 @@
         "disabled": false,
         "downloads": 1,
         "gated": false,
-        "last_modified": "2026-11-25T11:24:56.000Z",
+        "last_modified": "2026-11-26T10:03:54.000Z",
         "license": "other",
         "likes": 0,
         "private": false,
         "repo_id": "sag-uniroma2/FrameLLaMA-Multilingual-Instructions",
-        "sha": "4d73d964868ccdda69759070bdb4d3a17efb4208",
+        "sha": "db5c48bafa97bc21bae5b290578629cd62a73b6a",
         "siblings_count": 0,
         "tags": [
           "cross-lingual",
@@ -13516,7 +13594,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 1,
+      "seen_count": 2,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13551,8 +13629,8 @@
     },
     "sagea-ai/SAGE-Code-Reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "apache-2.0"
@@ -13592,7 +13670,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13617,8 +13695,8 @@
     },
     "saurabh5/code_rlvr_mixture_dpo": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -13656,7 +13734,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13686,8 +13764,8 @@
     },
     "saurabh5/klear-code-rlvr": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -13729,7 +13807,7 @@
         "text_modality_confirmed": false
       },
       "score": 12.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13759,8 +13837,8 @@
     },
     "shaban2024/agentmujo-function-calling": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -13812,7 +13890,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13842,8 +13920,8 @@
     },
     "shangshang/math-reasoning-zh": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "mit"
@@ -13888,7 +13966,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -13939,8 +14017,8 @@
     },
     "skarnati20/nebius-swe-agent-small-qwen7b-activations": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -13978,7 +14056,7 @@
         "text_modality_confirmed": false
       },
       "score": 7.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14003,8 +14081,8 @@
     },
     "smshahbaj/verifiable-code-reasoning": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -14064,7 +14142,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14136,8 +14214,8 @@
     },
     "somsom317/pilates-function-calling-datasets-korean": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -14174,7 +14252,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14199,8 +14277,8 @@
     },
     "springofwindslabs/function-calling-en-trial": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -14257,7 +14335,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14292,8 +14370,8 @@
     },
     "springofwindslabs/function-calling-ja-trial": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -14351,7 +14429,7 @@
         "text_modality_confirmed": false
       },
       "score": 11.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14386,8 +14464,8 @@
     },
     "stindardlogic/instruction-following-hard-sft-100k": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -14447,7 +14525,7 @@
         "text_modality_confirmed": false
       },
       "score": 14.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14703,8 +14781,8 @@
     },
     "thenukegun10x/LFM2.5-24B-A2B-BF16-Reasoning-Traces": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -14769,7 +14847,7 @@
         "text_modality_confirmed": false
       },
       "score": 9.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14820,8 +14898,8 @@
     },
     "treasure4l/multilingual_instruction_tuning": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -14858,7 +14936,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14888,8 +14966,8 @@
     },
     "treasure4l/multilingual_instruction_tuning_plus": {
       "first_seen_at": "2026-11-09T04:15:35Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {},
         "disabled": false,
@@ -14926,7 +15004,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 20,
+      "seen_count": 21,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -14956,8 +15034,8 @@
     },
     "vishalxyzabc7527/gemma4-swe-agent-sft-harness": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "license": "other",
@@ -15008,7 +15086,7 @@
         "text_modality_confirmed": false
       },
       "score": 13.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -15131,8 +15209,8 @@
     },
     "wflying/code-rlvr-15k": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -15190,7 +15268,7 @@
         "text_modality_confirmed": false
       },
       "score": 14.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -15380,8 +15458,8 @@
     },
     "williamTLmiller/swe-bench-coding-agent-tasks": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "annotations_creators": [
@@ -15466,7 +15544,7 @@
         "text_modality_confirmed": false
       },
       "score": 6.5,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -15501,8 +15579,8 @@
     },
     "zaydsyed/TactLM-Math-Reasoning-Data": {
       "first_seen_at": "2026-11-10T00:43:48Z",
-      "last_counted_run": "2026-11-26T01:00:39Z",
-      "last_seen_at": "2026-11-26T01:00:39Z",
+      "last_counted_run": "2026-11-27T01:02:03Z",
+      "last_seen_at": "2026-11-27T01:02:03Z",
       "metadata": {
         "card_data": {
           "language": [
@@ -15561,7 +15639,7 @@
         "text_modality_confirmed": false
       },
       "score": 10.0,
-      "seen_count": 17,
+      "seen_count": 18,
       "status": "pending_review",
       "suggested_categories": [
         {
@@ -15590,48 +15668,15 @@
       "url": "https://huggingface.co/datasets/zaydsyed/TactLM-Math-Reasoning-Data"
     }
   },
-  "generated_at": "2026-11-26T01:00:39Z",
+  "generated_at": "2026-11-27T01:02:03Z",
   "last_run": {
     "assets": 175,
     "changes": [
       {
         "changes": {
-          "downloads": {
-            "new": 47518,
-            "old": 46765
-          },
           "likes": {
-            "new": 241,
-            "old": 239
-          }
-        },
-        "dataset_ids": [
-          "mathvista_testmini"
-        ],
-        "repo_id": "AI4Math/MathVista"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1009,
-            "old": 993
-          }
-        },
-        "dataset_ids": [
-          "falsereject_train",
-          "falsereject_test"
-        ],
-        "repo_id": "AmazonScience/FalseReject"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 49503,
-            "old": 48470
-          },
-          "likes": {
-            "new": 2544,
-            "old": 2513
+            "new": 2569,
+            "old": 2544
           }
         },
         "dataset_ids": [
@@ -15641,169 +15686,9 @@
       },
       {
         "changes": {
-          "downloads": {
-            "new": 616,
-            "old": 620
-          }
-        },
-        "dataset_ids": [
-          "coig_pc_lite"
-        ],
-        "repo_id": "BAAI/COIG-PC-Lite"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 12810,
-            "old": 12417
-          }
-        },
-        "dataset_ids": [
-          "infinity_instruct"
-        ],
-        "repo_id": "BAAI/Infinity-Instruct"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 26138,
-            "old": 24736
-          }
-        },
-        "dataset_ids": [
-          "taco"
-        ],
-        "repo_id": "BAAI/TACO"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 40932,
-            "old": 38897
-          }
-        },
-        "dataset_ids": [
-          "dapo_math_17k"
-        ],
-        "repo_id": "BytedTsinghua-SIA/DAPO-Math-17k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 634,
-            "old": 611
-          }
-        },
-        "dataset_ids": [
-          "enigmata_data"
-        ],
-        "repo_id": "BytedTsinghua-SIA/Enigmata-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 12038,
-            "old": 12138
-          }
-        },
-        "dataset_ids": [
-          "aya_collection"
-        ],
-        "repo_id": "CohereLabs/aya_collection"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 27678,
-            "old": 27189
-          }
-        },
-        "dataset_ids": [
-          "aya_dataset"
-        ],
-        "repo_id": "CohereLabs/aya_dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2830,
-            "old": 2923
-          }
-        },
-        "dataset_ids": [
-          "chinese_r1_distill_110k"
-        ],
-        "repo_id": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 3330,
-            "old": 3301
-          }
-        },
-        "dataset_ids": [
-          "r1_onevision"
-        ],
-        "repo_id": "Fancy-MLLM/R1-Onevision"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 229357,
-            "old": 225863
-          }
-        },
-        "dataset_ids": [
-          "math_500"
-        ],
-        "repo_id": "HuggingFaceH4/MATH-500"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17463,
-            "old": 17378
-          }
-        },
-        "dataset_ids": [
-          "mt_bench"
-        ],
-        "repo_id": "HuggingFaceH4/mt_bench_prompts"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 54549,
-            "old": 54042
-          }
-        },
-        "dataset_ids": [
-          "no_robots"
-        ],
-        "repo_id": "HuggingFaceH4/no_robots"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 113200,
-            "old": 110135
-          }
-        },
-        "dataset_ids": [
-          "finevision"
-        ],
-        "repo_id": "HuggingFaceM4/FineVision"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 113012,
-            "old": 111411
-          },
           "likes": {
-            "new": 724,
-            "old": 707
+            "new": 752,
+            "old": 724
           }
         },
         "dataset_ids": [
@@ -15813,157 +15698,9 @@
       },
       {
         "changes": {
-          "downloads": {
-            "new": 16589,
-            "old": 15579
-          }
-        },
-        "dataset_ids": [
-          "omni_math"
-        ],
-        "repo_id": "KbsdJames/Omni-MATH"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 868,
-            "old": 809
-          }
-        },
-        "dataset_ids": [
-          "vl_rewardbench"
-        ],
-        "repo_id": "MMInstruction/VL-RewardBench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 3388,
-            "old": 3284
-          }
-        },
-        "dataset_ids": [
-          "vlfeedback"
-        ],
-        "repo_id": "MMInstruction/VLFeedback"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 89573,
-            "old": 89752
-          },
           "likes": {
-            "new": 350,
-            "old": 349
-          }
-        },
-        "dataset_ids": [
-          "mmmu_validation"
-        ],
-        "repo_id": "MMMU/MMMU"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 40093,
-            "old": 39992
-          }
-        },
-        "dataset_ids": [
-          "mmmu_pro_standard10"
-        ],
-        "repo_id": "MMMU/MMMU_Pro"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 16227,
-            "old": 15903
-          }
-        },
-        "dataset_ids": [
-          "mathvision_test"
-        ],
-        "repo_id": "MathLLMs/MathVision"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2811,
-            "old": 2807
-          }
-        },
-        "dataset_ids": [
-          "weblinx"
-        ],
-        "repo_id": "McGill-NLP/WebLINX"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 3993,
-            "old": 4026
-          }
-        },
-        "dataset_ids": [
-          "toolmind"
-        ],
-        "repo_id": "Nanbeige/ToolMind"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 7708,
-            "old": 8042
-          }
-        },
-        "dataset_ids": [
-          "os_atlas_action_sft"
-        ],
-        "repo_id": "OS-Copilot/OS-Atlas-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4946,
-            "old": 4865
-          }
-        },
-        "dataset_ids": [
-          "screenspot_v2"
-        ],
-        "repo_id": "OS-Copilot/ScreenSpot-v2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 11421,
-            "old": 11445
-          }
-        },
-        "dataset_ids": [
-          "videochat_flash_training"
-        ],
-        "repo_id": "OpenGVLab/VideoChat-Flash-Training-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 6311,
-            "old": 6126
-          }
-        },
-        "dataset_ids": [
-          "processbench"
-        ],
-        "repo_id": "Qwen/ProcessBench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17587,
-            "old": 17220
+            "new": 769,
+            "old": 767
           }
         },
         "dataset_ids": [
@@ -15973,468 +15710,9 @@
       },
       {
         "changes": {
-          "downloads": {
-            "new": 486,
-            "old": 485
-          }
-        },
-        "dataset_ids": [
-          "m2lingual"
-        ],
-        "repo_id": "ServiceNow-AI/M2Lingual"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 5039,
-            "old": 4803
-          }
-        },
-        "dataset_ids": [
-          "skywork_or1_rl"
-        ],
-        "repo_id": "Skywork/Skywork-OR1-RL-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2103,
-            "old": 2095
-          }
-        },
-        "dataset_ids": [
-          "skywork_reward_preference_80k"
-        ],
-        "repo_id": "Skywork/Skywork-Reward-Preference-80K-v0.2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 10927,
-            "old": 10382
-          }
-        },
-        "dataset_ids": [
-          "big_math_rl_verified"
-        ],
-        "repo_id": "SynthLabsAI/Big-Math-RL-Verified"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 376452,
-            "old": 380151
-          }
-        },
-        "dataset_ids": [
-          "mmlu_pro"
-        ],
-        "repo_id": "TIGER-Lab/MMLU-Pro"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1069,
-            "old": 1081
-          }
-        },
-        "dataset_ids": [
-          "mantis_eval"
-        ],
-        "repo_id": "TIGER-Lab/Mantis-Eval"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 6382,
-            "old": 6394
-          }
-        },
-        "dataset_ids": [
-          "mantis_instruct"
-        ],
-        "repo_id": "TIGER-Lab/Mantis-Instruct"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 68022,
-            "old": 66376
-          }
-        },
-        "dataset_ids": [
-          "deepscaler_preview"
-        ],
-        "repo_id": "agentica-org/DeepScaleR-Preview-Dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17383,
-            "old": 16665
-          }
-        },
-        "dataset_ids": [
-          "agentharm"
-        ],
-        "repo_id": "ai-safety-institute/AgentHarm"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 734,
-            "old": 711
-          }
-        },
-        "dataset_ids": [
-          "longform",
-          "longform_test"
-        ],
-        "repo_id": "akoksal/LongForm"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 9086,
-            "old": 8742
-          }
-        },
-        "dataset_ids": [
-          "dolci_instruct_sft"
-        ],
-        "repo_id": "allenai/Dolci-Instruct-SFT"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1091,
-            "old": 1319
-          }
-        },
-        "dataset_ids": [
-          "molmo2_videopoint"
-        ],
-        "repo_id": "allenai/Molmo2-VideoPoint"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 463,
-            "old": 453
-          }
-        },
-        "dataset_ids": [
-          "molmo2_videotrack"
-        ],
-        "repo_id": "allenai/Molmo2-VideoTrack"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4638,
-            "old": 4461
-          }
-        },
-        "dataset_ids": [
-          "tulu3_preference_mixture"
-        ],
-        "repo_id": "allenai/llama-3.1-tulu-3-8b-preference-mixture"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 448,
-            "old": 436
-          }
-        },
-        "dataset_ids": [
-          "pixmo_cap_qa"
-        ],
-        "repo_id": "allenai/pixmo-cap-qa"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4426,
-            "old": 4297
-          }
-        },
-        "dataset_ids": [
-          "pixmo_count_train",
-          "pixmo_count_test"
-        ],
-        "repo_id": "allenai/pixmo-count"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 6676,
-            "old": 6851
-          }
-        },
-        "dataset_ids": [
-          "pixmo_docs"
-        ],
-        "repo_id": "allenai/pixmo-docs"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2435,
-            "old": 2416
-          }
-        },
-        "dataset_ids": [
-          "pixmo_points"
-        ],
-        "repo_id": "allenai/pixmo-points"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 25716,
-            "old": 21400
-          }
-        },
-        "dataset_ids": [
-          "rewardbench"
-        ],
-        "repo_id": "allenai/reward-bench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 12942,
-            "old": 11967
-          }
-        },
-        "dataset_ids": [
-          "rewardbench2"
-        ],
-        "repo_id": "allenai/reward-bench-2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 33789,
-            "old": 32236
-          },
           "likes": {
-            "new": 288,
-            "old": 287
-          }
-        },
-        "dataset_ids": [
-          "tulu3_sft_mixture"
-        ],
-        "repo_id": "allenai/tulu-3-sft-mixture"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 14896,
-            "old": 14252
-          }
-        },
-        "dataset_ids": [
-          "tulu3_persona_if"
-        ],
-        "repo_id": "allenai/tulu-3-sft-personas-instruction-following"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 6075,
-            "old": 5761
-          }
-        },
-        "dataset_ids": [
-          "ifeval_like_filtered"
-        ],
-        "repo_id": "argilla/ifeval-like-data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2277,
-            "old": 2244
-          }
-        },
-        "dataset_ids": [
-          "nectar"
-        ],
-        "repo_id": "berkeley-nest/Nectar"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 64965,
-            "old": 63485
-          },
-          "likes": {
-            "new": 1398,
-            "old": 1397
-          }
-        },
-        "dataset_ids": [
-          "dolly_15k"
-        ],
-        "repo_id": "databricks/databricks-dolly-15k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 68493,
-            "old": 65317
-          }
-        },
-        "dataset_ids": [
-          "codecontests"
-        ],
-        "repo_id": "deepmind/code_contests"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 10907,
-            "old": 10722
-          }
-        },
-        "dataset_ids": [
-          "natural_reasoning"
-        ],
-        "repo_id": "facebook/natural_reasoning"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17769,
-            "old": 17442
-          }
-        },
-        "dataset_ids": [
-          "glaive_function_calling_v2"
-        ],
-        "repo_id": "glaiveai/glaive-function-calling-v2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4497,
-            "old": 4307
-          }
-        },
-        "dataset_ids": [
-          "voice_assistant_400k"
-        ],
-        "repo_id": "gpt-omni/VoiceAssistant-400K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 12993,
-            "old": 12722
-          }
-        },
-        "dataset_ids": [
-          "gui_odyssey_train",
-          "gui_odyssey_test"
-        ],
-        "repo_id": "hflqf88888/GUIOdyssey"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 7291,
-            "old": 7435
-          }
-        },
-        "dataset_ids": [
-          "voicebench"
-        ],
-        "repo_id": "hlt-lab/voicebench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 15954,
-            "old": 15840
-          }
-        },
-        "dataset_ids": [
-          "llava_instruct_150k"
-        ],
-        "repo_id": "liuhaotian/LLaVA-Instruct-150K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 18518,
-            "old": 14459
-          }
-        },
-        "dataset_ids": [
-          "arena_human_preference_140k"
-        ],
-        "repo_id": "lmarena-ai/arena-human-preference-140k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 19018,
-            "old": 19071
-          }
-        },
-        "dataset_ids": [
-          "chartqa_test"
-        ],
-        "repo_id": "lmms-lab/ChartQA"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 51413,
-            "old": 50786
-          }
-        },
-        "dataset_ids": [
-          "docvqa_validation"
-        ],
-        "repo_id": "lmms-lab/DocVQA"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 101138,
-            "old": 101561
-          }
-        },
-        "dataset_ids": [
-          "llava_video_178k"
-        ],
-        "repo_id": "lmms-lab/LLaVA-Video-178K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 87971,
-            "old": 86428
-          }
-        },
-        "dataset_ids": [
-          "video_mme"
-        ],
-        "repo_id": "lmms-lab/Video-MME"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 34904,
-            "old": 34195
-          },
-          "likes": {
-            "new": 65,
-            "old": 64
+            "new": 66,
+            "old": 65
           }
         },
         "dataset_ids": [
@@ -16444,45 +15722,9 @@
       },
       {
         "changes": {
-          "downloads": {
-            "new": 66159,
-            "old": 53068
-          }
-        },
-        "dataset_ids": [
-          "bbh"
-        ],
-        "repo_id": "lukaemon/bbh"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 29552,
-            "old": 28625
-          }
-        },
-        "dataset_ids": [
-          "codefeedback_filtered"
-        ],
-        "repo_id": "m-a-p/CodeFeedback-Filtered-Instruction"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 47660,
-            "old": 47359
-          }
-        },
-        "dataset_ids": [
-          "llava_onevision15_instruct_22m"
-        ],
-        "repo_id": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 24039,
-            "old": 24008
+          "likes": {
+            "new": 122,
+            "old": 121
           }
         },
         "dataset_ids": [
@@ -16492,325 +15734,28 @@
       },
       {
         "changes": {
-          "downloads": {
-            "new": 21193,
-            "old": 20449
-          }
-        },
-        "dataset_ids": [
-          "helpsteer2"
-        ],
-        "repo_id": "nvidia/HelpSteer2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 12637,
-            "old": 12290
-          }
-        },
-        "dataset_ids": [
-          "helpsteer3_preference"
-        ],
-        "repo_id": "nvidia/HelpSteer3"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 508,
-            "old": 493
-          }
-        },
-        "dataset_ids": [
-          "nemotron_cascade_2_rl"
-        ],
-        "repo_id": "nvidia/Nemotron-Cascade-2-RL-data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 21746,
-            "old": 17972
-          }
-        },
-        "dataset_ids": [
-          "nemotron_cascade_2_sft"
-        ],
-        "repo_id": "nvidia/Nemotron-Cascade-2-SFT-Data"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 62379,
-            "old": 60240
-          }
-        },
-        "dataset_ids": [
-          "opencodeinstruct"
-        ],
-        "repo_id": "nvidia/OpenCodeInstruct"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 34953,
-            "old": 33343
-          }
-        },
-        "dataset_ids": [
-          "opencode_reasoning"
-        ],
-        "repo_id": "nvidia/OpenCodeReasoning"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 119097,
-            "old": 118170
-          }
-        },
-        "dataset_ids": [
-          "openmathinstruct2"
-        ],
-        "repo_id": "nvidia/OpenMathInstruct-2"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 108422,
-            "old": 103907
-          },
           "likes": {
-            "new": 507,
-            "old": 506
-          }
-        },
-        "dataset_ids": [
-          "openmath_reasoning"
-        ],
-        "repo_id": "nvidia/OpenMathReasoning"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 34064,
-            "old": 32121
-          }
-        },
-        "dataset_ids": [
-          "mixture_of_thoughts"
-        ],
-        "repo_id": "open-r1/Mixture-of-Thoughts"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1316225,
-            "old": 1281322
-          },
-          "likes": {
-            "new": 2159,
-            "old": 2147
+            "new": 2177,
+            "old": 2159
           }
         },
         "dataset_ids": [
           "gsm8k_test"
         ],
         "repo_id": "openai/gsm8k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 3884,
-            "old": 3975
-          }
-        },
-        "dataset_ids": [
-          "summarize_from_feedback"
-        ],
-        "repo_id": "openai/summarize_from_feedback"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1464,
-            "old": 1591
-          }
-        },
-        "dataset_ids": [
-          "webgpt_comparisons"
-        ],
-        "repo_id": "openai/webgpt_comparisons"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2644,
-            "old": 2641
-          }
-        },
-        "dataset_ids": [
-          "rlaif_v"
-        ],
-        "repo_id": "openbmb/RLAIF-V-Dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17653,
-            "old": 17541
-          }
-        },
-        "dataset_ids": [
-          "ultrafeedback"
-        ],
-        "repo_id": "openbmb/UltraFeedback"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 308,
-            "old": 309
-          }
-        },
-        "dataset_ids": [
-          "mmbench_cn"
-        ],
-        "repo_id": "opencompass/MMBench"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 184137,
-            "old": 183276
-          }
-        },
-        "dataset_ids": [
-          "swebench_verified"
-        ],
-        "repo_id": "princeton-nlp/SWE-bench_Verified"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 7690,
-            "old": 7254
-          }
-        },
-        "dataset_ids": [
-          "air_bench"
-        ],
-        "repo_id": "qyang1021/AIR-Bench-Dataset"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 2413,
-            "old": 2353
-          }
-        },
-        "dataset_ids": [
-          "sorry_bench_202503"
-        ],
-        "repo_id": "sorry-bench/sorry-bench-202503"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 13685,
-            "old": 13525
-          }
-        },
-        "dataset_ids": [
-          "shp"
-        ],
-        "repo_id": "stanfordnlp/SHP"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 17843,
-            "old": 17280
-          }
-        },
-        "dataset_ids": [
-          "openhermes_2_5"
-        ],
-        "repo_id": "teknium/OpenHermes-2.5"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1718,
-            "old": 1703
-          }
-        },
-        "dataset_ids": [
-          "vlguard_train"
-        ],
-        "repo_id": "ys-zong/VLGuard"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 203,
-            "old": 196
-          }
-        },
-        "dataset_ids": [
-          "safe_vid_350k",
-          "safevidbench"
-        ],
-        "repo_id": "yxwang/SafeVid-350K"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 4685,
-            "old": 4457
-          }
-        },
-        "dataset_ids": [
-          "longalign_10k"
-        ],
-        "repo_id": "zai-org/LongAlign-10k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 1799,
-            "old": 1645
-          }
-        },
-        "dataset_ids": [
-          "longcite_45k"
-        ],
-        "repo_id": "zai-org/LongCite-45k"
-      },
-      {
-        "changes": {
-          "downloads": {
-            "new": 370,
-            "old": 389
-          }
-        },
-        "dataset_ids": [
-          "llava_human_preference_10k"
-        ],
-        "repo_id": "zhiqings/LLaVA-Human-Preference-10K"
       }
     ],
     "errors": [],
-    "generated_at": "2026-11-26T01:00:39Z",
+    "generated_at": "2026-11-27T01:02:03Z",
     "mode": "metadata+discovery",
     "new_candidates": [
       {
-        "repo_id": "sag-uniroma2/FrameLLaMA-Multilingual-Instructions",
-        "score": 10.5,
-        "suggested_category": "multilingual"
+        "repo_id": "nvidia/Nemotron-SFT-Instruction-Following-Chat-v4",
+        "score": 13.5,
+        "suggested_category": "general_sft"
       }
     ],
-    "pending_candidates": 179,
+    "pending_candidates": 180,
     "queries_run": 35,
     "refreshed_ok": 101,
     "tracked_total": 101
@@ -18875,8 +17820,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "AI4Math/MathVista",
       "status": "ok"
     },
@@ -19816,8 +18761,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "AmazonScience/FalseReject",
       "status": "ok"
     },
@@ -19831,7 +18776,7 @@
         "gated": false,
         "last_modified": "2023-05-26T18:47:34.000Z",
         "license": "mit",
-        "likes": 2544,
+        "likes": 2569,
         "private": false,
         "repo_id": "Anthropic/hh-rlhf",
         "sha": "09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa",
@@ -20542,10 +19487,48 @@
             ],
             "url": "https://huggingface.co/datasets/Anthropic/hh-rlhf"
           }
+        },
+        {
+          "changes": {
+            "likes": {
+              "new": 2569,
+              "old": 2544
+            }
+          },
+          "observed_at": "2026-11-27T01:02:03Z",
+          "previous": {
+            "card_data": {
+              "license": "mit"
+            },
+            "disabled": false,
+            "downloads": 49503,
+            "gated": false,
+            "last_modified": "2023-05-26T18:47:34.000Z",
+            "license": "mit",
+            "likes": 2544,
+            "private": false,
+            "repo_id": "Anthropic/hh-rlhf",
+            "sha": "09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa",
+            "siblings_count": 11,
+            "tags": [
+              "arxiv:2204.05862",
+              "format:json",
+              "human-feedback",
+              "library:dask",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:polars",
+              "license:mit",
+              "modality:text",
+              "region:us",
+              "size_categories:100K<n<1M"
+            ],
+            "url": "https://huggingface.co/datasets/Anthropic/hh-rlhf"
+          }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Anthropic/hh-rlhf",
       "status": "ok"
     },
@@ -21163,8 +20146,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "BAAI/COIG-PC-Lite",
       "status": "ok"
     },
@@ -22183,8 +21166,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "BAAI/Infinity-Instruct",
       "status": "ok"
     },
@@ -23159,8 +22142,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "BAAI/TACO",
       "status": "ok"
     },
@@ -24049,8 +23032,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "BytedTsinghua-SIA/DAPO-Math-17k",
       "status": "ok"
     },
@@ -24575,8 +23558,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "BytedTsinghua-SIA/Enigmata-Data",
       "status": "ok"
     },
@@ -25155,8 +24138,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "BytedTsinghua-SIA/Enigmata-Eval",
       "status": "ok"
     },
@@ -30243,8 +29226,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "CohereLabs/aya_collection",
       "status": "ok"
     },
@@ -33927,8 +32910,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "CohereLabs/aya_dataset",
       "status": "ok"
     },
@@ -34849,8 +33832,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k",
       "status": "ok"
     },
@@ -35645,8 +34628,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Fancy-MLLM/R1-Onevision",
       "status": "ok"
     },
@@ -36431,8 +35414,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "HuggingFaceH4/MATH-500",
       "status": "ok"
     },
@@ -37353,8 +36336,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "HuggingFaceH4/mt_bench_prompts",
       "status": "ok"
     },
@@ -38189,8 +37172,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "HuggingFaceH4/no_robots",
       "status": "ok"
     },
@@ -38899,8 +37882,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "HuggingFaceM4/FineVision",
       "status": "ok"
     },
@@ -38925,7 +37908,7 @@
         "gated": "auto",
         "last_modified": "2026-09-21T22:29:06.000Z",
         "license": "cc-by-4.0",
-        "likes": 724,
+        "likes": 752,
         "private": false,
         "repo_id": "Idavidrein/gpqa",
         "sha": "83022cefff930aea54f654c0b282e74b9eeda5c6",
@@ -39979,10 +38962,67 @@
             ],
             "url": "https://huggingface.co/datasets/Idavidrein/gpqa"
           }
+        },
+        {
+          "changes": {
+            "likes": {
+              "new": 752,
+              "old": 724
+            }
+          },
+          "observed_at": "2026-11-27T01:02:03Z",
+          "previous": {
+            "card_data": {
+              "language": [
+                "en"
+              ],
+              "license": "cc-by-4.0",
+              "pretty_name": "GPQA",
+              "size_categories": [
+                "n<1K"
+              ],
+              "task_categories": [
+                "question-answering",
+                "text-generation"
+              ]
+            },
+            "disabled": false,
+            "downloads": 113012,
+            "gated": "auto",
+            "last_modified": "2026-09-21T22:29:06.000Z",
+            "license": "cc-by-4.0",
+            "likes": 724,
+            "private": false,
+            "repo_id": "Idavidrein/gpqa",
+            "sha": "83022cefff930aea54f654c0b282e74b9eeda5c6",
+            "siblings_count": 8,
+            "tags": [
+              "arxiv:2311.12022",
+              "benchmark:eval-yaml",
+              "benchmark:official",
+              "format:csv",
+              "language:en",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:pandas",
+              "library:polars",
+              "license:cc-by-4.0",
+              "modality:tabular",
+              "modality:text",
+              "multiple-choice-qa",
+              "open-book-qa",
+              "open-domain-qa",
+              "region:us",
+              "size_categories:1K<n<10K",
+              "task_categories:question-answering",
+              "task_categories:text-generation"
+            ],
+            "url": "https://huggingface.co/datasets/Idavidrein/gpqa"
+          }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Idavidrein/gpqa",
       "status": "ok"
     },
@@ -40817,8 +39857,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "KbsdJames/Omni-MATH",
       "status": "ok"
     },
@@ -41757,8 +40797,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "MMInstruction/VL-RewardBench",
       "status": "ok"
     },
@@ -42535,8 +41575,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "MMInstruction/VLFeedback",
       "status": "ok"
     },
@@ -44193,8 +43233,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "MMMU/MMMU",
       "status": "ok"
     },
@@ -45339,8 +44379,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "MMMU/MMMU_Pro",
       "status": "ok"
     },
@@ -47021,8 +46061,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "MathLLMs/MathVision",
       "status": "ok"
     },
@@ -47909,8 +46949,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "McGill-NLP/WebLINX",
       "status": "ok"
     },
@@ -48799,8 +47839,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Nanbeige/ToolMind",
       "status": "ok"
     },
@@ -49469,8 +48509,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "OS-Copilot/OS-Atlas-Data",
       "status": "ok"
     },
@@ -50013,8 +49053,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "OS-Copilot/ScreenSpot-v2",
       "status": "ok"
     },
@@ -50663,8 +49703,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "OpenGVLab/VideoChat-Flash-Training-Data",
       "status": "ok"
     },
@@ -51495,8 +50535,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Qwen/ProcessBench",
       "status": "ok"
     },
@@ -51521,7 +50561,7 @@
         "gated": "auto",
         "last_modified": "2025-01-24T19:25:58.000Z",
         "license": "cc-by-4.0",
-        "likes": 767,
+        "likes": 769,
         "private": false,
         "repo_id": "Salesforce/xlam-function-calling-60k",
         "sha": "26d14ebfe18b1f7b524bd39b404b50af5dc97866",
@@ -52585,10 +51625,66 @@
             ],
             "url": "https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k"
           }
+        },
+        {
+          "changes": {
+            "likes": {
+              "new": 769,
+              "old": 767
+            }
+          },
+          "observed_at": "2026-11-27T01:02:03Z",
+          "previous": {
+            "card_data": {
+              "language": [
+                "en"
+              ],
+              "license": "cc-by-4.0",
+              "size_categories": [
+                "10K<n<100K"
+              ],
+              "task_categories": [
+                "question-answering",
+                "text-generation",
+                "reinforcement-learning"
+              ]
+            },
+            "disabled": false,
+            "downloads": 17587,
+            "gated": "auto",
+            "last_modified": "2025-01-24T19:25:58.000Z",
+            "license": "cc-by-4.0",
+            "likes": 767,
+            "private": false,
+            "repo_id": "Salesforce/xlam-function-calling-60k",
+            "sha": "26d14ebfe18b1f7b524bd39b404b50af5dc97866",
+            "siblings_count": 6,
+            "tags": [
+              "LLM Agent",
+              "arxiv:2406.18518",
+              "code",
+              "format:json",
+              "function-calling",
+              "language:en",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:pandas",
+              "library:polars",
+              "license:cc-by-4.0",
+              "modality:text",
+              "region:us",
+              "size_categories:10K<n<100K",
+              "synthetic",
+              "task_categories:question-answering",
+              "task_categories:reinforcement-learning",
+              "task_categories:text-generation"
+            ],
+            "url": "https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k"
+          }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Salesforce/xlam-function-calling-60k",
       "status": "ok"
     },
@@ -55399,8 +54495,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "ServiceNow-AI/M2Lingual",
       "status": "ok"
     },
@@ -56019,8 +55115,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Skywork/Skywork-OR1-RL-Data",
       "status": "ok"
     },
@@ -56635,8 +55731,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "Skywork/Skywork-Reward-Preference-80K-v0.2",
       "status": "ok"
     },
@@ -57687,8 +56783,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "SynthLabsAI/Big-Math-RL-Verified",
       "status": "ok"
     },
@@ -58675,8 +57771,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "TIGER-Lab/MMLU-Pro",
       "status": "ok"
     },
@@ -59561,8 +58657,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "TIGER-Lab/Mantis-Eval",
       "status": "ok"
     },
@@ -60465,8 +59561,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "TIGER-Lab/Mantis-Instruct",
       "status": "ok"
     },
@@ -61045,8 +60141,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "YiyangAiLab/POVID_preference_data_for_VLLMs",
       "status": "ok"
     },
@@ -61831,8 +60927,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "agentica-org/DeepScaleR-Preview-Dataset",
       "status": "ok"
     },
@@ -62523,8 +61619,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "ai-safety-institute/AgentHarm",
       "status": "ok"
     },
@@ -63480,8 +62576,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "akoksal/LongForm",
       "status": "ok"
     },
@@ -66952,8 +66048,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/Dolci-Instruct-SFT",
       "status": "ok"
     },
@@ -67622,8 +66718,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/Molmo2-VideoPoint",
       "status": "ok"
     },
@@ -68310,8 +67406,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/Molmo2-VideoTrack",
       "status": "ok"
     },
@@ -68962,8 +68058,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/llama-3.1-tulu-3-8b-preference-mixture",
       "status": "ok"
     },
@@ -69731,8 +68827,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/pixmo-ask-model-anything",
       "status": "ok"
     },
@@ -70581,8 +69677,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/pixmo-cap-qa",
       "status": "ok"
     },
@@ -71342,8 +70438,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/pixmo-count",
       "status": "ok"
     },
@@ -72084,8 +71180,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/pixmo-docs",
       "status": "ok"
     },
@@ -72853,8 +71949,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/pixmo-point-explanations",
       "status": "ok"
     },
@@ -73523,8 +72619,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/pixmo-points",
       "status": "ok"
     },
@@ -74485,8 +73581,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/reward-bench",
       "status": "ok"
     },
@@ -75371,8 +74467,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/reward-bench-2",
       "status": "ok"
     },
@@ -79799,8 +78895,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/tulu-3-sft-mixture",
       "status": "ok"
     },
@@ -80685,8 +79781,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "allenai/tulu-3-sft-personas-instruction-following",
       "status": "ok"
     },
@@ -81643,8 +80739,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "argilla/ifeval-like-data",
       "status": "ok"
     },
@@ -82493,8 +81589,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "berkeley-nest/Nectar",
       "status": "ok"
     },
@@ -83421,8 +82517,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "databricks/databricks-dolly-15k",
       "status": "ok"
     },
@@ -84653,8 +83749,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "deepmind/code_contests",
       "status": "ok"
     },
@@ -85539,8 +84635,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "facebook/natural_reasoning",
       "status": "ok"
     },
@@ -86401,8 +85497,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "glaiveai/glaive-function-calling-v2",
       "status": "ok"
     },
@@ -87079,8 +86175,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "gpt-omni/VoiceAssistant-400K",
       "status": "ok"
     },
@@ -87912,8 +87008,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "hflqf88888/GUIOdyssey",
       "status": "ok"
     },
@@ -88672,8 +87768,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "hlt-lab/voicebench",
       "status": "ok"
     },
@@ -89476,8 +88572,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "liuhaotian/LLaVA-Instruct-150K",
       "status": "ok"
     },
@@ -90186,8 +89282,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "lmarena-ai/arena-human-preference-140k",
       "status": "ok"
     },
@@ -90820,8 +89916,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "lmms-lab/ChartQA",
       "status": "ok"
     },
@@ -91508,8 +90604,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "lmms-lab/DocVQA",
       "status": "ok"
     },
@@ -92272,8 +91368,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "lmms-lab/LLaVA-Video-178K",
       "status": "ok"
     },
@@ -92888,8 +91984,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "lmms-lab/Video-MME",
       "status": "ok"
     },
@@ -92911,7 +92007,7 @@
         "gated": "auto",
         "last_modified": "2024-10-14T05:43:04.000Z",
         "license": "cc-by-nc-sa-4.0",
-        "likes": 65,
+        "likes": 66,
         "private": false,
         "repo_id": "longvideobench/LongVideoBench",
         "sha": "60d1c89c1919a198b73be39c2babb213b29d6a5c",
@@ -93860,10 +92956,63 @@
             ],
             "url": "https://huggingface.co/datasets/longvideobench/LongVideoBench"
           }
+        },
+        {
+          "changes": {
+            "likes": {
+              "new": 66,
+              "old": 65
+            }
+          },
+          "observed_at": "2026-11-27T01:02:03Z",
+          "previous": {
+            "card_data": {
+              "language": [
+                "en"
+              ],
+              "license": "cc-by-nc-sa-4.0",
+              "pretty_name": "longvideobench",
+              "task_categories": [
+                "multiple-choice",
+                "visual-question-answering"
+              ]
+            },
+            "disabled": false,
+            "downloads": 34904,
+            "gated": "auto",
+            "last_modified": "2024-10-14T05:43:04.000Z",
+            "license": "cc-by-nc-sa-4.0",
+            "likes": 65,
+            "private": false,
+            "repo_id": "longvideobench/LongVideoBench",
+            "sha": "60d1c89c1919a198b73be39c2babb213b29d6a5c",
+            "siblings_count": 38,
+            "tags": [
+              "arxiv:2407.15754",
+              "format:parquet",
+              "language:en",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:pandas",
+              "library:polars",
+              "license:cc-by-nc-sa-4.0",
+              "long context",
+              "long video understanding",
+              "modality:tabular",
+              "modality:text",
+              "multimodal",
+              "neurips 2024",
+              "region:us",
+              "size_categories:1K<n<10K",
+              "task_categories:multiple-choice",
+              "task_categories:visual-question-answering"
+            ],
+            "url": "https://huggingface.co/datasets/longvideobench/LongVideoBench"
+          }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "longvideobench/LongVideoBench",
       "status": "ok"
     },
@@ -94482,8 +93631,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "lukaemon/bbh",
       "status": "ok"
     },
@@ -95372,8 +94521,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "m-a-p/CodeFeedback-Filtered-Instruction",
       "status": "ok"
     },
@@ -96276,8 +95425,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "mvp-lab/LLaVA-OneVision-1.5-Instruct-Data",
       "status": "ok"
     },
@@ -96301,7 +95450,7 @@
         "gated": false,
         "last_modified": "2025-06-09T19:15:56.000Z",
         "license": "cc-by-4.0",
-        "likes": 121,
+        "likes": 122,
         "private": false,
         "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
         "sha": "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
@@ -97276,10 +96425,65 @@
             ],
             "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
           }
+        },
+        {
+          "changes": {
+            "likes": {
+              "new": 122,
+              "old": 121
+            }
+          },
+          "observed_at": "2026-11-27T01:02:03Z",
+          "previous": {
+            "card_data": {
+              "language": [
+                "en"
+              ],
+              "license": "cc-by-4.0",
+              "pretty_name": "Nemotron Content Safety Dataset V2",
+              "size_categories": [
+                "10K<n<100K"
+              ],
+              "task_categories": [
+                "text-classification"
+              ]
+            },
+            "disabled": false,
+            "downloads": 24039,
+            "gated": false,
+            "last_modified": "2025-06-09T19:15:56.000Z",
+            "license": "cc-by-4.0",
+            "likes": 121,
+            "private": false,
+            "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+            "sha": "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
+            "siblings_count": 7,
+            "tags": [
+              "LLM safety",
+              "aegis",
+              "content moderation",
+              "format:json",
+              "language:en",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:pandas",
+              "library:polars",
+              "license:cc-by-4.0",
+              "modality:text",
+              "nemoguard",
+              "nemotron",
+              "region:us",
+              "safety",
+              "size_categories:10K<n<100K",
+              "task_categories:text-classification",
+              "toxicity detection"
+            ],
+            "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0"
+          }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
       "status": "ok"
     },
@@ -98154,8 +97358,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/HelpSteer2",
       "status": "ok"
     },
@@ -99530,8 +98734,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/HelpSteer3",
       "status": "ok"
     },
@@ -100272,8 +99476,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/Nemotron-Cascade-2-RL-data",
       "status": "ok"
     },
@@ -100928,8 +100132,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/Nemotron-Cascade-2-SFT-Data",
       "status": "ok"
     },
@@ -101858,8 +101062,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/OpenCodeInstruct",
       "status": "ok"
     },
@@ -102694,8 +101898,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/OpenCodeReasoning",
       "status": "ok"
     },
@@ -103668,8 +102872,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/OpenMathInstruct-2",
       "status": "ok"
     },
@@ -104650,8 +103854,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "nvidia/OpenMathReasoning",
       "status": "ok"
     },
@@ -105518,8 +104722,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "open-r1/Mixture-of-Thoughts",
       "status": "ok"
     },
@@ -105556,7 +104760,7 @@
         "license": [
           "mit"
         ],
-        "likes": 2159,
+        "likes": 2177,
         "private": false,
         "repo_id": "openai/gsm8k",
         "sha": "740312add88f781978c0658806c59bc2815b9866",
@@ -106822,10 +106026,79 @@
             ],
             "url": "https://huggingface.co/datasets/openai/gsm8k"
           }
+        },
+        {
+          "changes": {
+            "likes": {
+              "new": 2177,
+              "old": 2159
+            }
+          },
+          "observed_at": "2026-11-27T01:02:03Z",
+          "previous": {
+            "card_data": {
+              "annotations_creators": [
+                "crowdsourced"
+              ],
+              "language": [
+                "en"
+              ],
+              "language_creators": [
+                "crowdsourced"
+              ],
+              "license": [
+                "mit"
+              ],
+              "pretty_name": "Grade School Math 8K",
+              "size_categories": [
+                "1K<n<10K"
+              ],
+              "source_datasets": [
+                "original"
+              ],
+              "task_categories": [
+                "text-generation"
+              ]
+            },
+            "disabled": false,
+            "downloads": 1316225,
+            "gated": false,
+            "last_modified": "2026-03-23T10:18:13.000Z",
+            "license": [
+              "mit"
+            ],
+            "likes": 2159,
+            "private": false,
+            "repo_id": "openai/gsm8k",
+            "sha": "740312add88f781978c0658806c59bc2815b9866",
+            "siblings_count": 7,
+            "tags": [
+              "annotations_creators:crowdsourced",
+              "arxiv:2110.14168",
+              "benchmark:eval-yaml",
+              "benchmark:official",
+              "format:parquet",
+              "language:en",
+              "language_creators:crowdsourced",
+              "library:datasets",
+              "library:mlcroissant",
+              "library:pandas",
+              "library:polars",
+              "license:mit",
+              "math-word-problems",
+              "modality:text",
+              "multilinguality:monolingual",
+              "region:us",
+              "size_categories:10K<n<100K",
+              "source_datasets:original",
+              "task_categories:text-generation"
+            ],
+            "url": "https://huggingface.co/datasets/openai/gsm8k"
+          }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "openai/gsm8k",
       "status": "ok"
     },
@@ -107422,8 +106695,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "openai/summarize_from_feedback",
       "status": "ok"
     },
@@ -108042,8 +107315,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "openai/webgpt_comparisons",
       "status": "ok"
     },
@@ -109126,8 +108399,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "openbmb/RLAIF-V-Dataset",
       "status": "ok"
     },
@@ -109998,8 +109271,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "openbmb/UltraFeedback",
       "status": "ok"
     },
@@ -110524,8 +109797,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "opencompass/MMBench",
       "status": "ok"
     },
@@ -111159,8 +110432,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "princeton-nlp/SWE-bench_Verified",
       "status": "ok"
     },
@@ -111973,8 +111246,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "qyang1021/AIR-Bench-Dataset",
       "status": "ok"
     },
@@ -113101,8 +112374,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "sorry-bench/sorry-bench-202503",
       "status": "ok"
     },
@@ -114131,8 +113404,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "stanfordnlp/SHP",
       "status": "ok"
     },
@@ -114925,8 +114198,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "teknium/OpenHermes-2.5",
       "status": "ok"
     },
@@ -115761,8 +115034,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "ys-zong/VLGuard",
       "status": "ok"
     },
@@ -116358,8 +115631,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "yxwang/SafeVid-350K",
       "status": "ok"
     },
@@ -117266,8 +116539,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "zai-org/LongAlign-10k",
       "status": "ok"
     },
@@ -118260,8 +117533,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "zai-org/LongCite-45k",
       "status": "ok"
     },
@@ -118930,8 +118203,8 @@
           }
         }
       ],
-      "last_checked_at": "2026-11-26T01:00:39Z",
-      "last_success_at": "2026-11-26T01:00:39Z",
+      "last_checked_at": "2026-11-27T01:02:03Z",
+      "last_success_at": "2026-11-27T01:02:03Z",
       "repo_id": "zhiqings/LLaVA-Human-Preference-10K",
       "status": "ok"
     }
